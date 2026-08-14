@@ -6,11 +6,13 @@ on:
     branches: [main]
     paths:
       - 'collector.py'
+      - 'import_bbb_snapshot.py'
       - 'optimizer.py'
       - 'disenchant_optimizer.py'
       - 'requirements.txt'
       - 'config/**'
       - 'recipes/**'
+      - 'data/bbb_snapshot.json'
       - '.github/workflows/collect.yml'
   schedule:
     - cron: '17 */3 * * *'
@@ -40,6 +42,9 @@ jobs:
       - name: Collect source diagnostics and live prices
         run: python collector.py
 
+      - name: Import browser BBB snapshot when present
+        run: python import_bbb_snapshot.py
+
       - name: Build Enchanting report
         run: python optimizer.py
 
@@ -55,6 +60,7 @@ jobs:
           de=json.load(open('data/disenchant_thresholds.json'))
           print('Price source:', p.get('source'))
           print('Live items updated:', p.get('live_items_updated'))
+          print('Snapshot generated:', p.get('snapshot_generated_at'))
           print('Market:', d['market'])
           print('Baseline route:', d.get('baseline_route_segments'))
           print('Baseline total:', d.get('baseline_route_summary'))
