@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:50:56.957235+00:00",
+  "generated_at": "2026-08-14T16:53:42.552500+00:00",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "model": "minimize expected net leveling cost after 5% AH cut and one-listing sale-rate-weighted recovery",
   "route": [
@@ -7,12 +7,14 @@
       "from": 1,
       "to": 50,
       "output": "Brilliant Smallfish",
+      "output_item_id": 6290,
       "expected_crafts": 52,
       "materials": [
         {
           "name": "Raw Brilliant Smallfish",
           "qty": 1,
-          "unit_gold": 0.0018
+          "unit_gold": 0.0018,
+          "item_id": 6291
         }
       ],
       "gross_per_craft_gold": 0.0018,
@@ -28,12 +30,14 @@
       "from": 50,
       "to": 100,
       "output": "Longjaw Mud Snapper",
+      "output_item_id": 4592,
       "expected_crafts": 55,
       "materials": [
         {
           "name": "Raw Longjaw Mud Snapper",
           "qty": 1,
-          "unit_gold": 0.0011
+          "unit_gold": 0.0011,
+          "item_id": 6289
         }
       ],
       "gross_per_craft_gold": 0.0011,
@@ -49,12 +53,14 @@
       "from": 100,
       "to": 175,
       "output": "Bristle Whisker Catfish",
+      "output_item_id": 4593,
       "expected_crafts": 120,
       "materials": [
         {
           "name": "Raw Bristle Whisker Catfish",
           "qty": 1,
-          "unit_gold": 0.061
+          "unit_gold": 0.061,
+          "item_id": 6308
         }
       ],
       "gross_per_craft_gold": 0.061,
@@ -70,12 +76,14 @@
       "from": 175,
       "to": 225,
       "output": "Mithril Head Trout",
+      "output_item_id": 8364,
       "expected_crafts": 60,
       "materials": [
         {
           "name": "Raw Mithril Head Trout",
           "qty": 1,
-          "unit_gold": 0.0183
+          "unit_gold": 0.0183,
+          "item_id": 8365
         }
       ],
       "gross_per_craft_gold": 0.0183,
@@ -91,12 +99,14 @@
       "from": 225,
       "to": 250,
       "output": "Spotted Yellowtail",
+      "output_item_id": 6887,
       "expected_crafts": 25,
       "materials": [
         {
           "name": "Raw Spotted Yellowtail",
           "qty": 1,
-          "unit_gold": 0.0207
+          "unit_gold": 0.0207,
+          "item_id": 4603
         }
       ],
       "gross_per_craft_gold": 0.0207,
@@ -112,12 +122,14 @@
       "from": 250,
       "to": 275,
       "output": "Spotted Yellowtail",
+      "output_item_id": 6887,
       "expected_crafts": 65,
       "materials": [
         {
           "name": "Raw Spotted Yellowtail",
           "qty": 1,
-          "unit_gold": 0.0207
+          "unit_gold": 0.0207,
+          "item_id": 4603
         }
       ],
       "gross_per_craft_gold": 0.0207,
@@ -133,17 +145,20 @@
       "from": 275,
       "to": 300,
       "output": "Lobster Stew",
+      "output_item_id": 13933,
       "expected_crafts": 25,
       "materials": [
         {
           "name": "Darkclaw Lobster",
           "qty": 1,
-          "unit_gold": 0.65
+          "unit_gold": 0.65,
+          "item_id": 13888
         },
         {
           "name": "Refreshing Spring Water",
           "qty": 1,
-          "unit_gold": 0.0099
+          "unit_gold": 0.0099,
+          "item_id": 159
         }
       ],
       "gross_per_craft_gold": 0.6599,
@@ -163,12 +178,14 @@
       "ranked": [
         {
           "output": "Brilliant Smallfish",
+          "output_item_id": 6290,
           "expected_crafts": 52,
           "materials": [
             {
               "name": "Raw Brilliant Smallfish",
               "qty": 1,
-              "unit_gold": 0.0018
+              "unit_gold": 0.0018,
+              "item_id": 6291
             }
           ],
           "gross_per_craft_gold": 0.0018,
@@ -188,12 +205,14 @@
       "ranked": [
         {
           "output": "Longjaw Mud Snapper",
+          "output_item_id": 4592,
           "expected_crafts": 55,
           "materials": [
             {
               "name": "Raw Longjaw Mud Snapper",
               "qty": 1,
-              "unit_gold": 0.0011
+              "unit_gold": 0.0011,
+              "item_id": 6289
             }
           ],
           "gross_per_craft_gold": 0.0011,
@@ -213,12 +232,14 @@
       "ranked": [
         {
           "output": "Bristle Whisker Catfish",
+          "output_item_id": 4593,
           "expected_crafts": 120,
           "materials": [
             {
               "name": "Raw Bristle Whisker Catfish",
               "qty": 1,
-              "unit_gold": 0.061
+              "unit_gold": 0.061,
+              "item_id": 6308
             }
           ],
           "gross_per_craft_gold": 0.061,
@@ -238,12 +259,14 @@
       "ranked": [
         {
           "output": "Mithril Head Trout",
+          "output_item_id": 8364,
           "expected_crafts": 60,
           "materials": [
             {
               "name": "Raw Mithril Head Trout",
               "qty": 1,
-              "unit_gold": 0.0183
+              "unit_gold": 0.0183,
+              "item_id": 8365
             }
           ],
           "gross_per_craft_gold": 0.0183,
@@ -257,12 +280,14 @@
         },
         {
           "output": "Rockscale Cod",
+          "output_item_id": 4594,
           "expected_crafts": 75,
           "materials": [
             {
               "name": "Raw Rockscale Cod",
               "qty": 1,
-              "unit_gold": 0.0009
+              "unit_gold": 0.0009,
+              "item_id": 6362
             }
           ],
           "gross_per_craft_gold": 0.0009,
@@ -282,12 +307,14 @@
       "ranked": [
         {
           "output": "Spotted Yellowtail",
+          "output_item_id": 6887,
           "expected_crafts": 25,
           "materials": [
             {
               "name": "Raw Spotted Yellowtail",
               "qty": 1,
-              "unit_gold": 0.0207
+              "unit_gold": 0.0207,
+              "item_id": 4603
             }
           ],
           "gross_per_craft_gold": 0.0207,
@@ -301,17 +328,20 @@
         },
         {
           "output": "Tender Wolf Steak",
+          "output_item_id": 18045,
           "expected_crafts": 25,
           "materials": [
             {
               "name": "Tender Wolf Meat",
               "qty": 1,
-              "unit_gold": 0.0957
+              "unit_gold": 0.0957,
+              "item_id": 12208
             },
             {
               "name": "Soothing Spices",
               "qty": 1,
-              "unit_gold": 0.0847
+              "unit_gold": 0.0847,
+              "item_id": 3713
             }
           ],
           "gross_per_craft_gold": 0.1804,
@@ -331,12 +361,14 @@
       "ranked": [
         {
           "output": "Spotted Yellowtail",
+          "output_item_id": 6887,
           "expected_crafts": 65,
           "materials": [
             {
               "name": "Raw Spotted Yellowtail",
               "qty": 1,
-              "unit_gold": 0.0207
+              "unit_gold": 0.0207,
+              "item_id": 4603
             }
           ],
           "gross_per_craft_gold": 0.0207,
@@ -350,12 +382,14 @@
         },
         {
           "output": "Poached Sunscale Salmon",
+          "output_item_id": 13932,
           "expected_crafts": 35,
           "materials": [
             {
               "name": "Raw Sunscale Salmon",
               "qty": 1,
-              "unit_gold": 0.247
+              "unit_gold": 0.247,
+              "item_id": 13760
             }
           ],
           "gross_per_craft_gold": 0.247,
@@ -369,17 +403,20 @@
         },
         {
           "output": "Nightfin Soup",
+          "output_item_id": 13931,
           "expected_crafts": 35,
           "materials": [
             {
               "name": "Raw Nightfin Snapper",
               "qty": 1,
-              "unit_gold": 0.4796
+              "unit_gold": 0.4796,
+              "item_id": 13759
             },
             {
               "name": "Refreshing Spring Water",
               "qty": 1,
-              "unit_gold": 0.0099
+              "unit_gold": 0.0099,
+              "item_id": 159
             }
           ],
           "gross_per_craft_gold": 0.4895,
@@ -399,17 +436,20 @@
       "ranked": [
         {
           "output": "Lobster Stew",
+          "output_item_id": 13933,
           "expected_crafts": 25,
           "materials": [
             {
               "name": "Darkclaw Lobster",
               "qty": 1,
-              "unit_gold": 0.65
+              "unit_gold": 0.65,
+              "item_id": 13888
             },
             {
               "name": "Refreshing Spring Water",
               "qty": 1,
-              "unit_gold": 0.0099
+              "unit_gold": 0.0099,
+              "item_id": 159
             }
           ],
           "gross_per_craft_gold": 0.6599,
@@ -423,17 +463,20 @@
         },
         {
           "output": "Baked Salmon",
+          "output_item_id": 13935,
           "expected_crafts": 25,
           "materials": [
             {
               "name": "Raw Whitescale Salmon",
               "qty": 1,
-              "unit_gold": 0.9492
+              "unit_gold": 0.9492,
+              "item_id": 13889
             },
             {
               "name": "Soothing Spices",
               "qty": 1,
-              "unit_gold": 0.0847
+              "unit_gold": 0.0847,
+              "item_id": 3713
             }
           ],
           "gross_per_craft_gold": 1.0339,
@@ -447,22 +490,26 @@
         },
         {
           "output": "Mightfish Steak",
+          "output_item_id": 13934,
           "expected_crafts": 25,
           "materials": [
             {
               "name": "Large Raw Mightfish",
               "qty": 1,
-              "unit_gold": 6.0094
+              "unit_gold": 6.0094,
+              "item_id": 13893
             },
             {
               "name": "Hot Spices",
               "qty": 1,
-              "unit_gold": 0.0199
+              "unit_gold": 0.0199,
+              "item_id": 2692
             },
             {
               "name": "Soothing Spices",
               "qty": 1,
-              "unit_gold": 0.0847
+              "unit_gold": 0.0847,
+              "item_id": 3713
             }
           ],
           "gross_per_craft_gold": 6.114,
@@ -565,6 +612,7 @@
   "notes": [
     "Sale rate and sold/day are regional TSM metrics, not Thunderstrike-only sales counts.",
     "Amounts are conservative expected-craft quantities; RNG may require a small top-up.",
-    "Smoked Desert Dumplings is excluded because its recipe is quest-earned rather than AH-buyable."
+    "Smoked Desert Dumplings is excluded because its recipe is quest-earned rather than AH-buyable.",
+    "Known Classic TSM name collisions are resolved with canonical item IDs where needed."
   ]
 }
