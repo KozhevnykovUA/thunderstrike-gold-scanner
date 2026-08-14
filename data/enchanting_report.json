@@ -1,0 +1,84 @@
+{
+  "market": {
+    "region": "eu",
+    "realm": "thunderstrike",
+    "realm_id": 6409,
+    "faction": "alliance",
+    "auction_house_id": 2
+  },
+  "price_source": "manual_seed_from_verified_bootybaybroker_pages",
+  "warning": "Seed prices are lowest-buyout snapshots, not live market-depth-adjusted prices.",
+  "recipes": [
+    {
+      "name": "Enchant Cloak - Major Armor",
+      "skill": {
+        "yellow": 325,
+        "green": 340,
+        "gray": 355
+      },
+      "material_cost_gold": 7.7296,
+      "missing_price_item_ids": [],
+      "notes": "Current Wowhead route uses this from 317; price comparison can make it attractive through 335."
+    },
+    {
+      "name": "Enchant Chest - Major Spirit",
+      "skill": {
+        "yellow": 330,
+        "green": 345,
+        "gray": 360
+      },
+      "material_cost_gold": 11.4826,
+      "missing_price_item_ids": [],
+      "notes": "Baseline alternative after 320."
+    },
+    {
+      "name": "Superior Wizard Oil",
+      "skill": {
+        "yellow": 350,
+        "green": 365,
+        "gray": 380
+      },
+      "material_cost_gold": 6.7989,
+      "missing_price_item_ids": [],
+      "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available."
+    },
+    {
+      "name": "Runed Adamantite Rod",
+      "skill": {
+        "yellow": 350,
+        "green": 350,
+        "gray": 350
+      },
+      "material_cost_gold": 294.6969,
+      "missing_price_item_ids": [],
+      "notes": "Also requires 1 Adamantite Rod. Required tool investment."
+    },
+    {
+      "name": "Enchant Gloves - Major Strength",
+      "skill": {
+        "yellow": 360,
+        "green": 370,
+        "gray": 380
+      },
+      "material_cost_gold": 17.3357,
+      "missing_price_item_ids": [],
+      "notes": "Baseline 351-365 route."
+    },
+    {
+      "name": "Enchant Ring - Spellpower",
+      "skill": {
+        "yellow": 370,
+        "green": 375,
+        "gray": 380
+      },
+      "material_cost_gold": 51.0498,
+      "missing_price_item_ids": [],
+      "notes": "Baseline 365-375 route; requires Honored Keepers of Time."
+    }
+  ],
+  "comparison_320_335": {
+    "major_armor_cost_gold": 7.7296,
+    "major_spirit_cost_gold": 11.4826,
+    "major_armor_cheaper_pct": 32.68
+  }
+}
