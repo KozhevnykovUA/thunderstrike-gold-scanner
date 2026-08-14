@@ -9,6 +9,8 @@ on:
       - 'requirements.txt'
       - 'config/**'
       - '.github/workflows/collect.yml'
+  schedule:
+    - cron: '17 */3 * * *'
 
 permissions:
   contents: write
@@ -31,19 +33,17 @@ jobs:
       - name: Collect diagnostics
         run: python collector.py
 
-      - name: Show Arcane Dust validation
+      - name: Show TSM validation
         run: |
           python - <<'PY'
           import json
           d=json.load(open('data/diagnostics.json'))
-          a=next(x for x in d['items'] if x['id']==22445)
-          print('HTTP:', a.get('http_status'))
-          print('Final URL:', a.get('final_url'))
-          print('Candidates:', a.get('money_candidates_gold'))
-          print('Expected:', a.get('expected_validation_gold'))
-          print('Validation match:', a.get('validation_match'))
-          print('Headers:', a.get('response_headers'))
-          print('Body preview:', a.get('body_preview'))
+          print('Selected URL:', d.get('selected_url'))
+          print('Columns:', d.get('selected_columns'))
+          for x in d.get('selected_items', []):
+              print(x['name'], x.get('row'))
+          for s in d.get('sources', []):
+              print('SOURCE', s.get('url'), 'HTTP', s.get('http_status'), 'ROWS', s.get('row_count'))
           PY
 
       - name: Commit diagnostic output
