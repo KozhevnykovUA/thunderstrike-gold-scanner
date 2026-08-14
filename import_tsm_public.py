@@ -8,6 +8,7 @@ import requests
 
 CONFIG = Path('config/items.json')
 PRICES = Path('data/prices.json')
+CACHE = Path('data/tsm_items.csv')
 TSM_URL = 'https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike-alliance/items.csv'
 
 
@@ -28,6 +29,8 @@ def main():
 
     r = requests.get(TSM_URL, timeout=45, headers={'User-Agent': 'ThunderstrikeGoldScanner/1.0'})
     r.raise_for_status()
+    CACHE.parent.mkdir(parents=True, exist_ok=True)
+    CACHE.write_text(r.text, encoding='utf-8')
     rows = {row['itemId']: row for row in csv.DictReader(io.StringIO(r.text))}
 
     imported = 0
@@ -52,7 +55,6 @@ def main():
             'min_buyout_gold': min_buyout,
             'recent_gold': recent,
             'historical_gold': historical,
-            # DBRecent is our primary automated buy proxy: fresher and less fragile than one cheapest listing.
             'effective_buy_gold': recent or market or min_buyout,
             'realistic_sell_price_gold': market or recent or min_buyout,
             'tsm_updated_at': updated_at,
@@ -70,11 +72,12 @@ def main():
         'Prices in source CSV are copper and are converted to gold.',
         'effective_buy_gold uses TSM recent when available, then marketValue, then minBuyout.',
         'minBuyout is retained as the current floor; marketValue and historical are retained for context.',
-        'Public realm CSV does not expose market depth, sale rate, sold/day, or quantity, so those remain separate future inputs.',
+        'The full downloaded CSV is cached in data/tsm_items.csv for this workflow run so downstream scanners do not hit TSM repeatedly.',
+        'Public realm CSV does not expose market depth, sale rate, sold/day, or quantity; sale metrics are collected separately from TSM item pages.',
     ]
 
     PRICES.write_text(json.dumps(current, indent=2, ensure_ascii=False), encoding='utf-8')
-    print('Imported', imported, 'TSM items from', TSM_URL, 'latest', latest_updated)
+    print('Imported', imported, 'TSM items from', TSM_URL, 'latest', latest_updated, 'cached rows=', len(rows))
 
 
 if __name__ == '__main__':
