@@ -49,6 +49,39 @@ def expected_cost_per_skill(craft_gold, probability):
     return round(craft_gold / probability, 4)
 
 
+def build_segments(points):
+    """Compress per-skill winners into human-friendly skill ranges."""
+    if not points:
+        return []
+    segments = []
+    start = points[0]['skill']
+    prev_skill = start
+    current = points[0]['best']['name']
+    req = points[0]['best'].get('requirements')
+    for point in points[1:]:
+        name = point['best']['name']
+        point_req = point['best'].get('requirements')
+        contiguous = point['skill'] == prev_skill + 1
+        if name != current or point_req != req or not contiguous:
+            segments.append({
+                'from_skill': start,
+                'to_skill': prev_skill + 1,
+                'recipe': current,
+                'requirements': req,
+            })
+            start = point['skill']
+            current = name
+            req = point_req
+        prev_skill = point['skill']
+    segments.append({
+        'from_skill': start,
+        'to_skill': prev_skill + 1,
+        'recipe': current,
+        'requirements': req,
+    })
+    return segments
+
+
 def main():
     prices = load_json(PRICES)
     recipes = load_json(RECIPES)
@@ -57,18 +90,20 @@ def main():
     for recipe in recipes['recipes']:
         cost, missing = craft_cost(prices, recipe['materials'])
         required_skill = recipe.get('required_skill', 0)
+        repeatable = recipe.get('repeatable_for_leveling', recipe['name'] != 'Runed Adamantite Rod')
         skill_curve = []
-        for skill in range(300, 375):
-            if skill < required_skill:
-                continue
-            probability = skillup_probability(skill, recipe['skill'])
-            if probability <= 0:
-                continue
-            skill_curve.append({
-                'skill': skill,
-                'skillup_probability': round(probability, 4),
-                'expected_cost_per_skill_gold': expected_cost_per_skill(cost, probability),
-            })
+        if repeatable:
+            for skill in range(300, 375):
+                if skill < required_skill:
+                    continue
+                probability = skillup_probability(skill, recipe['skill'])
+                if probability <= 0:
+                    continue
+                skill_curve.append({
+                    'skill': skill,
+                    'skillup_probability': round(probability, 4),
+                    'expected_cost_per_skill_gold': expected_cost_per_skill(cost, probability),
+                })
 
         rows.append({
             'name': recipe['name'],
@@ -77,6 +112,7 @@ def main():
             'requirements': recipe.get('requirements'),
             'material_cost_gold': cost,
             'missing_price_item_ids': missing,
+            'repeatable_for_leveling': repeatable,
             'notes': recipe.get('notes'),
             'skill_curve': skill_curve,
         })
@@ -90,7 +126,7 @@ def main():
             'orange': 1.0,
             'yellow_to_green': 'linear 1.0 -> 0.5',
             'green_to_gray': 'linear 0.5 -> 0.0',
-            'note': 'Used for route comparison; exact recipe availability and reputation requirements are enforced where known.'
+            'note': 'Used for route comparison; exact recipe availability and reputation requirements are preserved in output.'
         },
         'recipes': rows,
     }
@@ -108,33 +144,58 @@ def main():
         }
 
     cheapest_by_skill = []
+    baseline_by_skill = []
+    conditional_by_skill = []
+
     for skill in range(300, 375):
         candidates = []
+        baseline = []
+        conditional = []
         for row in rows:
             point = next((x for x in row['skill_curve'] if x['skill'] == skill), None)
             if not point or point['expected_cost_per_skill_gold'] is None:
                 continue
-            candidates.append({
+            candidate = {
                 'name': row['name'],
                 'craft_cost_gold': row['material_cost_gold'],
                 'skillup_probability': point['skillup_probability'],
                 'expected_cost_per_skill_gold': point['expected_cost_per_skill_gold'],
                 'requirements': row.get('requirements'),
-            })
-        candidates.sort(key=lambda x: x['expected_cost_per_skill_gold'])
+            }
+            candidates.append(candidate)
+            if row.get('requirements'):
+                conditional.append(candidate)
+            else:
+                baseline.append(candidate)
+
+        for bucket in (candidates, baseline, conditional):
+            bucket.sort(key=lambda x: x['expected_cost_per_skill_gold'])
+
         if candidates:
             cheapest_by_skill.append({
                 'skill': skill,
                 'best': candidates[0],
                 'alternatives': candidates[1:4],
             })
+        if baseline:
+            baseline_by_skill.append({'skill': skill, 'best': baseline[0]})
+        if conditional:
+            conditional_by_skill.append({'skill': skill, 'best': conditional[0]})
+
     report['cheapest_by_skill'] = cheapest_by_skill
+    report['baseline_route_segments'] = build_segments(baseline_by_skill)
+    report['conditional_route_segments'] = build_segments(conditional_by_skill)
+    report['all_route_segments'] = build_segments(cheapest_by_skill)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
 
-    for row in rows:
-        print(f"{row['name']}: {row['material_cost_gold']}g")
+    print('Baseline route segments:')
+    for seg in report['baseline_route_segments']:
+        print(seg)
+    print('Conditional route segments:')
+    for seg in report['conditional_route_segments']:
+        print(seg)
     print('Wrote', OUT)
 
 
