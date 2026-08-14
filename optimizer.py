@@ -21,7 +21,18 @@ def item_row(prices, item_id):
 
 def item_price(prices, item_id):
     row = item_row(prices, item_id)
-    return None if not row else row.get('min_buyout_gold')
+    if not row:
+        return None
+    effective = row.get('effective_buy_gold')
+    if effective is not None and effective > 0:
+        return effective
+    min_buyout = row.get('min_buyout_gold')
+    if min_buyout is not None and min_buyout > 0:
+        return min_buyout
+    market_value = row.get('market_value_gold')
+    if market_value is not None and market_value > 0:
+        return market_value
+    return None
 
 
 def craft_cost(prices, materials, multiplier=1.0):
@@ -143,12 +154,14 @@ def route_summary(points, row_lookup, prices):
     material_rows = []
     for item_id, qty in sorted(mats.items(), key=lambda x: -x[1]):
         market = item_row(prices, item_id) or {}
+        unit_price = item_price(prices, item_id)
         risk = supply_risk(prices, item_id, qty)
         material_rows.append({
             'item_id': int(item_id), 'name': market.get('name'),
             'expected_quantity': round(qty, 2),
-            'min_buyout_gold': market.get('min_buyout_gold'),
-            'safe_unit_price_gold': round(market['min_buyout_gold'] * SAFE_BUY_MULTIPLIER, 4) if market.get('min_buyout_gold') is not None else None,
+            'effective_buy_gold': unit_price,
+            'market_value_gold': market.get('market_value_gold'),
+            'safe_unit_price_gold': round(unit_price * SAFE_BUY_MULTIPLIER, 4) if unit_price is not None else None,
             **risk,
         })
 
@@ -207,9 +220,10 @@ def main():
 
     report = {
         'market': prices['market'], 'price_source': prices['source'],
-        'warning': 'Market-depth tiers are not available yet. Safe scenario applies +7.5% to input buy prices. Sale recovery is credited only with explicit demand probability.',
+        'warning': 'Market-depth tiers are not available yet. effective_buy_gold currently uses the BBB market-value snapshot as a proxy. Safe scenario applies +7.5% to input buy prices. Sale recovery is credited only with explicit demand probability.',
         'economics_model': {
             'ranking_metric': '(material cost - expected sale recovery) / skill-up probability',
+            'buy_price_priority': ['effective_buy_gold', 'positive min_buyout_gold', 'positive market_value_gold'],
             'ah_cut': AH_CUT, 'safe_buy_multiplier': SAFE_BUY_MULTIPLIER,
             'supply_warning_fraction': SUPPLY_WARN, 'supply_high_risk_fraction': SUPPLY_HIGH,
             'sale_recovery_rule': 'No demand probability = zero credited recovery',
@@ -254,7 +268,6 @@ def main():
     report['conditional_route_summary'] = route_summary(conditional_by_skill, row_lookup, prices)
     report['all_route_summary'] = route_summary(cheapest_by_skill, row_lookup, prices)
 
-    # Mandatory one-time tools are separated from repeatable leveling economics.
     report['mandatory_tools'] = [
         {
             'name': r['name'], 'required_skill': r['required_skill'],
