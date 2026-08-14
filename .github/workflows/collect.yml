@@ -7,6 +7,7 @@ on:
     paths:
       - 'collector.py'
       - 'import_bbb_snapshot.py'
+      - 'import_tsm_public.py'
       - 'validate_bbb_snapshot.py'
       - 'optimizer.py'
       - 'disenchant_optimizer.py'
@@ -53,6 +54,9 @@ jobs:
       - name: Import browser BBB snapshot when present
         run: python import_bbb_snapshot.py
 
+      - name: Import official TSM public prices
+        run: python import_tsm_public.py
+
       - name: Build Enchanting report
         run: python optimizer.py
 
@@ -67,8 +71,8 @@ jobs:
           d=json.load(open('data/enchanting_report.json'))
           de=json.load(open('data/disenchant_thresholds.json'))
           print('Price source:', p.get('source'))
-          print('Live items updated:', p.get('live_items_updated'))
-          print('Snapshot generated:', p.get('snapshot_generated_at'))
+          print('TSM items imported:', p.get('tsm_items_imported'))
+          print('TSM latest updated:', p.get('tsm_latest_updated_at'))
           print('Market:', d['market'])
           print('Baseline route:', d.get('baseline_route_segments'))
           print('Baseline total:', d.get('baseline_route_summary'))
