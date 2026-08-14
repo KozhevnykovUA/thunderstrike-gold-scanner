@@ -13,6 +13,54 @@
   "thresholds": [
     {
       "quality": "uncommon",
+      "item_level_min": 80,
+      "item_level_max": 99,
+      "item_type": "armor",
+      "expected_disenchant_value_gold": null,
+      "conservative_buy_ceiling_gold": null,
+      "break_even_buy_ceiling_gold": null,
+      "recommended_rule": null,
+      "components": [
+        {
+          "item_id": 22445,
+          "name": "Arcane Dust",
+          "probability": 0.75,
+          "average_quantity_if_hit": 2.5,
+          "unit_value_gold": 0.9662,
+          "expected_value_gold": 1.8116
+        }
+      ],
+      "missing_price_item_ids": [
+        22447,
+        22448
+      ]
+    },
+    {
+      "quality": "uncommon",
+      "item_level_min": 80,
+      "item_level_max": 99,
+      "item_type": "weapon",
+      "expected_disenchant_value_gold": null,
+      "conservative_buy_ceiling_gold": null,
+      "break_even_buy_ceiling_gold": null,
+      "recommended_rule": null,
+      "components": [
+        {
+          "item_id": 22445,
+          "name": "Arcane Dust",
+          "probability": 0.22,
+          "average_quantity_if_hit": 2.5,
+          "unit_value_gold": 0.9662,
+          "expected_value_gold": 0.5314
+        }
+      ],
+      "missing_price_item_ids": [
+        22447,
+        22448
+      ]
+    },
+    {
+      "quality": "uncommon",
       "item_level_min": 100,
       "item_level_max": 120,
       "item_type": "armor",
