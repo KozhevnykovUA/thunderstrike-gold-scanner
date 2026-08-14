@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-08-14T14:00:00Z",
+  "source": "manual_seed_from_verified_bootybaybroker_pages",
+  "market": {
+    "region": "eu",
+    "realm": "thunderstrike",
+    "realm_id": 6409,
+    "faction": "alliance",
+    "auction_house_id": 2
+  },
+  "items": {
+    "22445": {"name": "Arcane Dust", "min_buyout_gold": 0.9662},
+    "22446": {"name": "Greater Planar Essence", "min_buyout_gold": 5.7413, "quantity": 5253},
+    "22449": {"name": "Large Prismatic Shard", "min_buyout_gold": 19.7836, "quantity": 4754},
+    "22792": {"name": "Nightmare Vine", "min_buyout_gold": 3.9003, "quantity": 3450},
+    "23571": {"name": "Primal Might", "min_buyout_gold": 90.4977, "quantity": 184}
+  },
+  "notes": [
+    "These are seed values verified manually from realm-scoped BootyBayBroker pages.",
+    "They are lowest-buyout snapshots, not market-depth-adjusted effective buy prices.",
+    "Do not treat this file as a live feed until an automated source is connected."
+  ]
+}
