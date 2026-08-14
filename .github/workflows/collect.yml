@@ -45,9 +45,18 @@ jobs:
           import json
           d=json.load(open('data/enchanting_report.json'))
           print('Market:', d['market'])
+          print('Ranking:', d.get('economics_model', {}).get('ranking_metric'))
           for x in d['recipes']:
-              print(x['name'], x['material_cost_gold'])
-          print('320-335 comparison:', d.get('comparison_320_335'))
+              print(
+                  x['name'],
+                  'gross=', x.get('gross_material_cost_gold'),
+                  'recovery=', x.get('sale_recovery', {}).get('expected_recovery_gold'),
+                  'net=', x.get('net_craft_cost_gold'),
+                  'recovery_status=', x.get('sale_recovery', {}).get('status'),
+              )
+          print('Baseline route:', d.get('baseline_route_segments'))
+          print('Conditional route:', d.get('conditional_route_segments'))
+          print('All route:', d.get('all_route_segments'))
           PY
 
       - name: Commit generated output
