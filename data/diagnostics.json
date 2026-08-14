@@ -1,11 +1,28 @@
 {
-  "generated_at": "2026-08-14T14:51:46.360759+00:00",
+  "generated_at": "2026-08-14T14:53:25.458221+00:00",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
     "realm_id": 6409,
     "faction": "alliance",
     "auction_house_id": 2
+  },
+  "realm_api": {
+    "realms": {
+      "url": "https://realm-api.tradeskillmaster.com/public/realms",
+      "http_status": 404,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": 76,
+      "body_preview": "{\"message\":\"Cannot GET /public/realms\",\"error\":\"Not Found\",\"statusCode\":404}"
+    },
+    "thunderstrike_matches": [],
+    "regions": {
+      "url": "https://realm-api.tradeskillmaster.com/public/regions",
+      "http_status": 404,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": 77,
+      "body_preview": "{\"message\":\"Cannot GET /public/regions\",\"error\":\"Not Found\",\"statusCode\":404}"
+    }
   },
   "sources": [
     {
@@ -17,6 +34,20 @@
     },
     {
       "url": "https://public-data.tradeskillmaster.com/classic-progression/eu/realm/thunderstrike/items.csv",
+      "http_status": 404,
+      "content_type": "text/html",
+      "content_length": 27150,
+      "body_preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"icon\" href=\"https://www.cloudflare.com/favicon.ico\" />\n    <title>Not Found</title>\n    <style>\n      body {\n        font-family: system-"
+    },
+    {
+      "url": "https://public-data.tradeskillmaster.com/classic-anniversary/eu/realm/thunderstrike/items.csv",
+      "http_status": 404,
+      "content_type": "text/html",
+      "content_length": 27150,
+      "body_preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"icon\" href=\"https://www.cloudflare.com/favicon.ico\" />\n    <title>Not Found</title>\n    <style>\n      body {\n        font-family: system-"
+    },
+    {
+      "url": "https://public-data.tradeskillmaster.com/anniversary/eu/realm/thunderstrike/items.csv",
       "http_status": 404,
       "content_type": "text/html",
       "content_length": 27150,
