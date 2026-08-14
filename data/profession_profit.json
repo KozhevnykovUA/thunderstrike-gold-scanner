@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-14T16:38:41.403834+00:00",
+  "source": "TSM realm prices + TSM regional sale metrics",
+  "opportunities": [
+    {
+      "profession": "Enchanting",
+      "output": "Superior Wizard Oil",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Arcane Dust",
+          "qty": 3,
+          "unit_buy_gold": 0.9605,
+          "cost_gold": 2.8815
+        },
+        {
+          "name": "Nightmare Vine",
+          "qty": 1,
+          "unit_buy_gold": 3.4315,
+          "cost_gold": 3.4315
+        }
+      ],
+      "material_cost_gold": 6.633,
+      "sell_recent_gold": 7.2577,
+      "net_sale_after_5pct_gold": 6.8948,
+      "profit_per_craft_gold": 0.2618,
+      "roi_pct": 3.9,
+      "region_sale_rate": 0.636,
+      "region_avg_daily_sold": 211.152,
+      "expected_profit_per_listing_gold": 0.1665,
+      "regional_demand_profit_index": 55.28,
+      "profitable": true
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Adamantite Weightstone",
+      "requirements": "Cenarion Expedition - Honored",
+      "materials": [
+        {
+          "name": "Adamantite Bar",
+          "qty": 1,
+          "unit_buy_gold": 4.4536,
+          "cost_gold": 4.4536
+        },
+        {
+          "name": "Netherweave Cloth",
+          "qty": 2,
+          "unit_buy_gold": 0.1548,
+          "cost_gold": 0.3096
+        }
+      ],
+      "material_cost_gold": 4.7632,
+      "sell_recent_gold": 5.4535,
+      "net_sale_after_5pct_gold": 5.1808,
+      "profit_per_craft_gold": 0.4176,
+      "roi_pct": 8.8,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": true
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Fel Weightstone",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Fel Iron Bar",
+          "qty": 1,
+          "unit_buy_gold": 1.5293,
+          "cost_gold": 1.5293
+        },
+        {
+          "name": "Netherweave Cloth",
+          "qty": 1,
+          "unit_buy_gold": 0.1548,
+          "cost_gold": 0.1548
+        }
+      ],
+      "material_cost_gold": 1.6841,
+      "sell_recent_gold": 1.3977,
+      "net_sale_after_5pct_gold": 1.3278,
+      "profit_per_craft_gold": -0.3563,
+      "roi_pct": -21.2,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": false
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Lesser Ward of Shielding",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Adamantite Bar",
+          "qty": 1,
+          "unit_buy_gold": 4.4536,
+          "cost_gold": 4.4536
+        }
+      ],
+      "material_cost_gold": 4.4536,
+      "sell_recent_gold": 0.7998,
+      "net_sale_after_5pct_gold": 0.7598,
+      "profit_per_craft_gold": -3.6938,
+      "roi_pct": -82.9,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": false
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Lesser Rune of Warding",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Adamantite Bar",
+          "qty": 1,
+          "unit_buy_gold": 4.4536,
+          "cost_gold": 4.4536
+        }
+      ],
+      "material_cost_gold": 4.4536,
+      "sell_recent_gold": 0.2714,
+      "net_sale_after_5pct_gold": 0.2578,
+      "profit_per_craft_gold": -4.1958,
+      "roi_pct": -94.2,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": false
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Khorium Belt",
+      "requirements": "Plans: Khorium Belt",
+      "materials": [
+        {
+          "name": "Khorium Bar",
+          "qty": 3,
+          "unit_buy_gold": 4.1134,
+          "cost_gold": 12.3402
+        },
+        {
+          "name": "Primal Water",
+          "qty": 2,
+          "unit_buy_gold": 13.5896,
+          "cost_gold": 27.1792
+        },
+        {
+          "name": "Primal Mana",
+          "qty": 2,
+          "unit_buy_gold": 14.6971,
+          "cost_gold": 29.3942
+        }
+      ],
+      "material_cost_gold": 68.9136,
+      "sell_recent_gold": 24.2492,
+      "net_sale_after_5pct_gold": 23.0367,
+      "profit_per_craft_gold": -45.8769,
+      "roi_pct": -66.6,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": false
+    }
+  ]
+}
