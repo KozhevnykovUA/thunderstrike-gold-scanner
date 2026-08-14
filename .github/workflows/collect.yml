@@ -10,6 +10,7 @@ on:
       - 'optimizer.py'
       - 'disenchant_optimizer.py'
       - 'requirements.txt'
+      - 'browser/**'
       - 'config/**'
       - 'recipes/**'
       - 'data/bbb_snapshot.json'
@@ -38,6 +39,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Validate browser collector syntax
+        run: node --check browser/bbb_collector.js
 
       - name: Collect source diagnostics and live prices
         run: python collector.py
