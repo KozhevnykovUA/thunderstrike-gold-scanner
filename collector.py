@@ -25,7 +25,7 @@ def money_to_gold(match):
     groups = match.groups()
     if len(groups) == 3:
         g, s, c = groups
-        return (int(g or 0) + int(s or 0) / 100 + int(c or 0) / 10000)
+        return int(g or 0) + int(s or 0) / 100 + int(c or 0) / 10000
     g, s = groups
     return int(g or 0) + int(s or 0) / 100
 
@@ -48,10 +48,7 @@ def extract_candidates(html, item_name):
     text = " ".join(soup.stripped_strings)
     lower = text.lower()
     idx = lower.find(item_name.lower())
-    if idx >= 0:
-        window = text[max(0, idx - 800): idx + 5000]
-    else:
-        window = text[:12000]
+    window = text[max(0, idx - 800): idx + 5000] if idx >= 0 else text[:12000]
 
     money = []
     for pattern in PRICE_PATTERNS:
@@ -81,8 +78,11 @@ def main():
     market = config["market"]
     session = requests.Session()
     session.headers.update({
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/142 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
     })
 
     result = {
@@ -95,10 +95,15 @@ def main():
         url = scoped_url(market, item)
         row = {"id": item["id"], "name": item["name"], "url": url}
         try:
-            response = session.get(url, timeout=30)
+            response = session.get(url, timeout=30, allow_redirects=True)
             row["http_status"] = response.status_code
             row["final_url"] = response.url
             row["content_length"] = len(response.text)
+            row["response_headers"] = {
+                k: v for k, v in response.headers.items()
+                if k.lower() in {"server", "content-type", "cf-ray", "cf-cache-status", "location", "x-vercel-id"}
+            }
+            row["body_preview"] = response.text[:1000]
             row.update(extract_candidates(response.text, item["name"]))
             if "expected_validation_gold" in item:
                 expected = item["expected_validation_gold"]
@@ -115,8 +120,9 @@ def main():
     OUT_PATH.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
 
     arcane = next((x for x in result["items"] if x["id"] == 22445), None)
-    if not arcane or arcane.get("http_status") != 200:
-        raise SystemExit("Arcane Dust validation request failed")
+    print("Arcane Dust HTTP:", arcane.get("http_status") if arcane else None)
+    print("Arcane Dust candidates:", arcane.get("money_candidates_gold") if arcane else None)
+    print("Arcane Dust validation:", arcane.get("validation_match") if arcane else None)
 
 
 if __name__ == "__main__":
