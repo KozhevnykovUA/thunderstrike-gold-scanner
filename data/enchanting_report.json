@@ -515,7 +515,7 @@
       "net_craft_cost_gold": 6.7989,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Also requires 1 Imbued Vial. Sale recovery should be deducted from leveling cost when market price and demand data are available.",
+      "notes": "Also requires 1 Imbued Vial. Sale recovery should be included when realm sell price and liquidity data are available.",
       "skill_curve": [
         {
           "skill": 340,
@@ -888,7 +888,7 @@
       "net_craft_cost_gold": 45.3644,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Alternative 360-370 route; exact skill breakpoints remain provisional until a primary data source is added.",
+      "notes": "Skill breakpoints are provisional until exact data is sourced.",
       "skill_curve": [
         {
           "skill": 360,
@@ -1090,7 +1090,7 @@
       "net_craft_cost_gold": 61.6221,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Potential 370-375 route; later breakpoints are provisional.",
+      "notes": "Only 370-375 matters for this optimizer.",
       "skill_curve": [
         {
           "skill": 370,
@@ -1144,7 +1144,7 @@
         "23427"
       ],
       "repeatable_for_leveling": true,
-      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; excluded until item 23427 has a price.",
+      "notes": "Excluded from ranking until Eternium Ore has a price.",
       "skill_curve": [
         {
           "skill": 360,
