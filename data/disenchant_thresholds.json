@@ -1,0 +1,89 @@
+{
+  "market": {
+    "region": "eu",
+    "realm": "thunderstrike",
+    "realm_id": 6409,
+    "faction": "alliance",
+    "auction_house_id": 2
+  },
+  "price_source": "manual_seed_from_verified_bootybaybroker_pages",
+  "method": "Expected disenchant value from probability x average quantity x current material value.",
+  "conservative_sell_multiplier": 0.9,
+  "warning": "Uses current seed material prices and expected-value math; individual disenchants are random. Vendor value and AH resale value of the gear must be compared separately.",
+  "thresholds": [
+    {
+      "quality": "uncommon",
+      "item_level_min": 100,
+      "item_level_max": 120,
+      "item_type": "armor",
+      "expected_disenchant_value_gold": 5.0244,
+      "conservative_buy_ceiling_gold": 4.522,
+      "break_even_buy_ceiling_gold": 5.0244,
+      "recommended_rule": "DE if total acquisition cost is below 4.52g; between 4.52g and 5.02g only if you accept price/variance risk.",
+      "components": [
+        {
+          "item_id": 22445,
+          "name": "Arcane Dust",
+          "probability": 0.75,
+          "average_quantity_if_hit": 3.5,
+          "unit_value_gold": 0.9662,
+          "expected_value_gold": 2.5363
+        },
+        {
+          "item_id": 22446,
+          "name": "Greater Planar Essence",
+          "probability": 0.22,
+          "average_quantity_if_hit": 1.5,
+          "unit_value_gold": 5.7413,
+          "expected_value_gold": 1.8946
+        },
+        {
+          "item_id": 22449,
+          "name": "Large Prismatic Shard",
+          "probability": 0.03,
+          "average_quantity_if_hit": 1.0,
+          "unit_value_gold": 19.7836,
+          "expected_value_gold": 0.5935
+        }
+      ],
+      "missing_price_item_ids": []
+    },
+    {
+      "quality": "uncommon",
+      "item_level_min": 100,
+      "item_level_max": 120,
+      "item_type": "weapon",
+      "expected_disenchant_value_gold": 7.7964,
+      "conservative_buy_ceiling_gold": 7.0168,
+      "break_even_buy_ceiling_gold": 7.7964,
+      "recommended_rule": "DE if total acquisition cost is below 7.02g; between 7.02g and 7.80g only if you accept price/variance risk.",
+      "components": [
+        {
+          "item_id": 22445,
+          "name": "Arcane Dust",
+          "probability": 0.22,
+          "average_quantity_if_hit": 3.5,
+          "unit_value_gold": 0.9662,
+          "expected_value_gold": 0.744
+        },
+        {
+          "item_id": 22446,
+          "name": "Greater Planar Essence",
+          "probability": 0.75,
+          "average_quantity_if_hit": 1.5,
+          "unit_value_gold": 5.7413,
+          "expected_value_gold": 6.459
+        },
+        {
+          "item_id": 22449,
+          "name": "Large Prismatic Shard",
+          "probability": 0.03,
+          "average_quantity_if_hit": 1.0,
+          "unit_value_gold": 19.7836,
+          "expected_value_gold": 0.5935
+        }
+      ],
+      "missing_price_item_ids": []
+    }
+  ]
+}
