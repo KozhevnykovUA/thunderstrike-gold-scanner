@@ -1,0 +1,16 @@
+{
+  "market": {
+    "region": "eu",
+    "realm": "thunderstrike",
+    "realm_id": 6409,
+    "faction": "alliance",
+    "auction_house_id": 2
+  },
+  "items": [
+    {"id": 22445, "name": "Arcane Dust", "expected_validation_gold": 0.9662},
+    {"id": 22446, "name": "Greater Planar Essence"},
+    {"id": 22449, "name": "Large Prismatic Shard"},
+    {"id": 22792, "name": "Nightmare Vine"},
+    {"id": 23571, "name": "Primal Might"}
+  ]
+}
