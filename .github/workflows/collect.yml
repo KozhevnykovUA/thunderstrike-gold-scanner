@@ -10,10 +10,13 @@ on:
       - 'requirements.txt'
       - 'config/**'
       - 'recipes/**'
-      - 'data/prices.json'
       - '.github/workflows/collect.yml'
   schedule:
     - cron: '17 */3 * * *'
+
+concurrency:
+  group: thunderstrike-market-collector
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -33,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect source diagnostics
+      - name: Collect source diagnostics and live prices
         run: python collector.py
 
       - name: Build Enchanting report
@@ -43,7 +46,10 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          p=json.load(open('data/prices.json'))
           d=json.load(open('data/enchanting_report.json'))
+          print('Price source:', p.get('source'))
+          print('Live items updated:', p.get('live_items_updated'))
           print('Market:', d['market'])
           print('Ranking:', d.get('economics_model', {}).get('ranking_metric'))
           for x in d['recipes']:
@@ -63,7 +69,7 @@ jobs:
         run: |
           git config user.name 'thunderstrike-gold-scanner'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/diagnostics.json data/enchanting_report.json
+          git add data/prices.json data/diagnostics.json data/enchanting_report.json
           if git diff --cached --quiet; then
             echo 'No changes'
           else
