@@ -1014,7 +1014,7 @@
       },
       "material_cost_gold": 294.6969,
       "missing_price_item_ids": [],
-      "notes": "Also requires 1 Adamantite Rod. Required tool investment.",
+      "notes": "Also requires 1 Adamantite Rod. Required tool investment; not treated as a repeatable leveling recipe.",
       "skill_curve": [
         {
           "skill": 300,
@@ -1657,6 +1657,394 @@
       ]
     },
     {
+      "name": "Enchant Ring - Striking",
+      "skill": {
+        "yellow": 365,
+        "green": 370,
+        "gray": 375
+      },
+      "material_cost_gold": 45.3644,
+      "missing_price_item_ids": [],
+      "notes": "Wowhead lists this as an alternative for 351-365 and comments describe it as useful through 370. Skill breakpoints are provisional until exact data is sourced.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 360,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 361,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 362,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 363,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 364,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 365,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
+          "skill": 366,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 50.4049
+        },
+        {
+          "skill": 367,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 56.7055
+        },
+        {
+          "skill": 368,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 64.8063
+        },
+        {
+          "skill": 369,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 75.6073
+        },
+        {
+          "skill": 370,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 90.7288
+        },
+        {
+          "skill": 371,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 113.411
+        },
+        {
+          "skill": 372,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 151.2147
+        },
+        {
+          "skill": 373,
+          "skillup_probability": 0.2,
+          "expected_cost_per_skill_gold": 226.822
+        },
+        {
+          "skill": 374,
+          "skillup_probability": 0.1,
+          "expected_cost_per_skill_gold": 453.644
+        }
+      ]
+    },
+    {
       "name": "Enchant Ring - Spellpower",
       "skill": {
         "yellow": 370,
@@ -1665,7 +2053,7 @@
       },
       "material_cost_gold": 51.0498,
       "missing_price_item_ids": [],
-      "notes": "Baseline 365-375 route; requires Honored Keepers of Time.",
+      "notes": "Baseline 365-375 route.",
       "skill_curve": [
         {
           "skill": 300,
@@ -2041,6 +2429,784 @@
           "skill": 374,
           "skillup_probability": 0.6,
           "expected_cost_per_skill_gold": 85.083
+        }
+      ]
+    },
+    {
+      "name": "Enchant Ring - Healing Power",
+      "skill": {
+        "yellow": 375,
+        "green": 380,
+        "gray": 385
+      },
+      "material_cost_gold": 61.6221,
+      "missing_price_item_ids": [],
+      "notes": "Wowhead comments identify this as orange for 370-375. Later breakpoints are provisional; only 370-375 matters for this optimizer.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 360,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 361,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 362,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 363,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 364,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 365,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 366,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 367,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 368,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 369,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 370,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 371,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 372,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 373,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
+          "skill": 374,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        }
+      ]
+    },
+    {
+      "name": "Enchant Chest - Defense",
+      "skill": {
+        "yellow": 370,
+        "green": 375,
+        "gray": 380
+      },
+      "material_cost_gold": null,
+      "missing_price_item_ids": [
+        "23427"
+      ],
+      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; currently excluded from ranking until item 23427 has a price.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 360,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 361,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 362,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 363,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 364,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 365,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 366,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 367,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 368,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 369,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 370,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 371,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 372,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 373,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": null
+        },
+        {
+          "skill": 374,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": null
         }
       ]
     }
@@ -3523,10 +4689,10 @@
           "expected_cost_per_skill_gold": 34.4478
         },
         {
-          "name": "Enchant Cloak - Major Armor",
-          "craft_cost_gold": 7.7296,
-          "skillup_probability": 0.1667,
-          "expected_cost_per_skill_gold": 46.3776
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
         }
       ]
     },
@@ -3552,10 +4718,10 @@
           "expected_cost_per_skill_gold": 38.2753
         },
         {
-          "name": "Enchant Ring - Spellpower",
-          "craft_cost_gold": 51.0498,
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
           "skillup_probability": 1.0,
-          "expected_cost_per_skill_gold": 51.0498
+          "expected_cost_per_skill_gold": 45.3644
         }
       ]
     },
@@ -3581,10 +4747,10 @@
           "expected_cost_per_skill_gold": 43.0598
         },
         {
-          "name": "Enchant Ring - Spellpower",
-          "craft_cost_gold": 51.0498,
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
           "skillup_probability": 1.0,
-          "expected_cost_per_skill_gold": 51.0498
+          "expected_cost_per_skill_gold": 45.3644
         }
       ]
     },
@@ -3604,16 +4770,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Chest - Major Spirit",
           "craft_cost_gold": 11.4826,
           "skillup_probability": 0.2333,
           "expected_cost_per_skill_gold": 49.2111
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "craft_cost_gold": 51.0498,
-          "skillup_probability": 1.0,
-          "expected_cost_per_skill_gold": 51.0498
         }
       ]
     },
@@ -3633,16 +4799,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
-        },
-        {
-          "name": "Enchant Chest - Major Spirit",
-          "craft_cost_gold": 11.4826,
-          "skillup_probability": 0.2,
-          "expected_cost_per_skill_gold": 57.413
         }
       ]
     },
@@ -3662,16 +4828,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
-        },
-        {
-          "name": "Enchant Chest - Major Spirit",
-          "craft_cost_gold": 11.4826,
-          "skillup_probability": 0.1667,
-          "expected_cost_per_skill_gold": 68.8956
         }
       ]
     },
@@ -3691,16 +4857,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
-        },
-        {
-          "name": "Enchant Chest - Major Spirit",
-          "craft_cost_gold": 11.4826,
-          "skillup_probability": 0.1333,
-          "expected_cost_per_skill_gold": 86.1195
         }
       ]
     },
@@ -3720,16 +4886,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
-        },
-        {
-          "name": "Enchant Chest - Major Spirit",
-          "craft_cost_gold": 11.4826,
-          "skillup_probability": 0.1,
-          "expected_cost_per_skill_gold": 114.826
         }
       ]
     },
@@ -3749,16 +4915,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
-        },
-        {
-          "name": "Enchant Chest - Major Spirit",
-          "craft_cost_gold": 11.4826,
-          "skillup_probability": 0.0667,
-          "expected_cost_per_skill_gold": 172.239
         }
       ]
     },
@@ -3778,16 +4944,16 @@
           "expected_cost_per_skill_gold": 17.3357
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
-        },
-        {
-          "name": "Enchant Chest - Major Spirit",
-          "craft_cost_gold": 11.4826,
-          "skillup_probability": 0.0333,
-          "expected_cost_per_skill_gold": 344.478
         }
       ]
     },
@@ -3805,6 +4971,12 @@
           "craft_cost_gold": 17.3357,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
         },
         {
           "name": "Enchant Ring - Spellpower",
@@ -3830,6 +5002,12 @@
           "expected_cost_per_skill_gold": 18.2481
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
@@ -3851,6 +5029,12 @@
           "craft_cost_gold": 17.3357,
           "skillup_probability": 0.9,
           "expected_cost_per_skill_gold": 19.2619
+        },
+        {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
         },
         {
           "name": "Enchant Ring - Spellpower",
@@ -3876,6 +5060,12 @@
           "expected_cost_per_skill_gold": 20.3949
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
@@ -3897,6 +5087,12 @@
           "craft_cost_gold": 17.3357,
           "skillup_probability": 0.8,
           "expected_cost_per_skill_gold": 21.6696
+        },
+        {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
         },
         {
           "name": "Enchant Ring - Spellpower",
@@ -3922,6 +5118,12 @@
           "expected_cost_per_skill_gold": 23.1143
         },
         {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 45.3644
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
@@ -3943,6 +5145,12 @@
           "craft_cost_gold": 17.3357,
           "skillup_probability": 0.7,
           "expected_cost_per_skill_gold": 24.7653
+        },
+        {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 50.4049
         },
         {
           "name": "Enchant Ring - Spellpower",
@@ -3972,6 +5180,12 @@
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Ring - Striking",
+          "craft_cost_gold": 45.3644,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 56.7055
         }
       ]
     },
@@ -3995,6 +5209,12 @@
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
         }
       ]
     },
@@ -4018,6 +5238,12 @@
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
         }
       ]
     },
@@ -4041,6 +5267,12 @@
           "craft_cost_gold": 51.0498,
           "skillup_probability": 1.0,
           "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
         }
       ]
     },
@@ -4064,6 +5296,12 @@
           "craft_cost_gold": 51.0498,
           "skillup_probability": 0.9,
           "expected_cost_per_skill_gold": 56.722
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
         }
       ]
     },
@@ -4081,6 +5319,12 @@
           "craft_cost_gold": 17.3357,
           "skillup_probability": 0.4,
           "expected_cost_per_skill_gold": 43.3392
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
         },
         {
           "name": "Enchant Ring - Spellpower",
@@ -4106,6 +5350,12 @@
           "expected_cost_per_skill_gold": 49.5306
         },
         {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
+        },
+        {
           "name": "Enchant Ring - Spellpower",
           "craft_cost_gold": 51.0498,
           "skillup_probability": 0.7,
@@ -4127,6 +5377,12 @@
           "craft_cost_gold": 17.3357,
           "skillup_probability": 0.3,
           "expected_cost_per_skill_gold": 57.7857
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "craft_cost_gold": 61.6221,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 61.6221
         },
         {
           "name": "Enchant Ring - Spellpower",
