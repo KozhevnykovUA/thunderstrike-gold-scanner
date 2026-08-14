@@ -23,6 +23,312 @@
   },
   "recipes": [
     {
+      "name": "Runed Fel Iron Rod",
+      "required_skill": 300,
+      "skill": {
+        "yellow": 300,
+        "green": 310,
+        "gray": 325
+      },
+      "requirements": {
+        "existing_tool": "Runed Arcanite Rod"
+      },
+      "materials": {
+        "25843": 1,
+        "16203": 4,
+        "14344": 6
+      },
+      "gross_material_cost_gold": null,
+      "safe_gross_material_cost_gold": null,
+      "sale_recovery": {
+        "status": "not_saleable",
+        "expected_recovery_gold": 0.0
+      },
+      "net_craft_cost_gold": null,
+      "safe_net_craft_cost_gold": null,
+      "missing_price_item_ids": [
+        "25843",
+        "16203",
+        "14344"
+      ],
+      "repeatable_for_leveling": false,
+      "notes": "Mandatory one-time rod. TBC database difficulty 300/300/310/325/340; user already has the Runed Arcanite Rod, so it is treated as an existing tool rather than a market purchase.",
+      "skill_curve": []
+    },
+    {
+      "name": "Enchant Cloak - Superior Defense",
+      "required_skill": 285,
+      "skill": {
+        "yellow": 300,
+        "green": 317,
+        "gray": 335
+      },
+      "requirements": null,
+      "materials": {
+        "16204": 8
+      },
+      "gross_material_cost_gold": null,
+      "safe_gross_material_cost_gold": null,
+      "sale_recovery": {
+        "status": "not_saleable",
+        "expected_recovery_gold": 0.0
+      },
+      "net_craft_cost_gold": null,
+      "safe_net_craft_cost_gold": null,
+      "missing_price_item_ids": [
+        "16204"
+      ],
+      "repeatable_for_leveling": true,
+      "notes": "Phase 1 vendor formula. TBC database difficulty 285/300/317/335. Current Wowhead leveling guide uses it for 301-317.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 0.9706,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 0.9412,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 0.9118,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 0.8824,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 0.8529,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 0.8235,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 0.7941,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 0.7647,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 0.7353,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 0.7059,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 0.6765,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 0.6471,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 0.6176,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 0.5882,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 0.5588,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 0.5294,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 0.5,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 0.4722,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 0.4444,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 0.4167,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 0.3889,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 0.3611,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 0.3333,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 0.3056,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 0.2778,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 0.25,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 0.2222,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 0.1944,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 0.1667,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 0.1389,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 0.1111,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 0.0833,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 0.0556,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 0.0278,
+          "expected_gross_cost_per_skill_gold": null,
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
+        }
+      ]
+    },
+    {
       "name": "Enchant Cloak - Major Armor",
       "required_skill": 310,
       "skill": {
@@ -44,7 +350,7 @@
       "safe_net_craft_cost_gold": 7.3504,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Wowhead difficulty 310/320/335/350. Current leveling guide uses it from 317 and may extend it toward 335 when Arcane Dust is cheap.",
+      "notes": "Wowhead difficulty 310/320/335/350. Current leveling guide uses it from 317 and may extend it when Arcane Dust is cheap.",
       "skill_curve": [
         {
           "skill": 310,
@@ -350,7 +656,7 @@
       "safe_net_craft_cost_gold": 10.9517,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Trainer recipe. Wowhead comments confirm green at 345; leveling guide uses it 320-340.",
+      "notes": "Trainer recipe. Leveling guide uses it 320-340.",
       "skill_curve": [
         {
           "skill": 320,
@@ -811,8 +1117,8 @@
       "required_skill": 350,
       "skill": {
         "yellow": 350,
-        "green": 350,
-        "gray": 350
+        "green": 360,
+        "gray": 375
       },
       "requirements": null,
       "materials": {
@@ -831,7 +1137,7 @@
       "safe_net_craft_cost_gold": 342.7813,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": false,
-      "notes": "Required one-time tool investment. Adamantite Rod price is tracked separately.",
+      "notes": "Required one-time tool investment.",
       "skill_curve": []
     },
     {
@@ -1131,7 +1437,7 @@
       "safe_net_craft_cost_gold": 45.2749,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Wowhead difficulty 360/370/385/400.",
+      "notes": "Wowhead difficulty 360/370/385/400. Available from Karazhan reputation vendor path; usable in current phase if reputation requirement is met.",
       "skill_curve": [
         {
           "skill": 360,
@@ -1249,7 +1555,8 @@
         "gray": 400
       },
       "requirements": {
-        "reputation": "Keepers of Time - Honored"
+        "reputation": "Keepers of Time - Honored",
+        "phase": 3
       },
       "materials": {
         "22449": 2,
@@ -1265,7 +1572,7 @@
       "safe_net_craft_cost_gold": 50.7138,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Wowhead difficulty 360/370/385/400; baseline leveling guide uses it 365-375.",
+      "notes": "Phase 3 recipe. Blizzard has Phase 3 launching August 27, 2026, so it is excluded from current Phase 2 optimization.",
       "skill_curve": [
         {
           "skill": 360,
@@ -1449,7 +1756,7 @@
       },
       "requirements": {
         "reputation": "Shattered Sun Offensive - Honored",
-        "phase_note": "Available with Shattered Sun Offensive content"
+        "phase": 5
       },
       "materials": {
         "22446": 4,
@@ -1466,7 +1773,7 @@
       "safe_net_craft_cost_gold": 30.8422,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Wowhead difficulty 360/370/385/400.",
+      "notes": "Phase 5 recipe. Excluded from current Phase 2 optimization.",
       "skill_curve": [
         {
           "skill": 360,
@@ -3406,7 +3713,7 @@
           "expected_safe_net_cost_per_skill_gold": 30.8422,
           "requirements": {
             "reputation": "Shattered Sun Offensive - Honored",
-            "phase_note": "Available with Shattered Sun Offensive content"
+            "phase": 5
           }
         },
         {
@@ -3436,7 +3743,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3470,7 +3778,7 @@
           "expected_safe_net_cost_per_skill_gold": 30.8422,
           "requirements": {
             "reputation": "Shattered Sun Offensive - Honored",
-            "phase_note": "Available with Shattered Sun Offensive content"
+            "phase": 5
           }
         },
         {
@@ -3500,7 +3808,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3534,7 +3843,7 @@
           "expected_safe_net_cost_per_skill_gold": 30.8422,
           "requirements": {
             "reputation": "Shattered Sun Offensive - Honored",
-            "phase_note": "Available with Shattered Sun Offensive content"
+            "phase": 5
           }
         },
         {
@@ -3564,7 +3873,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3598,7 +3908,7 @@
           "expected_safe_net_cost_per_skill_gold": 30.8422,
           "requirements": {
             "reputation": "Shattered Sun Offensive - Honored",
-            "phase_note": "Available with Shattered Sun Offensive content"
+            "phase": 5
           }
         },
         {
@@ -3628,7 +3938,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3648,7 +3959,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -3692,7 +4003,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3712,7 +4024,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -3756,7 +4068,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3776,7 +4089,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -3820,7 +4133,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3840,7 +4154,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -3884,7 +4198,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3904,7 +4219,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -3948,7 +4263,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -3968,7 +4284,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -4012,7 +4328,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -4032,7 +4349,7 @@
         "expected_safe_net_cost_per_skill_gold": 30.8422,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -4076,7 +4393,8 @@
           "expected_net_cost_per_skill_gold": 47.1756,
           "expected_safe_net_cost_per_skill_gold": 50.7138,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         }
       ]
@@ -4096,7 +4414,7 @@
         "expected_safe_net_cost_per_skill_gold": 31.9057,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -4127,7 +4445,8 @@
           "expected_net_cost_per_skill_gold": 48.8023,
           "expected_safe_net_cost_per_skill_gold": 52.4626,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         },
         {
@@ -4160,7 +4479,7 @@
         "expected_safe_net_cost_per_skill_gold": 33.0452,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -4191,7 +4510,8 @@
           "expected_net_cost_per_skill_gold": 50.5453,
           "expected_safe_net_cost_per_skill_gold": 54.3362,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         },
         {
@@ -4226,7 +4546,7 @@
         "expected_safe_net_cost_per_skill_gold": 34.2691,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -4257,7 +4577,8 @@
           "expected_net_cost_per_skill_gold": 52.4173,
           "expected_safe_net_cost_per_skill_gold": 56.3487,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         },
         {
@@ -4292,7 +4613,7 @@
         "expected_safe_net_cost_per_skill_gold": 35.5872,
         "requirements": {
           "reputation": "Shattered Sun Offensive - Honored",
-          "phase_note": "Available with Shattered Sun Offensive content"
+          "phase": 5
         }
       },
       "alternatives": [
@@ -4323,7 +4644,8 @@
           "expected_net_cost_per_skill_gold": 54.4334,
           "expected_safe_net_cost_per_skill_gold": 58.5159,
           "requirements": {
-            "reputation": "Keepers of Time - Honored"
+            "reputation": "Keepers of Time - Honored",
+            "phase": 3
           }
         },
         {
@@ -4377,7 +4699,7 @@
       "recipe": "Enchant Chest - Defense",
       "requirements": {
         "reputation": "Shattered Sun Offensive - Honored",
-        "phase_note": "Available with Shattered Sun Offensive content"
+        "phase": 5
       }
     }
   ],
@@ -4412,7 +4734,7 @@
       "recipe": "Enchant Chest - Defense",
       "requirements": {
         "reputation": "Shattered Sun Offensive - Honored",
-        "phase_note": "Available with Shattered Sun Offensive content"
+        "phase": 5
       }
     }
   ],
@@ -4582,6 +4904,17 @@
     "gaps": []
   },
   "mandatory_tools": [
+    {
+      "name": "Runed Fel Iron Rod",
+      "required_skill": 300,
+      "gross_material_cost_gold": null,
+      "safe_gross_material_cost_gold": null,
+      "missing_price_item_ids": [
+        "25843",
+        "16203",
+        "14344"
+      ]
+    },
     {
       "name": "Runed Adamantite Rod",
       "required_skill": 350,
