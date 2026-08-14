@@ -6,8 +6,11 @@ on:
     branches: [main]
     paths:
       - 'collector.py'
+      - 'optimizer.py'
       - 'requirements.txt'
       - 'config/**'
+      - 'recipes/**'
+      - 'data/prices.json'
       - '.github/workflows/collect.yml'
   schedule:
     - cron: '17 */3 * * *'
@@ -30,30 +33,31 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect diagnostics
+      - name: Collect source diagnostics
         run: python collector.py
 
-      - name: Show TSM validation
+      - name: Build Enchanting report
+        run: python optimizer.py
+
+      - name: Show optimizer summary
         run: |
           python - <<'PY'
           import json
-          d=json.load(open('data/diagnostics.json'))
-          print('Selected URL:', d.get('selected_url'))
-          print('Columns:', d.get('selected_columns'))
-          for x in d.get('selected_items', []):
-              print(x['name'], x.get('row'))
-          for s in d.get('sources', []):
-              print('SOURCE', s.get('url'), 'HTTP', s.get('http_status'), 'ROWS', s.get('row_count'))
+          d=json.load(open('data/enchanting_report.json'))
+          print('Market:', d['market'])
+          for x in d['recipes']:
+              print(x['name'], x['material_cost_gold'])
+          print('320-335 comparison:', d.get('comparison_320_335'))
           PY
 
-      - name: Commit diagnostic output
+      - name: Commit generated output
         run: |
           git config user.name 'thunderstrike-gold-scanner'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/diagnostics.json
+          git add data/diagnostics.json data/enchanting_report.json
           if git diff --cached --quiet; then
             echo 'No changes'
           else
-            git commit -m 'Update Thunderstrike market diagnostics'
+            git commit -m 'Update Thunderstrike scanner reports'
             git push
           fi
