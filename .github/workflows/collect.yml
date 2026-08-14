@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -37,9 +37,13 @@ jobs:
           import json
           d=json.load(open('data/diagnostics.json'))
           a=next(x for x in d['items'] if x['id']==22445)
-          print('Arcane Dust candidates:', a.get('money_candidates_gold'))
+          print('HTTP:', a.get('http_status'))
+          print('Final URL:', a.get('final_url'))
+          print('Candidates:', a.get('money_candidates_gold'))
           print('Expected:', a.get('expected_validation_gold'))
           print('Validation match:', a.get('validation_match'))
+          print('Headers:', a.get('response_headers'))
+          print('Body preview:', a.get('body_preview'))
           PY
 
       - name: Commit diagnostic output
