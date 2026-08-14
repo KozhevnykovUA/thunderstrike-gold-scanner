@@ -7,10 +7,13 @@
     "auction_house_id": 2
   },
   "price_source": "manual_seed_from_verified_bootybaybroker_pages",
-  "warning": "Input prices are still seed snapshots. Sale recovery is only credited when explicit demand probability is available.",
+  "warning": "Market-depth tiers are not available yet. Safe scenario applies +7.5% to input buy prices. Sale recovery is credited only with explicit demand probability.",
   "economics_model": {
     "ranking_metric": "(material cost - expected sale recovery) / skill-up probability",
     "ah_cut": 0.05,
+    "safe_buy_multiplier": 1.075,
+    "supply_warning_fraction": 0.2,
+    "supply_high_risk_fraction": 0.5,
     "sale_recovery_rule": "No demand probability = zero credited recovery"
   },
   "recipes": [
@@ -23,12 +26,17 @@
         "gray": 350
       },
       "requirements": null,
+      "materials": {
+        "22445": 8
+      },
       "gross_material_cost_gold": 7.7296,
+      "safe_gross_material_cost_gold": 8.3093,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 7.7296,
+      "safe_net_craft_cost_gold": 8.3093,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Wowhead difficulty 310/320/335/350. Current leveling guide uses it from 317 and may extend it toward 335 when Arcane Dust is cheap.",
@@ -37,241 +45,281 @@
           "skill": 310,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 311,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 312,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 313,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 314,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 315,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 316,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 317,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 318,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 319,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 320,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 7.7296,
-          "expected_net_cost_per_skill_gold": 7.7296
+          "expected_net_cost_per_skill_gold": 7.7296,
+          "expected_safe_net_cost_per_skill_gold": 8.3093
         },
         {
           "skill": 321,
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 7.9961,
-          "expected_net_cost_per_skill_gold": 7.9961
+          "expected_net_cost_per_skill_gold": 7.9961,
+          "expected_safe_net_cost_per_skill_gold": 8.5958
         },
         {
           "skill": 322,
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 8.2817,
-          "expected_net_cost_per_skill_gold": 8.2817
+          "expected_net_cost_per_skill_gold": 8.2817,
+          "expected_safe_net_cost_per_skill_gold": 8.9028
         },
         {
           "skill": 323,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 8.5884,
-          "expected_net_cost_per_skill_gold": 8.5884
+          "expected_net_cost_per_skill_gold": 8.5884,
+          "expected_safe_net_cost_per_skill_gold": 9.2326
         },
         {
           "skill": 324,
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": 8.9188,
-          "expected_net_cost_per_skill_gold": 8.9188
+          "expected_net_cost_per_skill_gold": 8.9188,
+          "expected_safe_net_cost_per_skill_gold": 9.5877
         },
         {
           "skill": 325,
           "skillup_probability": 0.8333,
           "expected_gross_cost_per_skill_gold": 9.2755,
-          "expected_net_cost_per_skill_gold": 9.2755
+          "expected_net_cost_per_skill_gold": 9.2755,
+          "expected_safe_net_cost_per_skill_gold": 9.9712
         },
         {
           "skill": 326,
           "skillup_probability": 0.8,
           "expected_gross_cost_per_skill_gold": 9.662,
-          "expected_net_cost_per_skill_gold": 9.662
+          "expected_net_cost_per_skill_gold": 9.662,
+          "expected_safe_net_cost_per_skill_gold": 10.3866
         },
         {
           "skill": 327,
           "skillup_probability": 0.7667,
           "expected_gross_cost_per_skill_gold": 10.0821,
-          "expected_net_cost_per_skill_gold": 10.0821
+          "expected_net_cost_per_skill_gold": 10.0821,
+          "expected_safe_net_cost_per_skill_gold": 10.8382
         },
         {
           "skill": 328,
           "skillup_probability": 0.7333,
           "expected_gross_cost_per_skill_gold": 10.5404,
-          "expected_net_cost_per_skill_gold": 10.5404
+          "expected_net_cost_per_skill_gold": 10.5404,
+          "expected_safe_net_cost_per_skill_gold": 11.3309
         },
         {
           "skill": 329,
           "skillup_probability": 0.7,
           "expected_gross_cost_per_skill_gold": 11.0423,
-          "expected_net_cost_per_skill_gold": 11.0423
+          "expected_net_cost_per_skill_gold": 11.0423,
+          "expected_safe_net_cost_per_skill_gold": 11.8704
         },
         {
           "skill": 330,
           "skillup_probability": 0.6667,
           "expected_gross_cost_per_skill_gold": 11.5944,
-          "expected_net_cost_per_skill_gold": 11.5944
+          "expected_net_cost_per_skill_gold": 11.5944,
+          "expected_safe_net_cost_per_skill_gold": 12.4639
         },
         {
           "skill": 331,
           "skillup_probability": 0.6333,
           "expected_gross_cost_per_skill_gold": 12.2046,
-          "expected_net_cost_per_skill_gold": 12.2046
+          "expected_net_cost_per_skill_gold": 12.2046,
+          "expected_safe_net_cost_per_skill_gold": 13.1199
         },
         {
           "skill": 332,
           "skillup_probability": 0.6,
           "expected_gross_cost_per_skill_gold": 12.8827,
-          "expected_net_cost_per_skill_gold": 12.8827
+          "expected_net_cost_per_skill_gold": 12.8827,
+          "expected_safe_net_cost_per_skill_gold": 13.8488
         },
         {
           "skill": 333,
           "skillup_probability": 0.5667,
           "expected_gross_cost_per_skill_gold": 13.6405,
-          "expected_net_cost_per_skill_gold": 13.6405
+          "expected_net_cost_per_skill_gold": 13.6405,
+          "expected_safe_net_cost_per_skill_gold": 14.6635
         },
         {
           "skill": 334,
           "skillup_probability": 0.5333,
           "expected_gross_cost_per_skill_gold": 14.493,
-          "expected_net_cost_per_skill_gold": 14.493
+          "expected_net_cost_per_skill_gold": 14.493,
+          "expected_safe_net_cost_per_skill_gold": 15.5799
         },
         {
           "skill": 335,
           "skillup_probability": 0.5,
           "expected_gross_cost_per_skill_gold": 15.4592,
-          "expected_net_cost_per_skill_gold": 15.4592
+          "expected_net_cost_per_skill_gold": 15.4592,
+          "expected_safe_net_cost_per_skill_gold": 16.6186
         },
         {
           "skill": 336,
           "skillup_probability": 0.4667,
           "expected_gross_cost_per_skill_gold": 16.5634,
-          "expected_net_cost_per_skill_gold": 16.5634
+          "expected_net_cost_per_skill_gold": 16.5634,
+          "expected_safe_net_cost_per_skill_gold": 17.8056
         },
         {
           "skill": 337,
           "skillup_probability": 0.4333,
           "expected_gross_cost_per_skill_gold": 17.8375,
-          "expected_net_cost_per_skill_gold": 17.8375
+          "expected_net_cost_per_skill_gold": 17.8375,
+          "expected_safe_net_cost_per_skill_gold": 19.1753
         },
         {
           "skill": 338,
           "skillup_probability": 0.4,
           "expected_gross_cost_per_skill_gold": 19.324,
-          "expected_net_cost_per_skill_gold": 19.324
+          "expected_net_cost_per_skill_gold": 19.324,
+          "expected_safe_net_cost_per_skill_gold": 20.7733
         },
         {
           "skill": 339,
           "skillup_probability": 0.3667,
           "expected_gross_cost_per_skill_gold": 21.0807,
-          "expected_net_cost_per_skill_gold": 21.0807
+          "expected_net_cost_per_skill_gold": 21.0807,
+          "expected_safe_net_cost_per_skill_gold": 22.6617
         },
         {
           "skill": 340,
           "skillup_probability": 0.3333,
           "expected_gross_cost_per_skill_gold": 23.1888,
-          "expected_net_cost_per_skill_gold": 23.1888
+          "expected_net_cost_per_skill_gold": 23.1888,
+          "expected_safe_net_cost_per_skill_gold": 24.9279
         },
         {
           "skill": 341,
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 25.7653,
-          "expected_net_cost_per_skill_gold": 25.7653
+          "expected_net_cost_per_skill_gold": 25.7653,
+          "expected_safe_net_cost_per_skill_gold": 27.6977
         },
         {
           "skill": 342,
           "skillup_probability": 0.2667,
           "expected_gross_cost_per_skill_gold": 28.986,
-          "expected_net_cost_per_skill_gold": 28.986
+          "expected_net_cost_per_skill_gold": 28.986,
+          "expected_safe_net_cost_per_skill_gold": 31.1599
         },
         {
           "skill": 343,
           "skillup_probability": 0.2333,
           "expected_gross_cost_per_skill_gold": 33.1269,
-          "expected_net_cost_per_skill_gold": 33.1269
+          "expected_net_cost_per_skill_gold": 33.1269,
+          "expected_safe_net_cost_per_skill_gold": 35.6113
         },
         {
           "skill": 344,
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 38.648,
-          "expected_net_cost_per_skill_gold": 38.648
+          "expected_net_cost_per_skill_gold": 38.648,
+          "expected_safe_net_cost_per_skill_gold": 41.5465
         },
         {
           "skill": 345,
           "skillup_probability": 0.1667,
           "expected_gross_cost_per_skill_gold": 46.3776,
-          "expected_net_cost_per_skill_gold": 46.3776
+          "expected_net_cost_per_skill_gold": 46.3776,
+          "expected_safe_net_cost_per_skill_gold": 49.8558
         },
         {
           "skill": 346,
           "skillup_probability": 0.1333,
           "expected_gross_cost_per_skill_gold": 57.972,
-          "expected_net_cost_per_skill_gold": 57.972
+          "expected_net_cost_per_skill_gold": 57.972,
+          "expected_safe_net_cost_per_skill_gold": 62.3198
         },
         {
           "skill": 347,
           "skillup_probability": 0.1,
           "expected_gross_cost_per_skill_gold": 77.296,
-          "expected_net_cost_per_skill_gold": 77.296
+          "expected_net_cost_per_skill_gold": 77.296,
+          "expected_safe_net_cost_per_skill_gold": 83.093
         },
         {
           "skill": 348,
           "skillup_probability": 0.0667,
           "expected_gross_cost_per_skill_gold": 115.944,
-          "expected_net_cost_per_skill_gold": 115.944
+          "expected_net_cost_per_skill_gold": 115.944,
+          "expected_safe_net_cost_per_skill_gold": 124.6395
         },
         {
           "skill": 349,
           "skillup_probability": 0.0333,
           "expected_gross_cost_per_skill_gold": 231.888,
-          "expected_net_cost_per_skill_gold": 231.888
+          "expected_net_cost_per_skill_gold": 231.888,
+          "expected_safe_net_cost_per_skill_gold": 249.279
         }
       ]
     },
@@ -284,12 +332,17 @@
         "gray": 360
       },
       "requirements": null,
+      "materials": {
+        "22446": 2
+      },
       "gross_material_cost_gold": 11.4826,
+      "safe_gross_material_cost_gold": 12.3438,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 11.4826,
+      "safe_net_craft_cost_gold": 12.3438,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Trainer recipe. Wowhead comments confirm green at 345; leveling guide uses it 320-340.",
@@ -298,241 +351,281 @@
           "skill": 320,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 321,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 322,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 323,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 324,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 325,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 326,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 327,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 328,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 329,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 330,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
-          "expected_net_cost_per_skill_gold": 11.4826
+          "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438
         },
         {
           "skill": 331,
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 11.8786,
-          "expected_net_cost_per_skill_gold": 11.8786
+          "expected_net_cost_per_skill_gold": 11.8786,
+          "expected_safe_net_cost_per_skill_gold": 12.7694
         },
         {
           "skill": 332,
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 12.3028,
-          "expected_net_cost_per_skill_gold": 12.3028
+          "expected_net_cost_per_skill_gold": 12.3028,
+          "expected_safe_net_cost_per_skill_gold": 13.2255
         },
         {
           "skill": 333,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 12.7584,
-          "expected_net_cost_per_skill_gold": 12.7584
+          "expected_net_cost_per_skill_gold": 12.7584,
+          "expected_safe_net_cost_per_skill_gold": 13.7153
         },
         {
           "skill": 334,
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": 13.2492,
-          "expected_net_cost_per_skill_gold": 13.2492
+          "expected_net_cost_per_skill_gold": 13.2492,
+          "expected_safe_net_cost_per_skill_gold": 14.2428
         },
         {
           "skill": 335,
           "skillup_probability": 0.8333,
           "expected_gross_cost_per_skill_gold": 13.7791,
-          "expected_net_cost_per_skill_gold": 13.7791
+          "expected_net_cost_per_skill_gold": 13.7791,
+          "expected_safe_net_cost_per_skill_gold": 14.8126
         },
         {
           "skill": 336,
           "skillup_probability": 0.8,
           "expected_gross_cost_per_skill_gold": 14.3532,
-          "expected_net_cost_per_skill_gold": 14.3532
+          "expected_net_cost_per_skill_gold": 14.3532,
+          "expected_safe_net_cost_per_skill_gold": 15.4297
         },
         {
           "skill": 337,
           "skillup_probability": 0.7667,
           "expected_gross_cost_per_skill_gold": 14.9773,
-          "expected_net_cost_per_skill_gold": 14.9773
+          "expected_net_cost_per_skill_gold": 14.9773,
+          "expected_safe_net_cost_per_skill_gold": 16.1006
         },
         {
           "skill": 338,
           "skillup_probability": 0.7333,
           "expected_gross_cost_per_skill_gold": 15.6581,
-          "expected_net_cost_per_skill_gold": 15.6581
+          "expected_net_cost_per_skill_gold": 15.6581,
+          "expected_safe_net_cost_per_skill_gold": 16.8325
         },
         {
           "skill": 339,
           "skillup_probability": 0.7,
           "expected_gross_cost_per_skill_gold": 16.4037,
-          "expected_net_cost_per_skill_gold": 16.4037
+          "expected_net_cost_per_skill_gold": 16.4037,
+          "expected_safe_net_cost_per_skill_gold": 17.634
         },
         {
           "skill": 340,
           "skillup_probability": 0.6667,
           "expected_gross_cost_per_skill_gold": 17.2239,
-          "expected_net_cost_per_skill_gold": 17.2239
+          "expected_net_cost_per_skill_gold": 17.2239,
+          "expected_safe_net_cost_per_skill_gold": 18.5157
         },
         {
           "skill": 341,
           "skillup_probability": 0.6333,
           "expected_gross_cost_per_skill_gold": 18.1304,
-          "expected_net_cost_per_skill_gold": 18.1304
+          "expected_net_cost_per_skill_gold": 18.1304,
+          "expected_safe_net_cost_per_skill_gold": 19.4902
         },
         {
           "skill": 342,
           "skillup_probability": 0.6,
           "expected_gross_cost_per_skill_gold": 19.1377,
-          "expected_net_cost_per_skill_gold": 19.1377
+          "expected_net_cost_per_skill_gold": 19.1377,
+          "expected_safe_net_cost_per_skill_gold": 20.573
         },
         {
           "skill": 343,
           "skillup_probability": 0.5667,
           "expected_gross_cost_per_skill_gold": 20.2634,
-          "expected_net_cost_per_skill_gold": 20.2634
+          "expected_net_cost_per_skill_gold": 20.2634,
+          "expected_safe_net_cost_per_skill_gold": 21.7832
         },
         {
           "skill": 344,
           "skillup_probability": 0.5333,
           "expected_gross_cost_per_skill_gold": 21.5299,
-          "expected_net_cost_per_skill_gold": 21.5299
+          "expected_net_cost_per_skill_gold": 21.5299,
+          "expected_safe_net_cost_per_skill_gold": 23.1446
         },
         {
           "skill": 345,
           "skillup_probability": 0.5,
           "expected_gross_cost_per_skill_gold": 22.9652,
-          "expected_net_cost_per_skill_gold": 22.9652
+          "expected_net_cost_per_skill_gold": 22.9652,
+          "expected_safe_net_cost_per_skill_gold": 24.6876
         },
         {
           "skill": 346,
           "skillup_probability": 0.4667,
           "expected_gross_cost_per_skill_gold": 24.6056,
-          "expected_net_cost_per_skill_gold": 24.6056
+          "expected_net_cost_per_skill_gold": 24.6056,
+          "expected_safe_net_cost_per_skill_gold": 26.451
         },
         {
           "skill": 347,
           "skillup_probability": 0.4333,
           "expected_gross_cost_per_skill_gold": 26.4983,
-          "expected_net_cost_per_skill_gold": 26.4983
+          "expected_net_cost_per_skill_gold": 26.4983,
+          "expected_safe_net_cost_per_skill_gold": 28.4857
         },
         {
           "skill": 348,
           "skillup_probability": 0.4,
           "expected_gross_cost_per_skill_gold": 28.7065,
-          "expected_net_cost_per_skill_gold": 28.7065
+          "expected_net_cost_per_skill_gold": 28.7065,
+          "expected_safe_net_cost_per_skill_gold": 30.8595
         },
         {
           "skill": 349,
           "skillup_probability": 0.3667,
           "expected_gross_cost_per_skill_gold": 31.3162,
-          "expected_net_cost_per_skill_gold": 31.3162
+          "expected_net_cost_per_skill_gold": 31.3162,
+          "expected_safe_net_cost_per_skill_gold": 33.6649
         },
         {
           "skill": 350,
           "skillup_probability": 0.3333,
           "expected_gross_cost_per_skill_gold": 34.4478,
-          "expected_net_cost_per_skill_gold": 34.4478
+          "expected_net_cost_per_skill_gold": 34.4478,
+          "expected_safe_net_cost_per_skill_gold": 37.0314
         },
         {
           "skill": 351,
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 38.2753,
-          "expected_net_cost_per_skill_gold": 38.2753
+          "expected_net_cost_per_skill_gold": 38.2753,
+          "expected_safe_net_cost_per_skill_gold": 41.146
         },
         {
           "skill": 352,
           "skillup_probability": 0.2667,
           "expected_gross_cost_per_skill_gold": 43.0598,
-          "expected_net_cost_per_skill_gold": 43.0598
+          "expected_net_cost_per_skill_gold": 43.0598,
+          "expected_safe_net_cost_per_skill_gold": 46.2893
         },
         {
           "skill": 353,
           "skillup_probability": 0.2333,
           "expected_gross_cost_per_skill_gold": 49.2111,
-          "expected_net_cost_per_skill_gold": 49.2111
+          "expected_net_cost_per_skill_gold": 49.2111,
+          "expected_safe_net_cost_per_skill_gold": 52.902
         },
         {
           "skill": 354,
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 57.413,
-          "expected_net_cost_per_skill_gold": 57.413
+          "expected_net_cost_per_skill_gold": 57.413,
+          "expected_safe_net_cost_per_skill_gold": 61.719
         },
         {
           "skill": 355,
           "skillup_probability": 0.1667,
           "expected_gross_cost_per_skill_gold": 68.8956,
-          "expected_net_cost_per_skill_gold": 68.8956
+          "expected_net_cost_per_skill_gold": 68.8956,
+          "expected_safe_net_cost_per_skill_gold": 74.0628
         },
         {
           "skill": 356,
           "skillup_probability": 0.1333,
           "expected_gross_cost_per_skill_gold": 86.1195,
-          "expected_net_cost_per_skill_gold": 86.1195
+          "expected_net_cost_per_skill_gold": 86.1195,
+          "expected_safe_net_cost_per_skill_gold": 92.5785
         },
         {
           "skill": 357,
           "skillup_probability": 0.1,
           "expected_gross_cost_per_skill_gold": 114.826,
-          "expected_net_cost_per_skill_gold": 114.826
+          "expected_net_cost_per_skill_gold": 114.826,
+          "expected_safe_net_cost_per_skill_gold": 123.438
         },
         {
           "skill": 358,
           "skillup_probability": 0.0667,
           "expected_gross_cost_per_skill_gold": 172.239,
-          "expected_net_cost_per_skill_gold": 172.239
+          "expected_net_cost_per_skill_gold": 172.239,
+          "expected_safe_net_cost_per_skill_gold": 185.157
         },
         {
           "skill": 359,
           "skillup_probability": 0.0333,
           "expected_gross_cost_per_skill_gold": 344.478,
-          "expected_net_cost_per_skill_gold": 344.478
+          "expected_net_cost_per_skill_gold": 344.478,
+          "expected_safe_net_cost_per_skill_gold": 370.314
         }
       ]
     },
@@ -545,13 +638,19 @@
         "gray": 360
       },
       "requirements": null,
+      "materials": {
+        "22445": 3,
+        "22792": 1
+      },
       "gross_material_cost_gold": 6.7989,
+      "safe_gross_material_cost_gold": 7.3088,
       "sale_recovery": {
         "status": "missing_output_market_data",
         "item_id": 22522,
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 6.7989,
+      "safe_net_craft_cost_gold": 7.3088,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Wowhead difficulty 340/340/350/360. Also requires 1 Imbued Vial; vial cost is not yet included.",
@@ -560,121 +659,141 @@
           "skill": 340,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 6.7989,
-          "expected_net_cost_per_skill_gold": 6.7989
+          "expected_net_cost_per_skill_gold": 6.7989,
+          "expected_safe_net_cost_per_skill_gold": 7.3088
         },
         {
           "skill": 341,
           "skillup_probability": 0.95,
           "expected_gross_cost_per_skill_gold": 7.1567,
-          "expected_net_cost_per_skill_gold": 7.1567
+          "expected_net_cost_per_skill_gold": 7.1567,
+          "expected_safe_net_cost_per_skill_gold": 7.6935
         },
         {
           "skill": 342,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 7.5543,
-          "expected_net_cost_per_skill_gold": 7.5543
+          "expected_net_cost_per_skill_gold": 7.5543,
+          "expected_safe_net_cost_per_skill_gold": 8.1209
         },
         {
           "skill": 343,
           "skillup_probability": 0.85,
           "expected_gross_cost_per_skill_gold": 7.9987,
-          "expected_net_cost_per_skill_gold": 7.9987
+          "expected_net_cost_per_skill_gold": 7.9987,
+          "expected_safe_net_cost_per_skill_gold": 8.5986
         },
         {
           "skill": 344,
           "skillup_probability": 0.8,
           "expected_gross_cost_per_skill_gold": 8.4986,
-          "expected_net_cost_per_skill_gold": 8.4986
+          "expected_net_cost_per_skill_gold": 8.4986,
+          "expected_safe_net_cost_per_skill_gold": 9.136
         },
         {
           "skill": 345,
           "skillup_probability": 0.75,
           "expected_gross_cost_per_skill_gold": 9.0652,
-          "expected_net_cost_per_skill_gold": 9.0652
+          "expected_net_cost_per_skill_gold": 9.0652,
+          "expected_safe_net_cost_per_skill_gold": 9.7451
         },
         {
           "skill": 346,
           "skillup_probability": 0.7,
           "expected_gross_cost_per_skill_gold": 9.7127,
-          "expected_net_cost_per_skill_gold": 9.7127
+          "expected_net_cost_per_skill_gold": 9.7127,
+          "expected_safe_net_cost_per_skill_gold": 10.4411
         },
         {
           "skill": 347,
           "skillup_probability": 0.65,
           "expected_gross_cost_per_skill_gold": 10.4598,
-          "expected_net_cost_per_skill_gold": 10.4598
+          "expected_net_cost_per_skill_gold": 10.4598,
+          "expected_safe_net_cost_per_skill_gold": 11.2443
         },
         {
           "skill": 348,
           "skillup_probability": 0.6,
           "expected_gross_cost_per_skill_gold": 11.3315,
-          "expected_net_cost_per_skill_gold": 11.3315
+          "expected_net_cost_per_skill_gold": 11.3315,
+          "expected_safe_net_cost_per_skill_gold": 12.1813
         },
         {
           "skill": 349,
           "skillup_probability": 0.55,
           "expected_gross_cost_per_skill_gold": 12.3616,
-          "expected_net_cost_per_skill_gold": 12.3616
+          "expected_net_cost_per_skill_gold": 12.3616,
+          "expected_safe_net_cost_per_skill_gold": 13.2887
         },
         {
           "skill": 350,
           "skillup_probability": 0.5,
           "expected_gross_cost_per_skill_gold": 13.5978,
-          "expected_net_cost_per_skill_gold": 13.5978
+          "expected_net_cost_per_skill_gold": 13.5978,
+          "expected_safe_net_cost_per_skill_gold": 14.6176
         },
         {
           "skill": 351,
           "skillup_probability": 0.45,
           "expected_gross_cost_per_skill_gold": 15.1087,
-          "expected_net_cost_per_skill_gold": 15.1087
+          "expected_net_cost_per_skill_gold": 15.1087,
+          "expected_safe_net_cost_per_skill_gold": 16.2418
         },
         {
           "skill": 352,
           "skillup_probability": 0.4,
           "expected_gross_cost_per_skill_gold": 16.9972,
-          "expected_net_cost_per_skill_gold": 16.9972
+          "expected_net_cost_per_skill_gold": 16.9972,
+          "expected_safe_net_cost_per_skill_gold": 18.272
         },
         {
           "skill": 353,
           "skillup_probability": 0.35,
           "expected_gross_cost_per_skill_gold": 19.4254,
-          "expected_net_cost_per_skill_gold": 19.4254
+          "expected_net_cost_per_skill_gold": 19.4254,
+          "expected_safe_net_cost_per_skill_gold": 20.8823
         },
         {
           "skill": 354,
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 22.663,
-          "expected_net_cost_per_skill_gold": 22.663
+          "expected_net_cost_per_skill_gold": 22.663,
+          "expected_safe_net_cost_per_skill_gold": 24.3627
         },
         {
           "skill": 355,
           "skillup_probability": 0.25,
           "expected_gross_cost_per_skill_gold": 27.1956,
-          "expected_net_cost_per_skill_gold": 27.1956
+          "expected_net_cost_per_skill_gold": 27.1956,
+          "expected_safe_net_cost_per_skill_gold": 29.2352
         },
         {
           "skill": 356,
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 33.9945,
-          "expected_net_cost_per_skill_gold": 33.9945
+          "expected_net_cost_per_skill_gold": 33.9945,
+          "expected_safe_net_cost_per_skill_gold": 36.544
         },
         {
           "skill": 357,
           "skillup_probability": 0.15,
           "expected_gross_cost_per_skill_gold": 45.326,
-          "expected_net_cost_per_skill_gold": 45.326
+          "expected_net_cost_per_skill_gold": 45.326,
+          "expected_safe_net_cost_per_skill_gold": 48.7253
         },
         {
           "skill": 358,
           "skillup_probability": 0.1,
           "expected_gross_cost_per_skill_gold": 67.989,
-          "expected_net_cost_per_skill_gold": 67.989
+          "expected_net_cost_per_skill_gold": 67.989,
+          "expected_safe_net_cost_per_skill_gold": 73.088
         },
         {
           "skill": 359,
           "skillup_probability": 0.05,
           "expected_gross_cost_per_skill_gold": 135.978,
-          "expected_net_cost_per_skill_gold": 135.978
+          "expected_net_cost_per_skill_gold": 135.978,
+          "expected_safe_net_cost_per_skill_gold": 146.176
         }
       ]
     },
@@ -687,12 +806,20 @@
         "gray": 350
       },
       "requirements": null,
+      "materials": {
+        "22446": 8,
+        "22449": 8,
+        "23571": 1,
+        "25844": 1
+      },
       "gross_material_cost_gold": null,
+      "safe_gross_material_cost_gold": null,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": null,
+      "safe_net_craft_cost_gold": null,
       "missing_price_item_ids": [
         "25844"
       ],
@@ -709,12 +836,18 @@
         "gray": 380
       },
       "requirements": null,
+      "materials": {
+        "22445": 12,
+        "22446": 1
+      },
       "gross_material_cost_gold": 17.3357,
+      "safe_gross_material_cost_gold": 18.6359,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 17.3357,
+      "safe_net_craft_cost_gold": 18.6359,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Wowhead difficulty 340/350/365/380; baseline guide uses it after the 350 rod craft.",
@@ -723,211 +856,246 @@
           "skill": 340,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 341,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 342,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 343,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 344,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 345,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 346,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 347,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 348,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 349,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 350,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
-          "expected_net_cost_per_skill_gold": 17.3357
+          "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359
         },
         {
           "skill": 351,
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 17.9335,
-          "expected_net_cost_per_skill_gold": 17.9335
+          "expected_net_cost_per_skill_gold": 17.9335,
+          "expected_safe_net_cost_per_skill_gold": 19.2785
         },
         {
           "skill": 352,
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 18.574,
-          "expected_net_cost_per_skill_gold": 18.574
+          "expected_net_cost_per_skill_gold": 18.574,
+          "expected_safe_net_cost_per_skill_gold": 19.967
         },
         {
           "skill": 353,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 19.2619,
-          "expected_net_cost_per_skill_gold": 19.2619
+          "expected_net_cost_per_skill_gold": 19.2619,
+          "expected_safe_net_cost_per_skill_gold": 20.7066
         },
         {
           "skill": 354,
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": 20.0027,
-          "expected_net_cost_per_skill_gold": 20.0027
+          "expected_net_cost_per_skill_gold": 20.0027,
+          "expected_safe_net_cost_per_skill_gold": 21.503
         },
         {
           "skill": 355,
           "skillup_probability": 0.8333,
           "expected_gross_cost_per_skill_gold": 20.8028,
-          "expected_net_cost_per_skill_gold": 20.8028
+          "expected_net_cost_per_skill_gold": 20.8028,
+          "expected_safe_net_cost_per_skill_gold": 22.3631
         },
         {
           "skill": 356,
           "skillup_probability": 0.8,
           "expected_gross_cost_per_skill_gold": 21.6696,
-          "expected_net_cost_per_skill_gold": 21.6696
+          "expected_net_cost_per_skill_gold": 21.6696,
+          "expected_safe_net_cost_per_skill_gold": 23.2949
         },
         {
           "skill": 357,
           "skillup_probability": 0.7667,
           "expected_gross_cost_per_skill_gold": 22.6118,
-          "expected_net_cost_per_skill_gold": 22.6118
+          "expected_net_cost_per_skill_gold": 22.6118,
+          "expected_safe_net_cost_per_skill_gold": 24.3077
         },
         {
           "skill": 358,
           "skillup_probability": 0.7333,
           "expected_gross_cost_per_skill_gold": 23.6396,
-          "expected_net_cost_per_skill_gold": 23.6396
+          "expected_net_cost_per_skill_gold": 23.6396,
+          "expected_safe_net_cost_per_skill_gold": 25.4126
         },
         {
           "skill": 359,
           "skillup_probability": 0.7,
           "expected_gross_cost_per_skill_gold": 24.7653,
-          "expected_net_cost_per_skill_gold": 24.7653
+          "expected_net_cost_per_skill_gold": 24.7653,
+          "expected_safe_net_cost_per_skill_gold": 26.6227
         },
         {
           "skill": 360,
           "skillup_probability": 0.6667,
           "expected_gross_cost_per_skill_gold": 26.0035,
-          "expected_net_cost_per_skill_gold": 26.0035
+          "expected_net_cost_per_skill_gold": 26.0035,
+          "expected_safe_net_cost_per_skill_gold": 27.9538
         },
         {
           "skill": 361,
           "skillup_probability": 0.6333,
           "expected_gross_cost_per_skill_gold": 27.3722,
-          "expected_net_cost_per_skill_gold": 27.3722
+          "expected_net_cost_per_skill_gold": 27.3722,
+          "expected_safe_net_cost_per_skill_gold": 29.4251
         },
         {
           "skill": 362,
           "skillup_probability": 0.6,
           "expected_gross_cost_per_skill_gold": 28.8928,
-          "expected_net_cost_per_skill_gold": 28.8928
+          "expected_net_cost_per_skill_gold": 28.8928,
+          "expected_safe_net_cost_per_skill_gold": 31.0598
         },
         {
           "skill": 363,
           "skillup_probability": 0.5667,
           "expected_gross_cost_per_skill_gold": 30.5924,
-          "expected_net_cost_per_skill_gold": 30.5924
+          "expected_net_cost_per_skill_gold": 30.5924,
+          "expected_safe_net_cost_per_skill_gold": 32.8869
         },
         {
           "skill": 364,
           "skillup_probability": 0.5333,
           "expected_gross_cost_per_skill_gold": 32.5044,
-          "expected_net_cost_per_skill_gold": 32.5044
+          "expected_net_cost_per_skill_gold": 32.5044,
+          "expected_safe_net_cost_per_skill_gold": 34.9423
         },
         {
           "skill": 365,
           "skillup_probability": 0.5,
           "expected_gross_cost_per_skill_gold": 34.6714,
-          "expected_net_cost_per_skill_gold": 34.6714
+          "expected_net_cost_per_skill_gold": 34.6714,
+          "expected_safe_net_cost_per_skill_gold": 37.2718
         },
         {
           "skill": 366,
           "skillup_probability": 0.4667,
           "expected_gross_cost_per_skill_gold": 37.1479,
-          "expected_net_cost_per_skill_gold": 37.1479
+          "expected_net_cost_per_skill_gold": 37.1479,
+          "expected_safe_net_cost_per_skill_gold": 39.9341
         },
         {
           "skill": 367,
           "skillup_probability": 0.4333,
           "expected_gross_cost_per_skill_gold": 40.0055,
-          "expected_net_cost_per_skill_gold": 40.0055
+          "expected_net_cost_per_skill_gold": 40.0055,
+          "expected_safe_net_cost_per_skill_gold": 43.0059
         },
         {
           "skill": 368,
           "skillup_probability": 0.4,
           "expected_gross_cost_per_skill_gold": 43.3392,
-          "expected_net_cost_per_skill_gold": 43.3392
+          "expected_net_cost_per_skill_gold": 43.3392,
+          "expected_safe_net_cost_per_skill_gold": 46.5897
         },
         {
           "skill": 369,
           "skillup_probability": 0.3667,
           "expected_gross_cost_per_skill_gold": 47.2792,
-          "expected_net_cost_per_skill_gold": 47.2792
+          "expected_net_cost_per_skill_gold": 47.2792,
+          "expected_safe_net_cost_per_skill_gold": 50.8252
         },
         {
           "skill": 370,
           "skillup_probability": 0.3333,
           "expected_gross_cost_per_skill_gold": 52.0071,
-          "expected_net_cost_per_skill_gold": 52.0071
+          "expected_net_cost_per_skill_gold": 52.0071,
+          "expected_safe_net_cost_per_skill_gold": 55.9077
         },
         {
           "skill": 371,
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 57.7857,
-          "expected_net_cost_per_skill_gold": 57.7857
+          "expected_net_cost_per_skill_gold": 57.7857,
+          "expected_safe_net_cost_per_skill_gold": 62.1197
         },
         {
           "skill": 372,
           "skillup_probability": 0.2667,
           "expected_gross_cost_per_skill_gold": 65.0089,
-          "expected_net_cost_per_skill_gold": 65.0089
+          "expected_net_cost_per_skill_gold": 65.0089,
+          "expected_safe_net_cost_per_skill_gold": 69.8846
         },
         {
           "skill": 373,
           "skillup_probability": 0.2333,
           "expected_gross_cost_per_skill_gold": 74.2959,
-          "expected_net_cost_per_skill_gold": 74.2959
+          "expected_net_cost_per_skill_gold": 74.2959,
+          "expected_safe_net_cost_per_skill_gold": 79.8681
         },
         {
           "skill": 374,
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 86.6785,
-          "expected_net_cost_per_skill_gold": 86.6785
+          "expected_net_cost_per_skill_gold": 86.6785,
+          "expected_safe_net_cost_per_skill_gold": 93.1795
         }
       ]
     },
@@ -942,12 +1110,18 @@
       "requirements": {
         "reputation": "The Consortium - Revered"
       },
+      "materials": {
+        "22449": 2,
+        "22445": 6
+      },
       "gross_material_cost_gold": 45.3644,
+      "safe_gross_material_cost_gold": 48.7667,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 45.3644,
+      "safe_net_craft_cost_gold": 48.7667,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Wowhead difficulty 360/370/385/400.",
@@ -956,91 +1130,106 @@
           "skill": 360,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 361,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 362,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 363,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 364,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 365,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 366,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 367,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 368,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 369,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 370,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
-          "expected_net_cost_per_skill_gold": 45.3644
+          "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667
         },
         {
           "skill": 371,
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 46.9287,
-          "expected_net_cost_per_skill_gold": 46.9287
+          "expected_net_cost_per_skill_gold": 46.9287,
+          "expected_safe_net_cost_per_skill_gold": 50.4483
         },
         {
           "skill": 372,
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 48.6047,
-          "expected_net_cost_per_skill_gold": 48.6047
+          "expected_net_cost_per_skill_gold": 48.6047,
+          "expected_safe_net_cost_per_skill_gold": 52.25
         },
         {
           "skill": 373,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 50.4049,
-          "expected_net_cost_per_skill_gold": 50.4049
+          "expected_net_cost_per_skill_gold": 50.4049,
+          "expected_safe_net_cost_per_skill_gold": 54.1852
         },
         {
           "skill": 374,
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": 52.3435,
-          "expected_net_cost_per_skill_gold": 52.3435
+          "expected_net_cost_per_skill_gold": 52.3435,
+          "expected_safe_net_cost_per_skill_gold": 56.2693
         }
       ]
     },
@@ -1055,12 +1244,18 @@
       "requirements": {
         "reputation": "Keepers of Time - Honored"
       },
+      "materials": {
+        "22449": 2,
+        "22446": 2
+      },
       "gross_material_cost_gold": 51.0498,
+      "safe_gross_material_cost_gold": 54.8785,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 51.0498,
+      "safe_net_craft_cost_gold": 54.8785,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Wowhead difficulty 360/370/385/400; baseline leveling guide uses it 365-375.",
@@ -1069,91 +1264,106 @@
           "skill": 360,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 361,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 362,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 363,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 364,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 365,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 366,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 367,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 368,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 369,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 370,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
-          "expected_net_cost_per_skill_gold": 51.0498
+          "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785
         },
         {
           "skill": 371,
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 52.8101,
-          "expected_net_cost_per_skill_gold": 52.8101
+          "expected_net_cost_per_skill_gold": 52.8101,
+          "expected_safe_net_cost_per_skill_gold": 56.7709
         },
         {
           "skill": 372,
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 54.6962,
-          "expected_net_cost_per_skill_gold": 54.6962
+          "expected_net_cost_per_skill_gold": 54.6962,
+          "expected_safe_net_cost_per_skill_gold": 58.7984
         },
         {
           "skill": 373,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 56.722,
-          "expected_net_cost_per_skill_gold": 56.722
+          "expected_net_cost_per_skill_gold": 56.722,
+          "expected_safe_net_cost_per_skill_gold": 60.9761
         },
         {
           "skill": 374,
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": 58.9036,
-          "expected_net_cost_per_skill_gold": 58.9036
+          "expected_net_cost_per_skill_gold": 58.9036,
+          "expected_safe_net_cost_per_skill_gold": 63.3213
         }
       ]
     },
@@ -1168,12 +1378,19 @@
       "requirements": {
         "reputation": "The Sha'tar - Revered"
       },
+      "materials": {
+        "22449": 2,
+        "22446": 3,
+        "22445": 5
+      },
       "gross_material_cost_gold": 61.6221,
+      "safe_gross_material_cost_gold": 66.2438,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": 61.6221,
+      "safe_net_craft_cost_gold": 66.2438,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Wowhead difficulty 370/380/395/410.",
@@ -1182,31 +1399,36 @@
           "skill": 370,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
-          "expected_net_cost_per_skill_gold": 61.6221
+          "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438
         },
         {
           "skill": 371,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
-          "expected_net_cost_per_skill_gold": 61.6221
+          "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438
         },
         {
           "skill": 372,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
-          "expected_net_cost_per_skill_gold": 61.6221
+          "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438
         },
         {
           "skill": 373,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
-          "expected_net_cost_per_skill_gold": 61.6221
+          "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438
         },
         {
           "skill": 374,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
-          "expected_net_cost_per_skill_gold": 61.6221
+          "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438
         }
       ]
     },
@@ -1222,12 +1444,19 @@
         "reputation": "Shattered Sun Offensive - Honored",
         "phase_note": "Available with Shattered Sun Offensive content"
       },
+      "materials": {
+        "22446": 4,
+        "22445": 8,
+        "23427": 4
+      },
       "gross_material_cost_gold": null,
+      "safe_gross_material_cost_gold": null,
       "sale_recovery": {
         "status": "not_saleable",
         "expected_recovery_gold": 0.0
       },
       "net_craft_cost_gold": null,
+      "safe_net_craft_cost_gold": null,
       "missing_price_item_ids": [
         "23427"
       ],
@@ -1238,91 +1467,106 @@
           "skill": 360,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 361,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 362,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 363,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 364,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 365,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 366,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 367,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 368,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 369,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 370,
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 371,
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 372,
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 373,
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         },
         {
           "skill": 374,
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": null,
-          "expected_net_cost_per_skill_gold": null
+          "expected_net_cost_per_skill_gold": null,
+          "expected_safe_net_cost_per_skill_gold": null
         }
       ]
     }
@@ -1335,10 +1579,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1350,10 +1596,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1365,10 +1613,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1380,10 +1630,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1395,10 +1647,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1410,10 +1664,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1425,10 +1681,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1440,10 +1698,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1455,10 +1715,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1470,10 +1732,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": []
@@ -1485,10 +1749,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 7.7296,
         "expected_net_cost_per_skill_gold": 7.7296,
+        "expected_safe_net_cost_per_skill_gold": 8.3093,
         "requirements": null
       },
       "alternatives": [
@@ -1497,10 +1763,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1512,10 +1780,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9667,
         "expected_gross_cost_per_skill_gold": 7.9961,
         "expected_net_cost_per_skill_gold": 7.9961,
+        "expected_safe_net_cost_per_skill_gold": 8.5958,
         "requirements": null
       },
       "alternatives": [
@@ -1524,10 +1794,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1539,10 +1811,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9333,
         "expected_gross_cost_per_skill_gold": 8.2817,
         "expected_net_cost_per_skill_gold": 8.2817,
+        "expected_safe_net_cost_per_skill_gold": 8.9028,
         "requirements": null
       },
       "alternatives": [
@@ -1551,10 +1825,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1566,10 +1842,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9,
         "expected_gross_cost_per_skill_gold": 8.5884,
         "expected_net_cost_per_skill_gold": 8.5884,
+        "expected_safe_net_cost_per_skill_gold": 9.2326,
         "requirements": null
       },
       "alternatives": [
@@ -1578,10 +1856,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1593,10 +1873,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8667,
         "expected_gross_cost_per_skill_gold": 8.9188,
         "expected_net_cost_per_skill_gold": 8.9188,
+        "expected_safe_net_cost_per_skill_gold": 9.5877,
         "requirements": null
       },
       "alternatives": [
@@ -1605,10 +1887,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1620,10 +1904,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8333,
         "expected_gross_cost_per_skill_gold": 9.2755,
         "expected_net_cost_per_skill_gold": 9.2755,
+        "expected_safe_net_cost_per_skill_gold": 9.9712,
         "requirements": null
       },
       "alternatives": [
@@ -1632,10 +1918,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1647,10 +1935,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8,
         "expected_gross_cost_per_skill_gold": 9.662,
         "expected_net_cost_per_skill_gold": 9.662,
+        "expected_safe_net_cost_per_skill_gold": 10.3866,
         "requirements": null
       },
       "alternatives": [
@@ -1659,10 +1949,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1674,10 +1966,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7667,
         "expected_gross_cost_per_skill_gold": 10.0821,
         "expected_net_cost_per_skill_gold": 10.0821,
+        "expected_safe_net_cost_per_skill_gold": 10.8382,
         "requirements": null
       },
       "alternatives": [
@@ -1686,10 +1980,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1701,10 +1997,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7333,
         "expected_gross_cost_per_skill_gold": 10.5404,
         "expected_net_cost_per_skill_gold": 10.5404,
+        "expected_safe_net_cost_per_skill_gold": 11.3309,
         "requirements": null
       },
       "alternatives": [
@@ -1713,10 +2011,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1728,10 +2028,12 @@
         "gross_craft_cost_gold": 7.7296,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 7.7296,
+        "safe_net_craft_cost_gold": 8.3093,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7,
         "expected_gross_cost_per_skill_gold": 11.0423,
         "expected_net_cost_per_skill_gold": 11.0423,
+        "expected_safe_net_cost_per_skill_gold": 11.8704,
         "requirements": null
       },
       "alternatives": [
@@ -1740,10 +2042,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 11.4826,
           "expected_net_cost_per_skill_gold": 11.4826,
+          "expected_safe_net_cost_per_skill_gold": 12.3438,
           "requirements": null
         }
       ]
@@ -1755,10 +2059,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 11.4826,
         "expected_net_cost_per_skill_gold": 11.4826,
+        "expected_safe_net_cost_per_skill_gold": 12.3438,
         "requirements": null
       },
       "alternatives": [
@@ -1767,10 +2073,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.6667,
           "expected_gross_cost_per_skill_gold": 11.5944,
           "expected_net_cost_per_skill_gold": 11.5944,
+          "expected_safe_net_cost_per_skill_gold": 12.4639,
           "requirements": null
         }
       ]
@@ -1782,10 +2090,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9667,
         "expected_gross_cost_per_skill_gold": 11.8786,
         "expected_net_cost_per_skill_gold": 11.8786,
+        "expected_safe_net_cost_per_skill_gold": 12.7694,
         "requirements": null
       },
       "alternatives": [
@@ -1794,10 +2104,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.6333,
           "expected_gross_cost_per_skill_gold": 12.2046,
           "expected_net_cost_per_skill_gold": 12.2046,
+          "expected_safe_net_cost_per_skill_gold": 13.1199,
           "requirements": null
         }
       ]
@@ -1809,10 +2121,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9333,
         "expected_gross_cost_per_skill_gold": 12.3028,
         "expected_net_cost_per_skill_gold": 12.3028,
+        "expected_safe_net_cost_per_skill_gold": 13.2255,
         "requirements": null
       },
       "alternatives": [
@@ -1821,10 +2135,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.6,
           "expected_gross_cost_per_skill_gold": 12.8827,
           "expected_net_cost_per_skill_gold": 12.8827,
+          "expected_safe_net_cost_per_skill_gold": 13.8488,
           "requirements": null
         }
       ]
@@ -1836,10 +2152,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9,
         "expected_gross_cost_per_skill_gold": 12.7584,
         "expected_net_cost_per_skill_gold": 12.7584,
+        "expected_safe_net_cost_per_skill_gold": 13.7153,
         "requirements": null
       },
       "alternatives": [
@@ -1848,10 +2166,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.5667,
           "expected_gross_cost_per_skill_gold": 13.6405,
           "expected_net_cost_per_skill_gold": 13.6405,
+          "expected_safe_net_cost_per_skill_gold": 14.6635,
           "requirements": null
         }
       ]
@@ -1863,10 +2183,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8667,
         "expected_gross_cost_per_skill_gold": 13.2492,
         "expected_net_cost_per_skill_gold": 13.2492,
+        "expected_safe_net_cost_per_skill_gold": 14.2428,
         "requirements": null
       },
       "alternatives": [
@@ -1875,10 +2197,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.5333,
           "expected_gross_cost_per_skill_gold": 14.493,
           "expected_net_cost_per_skill_gold": 14.493,
+          "expected_safe_net_cost_per_skill_gold": 15.5799,
           "requirements": null
         }
       ]
@@ -1890,10 +2214,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8333,
         "expected_gross_cost_per_skill_gold": 13.7791,
         "expected_net_cost_per_skill_gold": 13.7791,
+        "expected_safe_net_cost_per_skill_gold": 14.8126,
         "requirements": null
       },
       "alternatives": [
@@ -1902,10 +2228,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.5,
           "expected_gross_cost_per_skill_gold": 15.4592,
           "expected_net_cost_per_skill_gold": 15.4592,
+          "expected_safe_net_cost_per_skill_gold": 16.6186,
           "requirements": null
         }
       ]
@@ -1917,10 +2245,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8,
         "expected_gross_cost_per_skill_gold": 14.3532,
         "expected_net_cost_per_skill_gold": 14.3532,
+        "expected_safe_net_cost_per_skill_gold": 15.4297,
         "requirements": null
       },
       "alternatives": [
@@ -1929,10 +2259,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.4667,
           "expected_gross_cost_per_skill_gold": 16.5634,
           "expected_net_cost_per_skill_gold": 16.5634,
+          "expected_safe_net_cost_per_skill_gold": 17.8056,
           "requirements": null
         }
       ]
@@ -1944,10 +2276,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7667,
         "expected_gross_cost_per_skill_gold": 14.9773,
         "expected_net_cost_per_skill_gold": 14.9773,
+        "expected_safe_net_cost_per_skill_gold": 16.1006,
         "requirements": null
       },
       "alternatives": [
@@ -1956,10 +2290,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.4333,
           "expected_gross_cost_per_skill_gold": 17.8375,
           "expected_net_cost_per_skill_gold": 17.8375,
+          "expected_safe_net_cost_per_skill_gold": 19.1753,
           "requirements": null
         }
       ]
@@ -1971,10 +2307,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7333,
         "expected_gross_cost_per_skill_gold": 15.6581,
         "expected_net_cost_per_skill_gold": 15.6581,
+        "expected_safe_net_cost_per_skill_gold": 16.8325,
         "requirements": null
       },
       "alternatives": [
@@ -1983,10 +2321,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.4,
           "expected_gross_cost_per_skill_gold": 19.324,
           "expected_net_cost_per_skill_gold": 19.324,
+          "expected_safe_net_cost_per_skill_gold": 20.7733,
           "requirements": null
         }
       ]
@@ -1998,10 +2338,12 @@
         "gross_craft_cost_gold": 11.4826,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 11.4826,
+        "safe_net_craft_cost_gold": 12.3438,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7,
         "expected_gross_cost_per_skill_gold": 16.4037,
         "expected_net_cost_per_skill_gold": 16.4037,
+        "expected_safe_net_cost_per_skill_gold": 17.634,
         "requirements": null
       },
       "alternatives": [
@@ -2010,10 +2352,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3667,
           "expected_gross_cost_per_skill_gold": 21.0807,
           "expected_net_cost_per_skill_gold": 21.0807,
+          "expected_safe_net_cost_per_skill_gold": 22.6617,
           "requirements": null
         }
       ]
@@ -2025,10 +2369,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 6.7989,
         "expected_net_cost_per_skill_gold": 6.7989,
+        "expected_safe_net_cost_per_skill_gold": 7.3088,
         "requirements": null
       },
       "alternatives": [
@@ -2037,10 +2383,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.6667,
           "expected_gross_cost_per_skill_gold": 17.2239,
           "expected_net_cost_per_skill_gold": 17.2239,
+          "expected_safe_net_cost_per_skill_gold": 18.5157,
           "requirements": null
         },
         {
@@ -2048,10 +2396,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2059,10 +2409,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3333,
           "expected_gross_cost_per_skill_gold": 23.1888,
           "expected_net_cost_per_skill_gold": 23.1888,
+          "expected_safe_net_cost_per_skill_gold": 24.9279,
           "requirements": null
         }
       ]
@@ -2074,10 +2426,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.95,
         "expected_gross_cost_per_skill_gold": 7.1567,
         "expected_net_cost_per_skill_gold": 7.1567,
+        "expected_safe_net_cost_per_skill_gold": 7.6935,
         "requirements": null
       },
       "alternatives": [
@@ -2086,10 +2440,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2097,10 +2453,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.6333,
           "expected_gross_cost_per_skill_gold": 18.1304,
           "expected_net_cost_per_skill_gold": 18.1304,
+          "expected_safe_net_cost_per_skill_gold": 19.4902,
           "requirements": null
         },
         {
@@ -2108,10 +2466,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 25.7653,
           "expected_net_cost_per_skill_gold": 25.7653,
+          "expected_safe_net_cost_per_skill_gold": 27.6977,
           "requirements": null
         }
       ]
@@ -2123,10 +2483,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.9,
         "expected_gross_cost_per_skill_gold": 7.5543,
         "expected_net_cost_per_skill_gold": 7.5543,
+        "expected_safe_net_cost_per_skill_gold": 8.1209,
         "requirements": null
       },
       "alternatives": [
@@ -2135,10 +2497,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2146,10 +2510,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.6,
           "expected_gross_cost_per_skill_gold": 19.1377,
           "expected_net_cost_per_skill_gold": 19.1377,
+          "expected_safe_net_cost_per_skill_gold": 20.573,
           "requirements": null
         },
         {
@@ -2157,10 +2523,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2667,
           "expected_gross_cost_per_skill_gold": 28.986,
           "expected_net_cost_per_skill_gold": 28.986,
+          "expected_safe_net_cost_per_skill_gold": 31.1599,
           "requirements": null
         }
       ]
@@ -2172,10 +2540,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.85,
         "expected_gross_cost_per_skill_gold": 7.9987,
         "expected_net_cost_per_skill_gold": 7.9987,
+        "expected_safe_net_cost_per_skill_gold": 8.5986,
         "requirements": null
       },
       "alternatives": [
@@ -2184,10 +2554,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2195,10 +2567,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.5667,
           "expected_gross_cost_per_skill_gold": 20.2634,
           "expected_net_cost_per_skill_gold": 20.2634,
+          "expected_safe_net_cost_per_skill_gold": 21.7832,
           "requirements": null
         },
         {
@@ -2206,10 +2580,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2333,
           "expected_gross_cost_per_skill_gold": 33.1269,
           "expected_net_cost_per_skill_gold": 33.1269,
+          "expected_safe_net_cost_per_skill_gold": 35.6113,
           "requirements": null
         }
       ]
@@ -2221,10 +2597,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.8,
         "expected_gross_cost_per_skill_gold": 8.4986,
         "expected_net_cost_per_skill_gold": 8.4986,
+        "expected_safe_net_cost_per_skill_gold": 9.136,
         "requirements": null
       },
       "alternatives": [
@@ -2233,10 +2611,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2244,10 +2624,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.5333,
           "expected_gross_cost_per_skill_gold": 21.5299,
           "expected_net_cost_per_skill_gold": 21.5299,
+          "expected_safe_net_cost_per_skill_gold": 23.1446,
           "requirements": null
         },
         {
@@ -2255,10 +2637,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 38.648,
           "expected_net_cost_per_skill_gold": 38.648,
+          "expected_safe_net_cost_per_skill_gold": 41.5465,
           "requirements": null
         }
       ]
@@ -2270,10 +2654,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.75,
         "expected_gross_cost_per_skill_gold": 9.0652,
         "expected_net_cost_per_skill_gold": 9.0652,
+        "expected_safe_net_cost_per_skill_gold": 9.7451,
         "requirements": null
       },
       "alternatives": [
@@ -2282,10 +2668,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2293,10 +2681,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.5,
           "expected_gross_cost_per_skill_gold": 22.9652,
           "expected_net_cost_per_skill_gold": 22.9652,
+          "expected_safe_net_cost_per_skill_gold": 24.6876,
           "requirements": null
         },
         {
@@ -2304,10 +2694,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.1667,
           "expected_gross_cost_per_skill_gold": 46.3776,
           "expected_net_cost_per_skill_gold": 46.3776,
+          "expected_safe_net_cost_per_skill_gold": 49.8558,
           "requirements": null
         }
       ]
@@ -2319,10 +2711,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.7,
         "expected_gross_cost_per_skill_gold": 9.7127,
         "expected_net_cost_per_skill_gold": 9.7127,
+        "expected_safe_net_cost_per_skill_gold": 10.4411,
         "requirements": null
       },
       "alternatives": [
@@ -2331,10 +2725,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2342,10 +2738,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.4667,
           "expected_gross_cost_per_skill_gold": 24.6056,
           "expected_net_cost_per_skill_gold": 24.6056,
+          "expected_safe_net_cost_per_skill_gold": 26.451,
           "requirements": null
         },
         {
@@ -2353,10 +2751,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.1333,
           "expected_gross_cost_per_skill_gold": 57.972,
           "expected_net_cost_per_skill_gold": 57.972,
+          "expected_safe_net_cost_per_skill_gold": 62.3198,
           "requirements": null
         }
       ]
@@ -2368,10 +2768,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.65,
         "expected_gross_cost_per_skill_gold": 10.4598,
         "expected_net_cost_per_skill_gold": 10.4598,
+        "expected_safe_net_cost_per_skill_gold": 11.2443,
         "requirements": null
       },
       "alternatives": [
@@ -2380,10 +2782,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2391,10 +2795,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.4333,
           "expected_gross_cost_per_skill_gold": 26.4983,
           "expected_net_cost_per_skill_gold": 26.4983,
+          "expected_safe_net_cost_per_skill_gold": 28.4857,
           "requirements": null
         },
         {
@@ -2402,10 +2808,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.1,
           "expected_gross_cost_per_skill_gold": 77.296,
           "expected_net_cost_per_skill_gold": 77.296,
+          "expected_safe_net_cost_per_skill_gold": 83.093,
           "requirements": null
         }
       ]
@@ -2417,10 +2825,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.6,
         "expected_gross_cost_per_skill_gold": 11.3315,
         "expected_net_cost_per_skill_gold": 11.3315,
+        "expected_safe_net_cost_per_skill_gold": 12.1813,
         "requirements": null
       },
       "alternatives": [
@@ -2429,10 +2839,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2440,10 +2852,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.4,
           "expected_gross_cost_per_skill_gold": 28.7065,
           "expected_net_cost_per_skill_gold": 28.7065,
+          "expected_safe_net_cost_per_skill_gold": 30.8595,
           "requirements": null
         },
         {
@@ -2451,10 +2865,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.0667,
           "expected_gross_cost_per_skill_gold": 115.944,
           "expected_net_cost_per_skill_gold": 115.944,
+          "expected_safe_net_cost_per_skill_gold": 124.6395,
           "requirements": null
         }
       ]
@@ -2466,10 +2882,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.55,
         "expected_gross_cost_per_skill_gold": 12.3616,
         "expected_net_cost_per_skill_gold": 12.3616,
+        "expected_safe_net_cost_per_skill_gold": 13.2887,
         "requirements": null
       },
       "alternatives": [
@@ -2478,10 +2896,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2489,10 +2909,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3667,
           "expected_gross_cost_per_skill_gold": 31.3162,
           "expected_net_cost_per_skill_gold": 31.3162,
+          "expected_safe_net_cost_per_skill_gold": 33.6649,
           "requirements": null
         },
         {
@@ -2500,10 +2922,12 @@
           "gross_craft_cost_gold": 7.7296,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 7.7296,
+          "safe_net_craft_cost_gold": 8.3093,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.0333,
           "expected_gross_cost_per_skill_gold": 231.888,
           "expected_net_cost_per_skill_gold": 231.888,
+          "expected_safe_net_cost_per_skill_gold": 249.279,
           "requirements": null
         }
       ]
@@ -2515,10 +2939,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.5,
         "expected_gross_cost_per_skill_gold": 13.5978,
         "expected_net_cost_per_skill_gold": 13.5978,
+        "expected_safe_net_cost_per_skill_gold": 14.6176,
         "requirements": null
       },
       "alternatives": [
@@ -2527,10 +2953,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 17.3357,
           "expected_net_cost_per_skill_gold": 17.3357,
+          "expected_safe_net_cost_per_skill_gold": 18.6359,
           "requirements": null
         },
         {
@@ -2538,10 +2966,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3333,
           "expected_gross_cost_per_skill_gold": 34.4478,
           "expected_net_cost_per_skill_gold": 34.4478,
+          "expected_safe_net_cost_per_skill_gold": 37.0314,
           "requirements": null
         }
       ]
@@ -2553,10 +2983,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.45,
         "expected_gross_cost_per_skill_gold": 15.1087,
         "expected_net_cost_per_skill_gold": 15.1087,
+        "expected_safe_net_cost_per_skill_gold": 16.2418,
         "requirements": null
       },
       "alternatives": [
@@ -2565,10 +2997,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 17.9335,
           "expected_net_cost_per_skill_gold": 17.9335,
+          "expected_safe_net_cost_per_skill_gold": 19.2785,
           "requirements": null
         },
         {
@@ -2576,10 +3010,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 38.2753,
           "expected_net_cost_per_skill_gold": 38.2753,
+          "expected_safe_net_cost_per_skill_gold": 41.146,
           "requirements": null
         }
       ]
@@ -2591,10 +3027,12 @@
         "gross_craft_cost_gold": 6.7989,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 6.7989,
+        "safe_net_craft_cost_gold": 7.3088,
         "sale_recovery_status": "missing_output_market_data",
         "skillup_probability": 0.4,
         "expected_gross_cost_per_skill_gold": 16.9972,
         "expected_net_cost_per_skill_gold": 16.9972,
+        "expected_safe_net_cost_per_skill_gold": 18.272,
         "requirements": null
       },
       "alternatives": [
@@ -2603,10 +3041,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 18.574,
           "expected_net_cost_per_skill_gold": 18.574,
+          "expected_safe_net_cost_per_skill_gold": 19.967,
           "requirements": null
         },
         {
@@ -2614,10 +3054,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2667,
           "expected_gross_cost_per_skill_gold": 43.0598,
           "expected_net_cost_per_skill_gold": 43.0598,
+          "expected_safe_net_cost_per_skill_gold": 46.2893,
           "requirements": null
         }
       ]
@@ -2629,10 +3071,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9,
         "expected_gross_cost_per_skill_gold": 19.2619,
         "expected_net_cost_per_skill_gold": 19.2619,
+        "expected_safe_net_cost_per_skill_gold": 20.7066,
         "requirements": null
       },
       "alternatives": [
@@ -2641,10 +3085,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.35,
           "expected_gross_cost_per_skill_gold": 19.4254,
           "expected_net_cost_per_skill_gold": 19.4254,
+          "expected_safe_net_cost_per_skill_gold": 20.8823,
           "requirements": null
         },
         {
@@ -2652,10 +3098,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2333,
           "expected_gross_cost_per_skill_gold": 49.2111,
           "expected_net_cost_per_skill_gold": 49.2111,
+          "expected_safe_net_cost_per_skill_gold": 52.902,
           "requirements": null
         }
       ]
@@ -2667,10 +3115,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8667,
         "expected_gross_cost_per_skill_gold": 20.0027,
         "expected_net_cost_per_skill_gold": 20.0027,
+        "expected_safe_net_cost_per_skill_gold": 21.503,
         "requirements": null
       },
       "alternatives": [
@@ -2679,10 +3129,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 22.663,
           "expected_net_cost_per_skill_gold": 22.663,
+          "expected_safe_net_cost_per_skill_gold": 24.3627,
           "requirements": null
         },
         {
@@ -2690,10 +3142,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 57.413,
           "expected_net_cost_per_skill_gold": 57.413,
+          "expected_safe_net_cost_per_skill_gold": 61.719,
           "requirements": null
         }
       ]
@@ -2705,10 +3159,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8333,
         "expected_gross_cost_per_skill_gold": 20.8028,
         "expected_net_cost_per_skill_gold": 20.8028,
+        "expected_safe_net_cost_per_skill_gold": 22.3631,
         "requirements": null
       },
       "alternatives": [
@@ -2717,10 +3173,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.25,
           "expected_gross_cost_per_skill_gold": 27.1956,
           "expected_net_cost_per_skill_gold": 27.1956,
+          "expected_safe_net_cost_per_skill_gold": 29.2352,
           "requirements": null
         },
         {
@@ -2728,10 +3186,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.1667,
           "expected_gross_cost_per_skill_gold": 68.8956,
           "expected_net_cost_per_skill_gold": 68.8956,
+          "expected_safe_net_cost_per_skill_gold": 74.0628,
           "requirements": null
         }
       ]
@@ -2743,10 +3203,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8,
         "expected_gross_cost_per_skill_gold": 21.6696,
         "expected_net_cost_per_skill_gold": 21.6696,
+        "expected_safe_net_cost_per_skill_gold": 23.2949,
         "requirements": null
       },
       "alternatives": [
@@ -2755,10 +3217,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 33.9945,
           "expected_net_cost_per_skill_gold": 33.9945,
+          "expected_safe_net_cost_per_skill_gold": 36.544,
           "requirements": null
         },
         {
@@ -2766,10 +3230,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.1333,
           "expected_gross_cost_per_skill_gold": 86.1195,
           "expected_net_cost_per_skill_gold": 86.1195,
+          "expected_safe_net_cost_per_skill_gold": 92.5785,
           "requirements": null
         }
       ]
@@ -2781,10 +3247,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7667,
         "expected_gross_cost_per_skill_gold": 22.6118,
         "expected_net_cost_per_skill_gold": 22.6118,
+        "expected_safe_net_cost_per_skill_gold": 24.3077,
         "requirements": null
       },
       "alternatives": [
@@ -2793,10 +3261,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.15,
           "expected_gross_cost_per_skill_gold": 45.326,
           "expected_net_cost_per_skill_gold": 45.326,
+          "expected_safe_net_cost_per_skill_gold": 48.7253,
           "requirements": null
         },
         {
@@ -2804,10 +3274,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.1,
           "expected_gross_cost_per_skill_gold": 114.826,
           "expected_net_cost_per_skill_gold": 114.826,
+          "expected_safe_net_cost_per_skill_gold": 123.438,
           "requirements": null
         }
       ]
@@ -2819,10 +3291,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7333,
         "expected_gross_cost_per_skill_gold": 23.6396,
         "expected_net_cost_per_skill_gold": 23.6396,
+        "expected_safe_net_cost_per_skill_gold": 25.4126,
         "requirements": null
       },
       "alternatives": [
@@ -2831,10 +3305,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.1,
           "expected_gross_cost_per_skill_gold": 67.989,
           "expected_net_cost_per_skill_gold": 67.989,
+          "expected_safe_net_cost_per_skill_gold": 73.088,
           "requirements": null
         },
         {
@@ -2842,10 +3318,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.0667,
           "expected_gross_cost_per_skill_gold": 172.239,
           "expected_net_cost_per_skill_gold": 172.239,
+          "expected_safe_net_cost_per_skill_gold": 185.157,
           "requirements": null
         }
       ]
@@ -2857,10 +3335,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.7,
         "expected_gross_cost_per_skill_gold": 24.7653,
         "expected_net_cost_per_skill_gold": 24.7653,
+        "expected_safe_net_cost_per_skill_gold": 26.6227,
         "requirements": null
       },
       "alternatives": [
@@ -2869,10 +3349,12 @@
           "gross_craft_cost_gold": 6.7989,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 6.7989,
+          "safe_net_craft_cost_gold": 7.3088,
           "sale_recovery_status": "missing_output_market_data",
           "skillup_probability": 0.05,
           "expected_gross_cost_per_skill_gold": 135.978,
           "expected_net_cost_per_skill_gold": 135.978,
+          "expected_safe_net_cost_per_skill_gold": 146.176,
           "requirements": null
         },
         {
@@ -2880,10 +3362,12 @@
           "gross_craft_cost_gold": 11.4826,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 11.4826,
+          "safe_net_craft_cost_gold": 12.3438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.0333,
           "expected_gross_cost_per_skill_gold": 344.478,
           "expected_net_cost_per_skill_gold": 344.478,
+          "expected_safe_net_cost_per_skill_gold": 370.314,
           "requirements": null
         }
       ]
@@ -2895,10 +3379,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.6667,
         "expected_gross_cost_per_skill_gold": 26.0035,
         "expected_net_cost_per_skill_gold": 26.0035,
+        "expected_safe_net_cost_per_skill_gold": 27.9538,
         "requirements": null
       },
       "alternatives": [
@@ -2907,10 +3393,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -2920,10 +3408,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -2937,10 +3427,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.6333,
         "expected_gross_cost_per_skill_gold": 27.3722,
         "expected_net_cost_per_skill_gold": 27.3722,
+        "expected_safe_net_cost_per_skill_gold": 29.4251,
         "requirements": null
       },
       "alternatives": [
@@ -2949,10 +3441,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -2962,10 +3456,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -2979,10 +3475,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.6,
         "expected_gross_cost_per_skill_gold": 28.8928,
         "expected_net_cost_per_skill_gold": 28.8928,
+        "expected_safe_net_cost_per_skill_gold": 31.0598,
         "requirements": null
       },
       "alternatives": [
@@ -2991,10 +3489,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3004,10 +3504,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3021,10 +3523,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.5667,
         "expected_gross_cost_per_skill_gold": 30.5924,
         "expected_net_cost_per_skill_gold": 30.5924,
+        "expected_safe_net_cost_per_skill_gold": 32.8869,
         "requirements": null
       },
       "alternatives": [
@@ -3033,10 +3537,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3046,10 +3552,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3063,10 +3571,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.5333,
         "expected_gross_cost_per_skill_gold": 32.5044,
         "expected_net_cost_per_skill_gold": 32.5044,
+        "expected_safe_net_cost_per_skill_gold": 34.9423,
         "requirements": null
       },
       "alternatives": [
@@ -3075,10 +3585,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3088,10 +3600,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3105,10 +3619,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.5,
         "expected_gross_cost_per_skill_gold": 34.6714,
         "expected_net_cost_per_skill_gold": 34.6714,
+        "expected_safe_net_cost_per_skill_gold": 37.2718,
         "requirements": null
       },
       "alternatives": [
@@ -3117,10 +3633,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3130,10 +3648,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3147,10 +3667,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.4667,
         "expected_gross_cost_per_skill_gold": 37.1479,
         "expected_net_cost_per_skill_gold": 37.1479,
+        "expected_safe_net_cost_per_skill_gold": 39.9341,
         "requirements": null
       },
       "alternatives": [
@@ -3159,10 +3681,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3172,10 +3696,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3189,10 +3715,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.4333,
         "expected_gross_cost_per_skill_gold": 40.0055,
         "expected_net_cost_per_skill_gold": 40.0055,
+        "expected_safe_net_cost_per_skill_gold": 43.0059,
         "requirements": null
       },
       "alternatives": [
@@ -3201,10 +3729,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3214,10 +3744,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3231,10 +3763,12 @@
         "gross_craft_cost_gold": 17.3357,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 17.3357,
+        "safe_net_craft_cost_gold": 18.6359,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.4,
         "expected_gross_cost_per_skill_gold": 43.3392,
         "expected_net_cost_per_skill_gold": 43.3392,
+        "expected_safe_net_cost_per_skill_gold": 46.5897,
         "requirements": null
       },
       "alternatives": [
@@ -3243,10 +3777,12 @@
           "gross_craft_cost_gold": 45.3644,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 45.3644,
+          "safe_net_craft_cost_gold": 48.7667,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 45.3644,
           "expected_net_cost_per_skill_gold": 45.3644,
+          "expected_safe_net_cost_per_skill_gold": 48.7667,
           "requirements": {
             "reputation": "The Consortium - Revered"
           }
@@ -3256,10 +3792,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3273,10 +3811,12 @@
         "gross_craft_cost_gold": 45.3644,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 45.3644,
+        "safe_net_craft_cost_gold": 48.7667,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 45.3644,
         "expected_net_cost_per_skill_gold": 45.3644,
+        "expected_safe_net_cost_per_skill_gold": 48.7667,
         "requirements": {
           "reputation": "The Consortium - Revered"
         }
@@ -3287,10 +3827,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3667,
           "expected_gross_cost_per_skill_gold": 47.2792,
           "expected_net_cost_per_skill_gold": 47.2792,
+          "expected_safe_net_cost_per_skill_gold": 50.8252,
           "requirements": null
         },
         {
@@ -3298,10 +3840,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3315,10 +3859,12 @@
         "gross_craft_cost_gold": 45.3644,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 45.3644,
+        "safe_net_craft_cost_gold": 48.7667,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
         "expected_gross_cost_per_skill_gold": 45.3644,
         "expected_net_cost_per_skill_gold": 45.3644,
+        "expected_safe_net_cost_per_skill_gold": 48.7667,
         "requirements": {
           "reputation": "The Consortium - Revered"
         }
@@ -3329,10 +3875,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 51.0498,
           "expected_net_cost_per_skill_gold": 51.0498,
+          "expected_safe_net_cost_per_skill_gold": 54.8785,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3342,10 +3890,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3333,
           "expected_gross_cost_per_skill_gold": 52.0071,
           "expected_net_cost_per_skill_gold": 52.0071,
+          "expected_safe_net_cost_per_skill_gold": 55.9077,
           "requirements": null
         },
         {
@@ -3353,10 +3903,12 @@
           "gross_craft_cost_gold": 61.6221,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 61.6221,
+          "safe_net_craft_cost_gold": 66.2438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
           "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438,
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
@@ -3370,10 +3922,12 @@
         "gross_craft_cost_gold": 45.3644,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 45.3644,
+        "safe_net_craft_cost_gold": 48.7667,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9667,
         "expected_gross_cost_per_skill_gold": 46.9287,
         "expected_net_cost_per_skill_gold": 46.9287,
+        "expected_safe_net_cost_per_skill_gold": 50.4483,
         "requirements": {
           "reputation": "The Consortium - Revered"
         }
@@ -3384,10 +3938,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.9667,
           "expected_gross_cost_per_skill_gold": 52.8101,
           "expected_net_cost_per_skill_gold": 52.8101,
+          "expected_safe_net_cost_per_skill_gold": 56.7709,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3397,10 +3953,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.3,
           "expected_gross_cost_per_skill_gold": 57.7857,
           "expected_net_cost_per_skill_gold": 57.7857,
+          "expected_safe_net_cost_per_skill_gold": 62.1197,
           "requirements": null
         },
         {
@@ -3408,10 +3966,12 @@
           "gross_craft_cost_gold": 61.6221,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 61.6221,
+          "safe_net_craft_cost_gold": 66.2438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
           "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438,
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
@@ -3425,10 +3985,12 @@
         "gross_craft_cost_gold": 45.3644,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 45.3644,
+        "safe_net_craft_cost_gold": 48.7667,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9333,
         "expected_gross_cost_per_skill_gold": 48.6047,
         "expected_net_cost_per_skill_gold": 48.6047,
+        "expected_safe_net_cost_per_skill_gold": 52.25,
         "requirements": {
           "reputation": "The Consortium - Revered"
         }
@@ -3439,10 +4001,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.9333,
           "expected_gross_cost_per_skill_gold": 54.6962,
           "expected_net_cost_per_skill_gold": 54.6962,
+          "expected_safe_net_cost_per_skill_gold": 58.7984,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3452,10 +4016,12 @@
           "gross_craft_cost_gold": 61.6221,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 61.6221,
+          "safe_net_craft_cost_gold": 66.2438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
           "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438,
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
@@ -3465,10 +4031,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2667,
           "expected_gross_cost_per_skill_gold": 65.0089,
           "expected_net_cost_per_skill_gold": 65.0089,
+          "expected_safe_net_cost_per_skill_gold": 69.8846,
           "requirements": null
         }
       ]
@@ -3480,10 +4048,12 @@
         "gross_craft_cost_gold": 45.3644,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 45.3644,
+        "safe_net_craft_cost_gold": 48.7667,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9,
         "expected_gross_cost_per_skill_gold": 50.4049,
         "expected_net_cost_per_skill_gold": 50.4049,
+        "expected_safe_net_cost_per_skill_gold": 54.1852,
         "requirements": {
           "reputation": "The Consortium - Revered"
         }
@@ -3494,10 +4064,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.9,
           "expected_gross_cost_per_skill_gold": 56.722,
           "expected_net_cost_per_skill_gold": 56.722,
+          "expected_safe_net_cost_per_skill_gold": 60.9761,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3507,10 +4079,12 @@
           "gross_craft_cost_gold": 61.6221,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 61.6221,
+          "safe_net_craft_cost_gold": 66.2438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
           "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438,
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
@@ -3520,10 +4094,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2333,
           "expected_gross_cost_per_skill_gold": 74.2959,
           "expected_net_cost_per_skill_gold": 74.2959,
+          "expected_safe_net_cost_per_skill_gold": 79.8681,
           "requirements": null
         }
       ]
@@ -3535,10 +4111,12 @@
         "gross_craft_cost_gold": 45.3644,
         "expected_sale_recovery_gold": 0.0,
         "net_craft_cost_gold": 45.3644,
+        "safe_net_craft_cost_gold": 48.7667,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8667,
         "expected_gross_cost_per_skill_gold": 52.3435,
         "expected_net_cost_per_skill_gold": 52.3435,
+        "expected_safe_net_cost_per_skill_gold": 56.2693,
         "requirements": {
           "reputation": "The Consortium - Revered"
         }
@@ -3549,10 +4127,12 @@
           "gross_craft_cost_gold": 51.0498,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 51.0498,
+          "safe_net_craft_cost_gold": 54.8785,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.8667,
           "expected_gross_cost_per_skill_gold": 58.9036,
           "expected_net_cost_per_skill_gold": 58.9036,
+          "expected_safe_net_cost_per_skill_gold": 63.3213,
           "requirements": {
             "reputation": "Keepers of Time - Honored"
           }
@@ -3562,10 +4142,12 @@
           "gross_craft_cost_gold": 61.6221,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 61.6221,
+          "safe_net_craft_cost_gold": 66.2438,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
           "expected_gross_cost_per_skill_gold": 61.6221,
           "expected_net_cost_per_skill_gold": 61.6221,
+          "expected_safe_net_cost_per_skill_gold": 66.2438,
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
@@ -3575,10 +4157,12 @@
           "gross_craft_cost_gold": 17.3357,
           "expected_sale_recovery_gold": 0.0,
           "net_craft_cost_gold": 17.3357,
+          "safe_net_craft_cost_gold": 18.6359,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 0.2,
           "expected_gross_cost_per_skill_gold": 86.6785,
           "expected_net_cost_per_skill_gold": 86.6785,
+          "expected_safe_net_cost_per_skill_gold": 93.1795,
           "requirements": null
         }
       ]
@@ -3652,6 +4236,162 @@
       "requirements": {
         "reputation": "The Consortium - Revered"
       }
+    }
+  ],
+  "baseline_route_summary": {
+    "covered_from_skill": 310,
+    "covered_to_skill": 375,
+    "expected_crafts": 102.18,
+    "expected_crafts_by_recipe": {
+      "Enchant Cloak - Major Armor": 21.92,
+      "Enchant Chest - Major Spirit": 11.92,
+      "Superior Wizard Oil": 20.1,
+      "Enchant Gloves - Major Strength": 48.24
+    },
+    "expected_gross_material_cost_gold": 1279.24,
+    "expected_sale_recovery_gold": 0.0,
+    "expected_net_leveling_cost_gold": 1279.24,
+    "safe_7_5pct_gross_cost_gold": 1375.18,
+    "safe_7_5pct_net_cost_gold": 1375.18,
+    "material_demand": [
+      {
+        "item_id": 22445,
+        "name": "Arcane Dust",
+        "expected_quantity": 814.56,
+        "min_buyout_gold": 0.9662,
+        "safe_unit_price_gold": 1.0387,
+        "market_quantity": null,
+        "required_fraction_of_market": null,
+        "risk": "unknown"
+      },
+      {
+        "item_id": 22446,
+        "name": "Greater Planar Essence",
+        "expected_quantity": 72.08,
+        "min_buyout_gold": 5.7413,
+        "safe_unit_price_gold": 6.1719,
+        "market_quantity": 5253,
+        "required_fraction_of_market": 0.0137,
+        "risk": "ok"
+      },
+      {
+        "item_id": 22792,
+        "name": "Nightmare Vine",
+        "expected_quantity": 20.1,
+        "min_buyout_gold": 3.9003,
+        "safe_unit_price_gold": 4.1928,
+        "market_quantity": 3450,
+        "required_fraction_of_market": 0.0058,
+        "risk": "ok"
+      }
+    ],
+    "gaps": []
+  },
+  "conditional_route_summary": {
+    "covered_from_skill": 360,
+    "covered_to_skill": 375,
+    "expected_crafts": 15.37,
+    "expected_crafts_by_recipe": {
+      "Enchant Ring - Striking": 15.37
+    },
+    "expected_gross_material_cost_gold": 697.29,
+    "expected_sale_recovery_gold": 0.0,
+    "expected_net_leveling_cost_gold": 697.29,
+    "safe_7_5pct_gross_cost_gold": 749.58,
+    "safe_7_5pct_net_cost_gold": 749.58,
+    "material_demand": [
+      {
+        "item_id": 22445,
+        "name": "Arcane Dust",
+        "expected_quantity": 92.22,
+        "min_buyout_gold": 0.9662,
+        "safe_unit_price_gold": 1.0387,
+        "market_quantity": null,
+        "required_fraction_of_market": null,
+        "risk": "unknown"
+      },
+      {
+        "item_id": 22449,
+        "name": "Large Prismatic Shard",
+        "expected_quantity": 30.74,
+        "min_buyout_gold": 19.7836,
+        "safe_unit_price_gold": 21.2674,
+        "market_quantity": 4754,
+        "required_fraction_of_market": 0.0065,
+        "risk": "ok"
+      }
+    ],
+    "gaps": []
+  },
+  "all_route_summary": {
+    "covered_from_skill": 310,
+    "covered_to_skill": 375,
+    "expected_crafts": 86.45,
+    "expected_crafts_by_recipe": {
+      "Enchant Cloak - Major Armor": 21.92,
+      "Enchant Chest - Major Spirit": 11.92,
+      "Superior Wizard Oil": 20.1,
+      "Enchant Gloves - Major Strength": 26.15,
+      "Enchant Ring - Striking": 6.37
+    },
+    "expected_gross_material_cost_gold": 1185.19,
+    "expected_sale_recovery_gold": 0.0,
+    "expected_net_leveling_cost_gold": 1185.19,
+    "safe_7_5pct_gross_cost_gold": 1274.08,
+    "safe_7_5pct_net_cost_gold": 1274.08,
+    "material_demand": [
+      {
+        "item_id": 22445,
+        "name": "Arcane Dust",
+        "expected_quantity": 587.63,
+        "min_buyout_gold": 0.9662,
+        "safe_unit_price_gold": 1.0387,
+        "market_quantity": null,
+        "required_fraction_of_market": null,
+        "risk": "unknown"
+      },
+      {
+        "item_id": 22446,
+        "name": "Greater Planar Essence",
+        "expected_quantity": 49.98,
+        "min_buyout_gold": 5.7413,
+        "safe_unit_price_gold": 6.1719,
+        "market_quantity": 5253,
+        "required_fraction_of_market": 0.0095,
+        "risk": "ok"
+      },
+      {
+        "item_id": 22792,
+        "name": "Nightmare Vine",
+        "expected_quantity": 20.1,
+        "min_buyout_gold": 3.9003,
+        "safe_unit_price_gold": 4.1928,
+        "market_quantity": 3450,
+        "required_fraction_of_market": 0.0058,
+        "risk": "ok"
+      },
+      {
+        "item_id": 22449,
+        "name": "Large Prismatic Shard",
+        "expected_quantity": 12.74,
+        "min_buyout_gold": 19.7836,
+        "safe_unit_price_gold": 21.2674,
+        "market_quantity": 4754,
+        "required_fraction_of_market": 0.0027,
+        "risk": "ok"
+      }
+    ],
+    "gaps": []
+  },
+  "mandatory_tools": [
+    {
+      "name": "Runed Adamantite Rod",
+      "required_skill": 350,
+      "gross_material_cost_gold": null,
+      "safe_gross_material_cost_gold": null,
+      "missing_price_item_ids": [
+        "25844"
+      ]
     }
   ]
 }
