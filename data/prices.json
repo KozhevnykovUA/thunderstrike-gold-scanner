@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T15:40:19.684Z",
-  "source": "bootybaybroker_browser_session_snapshot",
+  "generated_at": "2026-08-14T16:10:17.863404+00:00",
+  "source": "tsm_public_csv_thunderstrike_alliance",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -9,30 +9,262 @@
     "auction_house_id": 2
   },
   "items": {
-    "21877": {"name": "Netherweave Cloth", "market_value_gold": 0.1367, "effective_buy_gold": 0.1367},
-    "21885": {"name": "Primal Water", "market_value_gold": 13.7182, "effective_buy_gold": 13.7182},
-    "22445": {"name": "Arcane Dust", "market_value_gold": 0.8547, "effective_buy_gold": 0.8547},
-    "22446": {"name": "Greater Planar Essence", "market_value_gold": 5.0938, "effective_buy_gold": 5.0938},
-    "22447": {"name": "Lesser Planar Essence", "market_value_gold": 1.6355, "effective_buy_gold": 1.6355},
-    "22448": {"name": "Small Prismatic Shard", "market_value_gold": 6.4080, "effective_buy_gold": 6.4080},
-    "22449": {"name": "Large Prismatic Shard", "market_value_gold": 18.4940, "effective_buy_gold": 18.4940},
-    "22457": {"name": "Primal Mana", "market_value_gold": 15.6553, "effective_buy_gold": 15.6553},
-    "22522": {"name": "Superior Wizard Oil", "market_value_gold": 7.3746, "realistic_sell_price_gold": 7.3746},
-    "22578": {"name": "Mote of Water", "market_value_gold": 1.3542, "effective_buy_gold": 1.3542},
-    "22792": {"name": "Nightmare Vine", "market_value_gold": 4.6266, "effective_buy_gold": 4.6266},
-    "23427": {"name": "Eternium Ore", "market_value_gold": 0.3694, "effective_buy_gold": 0.3694},
-    "23445": {"name": "Fel Iron Bar", "market_value_gold": 1.4989, "effective_buy_gold": 1.4989},
-    "23446": {"name": "Adamantite Bar", "market_value_gold": 3.5752, "effective_buy_gold": 3.5752},
-    "23447": {"name": "Eternium Bar", "market_value_gold": 0.8976, "effective_buy_gold": 0.8976},
-    "23448": {"name": "Felsteel Bar", "market_value_gold": 7.1668, "effective_buy_gold": 7.1668},
-    "23449": {"name": "Khorium Bar", "market_value_gold": 4.1260, "effective_buy_gold": 4.1260},
-    "23571": {"name": "Primal Might", "market_value_gold": 85.7496, "effective_buy_gold": 85.7496},
-    "25844": {"name": "Adamantite Rod", "market_value_gold": 44.4143, "effective_buy_gold": 44.4143}
+    "21877": {
+      "name": "Netherweave Cloth",
+      "market_value_gold": 0.1486,
+      "effective_buy_gold": 0.1548,
+      "min_buyout_gold": 0.1,
+      "recent_gold": 0.1548,
+      "historical_gold": 0.1509,
+      "realistic_sell_price_gold": 0.1486,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "21885": {
+      "name": "Primal Water",
+      "market_value_gold": 16.1277,
+      "effective_buy_gold": 13.5896,
+      "min_buyout_gold": 13.5959,
+      "recent_gold": 13.5896,
+      "historical_gold": 18.1561,
+      "realistic_sell_price_gold": 16.1277,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22445": {
+      "name": "Arcane Dust",
+      "market_value_gold": 0.9634,
+      "effective_buy_gold": 0.9605,
+      "min_buyout_gold": 0.7575,
+      "recent_gold": 0.9605,
+      "historical_gold": 0.9981,
+      "realistic_sell_price_gold": 0.9634,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22446": {
+      "name": "Greater Planar Essence",
+      "market_value_gold": 5.7067,
+      "effective_buy_gold": 5.3166,
+      "min_buyout_gold": 5.2102,
+      "recent_gold": 5.3166,
+      "historical_gold": 7.0288,
+      "realistic_sell_price_gold": 5.7067,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22447": {
+      "name": "Lesser Planar Essence",
+      "market_value_gold": 1.7753,
+      "effective_buy_gold": 1.6845,
+      "min_buyout_gold": 1.5151,
+      "recent_gold": 1.6845,
+      "historical_gold": 2.1431,
+      "realistic_sell_price_gold": 1.7753,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22448": {
+      "name": "Small Prismatic Shard",
+      "market_value_gold": 6.4263,
+      "effective_buy_gold": 6.686,
+      "min_buyout_gold": 6.2183,
+      "recent_gold": 6.686,
+      "historical_gold": 6.6406,
+      "realistic_sell_price_gold": 6.4263,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22449": {
+      "name": "Large Prismatic Shard",
+      "market_value_gold": 19.8232,
+      "effective_buy_gold": 19.3821,
+      "min_buyout_gold": 18.7992,
+      "recent_gold": 19.3821,
+      "historical_gold": 20.4491,
+      "realistic_sell_price_gold": 19.8232,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22457": {
+      "name": "Primal Mana",
+      "market_value_gold": 15.5386,
+      "effective_buy_gold": 14.6971,
+      "min_buyout_gold": 14.5945,
+      "recent_gold": 14.6971,
+      "historical_gold": 16.4256,
+      "realistic_sell_price_gold": 15.5386,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22522": {
+      "name": "Superior Wizard Oil",
+      "market_value_gold": 7.0218,
+      "realistic_sell_price_gold": 7.0218,
+      "min_buyout_gold": 7.2578,
+      "recent_gold": 7.2577,
+      "historical_gold": 6.9826,
+      "effective_buy_gold": 7.2577,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22578": {
+      "name": "Mote of Water",
+      "market_value_gold": 1.6039,
+      "effective_buy_gold": 1.3751,
+      "min_buyout_gold": 1.3733,
+      "recent_gold": 1.3751,
+      "historical_gold": 1.7846,
+      "realistic_sell_price_gold": 1.6039,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "22792": {
+      "name": "Nightmare Vine",
+      "market_value_gold": 3.814,
+      "effective_buy_gold": 3.4315,
+      "min_buyout_gold": 3.432,
+      "recent_gold": 3.4315,
+      "historical_gold": 3.6458,
+      "realistic_sell_price_gold": 3.814,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23427": {
+      "name": "Eternium Ore",
+      "market_value_gold": 0.367,
+      "effective_buy_gold": 0.9758,
+      "min_buyout_gold": 0.9678,
+      "recent_gold": 0.9758,
+      "historical_gold": 0.4263,
+      "realistic_sell_price_gold": 0.367,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23445": {
+      "name": "Fel Iron Bar",
+      "market_value_gold": 1.6897,
+      "effective_buy_gold": 1.5293,
+      "min_buyout_gold": 1.5298,
+      "recent_gold": 1.5293,
+      "historical_gold": 1.7481,
+      "realistic_sell_price_gold": 1.6897,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23446": {
+      "name": "Adamantite Bar",
+      "market_value_gold": 3.9604,
+      "effective_buy_gold": 4.4536,
+      "min_buyout_gold": 4.4588,
+      "recent_gold": 4.4536,
+      "historical_gold": 4.5557,
+      "realistic_sell_price_gold": 3.9604,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23447": {
+      "name": "Eternium Bar",
+      "market_value_gold": 0.88,
+      "effective_buy_gold": 3.4875,
+      "min_buyout_gold": 3.488,
+      "recent_gold": 3.4875,
+      "historical_gold": 1.11,
+      "realistic_sell_price_gold": 0.88,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23448": {
+      "name": "Felsteel Bar",
+      "market_value_gold": 7.6571,
+      "effective_buy_gold": 7.3995,
+      "min_buyout_gold": 7.3782,
+      "recent_gold": 7.3995,
+      "historical_gold": 7.9134,
+      "realistic_sell_price_gold": 7.6571,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23449": {
+      "name": "Khorium Bar",
+      "market_value_gold": 4.2539,
+      "effective_buy_gold": 4.1134,
+      "min_buyout_gold": 4.1127,
+      "recent_gold": 4.1134,
+      "historical_gold": 3.1974,
+      "realistic_sell_price_gold": 4.2539,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "23571": {
+      "name": "Primal Might",
+      "market_value_gold": 85.7496,
+      "effective_buy_gold": 85.7496
+    },
+    "25844": {
+      "name": "Adamantite Rod",
+      "market_value_gold": 47.5879,
+      "effective_buy_gold": 43.0,
+      "min_buyout_gold": 42.9999,
+      "recent_gold": 43.0,
+      "historical_gold": 52.8112,
+      "realistic_sell_price_gold": 47.5879,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "16204": {
+      "name": "Illusion Dust",
+      "market_value_gold": 0.996,
+      "min_buyout_gold": 0.6682,
+      "recent_gold": 0.9723,
+      "historical_gold": 1.0784,
+      "effective_buy_gold": 0.9723,
+      "realistic_sell_price_gold": 0.996,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "16203": {
+      "name": "Greater Eternal Essence",
+      "market_value_gold": 3.056,
+      "min_buyout_gold": 3.8011,
+      "recent_gold": 3.7471,
+      "historical_gold": 3.1635,
+      "effective_buy_gold": 3.7471,
+      "realistic_sell_price_gold": 3.056,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "14344": {
+      "name": "Large Brilliant Shard",
+      "market_value_gold": 3.4935,
+      "min_buyout_gold": 3.3972,
+      "recent_gold": 3.3964,
+      "historical_gold": 3.696,
+      "effective_buy_gold": 3.3964,
+      "realistic_sell_price_gold": 3.4935,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    },
+    "25843": {
+      "name": "Fel Iron Rod",
+      "market_value_gold": 14.1414,
+      "min_buyout_gold": 13.3326,
+      "recent_gold": 13.3329,
+      "historical_gold": 14.7984,
+      "effective_buy_gold": 13.3329,
+      "realistic_sell_price_gold": 14.1414,
+      "tsm_updated_at": "2026-08-14T11:40:52Z",
+      "data_source": "tsm_public_csv"
+    }
   },
   "notes": [
-    "Imported from a realm-scoped BootyBayBroker browser-session snapshot supplied by the user.",
-    "The snapshot's min_buyout field was zero for most items, so market_value is used as the temporary effective-buy proxy.",
-    "Market depth, quantity, sale rate and sold/day were unavailable in this snapshot; do not treat effective_buy_gold as depth-adjusted.",
-    "Superior Wizard Oil market value is tracked as a sell-price reference, but sale recovery remains zero until demand probability is available."
-  ]
+    "Official TSM Public Pricing Data for classic/eu-fresh/thunderstrike-alliance.",
+    "Prices in source CSV are copper and are converted to gold.",
+    "effective_buy_gold uses TSM recent when available, then marketValue, then minBuyout.",
+    "minBuyout is retained as the current floor; marketValue and historical are retained for context.",
+    "Public realm CSV does not expose market depth, sale rate, sold/day, or quantity, so those remain separate future inputs."
+  ],
+  "tsm_url": "https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike-alliance/items.csv",
+  "tsm_items_imported": 22,
+  "tsm_latest_updated_at": "2026-08-14T11:40:52Z"
 }
