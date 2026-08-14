@@ -7,19 +7,31 @@
     "auction_house_id": 2
   },
   "price_source": "manual_seed_from_verified_bootybaybroker_pages",
-  "method": "Expected disenchant value from probability x average quantity x current material value.",
+  "method": "Expected disenchant value from probability x average quantity x material value.",
+  "derived_value_rules": {
+    "22447": {
+      "from_item_id": 22446,
+      "ratio": 0.3333333333333333,
+      "name": "Lesser Planar Essence"
+    },
+    "22448": {
+      "from_item_id": 22449,
+      "ratio": 0.3333333333333333,
+      "name": "Small Prismatic Shard"
+    }
+  },
   "conservative_sell_multiplier": 0.9,
-  "warning": "Uses current seed material prices and expected-value math; individual disenchants are random. Vendor value and AH resale value of the gear must be compared separately.",
+  "warning": "Uses current seed material prices and expected-value math; individual disenchants are random. Vendor value and AH resale value of the gear must be compared separately. Derived lesser/small values assume free 3:1 conversion.",
   "thresholds": [
     {
       "quality": "uncommon",
       "item_level_min": 80,
       "item_level_max": 99,
       "item_type": "armor",
-      "expected_disenchant_value_gold": null,
-      "conservative_buy_ceiling_gold": null,
-      "break_even_buy_ceiling_gold": null,
-      "recommended_rule": null,
+      "expected_disenchant_value_gold": 3.062,
+      "conservative_buy_ceiling_gold": 2.7558,
+      "break_even_buy_ceiling_gold": 3.062,
+      "recommended_rule": "DE if total acquisition cost is below 2.76g; between 2.76g and 3.06g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
@@ -27,23 +39,39 @@
           "probability": 0.75,
           "average_quantity_if_hit": 2.5,
           "unit_value_gold": 0.9662,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 1.8116
+        },
+        {
+          "item_id": 22447,
+          "name": "Lesser Planar Essence",
+          "probability": 0.22,
+          "average_quantity_if_hit": 2.5,
+          "unit_value_gold": 1.9138,
+          "unit_value_source": "derived_from_22446",
+          "expected_value_gold": 1.0526
+        },
+        {
+          "item_id": 22448,
+          "name": "Small Prismatic Shard",
+          "probability": 0.03,
+          "average_quantity_if_hit": 1.0,
+          "unit_value_gold": 6.5945,
+          "unit_value_source": "derived_from_22449",
+          "expected_value_gold": 0.1978
         }
       ],
-      "missing_price_item_ids": [
-        22447,
-        22448
-      ]
+      "missing_price_item_ids": []
     },
     {
       "quality": "uncommon",
       "item_level_min": 80,
       "item_level_max": 99,
       "item_type": "weapon",
-      "expected_disenchant_value_gold": null,
-      "conservative_buy_ceiling_gold": null,
-      "break_even_buy_ceiling_gold": null,
-      "recommended_rule": null,
+      "expected_disenchant_value_gold": 4.3176,
+      "conservative_buy_ceiling_gold": 3.8858,
+      "break_even_buy_ceiling_gold": 4.3176,
+      "recommended_rule": "DE if total acquisition cost is below 3.89g; between 3.89g and 4.32g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
@@ -51,13 +79,29 @@
           "probability": 0.22,
           "average_quantity_if_hit": 2.5,
           "unit_value_gold": 0.9662,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 0.5314
+        },
+        {
+          "item_id": 22447,
+          "name": "Lesser Planar Essence",
+          "probability": 0.75,
+          "average_quantity_if_hit": 2.5,
+          "unit_value_gold": 1.9138,
+          "unit_value_source": "derived_from_22446",
+          "expected_value_gold": 3.5883
+        },
+        {
+          "item_id": 22448,
+          "name": "Small Prismatic Shard",
+          "probability": 0.03,
+          "average_quantity_if_hit": 1.0,
+          "unit_value_gold": 6.5945,
+          "unit_value_source": "derived_from_22449",
+          "expected_value_gold": 0.1978
         }
       ],
-      "missing_price_item_ids": [
-        22447,
-        22448
-      ]
+      "missing_price_item_ids": []
     },
     {
       "quality": "uncommon",
@@ -75,6 +119,7 @@
           "probability": 0.75,
           "average_quantity_if_hit": 3.5,
           "unit_value_gold": 0.9662,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 2.5363
         },
         {
@@ -83,6 +128,7 @@
           "probability": 0.22,
           "average_quantity_if_hit": 1.5,
           "unit_value_gold": 5.7413,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 1.8946
         },
         {
@@ -91,6 +137,7 @@
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
           "unit_value_gold": 19.7836,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 0.5935
         }
       ],
@@ -112,6 +159,7 @@
           "probability": 0.22,
           "average_quantity_if_hit": 3.5,
           "unit_value_gold": 0.9662,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 0.744
         },
         {
@@ -120,6 +168,7 @@
           "probability": 0.75,
           "average_quantity_if_hit": 1.5,
           "unit_value_gold": 5.7413,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 6.459
         },
         {
@@ -128,6 +177,7 @@
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
           "unit_value_gold": 19.7836,
+          "unit_value_source": "direct_market",
           "expected_value_gold": 0.5935
         }
       ],
