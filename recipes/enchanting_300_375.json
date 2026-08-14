@@ -1,0 +1,42 @@
+{
+  "profession": "Enchanting",
+  "range": [300, 375],
+  "recipes": [
+    {
+      "name": "Enchant Cloak - Major Armor",
+      "skill": {"yellow": 325, "green": 340, "gray": 355},
+      "materials": {"22445": 8},
+      "notes": "Current Wowhead route uses this from 317; price comparison can make it attractive through 335."
+    },
+    {
+      "name": "Enchant Chest - Major Spirit",
+      "skill": {"yellow": 330, "green": 345, "gray": 360},
+      "materials": {"22446": 2},
+      "notes": "Baseline alternative after 320."
+    },
+    {
+      "name": "Superior Wizard Oil",
+      "skill": {"yellow": 350, "green": 365, "gray": 380},
+      "materials": {"22445": 3, "22792": 1},
+      "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available."
+    },
+    {
+      "name": "Runed Adamantite Rod",
+      "skill": {"yellow": 350, "green": 350, "gray": 350},
+      "materials": {"22446": 8, "22449": 8, "23571": 1},
+      "notes": "Also requires 1 Adamantite Rod. Required tool investment."
+    },
+    {
+      "name": "Enchant Gloves - Major Strength",
+      "skill": {"yellow": 360, "green": 370, "gray": 380},
+      "materials": {"22445": 12, "22446": 1},
+      "notes": "Baseline 351-365 route."
+    },
+    {
+      "name": "Enchant Ring - Spellpower",
+      "skill": {"yellow": 370, "green": 375, "gray": 380},
+      "materials": {"22449": 2, "22446": 2},
+      "notes": "Baseline 365-375 route; requires Honored Keepers of Time."
+    }
+  ]
+}
