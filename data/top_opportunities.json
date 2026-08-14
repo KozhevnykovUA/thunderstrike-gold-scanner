@@ -1,37 +1,8 @@
 {
-  "generated_at": "2026-08-14T19:18:05.960375+00:00",
+  "generated_at": "2026-08-14T20:17:50.456858+00:00",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "ranking": "sale-rate-adjusted expected profit per listing; sold/day retained as regional liquidity context",
   "top": [
-    {
-      "profession": "Enchanting",
-      "output": "Superior Wizard Oil",
-      "requirements": null,
-      "materials": [
-        {
-          "name": "Arcane Dust",
-          "qty": 3,
-          "unit_buy_gold": 0.9038,
-          "cost_gold": 2.7114
-        },
-        {
-          "name": "Nightmare Vine",
-          "qty": 1,
-          "unit_buy_gold": 3.4479,
-          "cost_gold": 3.4479
-        }
-      ],
-      "material_cost_gold": 6.4793,
-      "sell_recent_gold": 6.9954,
-      "net_sale_after_5pct_gold": 6.6456,
-      "profit_per_craft_gold": 0.1663,
-      "roi_pct": 2.6,
-      "region_sale_rate": 0.636,
-      "region_avg_daily_sold": 211.152,
-      "expected_profit_per_listing_gold": 0.1058,
-      "regional_demand_profit_index": 35.12,
-      "profitable": true
-    },
     {
       "output": "Warp Burger",
       "tsm_recent_sell_gold": 0.3484,
@@ -169,6 +140,34 @@
       "region_avg_daily_sold": 1059.102,
       "expected_profit_per_listing_gold": 0.046,
       "regional_demand_profit_index": 123.12,
+      "profitable": true,
+      "profession": "Cooking"
+    },
+    {
+      "output": "Talbuk Steak",
+      "tsm_recent_sell_gold": 0.2664,
+      "tsm_min_buyout_gold": 0.062,
+      "tsm_market_value_gold": 0.0551,
+      "tsm_historical_gold": 0.0691,
+      "heatmap_pct": null,
+      "materials": [
+        {
+          "name": "Talbuk Venison",
+          "qty": 1,
+          "unit_buy_gold": 0.0973,
+          "cost_gold": 0.0973
+        }
+      ],
+      "material_cost_gold": 0.0973,
+      "net_sale_after_5pct_gold": 0.2531,
+      "profit_per_craft_gold": 0.1558,
+      "profit_per_stack20_gold": 3.12,
+      "roi_pct": 160.1,
+      "margin_pct": 61.6,
+      "region_sale_rate": 0.289,
+      "region_avg_daily_sold": 179.469,
+      "expected_profit_per_listing_gold": 0.045,
+      "regional_demand_profit_index": 27.96,
       "profitable": true,
       "profession": "Cooking"
     },
@@ -341,6 +340,62 @@
       "profession": "Cooking"
     },
     {
+      "output": "Feltail Delight",
+      "tsm_recent_sell_gold": 0.0191,
+      "tsm_min_buyout_gold": 0.0186,
+      "tsm_market_value_gold": 0.0348,
+      "tsm_historical_gold": 0.019,
+      "heatmap_pct": null,
+      "materials": [
+        {
+          "name": "Spotted Feltail",
+          "qty": 1,
+          "unit_buy_gold": 0.0093,
+          "cost_gold": 0.0093
+        }
+      ],
+      "material_cost_gold": 0.0093,
+      "net_sale_after_5pct_gold": 0.0181,
+      "profit_per_craft_gold": 0.0088,
+      "profit_per_stack20_gold": 0.18,
+      "roi_pct": 95.1,
+      "margin_pct": 48.7,
+      "region_sale_rate": 0.218,
+      "region_avg_daily_sold": 164.699,
+      "expected_profit_per_listing_gold": 0.0019,
+      "regional_demand_profit_index": 1.46,
+      "profitable": true,
+      "profession": "Cooking"
+    },
+    {
+      "output": "Mok'Nathal Shortribs",
+      "tsm_recent_sell_gold": 0.0597,
+      "tsm_min_buyout_gold": 0.0596,
+      "tsm_market_value_gold": 0.0511,
+      "tsm_historical_gold": 0.0558,
+      "heatmap_pct": null,
+      "materials": [
+        {
+          "name": "Raptor Ribs",
+          "qty": 1,
+          "unit_buy_gold": 0.053,
+          "cost_gold": 0.053
+        }
+      ],
+      "material_cost_gold": 0.053,
+      "net_sale_after_5pct_gold": 0.0567,
+      "profit_per_craft_gold": 0.0037,
+      "profit_per_stack20_gold": 0.07,
+      "roi_pct": 7.0,
+      "margin_pct": 6.6,
+      "region_sale_rate": 0.236,
+      "region_avg_daily_sold": 89.916,
+      "expected_profit_per_listing_gold": 0.0009,
+      "regional_demand_profit_index": 0.33,
+      "profitable": true,
+      "profession": "Cooking"
+    },
+    {
       "profession": "Blacksmithing",
       "output": "Adamantite Weightstone",
       "requirements": "Cenarion Expedition - Honored",
@@ -363,6 +418,35 @@
       "net_sale_after_5pct_gold": 5.1619,
       "profit_per_craft_gold": 1.0877,
       "roi_pct": 26.7,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": true
+    },
+    {
+      "profession": "Enchanting",
+      "output": "Superior Wizard Oil",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Arcane Dust",
+          "qty": 3,
+          "unit_buy_gold": 0.9038,
+          "cost_gold": 2.7114
+        },
+        {
+          "name": "Nightmare Vine",
+          "qty": 1,
+          "unit_buy_gold": 3.4479,
+          "cost_gold": 3.4479
+        }
+      ],
+      "material_cost_gold": 6.4793,
+      "sell_recent_gold": 6.9954,
+      "net_sale_after_5pct_gold": 6.6456,
+      "profit_per_craft_gold": 0.1663,
+      "roi_pct": 2.6,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,

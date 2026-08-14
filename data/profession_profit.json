@@ -1,65 +1,7 @@
 {
-  "generated_at": "2026-08-14T19:18:05.920047+00:00",
+  "generated_at": "2026-08-14T20:17:50.413807+00:00",
   "source": "TSM realm prices + TSM regional sale metrics",
   "opportunities": [
-    {
-      "profession": "Enchanting",
-      "output": "Superior Wizard Oil",
-      "requirements": null,
-      "materials": [
-        {
-          "name": "Arcane Dust",
-          "qty": 3,
-          "unit_buy_gold": 0.9038,
-          "cost_gold": 2.7114
-        },
-        {
-          "name": "Nightmare Vine",
-          "qty": 1,
-          "unit_buy_gold": 3.4479,
-          "cost_gold": 3.4479
-        }
-      ],
-      "material_cost_gold": 6.4793,
-      "sell_recent_gold": 6.9954,
-      "net_sale_after_5pct_gold": 6.6456,
-      "profit_per_craft_gold": 0.1663,
-      "roi_pct": 2.6,
-      "region_sale_rate": 0.636,
-      "region_avg_daily_sold": 211.152,
-      "expected_profit_per_listing_gold": 0.1058,
-      "regional_demand_profit_index": 35.12,
-      "profitable": true
-    },
-    {
-      "profession": "Blacksmithing",
-      "output": "Fel Weightstone",
-      "requirements": null,
-      "materials": [
-        {
-          "name": "Fel Iron Bar",
-          "qty": 1,
-          "unit_buy_gold": 1.58,
-          "cost_gold": 1.58
-        },
-        {
-          "name": "Netherweave Cloth",
-          "qty": 1,
-          "unit_buy_gold": 0.1474,
-          "cost_gold": 0.1474
-        }
-      ],
-      "material_cost_gold": 1.7274,
-      "sell_recent_gold": 1.1697,
-      "net_sale_after_5pct_gold": 1.1112,
-      "profit_per_craft_gold": -0.6162,
-      "roi_pct": -35.7,
-      "region_sale_rate": 0.22,
-      "region_avg_daily_sold": 11.22,
-      "expected_profit_per_listing_gold": -0.1356,
-      "regional_demand_profit_index": -6.91,
-      "profitable": false
-    },
     {
       "profession": "Blacksmithing",
       "output": "Adamantite Weightstone",
@@ -88,6 +30,64 @@
       "expected_profit_per_listing_gold": null,
       "regional_demand_profit_index": null,
       "profitable": true
+    },
+    {
+      "profession": "Enchanting",
+      "output": "Superior Wizard Oil",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Arcane Dust",
+          "qty": 3,
+          "unit_buy_gold": 0.9038,
+          "cost_gold": 2.7114
+        },
+        {
+          "name": "Nightmare Vine",
+          "qty": 1,
+          "unit_buy_gold": 3.4479,
+          "cost_gold": 3.4479
+        }
+      ],
+      "material_cost_gold": 6.4793,
+      "sell_recent_gold": 6.9954,
+      "net_sale_after_5pct_gold": 6.6456,
+      "profit_per_craft_gold": 0.1663,
+      "roi_pct": 2.6,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": true
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Fel Weightstone",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Fel Iron Bar",
+          "qty": 1,
+          "unit_buy_gold": 1.58,
+          "cost_gold": 1.58
+        },
+        {
+          "name": "Netherweave Cloth",
+          "qty": 1,
+          "unit_buy_gold": 0.1474,
+          "cost_gold": 0.1474
+        }
+      ],
+      "material_cost_gold": 1.7274,
+      "sell_recent_gold": 1.1697,
+      "net_sale_after_5pct_gold": 1.1112,
+      "profit_per_craft_gold": -0.6162,
+      "roi_pct": -35.7,
+      "region_sale_rate": null,
+      "region_avg_daily_sold": null,
+      "expected_profit_per_listing_gold": null,
+      "regional_demand_profit_index": null,
+      "profitable": false
     },
     {
       "profession": "Blacksmithing",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:17:42.156277+00:00",
+  "generated_at": "2026-08-14T20:17:43.704887+00:00",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -322,7 +322,7 @@
       "http_status": 525,
       "final_url": "https://horde.thunderstrikemarket.org/report/alliance/raw-materials-enchanting/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7132,
+      "content_length": 7133,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -333,7 +333,7 @@
       "http_status": 525,
       "final_url": "https://horde.thunderstrikemarket.org/auction-house/compare/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7132,
+      "content_length": 7133,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -344,7 +344,7 @@
       "http_status": 525,
       "final_url": "https://horde.thunderstrikemarket.org/report/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7132,
+      "content_length": 7133,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -355,7 +355,7 @@
       "http_status": 525,
       "final_url": "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7137,
+      "content_length": 7138,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -372,20 +372,21 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/tbc-classic/item/16204/illusion-dust?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6314,
+          "content_length": 6335,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-ZXfoTeWytal10icUZ2iVPg&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-DuAQm6ZLBriLyUCxQoQAx3&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
+            0.0068,
             0.0002,
-            0.0069,
-            0.0005,
-            0.0052,
             0.0003,
-            0.0007,
-            0.0006,
-            0.0009
+            0.0019,
+            0.0004,
+            0.0001,
+            0.0005,
+            0.0098,
+            0.0022
           ]
         },
         {
@@ -395,15 +396,17 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6374,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-smgoJ9HgpovNyF95uKP5Fi&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-CEN1yQErrh8wyHYK4Cd0fU&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
+            0.0004,
             0.0048,
+            0.0008,
             0.0002,
-            0.0003,
-            0.0326,
-            0.0001,
-            0.0004
+            0.5104,
+            0.0639,
+            0.0006,
+            0.0003
           ]
         }
       ]
@@ -419,15 +422,13 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6365,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-aTDWU18rsPEty9R8PdiDiM&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-V6hvod2VUrQ63mXy3OZWwv&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0006,
-            0.0005,
-            0.0002,
             0.0003,
-            0.0004
+            0.0001,
+            0.0024
           ]
         },
         {
@@ -435,17 +436,18 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/item/16203/greater-eternal-essence?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6404,
+          "content_length": 6425,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-ESi1Poztz27KRSKMXbirWi&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-Ttq5gccJixdJaSvem9W2Kj&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0007,
-            0.0003,
-            0.0029,
+            0.0004,
+            0.001,
+            0.0008,
             0.0002,
-            0.0004
+            0.0001,
+            0.0455
           ]
         }
       ]

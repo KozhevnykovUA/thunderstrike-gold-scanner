@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:18:05.568161+00:00",
+  "generated_at": "2026-08-14T20:17:49.968215+00:00",
   "source": "TSM public pricing + TSM server-rendered regional sale metrics + TSM Gold heatmap snapshot",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "pricing_transport": "workflow_cache",
@@ -139,6 +139,33 @@
       "region_avg_daily_sold": 1059.102,
       "expected_profit_per_listing_gold": 0.046,
       "regional_demand_profit_index": 123.12,
+      "profitable": true
+    },
+    {
+      "output": "Talbuk Steak",
+      "tsm_recent_sell_gold": 0.2664,
+      "tsm_min_buyout_gold": 0.062,
+      "tsm_market_value_gold": 0.0551,
+      "tsm_historical_gold": 0.0691,
+      "heatmap_pct": null,
+      "materials": [
+        {
+          "name": "Talbuk Venison",
+          "qty": 1,
+          "unit_buy_gold": 0.0973,
+          "cost_gold": 0.0973
+        }
+      ],
+      "material_cost_gold": 0.0973,
+      "net_sale_after_5pct_gold": 0.2531,
+      "profit_per_craft_gold": 0.1558,
+      "profit_per_stack20_gold": 3.12,
+      "roi_pct": 160.1,
+      "margin_pct": 61.6,
+      "region_sale_rate": 0.289,
+      "region_avg_daily_sold": 179.469,
+      "expected_profit_per_listing_gold": 0.045,
+      "regional_demand_profit_index": 27.96,
       "profitable": true
     },
     {
@@ -304,6 +331,60 @@
       "profitable": true
     },
     {
+      "output": "Feltail Delight",
+      "tsm_recent_sell_gold": 0.0191,
+      "tsm_min_buyout_gold": 0.0186,
+      "tsm_market_value_gold": 0.0348,
+      "tsm_historical_gold": 0.019,
+      "heatmap_pct": null,
+      "materials": [
+        {
+          "name": "Spotted Feltail",
+          "qty": 1,
+          "unit_buy_gold": 0.0093,
+          "cost_gold": 0.0093
+        }
+      ],
+      "material_cost_gold": 0.0093,
+      "net_sale_after_5pct_gold": 0.0181,
+      "profit_per_craft_gold": 0.0088,
+      "profit_per_stack20_gold": 0.18,
+      "roi_pct": 95.1,
+      "margin_pct": 48.7,
+      "region_sale_rate": 0.218,
+      "region_avg_daily_sold": 164.699,
+      "expected_profit_per_listing_gold": 0.0019,
+      "regional_demand_profit_index": 1.46,
+      "profitable": true
+    },
+    {
+      "output": "Mok'Nathal Shortribs",
+      "tsm_recent_sell_gold": 0.0597,
+      "tsm_min_buyout_gold": 0.0596,
+      "tsm_market_value_gold": 0.0511,
+      "tsm_historical_gold": 0.0558,
+      "heatmap_pct": null,
+      "materials": [
+        {
+          "name": "Raptor Ribs",
+          "qty": 1,
+          "unit_buy_gold": 0.053,
+          "cost_gold": 0.053
+        }
+      ],
+      "material_cost_gold": 0.053,
+      "net_sale_after_5pct_gold": 0.0567,
+      "profit_per_craft_gold": 0.0037,
+      "profit_per_stack20_gold": 0.07,
+      "roi_pct": 7.0,
+      "margin_pct": 6.6,
+      "region_sale_rate": 0.236,
+      "region_avg_daily_sold": 89.916,
+      "expected_profit_per_listing_gold": 0.0009,
+      "regional_demand_profit_index": 0.33,
+      "profitable": true
+    },
+    {
       "output": "Broiled Bloodfin",
       "tsm_recent_sell_gold": 1.1472,
       "tsm_min_buyout_gold": 1.1098,
@@ -355,6 +436,33 @@
       "region_avg_daily_sold": 590.513,
       "expected_profit_per_listing_gold": -0.0616,
       "regional_demand_profit_index": -83.58,
+      "profitable": false
+    },
+    {
+      "output": "Crunchy Serpent",
+      "tsm_recent_sell_gold": 1.2781,
+      "tsm_min_buyout_gold": 1.1988,
+      "tsm_market_value_gold": 1.3255,
+      "tsm_historical_gold": 1.2366,
+      "heatmap_pct": 7.3,
+      "materials": [
+        {
+          "name": "Serpent Flesh",
+          "qty": 1,
+          "unit_buy_gold": 1.3384,
+          "cost_gold": 1.3384
+        }
+      ],
+      "material_cost_gold": 1.3384,
+      "net_sale_after_5pct_gold": 1.2142,
+      "profit_per_craft_gold": -0.1242,
+      "profit_per_stack20_gold": -2.48,
+      "roi_pct": -9.3,
+      "margin_pct": -10.2,
+      "region_sale_rate": 0.526,
+      "region_avg_daily_sold": 446.311,
+      "expected_profit_per_listing_gold": -0.0653,
+      "regional_demand_profit_index": -55.43,
       "profitable": false
     },
     {

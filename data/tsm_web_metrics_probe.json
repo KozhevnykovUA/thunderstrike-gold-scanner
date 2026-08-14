@@ -8,7 +8,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27655",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27655",
-      "content_length": 592266,
+      "content_length": 592290,
       "region_sale_rate": 0.232,
       "region_avg_daily_sold": 319.116,
       "contains_sale_rate_label": true,
@@ -20,9 +20,21 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27661",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27661",
-      "content_length": 589401,
+      "content_length": 589370,
       "region_sale_rate": 0.156,
       "region_avg_daily_sold": 54.678,
+      "contains_sale_rate_label": true,
+      "contains_daily_sold_label": true
+    },
+    "27662": {
+      "item_id": 27662,
+      "name": "Feltail Delight",
+      "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27662",
+      "status": 200,
+      "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27662",
+      "content_length": 590227,
+      "region_sale_rate": 0.218,
+      "region_avg_daily_sold": 164.699,
       "contains_sale_rate_label": true,
       "contains_daily_sold_label": true
     },
@@ -32,7 +44,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/33867",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/33867",
-      "content_length": 592019,
+      "content_length": 592040,
       "region_sale_rate": 0.162,
       "region_avg_daily_sold": 114.291,
       "contains_sale_rate_label": true,
@@ -44,7 +56,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/33874",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/33874",
-      "content_length": 593722,
+      "content_length": 593740,
       "region_sale_rate": 0.396,
       "region_avg_daily_sold": 1059.102,
       "contains_sale_rate_label": true,
@@ -56,7 +68,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27663",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27663",
-      "content_length": 591462,
+      "content_length": 591481,
       "region_sale_rate": 0.344,
       "region_avg_daily_sold": 268.148,
       "contains_sale_rate_label": true,
@@ -68,7 +80,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27664",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27664",
-      "content_length": 593915,
+      "content_length": 593930,
       "region_sale_rate": 0.425,
       "region_avg_daily_sold": 343.825,
       "contains_sale_rate_label": true,
@@ -80,7 +92,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27667",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27667",
-      "content_length": 593078,
+      "content_length": 593098,
       "region_sale_rate": 0.245,
       "region_avg_daily_sold": 262.763,
       "contains_sale_rate_label": true,
@@ -92,7 +104,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27659",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27659",
-      "content_length": 593735,
+      "content_length": 593652,
       "region_sale_rate": 0.467,
       "region_avg_daily_sold": 845.504,
       "contains_sale_rate_label": true,
@@ -104,7 +116,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27657",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27657",
-      "content_length": 595082,
+      "content_length": 595098,
       "region_sale_rate": 0.428,
       "region_avg_daily_sold": 1961.524,
       "contains_sale_rate_label": true,
@@ -116,7 +128,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27665",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27665",
-      "content_length": 594335,
+      "content_length": 594358,
       "region_sale_rate": 0.435,
       "region_avg_daily_sold": 590.513,
       "contains_sale_rate_label": true,
@@ -128,9 +140,21 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/33872",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/33872",
-      "content_length": 593698,
+      "content_length": 593702,
       "region_sale_rate": 0.311,
       "region_avg_daily_sold": 656.832,
+      "contains_sale_rate_label": true,
+      "contains_daily_sold_label": true
+    },
+    "27660": {
+      "item_id": 27660,
+      "name": "Talbuk Steak",
+      "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27660",
+      "status": 200,
+      "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27660",
+      "content_length": 590569,
+      "region_sale_rate": 0.289,
+      "region_avg_daily_sold": 179.469,
       "contains_sale_rate_label": true,
       "contains_daily_sold_label": true
     },
@@ -140,7 +164,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27658",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27658",
-      "content_length": 594018,
+      "content_length": 594045,
       "region_sale_rate": 0.512,
       "region_avg_daily_sold": 1531.392,
       "contains_sale_rate_label": true,
@@ -152,9 +176,33 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27666",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/27666",
-      "content_length": 595385,
+      "content_length": 595389,
       "region_sale_rate": 0.582,
       "region_avg_daily_sold": 1574.31,
+      "contains_sale_rate_label": true,
+      "contains_daily_sold_label": true
+    },
+    "31673": {
+      "item_id": 31673,
+      "name": "Crunchy Serpent",
+      "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/31673",
+      "status": 200,
+      "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/31673",
+      "content_length": 593978,
+      "region_sale_rate": 0.526,
+      "region_avg_daily_sold": 446.311,
+      "contains_sale_rate_label": true,
+      "contains_daily_sold_label": true
+    },
+    "31672": {
+      "item_id": 31672,
+      "name": "Mok'Nathal Shortribs",
+      "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/31672",
+      "status": 200,
+      "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/31672",
+      "content_length": 591058,
+      "region_sale_rate": 0.236,
+      "region_avg_daily_sold": 89.916,
       "contains_sale_rate_label": true,
       "contains_daily_sold_label": true
     },
@@ -164,7 +212,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/7676",
       "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/7676",
-      "content_length": 596666,
+      "content_length": 596680,
       "region_sale_rate": 0.265,
       "region_avg_daily_sold": 530.795,
       "contains_sale_rate_label": true,
@@ -174,61 +222,41 @@
       "item_id": 22445,
       "name": "Arcane Dust",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22445",
-      "status": 200,
+      "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22445",
-      "content_length": 594563,
-      "region_sale_rate": 0.638,
-      "region_avg_daily_sold": 12733.842,
-      "contains_sale_rate_label": true,
-      "contains_daily_sold_label": true
+      "content_length": 8138
     },
     "22446": {
       "item_id": 22446,
       "name": "Greater Planar Essence",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22446",
-      "status": 200,
+      "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22446",
-      "content_length": 595934,
-      "region_sale_rate": 0.422,
-      "region_avg_daily_sold": 2648.261,
-      "contains_sale_rate_label": true,
-      "contains_daily_sold_label": true
+      "content_length": 8138
     },
     "22449": {
       "item_id": 22449,
       "name": "Large Prismatic Shard",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22449",
-      "status": 200,
+      "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22449",
-      "content_length": 597042,
-      "region_sale_rate": 0.487,
-      "region_avg_daily_sold": 1756.122,
-      "contains_sale_rate_label": true,
-      "contains_daily_sold_label": true
+      "content_length": 8138
     },
     "22522": {
       "item_id": 22522,
       "name": "Superior Wizard Oil",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22522",
-      "status": 200,
+      "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22522",
-      "content_length": 593079,
-      "region_sale_rate": 0.636,
-      "region_avg_daily_sold": 211.152,
-      "contains_sale_rate_label": true,
-      "contains_daily_sold_label": true
+      "content_length": 8138
     },
     "28420": {
       "item_id": 28420,
       "name": "Fel Weightstone",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28420",
-      "status": 200,
+      "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28420",
-      "content_length": 589370,
-      "region_sale_rate": 0.22,
-      "region_avg_daily_sold": 11.22,
-      "contains_sale_rate_label": true,
-      "contains_daily_sold_label": true
+      "content_length": 8138
     },
     "23559": {
       "item_id": 23559,
@@ -236,7 +264,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23559",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23559",
-      "content_length": 8136
+      "content_length": 8138
     },
     "23575": {
       "item_id": 23575,
@@ -244,7 +272,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23575",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23575",
-      "content_length": 8136
+      "content_length": 8138
     },
     "28421": {
       "item_id": 28421,
@@ -252,7 +280,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28421",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28421",
-      "content_length": 8136
+      "content_length": 8138
     },
     "23524": {
       "item_id": 23524,
@@ -260,7 +288,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23524",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23524",
-      "content_length": 8136
+      "content_length": 8138
     }
   }
 }
