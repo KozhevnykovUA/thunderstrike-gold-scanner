@@ -15,6 +15,7 @@ AH_CUT = 0.05
 RECIPES = [
     {"output": "Ravager Dog", "mats": {"Ravager Flesh": 1}, "heatmap_pct": 131.8},
     {"output": "Blackened Trout", "mats": {"Barbed Gill Trout": 1}, "heatmap_pct": 120.7},
+    {"output": "Feltail Delight", "mats": {"Spotted Feltail": 1}, "heatmap_pct": None},
     {"output": "Broiled Bloodfin", "mats": {"Bloodfin Catfish": 1}, "heatmap_pct": 117.2},
     {"output": "Kibler's Bits", "mats": {"Buzzard Meat": 1}, "heatmap_pct": 81.5},
     {"output": "Blackened Sporefish", "mats": {"Zangarian Sporefish": 1}, "heatmap_pct": 65.4},
@@ -24,8 +25,11 @@ RECIPES = [
     {"output": "Blackened Basilisk", "mats": {"Chunk o' Basilisk": 1}, "heatmap_pct": 18.1},
     {"output": "Poached Bluefish", "mats": {"Icefin Bluefish": 1}, "heatmap_pct": 6.9},
     {"output": "Spicy Hot Talbuk", "mats": {"Talbuk Venison": 1}, "heatmap_pct": -1.3},
+    {"output": "Talbuk Steak", "mats": {"Talbuk Venison": 1}, "heatmap_pct": None},
     {"output": "Roasted Clefthoof", "mats": {"Clefthoof Meat": 1}, "heatmap_pct": -9.9},
     {"output": "Golden Fish Sticks", "mats": {"Golden Darter": 1}, "heatmap_pct": -10.9},
+    {"output": "Crunchy Serpent", "mats": {"Serpent Flesh": 1}, "heatmap_pct": 7.3},
+    {"output": "Mok'Nathal Shortribs", "mats": {"Raptor Ribs": 1}, "heatmap_pct": None},
     {"output": "Thistle Tea", "mats": {"Swiftthistle": 1}, "heatmap_pct": -17.3},
 ]
 
@@ -126,7 +130,7 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
     print("Top cooking opportunities by sale-rate-adjusted profit:")
-    for x in results[:10]:
+    for x in results[:15]:
         print(x["output"], "profit=", x["profit_per_craft_gold"], "rate=", x["region_sale_rate"], "sold/day=", x["region_avg_daily_sold"], "expected/listing=", x["expected_profit_per_listing_gold"])
 
 if __name__ == "__main__":
