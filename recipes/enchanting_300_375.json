@@ -21,14 +21,15 @@
       "required_skill": 340,
       "skill": {"yellow": 350, "green": 365, "gray": 380},
       "materials": {"22445": 3, "22792": 1},
-      "output": {"item_id": 22522, "quantity": 1, "name": "Superior Wizard Oil"},
-      "notes": "Also requires 1 Imbued Vial. Sale recovery should be deducted from leveling cost when market price and demand data are available."
+      "output": {"item_id": 22522, "quantity": 1, "saleable": true},
+      "notes": "Also requires 1 Imbued Vial. Sale recovery should be included when realm sell price and liquidity data are available."
     },
     {
       "name": "Runed Adamantite Rod",
       "required_skill": 350,
       "skill": {"yellow": 350, "green": 350, "gray": 350},
       "materials": {"22446": 8, "22449": 8, "23571": 1},
+      "repeatable_for_leveling": false,
       "notes": "Also requires 1 Adamantite Rod. Required tool investment; not treated as a repeatable leveling recipe."
     },
     {
@@ -44,7 +45,7 @@
       "skill": {"yellow": 365, "green": 370, "gray": 375},
       "materials": {"22449": 2, "22445": 6},
       "requirements": {"reputation": "The Consortium - Revered"},
-      "notes": "Alternative 360-370 route; exact skill breakpoints remain provisional until a primary data source is added."
+      "notes": "Skill breakpoints are provisional until exact data is sourced."
     },
     {
       "name": "Enchant Ring - Spellpower",
@@ -60,7 +61,7 @@
       "skill": {"yellow": 375, "green": 380, "gray": 385},
       "materials": {"22449": 2, "22446": 3, "22445": 5},
       "requirements": {"reputation": "The Sha'tar - Revered"},
-      "notes": "Potential 370-375 route; later breakpoints are provisional."
+      "notes": "Only 370-375 matters for this optimizer."
     },
     {
       "name": "Enchant Chest - Defense",
@@ -68,7 +69,7 @@
       "skill": {"yellow": 370, "green": 375, "gray": 380},
       "materials": {"22446": 4, "22445": 8, "23427": 4},
       "requirements": {"reputation": "Shattered Sun Offensive - Honored", "phase_note": "Available with Shattered Sun Offensive content"},
-      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; excluded until item 23427 has a price."
+      "notes": "Excluded from ranking until Eternium Ore has a price."
     }
   ]
 }
