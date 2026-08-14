@@ -1,0 +1,55 @@
+name: Collect Thunderstrike prices
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'collector.py'
+      - 'requirements.txt'
+      - 'config/**'
+      - '.github/workflows/collect.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect diagnostics
+        run: python collector.py
+
+      - name: Show Arcane Dust validation
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/diagnostics.json'))
+          a=next(x for x in d['items'] if x['id']==22445)
+          print('Arcane Dust candidates:', a.get('money_candidates_gold'))
+          print('Expected:', a.get('expected_validation_gold'))
+          print('Validation match:', a.get('validation_match'))
+          PY
+
+      - name: Commit diagnostic output
+        run: |
+          git config user.name 'thunderstrike-gold-scanner'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/diagnostics.json
+          if git diff --cached --quiet; then
+            echo 'No changes'
+          else
+            git commit -m 'Update Thunderstrike market diagnostics'
+            git push
+          fi
