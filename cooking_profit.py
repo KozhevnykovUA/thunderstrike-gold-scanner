@@ -7,6 +7,7 @@ from pathlib import Path
 import requests
 
 TSM_URL = "https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike-alliance/items.csv"
+TSM_CACHE = Path("data/tsm_items.csv")
 METRICS_PATH = Path("data/tsm_web_metrics_probe.json")
 OUT = Path("data/cooking_profit.json")
 AH_CUT = 0.05
@@ -34,10 +35,17 @@ def gold(copper):
     return int(copper) / 10000.0
 
 
-def main():
+def load_tsm_rows():
+    if TSM_CACHE.exists():
+        text = TSM_CACHE.read_text(encoding="utf-8")
+        return list(csv.DictReader(io.StringIO(text))), "workflow_cache"
     r = requests.get(TSM_URL, timeout=45, headers={"User-Agent": "ThunderstrikeGoldScanner/1.0"})
     r.raise_for_status()
-    rows = list(csv.DictReader(io.StringIO(r.text)))
+    return list(csv.DictReader(io.StringIO(r.text))), "direct_fallback"
+
+
+def main():
+    rows, pricing_transport = load_tsm_rows()
     by_name = {x["name"].strip().lower(): x for x in rows}
     metrics_payload = json.loads(METRICS_PATH.read_text(encoding="utf-8")) if METRICS_PATH.exists() else {"items": {}}
     metrics_by_name = {x.get("name", "").lower(): x for x in metrics_payload.get("items", {}).values() if isinstance(x, dict)}
@@ -109,6 +117,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": "TSM public pricing + TSM server-rendered regional sale metrics + TSM Gold heatmap snapshot",
         "market": "classic/eu-fresh/thunderstrike-alliance",
+        "pricing_transport": pricing_transport,
         "pricing_model": "recent prices; 5% AH cut; region sale rate used for per-listing expected-profit ranking",
         "note": "region_avg_daily_sold is a regional TSM demand metric, not a Thunderstrike-only daily sales forecast.",
         "opportunities": results,
