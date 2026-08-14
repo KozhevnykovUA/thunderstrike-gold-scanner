@@ -1,0 +1,20 @@
+{
+  "source_note": "TBC-era disenchant probabilities for uncommon items. Armor is dust-heavy; weapons are essence-heavy. Quantity ranges are averaged by the scanner.",
+  "brackets": [
+    {
+      "quality": "uncommon",
+      "item_level_min": 100,
+      "item_level_max": 120,
+      "armor": [
+        {"item_id": 22445, "name": "Arcane Dust", "probability": 0.75, "qty_min": 2, "qty_max": 5},
+        {"item_id": 22446, "name": "Greater Planar Essence", "probability": 0.22, "qty_min": 1, "qty_max": 2},
+        {"item_id": 22449, "name": "Large Prismatic Shard", "probability": 0.03, "qty_min": 1, "qty_max": 1}
+      ],
+      "weapon": [
+        {"item_id": 22445, "name": "Arcane Dust", "probability": 0.22, "qty_min": 2, "qty_max": 5},
+        {"item_id": 22446, "name": "Greater Planar Essence", "probability": 0.75, "qty_min": 1, "qty_max": 2},
+        {"item_id": 22449, "name": "Large Prismatic Shard", "probability": 0.03, "qty_min": 1, "qty_max": 1}
+      ]
+    }
+  ]
+}
