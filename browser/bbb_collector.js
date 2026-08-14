@@ -1,7 +1,7 @@
 // Thunderstrike Gold Scanner — BootyBayBroker browser collector
-// Run this in DevTools Console while you are on https://bootybaybroker.com/ and logged/past Cloudflare.
-// It uses same-origin fetch with your normal browser session; no Cloudflare bypassing.
-// The result is downloaded as bbb_snapshot.json and also copied to the clipboard when possible.
+// Run this in DevTools Console while you are on https://bootybaybroker.com/ and past Cloudflare.
+// It uses same-origin fetch with your normal browser session; no challenge bypassing.
+// The result is downloaded as bbb_snapshot.json and copied to the clipboard when possible.
 
 (async () => {
   const MARKET = {
@@ -20,6 +20,7 @@
     [23427, 'Eternium Ore'],
     [23445, 'Fel Iron Bar'],
     [23446, 'Adamantite Bar'],
+    [23447, 'Eternium Bar'],
     [23448, 'Felsteel Bar'],
     [23449, 'Khorium Bar'],
     [23571, 'Primal Might'],
@@ -82,8 +83,8 @@
     const auctionKeys = ['auctions','auctionCount','listings','activeAuctions'];
     const saleRateKeys = ['saleRate','regionalSaleRate','regionSaleRate'];
     const soldKeys = ['soldPerDay','regionalSoldPerDay','regionSoldPerDay'];
-
     const first = (o, keys) => { for (const k of keys) if (o[k] != null) return o[k]; return null; };
+
     for (const root of jsons) {
       walk(root, o => {
         const id = o.itemId ?? o.itemID ?? o.id;
@@ -133,15 +134,11 @@
     const auctions = labelValue(doc, ['Active Auctions','Auctions','Listings']);
     const saleRate = labelValue(doc, ['Sale Rate','Regional Sale Rate']);
     const soldDay = labelValue(doc, ['Sold / Day','Sold Per Day','Regional Sold Per Day']);
-
     const fallbackMoney = [...body.matchAll(/(?:\d+g\s*)?(?:\d+s\s*)?\d+c/gi)].map(x => normalizeMoney(x[0])).filter(x => x != null);
     return {
       min_buyout_gold: normalizeMoney(current) ?? fallbackMoney[0] ?? null,
       market_value_gold: normalizeMoney(market) ?? fallbackMoney[1] ?? null,
-      quantity: num(qty),
-      auction_count: num(auctions),
-      sale_rate: num(saleRate),
-      sold_per_day: num(soldDay),
+      quantity: num(qty), auction_count: num(auctions), sale_rate: num(saleRate), sold_per_day: num(soldDay),
       source: 'dom_text'
     };
   }
@@ -157,17 +154,13 @@
     const jsonRow = extractFromJson(collectJsonObjects(doc), id);
     const domRow = extractFromDom(doc);
     const merged = {...domRow, ...(jsonRow || {})};
+    if (merged.min_buyout_gold == null) {
+      return {id, name, url, ok: false, http_status: r.status, error: 'price_not_parsed', ...merged};
+    }
     return {id, name, url, ok: true, http_status: r.status, ...merged};
   }
 
-  const snapshot = {
-    schema_version: 1,
-    source: 'bootybaybroker_browser_session',
-    generated_at: new Date().toISOString(),
-    market: MARKET,
-    items: {}
-  };
-
+  const snapshot = {schema_version: 1, source: 'bootybaybroker_browser_session', generated_at: new Date().toISOString(), market: MARKET, items: {}};
   console.log(`[Gold Scanner] collecting ${ITEMS.length} items…`);
   for (let i = 0; i < ITEMS.length; i++) {
     const [id, name] = ITEMS[i];
@@ -178,16 +171,16 @@
     } catch (e) {
       snapshot.items[String(id)] = {id, name, ok: false, error: String(e)};
     }
-    await sleep(350); // polite same-origin pacing
+    await sleep(350);
   }
 
   const json = JSON.stringify(snapshot, null, 2);
   const blob = new Blob([json], {type: 'application/json'});
+  const href = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'bbb_snapshot.json';
+  a.href = href; a.download = 'bbb_snapshot.json';
   document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  setTimeout(() => URL.revokeObjectURL(href), 1000);
   try { await navigator.clipboard.writeText(json); console.log('[Gold Scanner] snapshot copied to clipboard'); } catch (_) {}
   console.log('[Gold Scanner] done:', snapshot);
   return snapshot;
