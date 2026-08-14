@@ -14,6 +14,7 @@ on:
       - 'disenchant_optimizer.py'
       - 'cooking_profit.py'
       - 'cooking_leveling_optimizer.py'
+      - 'cooking_recipe_roi.py'
       - 'profession_profit.py'
       - 'top_opportunities.py'
       - 'requirements.txt'
@@ -64,6 +65,8 @@ jobs:
         run: python cooking_profit.py
       - name: Optimize Cooking 1-300 net leveling cost
         run: python cooking_leveling_optimizer.py
+      - name: Build Cooking recipe ROI report
+        run: python cooking_recipe_roi.py
       - name: Build Blacksmithing and Enchanting profit report
         run: python profession_profit.py
       - name: Build unified Top Opportunities report
@@ -74,10 +77,15 @@ jobs:
           import json
           top=json.load(open('data/top_opportunities.json'))
           cook=json.load(open('data/cooking_leveling_1_300.json'))
+          roi=json.load(open('data/cooking_recipe_roi.json'))
           print('COOKING 1-300 ROUTE')
           for x in cook.get('route',[]):
               print(x['from'],'-',x['to'],x['output'],'crafts=',x['expected_crafts'],'net=',x['segment_net_gold'])
           print('Cooking estimated net:',cook.get('estimated_net_material_cost_gold'))
+          print('COOKING RECIPE ROI')
+          for x in roi.get('recommendations',[]):
+              if not x.get('owned'):
+                  print(x.get('recipe'),'price=',x.get('recipe_ah_recent_gold'),'profit=',x.get('profit_per_craft_gold'),'payback=',x.get('crafts_to_payback_if_sold'),'verdict=',x.get('verdict'))
           print('TOP OPPORTUNITIES TODAY')
           for i,x in enumerate(top.get('top',[])[:10],1):
               print(i, x.get('profession'), x.get('output'), 'profit=',x.get('profit_per_craft_gold'), 'rate=',x.get('region_sale_rate'), 'sold/day=',x.get('region_avg_daily_sold'), 'expected=',x.get('expected_profit_per_listing_gold'))
@@ -86,7 +94,7 @@ jobs:
         run: |
           git config user.name 'thunderstrike-gold-scanner'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json data/cooking_profit.json data/cooking_leveling_1_300.json data/profession_profit.json data/top_opportunities.json data/tsm_web_metrics_probe.json
+          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json data/cooking_profit.json data/cooking_leveling_1_300.json data/cooking_recipe_roi.json data/profession_profit.json data/top_opportunities.json data/tsm_web_metrics_probe.json
           if git diff --cached --quiet; then
             echo 'No changes'
           else
