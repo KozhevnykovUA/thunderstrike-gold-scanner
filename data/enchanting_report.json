@@ -485,7 +485,7 @@
       "material_cost_gold": 6.7989,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available.",
+      "notes": "Also requires 1 Imbued Vial. Sale recovery should be deducted from leveling cost when market price and demand data are available.",
       "skill_curve": [
         {
           "skill": 340,
@@ -834,7 +834,7 @@
       "material_cost_gold": 45.3644,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Wowhead lists this as an alternative for 351-365 and comments describe it as useful through 370. Skill breakpoints are provisional until exact data is sourced.",
+      "notes": "Alternative 360-370 route; exact skill breakpoints remain provisional until a primary data source is added.",
       "skill_curve": [
         {
           "skill": 360,
@@ -1020,7 +1020,7 @@
       "material_cost_gold": 61.6221,
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
-      "notes": "Wowhead comments identify this as orange for 370-375. Later breakpoints are provisional; only 370-375 matters for this optimizer.",
+      "notes": "Potential 370-375 route; later breakpoints are provisional.",
       "skill_curve": [
         {
           "skill": 370,
@@ -1066,7 +1066,7 @@
         "23427"
       ],
       "repeatable_for_leveling": true,
-      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; currently excluded from ranking until item 23427 has a price.",
+      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; excluded until item 23427 has a price.",
       "skill_curve": [
         {
           "skill": 360,
