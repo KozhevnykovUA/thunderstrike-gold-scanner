@@ -4,6 +4,7 @@ from pathlib import Path
 PRICES = Path('data/prices.json')
 RECIPES = Path('recipes/enchanting_300_375.json')
 OUT = Path('data/enchanting_report.json')
+AH_CUT = 0.05
 
 
 def load_json(path):
@@ -14,18 +15,16 @@ def item_row(prices, item_id):
     return prices['items'].get(str(item_id))
 
 
-def item_buy_price(prices, item_id):
+def item_price(prices, item_id):
     row = item_row(prices, item_id)
-    if not row:
-        return None
-    return row.get('effective_buy_gold', row.get('safe_buy_gold', row.get('min_buyout_gold')))
+    return None if not row else row.get('min_buyout_gold')
 
 
 def craft_cost(prices, materials):
     total = 0.0
     missing = []
     for item_id, qty in materials.items():
-        price = item_buy_price(prices, item_id)
+        price = item_price(prices, item_id)
         if price is None:
             missing.append(str(item_id))
             continue
@@ -33,84 +32,60 @@ def craft_cost(prices, materials):
     return (round(total, 4) if not missing else None), missing
 
 
-def sale_probability(row):
-    """Best-effort probability that one crafted item sells in the target window.
-
-    Preferred input is explicit sell_probability_48h. If absent, infer conservatively
-    from sale_rate and sold_per_day. Missing demand data means no recovery credit.
-    """
-    if not row:
-        return None
-    explicit = row.get('sell_probability_48h')
-    if explicit is not None:
-        return max(0.0, min(1.0, float(explicit)))
-
-    rate = row.get('sale_rate')
-    sold = row.get('sold_per_day')
-    if rate is None and sold is None:
-        return None
-
-    probs = []
-    if rate is not None:
-        # TSM-style sale rates are small decimals; map them conservatively to 48h sell chance.
-        probs.append(max(0.0, min(1.0, float(rate) * 8.0)))
-    if sold is not None:
-        # One crafted unit has a good chance to move when several sell per day.
-        probs.append(max(0.0, min(1.0, float(sold) / 2.0)))
-    return round(sum(probs) / len(probs), 4)
-
-
 def sale_recovery(prices, output):
-    if not output:
+    """Conservative expected AH recovery.
+
+    We only credit recovery if an explicit sale_probability_48h is present.
+    This avoids treating a listed price as guaranteed revenue when demand is unknown.
+    Optional listing_loss_gold can represent deposits/relisting losses.
+    """
+    if not output or not output.get('saleable'):
         return {
+            'status': 'not_saleable',
             'expected_recovery_gold': 0.0,
-            'sell_price_gold': None,
-            'sell_probability_48h': None,
-            'demand_known': False,
-            'reason': 'not_saleable_output',
         }
 
-    row = item_row(prices, output['item_id'])
+    item_id = output['item_id']
+    qty = output.get('quantity', 1)
+    row = item_row(prices, item_id)
     if not row:
         return {
+            'status': 'missing_output_market_data',
+            'item_id': item_id,
             'expected_recovery_gold': 0.0,
-            'sell_price_gold': None,
-            'sell_probability_48h': None,
-            'demand_known': False,
-            'reason': 'missing_output_market_data',
         }
 
-    sell_price = row.get('realistic_sell_gold', row.get('market_value_gold', row.get('min_buyout_gold')))
-    probability = sale_probability(row)
-    if sell_price is None or probability is None:
+    sell_price = row.get('realistic_sell_price_gold', row.get('market_value_gold', row.get('min_buyout_gold')))
+    p48 = row.get('sale_probability_48h')
+    sold_per_day = row.get('sold_per_day')
+    sale_rate = row.get('sale_rate')
+    listing_loss = row.get('listing_loss_gold', 0.0)
+
+    if sell_price is None or p48 is None:
         return {
-            'expected_recovery_gold': 0.0,
+            'status': 'demand_unknown',
+            'item_id': item_id,
             'sell_price_gold': sell_price,
-            'sell_probability_48h': probability,
-            'demand_known': probability is not None,
-            'reason': 'missing_sell_price_or_demand',
+            'sale_probability_48h': p48,
+            'sold_per_day': sold_per_day,
+            'sale_rate': sale_rate,
+            'expected_recovery_gold': 0.0,
         }
 
-    qty = output.get('quantity', 1)
-    cut_pct = float(row.get('ah_cut_pct', 0.05))
-    deposit = float(row.get('deposit_gold', 0.0))
-    expected_reposts = float(row.get('expected_reposts', 0.0))
-    gross = float(sell_price) * qty
-    net_if_sold = gross * (1.0 - cut_pct)
-    expected_deposit_loss = deposit * expected_reposts
-    expected = max(0.0, probability * net_if_sold - expected_deposit_loss)
-
+    p48 = max(0.0, min(1.0, float(p48)))
+    gross_after_cut = sell_price * qty * (1.0 - AH_CUT)
+    recovery = max(0.0, gross_after_cut * p48 - listing_loss)
     return {
-        'expected_recovery_gold': round(expected, 4),
-        'sell_price_gold': round(float(sell_price), 4),
-        'sell_probability_48h': round(probability, 4),
-        'sale_rate': row.get('sale_rate'),
-        'sold_per_day': row.get('sold_per_day'),
-        'quantity_on_ah': row.get('quantity'),
-        'ah_cut_pct': cut_pct,
-        'expected_deposit_loss_gold': round(expected_deposit_loss, 4),
-        'demand_known': True,
-        'reason': 'market_recovery_applied',
+        'status': 'estimated',
+        'item_id': item_id,
+        'quantity': qty,
+        'sell_price_gold': round(sell_price, 4),
+        'sale_probability_48h': round(p48, 4),
+        'sold_per_day': sold_per_day,
+        'sale_rate': sale_rate,
+        'ah_cut': AH_CUT,
+        'listing_loss_gold': listing_loss,
+        'expected_recovery_gold': round(recovery, 4),
     }
 
 
@@ -132,7 +107,7 @@ def skillup_probability(skill, thresholds):
 def expected_cost_per_skill(net_craft_gold, probability):
     if net_craft_gold is None or probability <= 0:
         return None
-    return round(net_craft_gold / probability, 4)
+    return round(max(0.0, net_craft_gold) / probability, 4)
 
 
 def build_segments(points):
@@ -163,12 +138,14 @@ def main():
     rows = []
 
     for recipe in recipes['recipes']:
-        raw_cost, missing = craft_cost(prices, recipe['materials'])
+        gross_cost, missing = craft_cost(prices, recipe['materials'])
         recovery = sale_recovery(prices, recipe.get('output'))
-        net_cost = None if raw_cost is None else max(0.0, round(raw_cost - recovery['expected_recovery_gold'], 4))
+        recovery_gold = recovery.get('expected_recovery_gold', 0.0)
+        net_cost = None if gross_cost is None else round(max(0.0, gross_cost - recovery_gold), 4)
         required_skill = recipe.get('required_skill', 0)
         repeatable = recipe.get('repeatable_for_leveling', recipe['name'] != 'Runed Adamantite Rod')
         skill_curve = []
+
         if repeatable:
             for skill in range(300, 375):
                 if skill < required_skill:
@@ -179,6 +156,7 @@ def main():
                 skill_curve.append({
                     'skill': skill,
                     'skillup_probability': round(probability, 4),
+                    'expected_gross_cost_per_skill_gold': expected_cost_per_skill(gross_cost, probability),
                     'expected_net_cost_per_skill_gold': expected_cost_per_skill(net_cost, probability),
                 })
 
@@ -187,7 +165,7 @@ def main():
             'required_skill': required_skill,
             'skill': recipe['skill'],
             'requirements': recipe.get('requirements'),
-            'material_cost_gold': raw_cost,
+            'gross_material_cost_gold': gross_cost,
             'sale_recovery': recovery,
             'net_craft_cost_gold': net_cost,
             'missing_price_item_ids': missing,
@@ -199,19 +177,11 @@ def main():
     report = {
         'market': prices['market'],
         'price_source': prices['source'],
-        'warning': 'Ranking uses expected NET leveling cost after sale recovery where sell-price and demand data are available. Missing demand data receives zero recovery credit.',
-        'recovery_model': {
-            'ranking_metric': '(material cost - expected AH recovery) / skill-up probability',
-            'sell_window': '48h',
-            'ah_cut_default': 0.05,
-            'demand_priority': 'explicit 48h sell probability, else conservative inference from sale_rate / sold_per_day',
-            'rule': 'No demand data = no assumed recovery; avoids treating an expensive unsold item as free leveling.'
-        },
-        'skillup_model': {
-            'type': 'color_breakpoint_linear_heuristic',
-            'orange': 1.0,
-            'yellow_to_green': 'linear 1.0 -> 0.5',
-            'green_to_gray': 'linear 0.5 -> 0.0',
+        'warning': 'Input prices are still seed snapshots. Sale recovery is only credited when explicit demand probability is available.',
+        'economics_model': {
+            'ranking_metric': '(material cost - expected sale recovery) / skill-up probability',
+            'ah_cut': AH_CUT,
+            'sale_recovery_rule': 'No demand probability = zero credited recovery',
         },
         'recipes': rows,
     }
@@ -219,6 +189,7 @@ def main():
     cheapest_by_skill = []
     baseline_by_skill = []
     conditional_by_skill = []
+
     for skill in range(300, 375):
         candidates = []
         baseline = []
@@ -229,11 +200,12 @@ def main():
                 continue
             candidate = {
                 'name': row['name'],
-                'material_cost_gold': row['material_cost_gold'],
-                'expected_recovery_gold': row['sale_recovery']['expected_recovery_gold'],
+                'gross_craft_cost_gold': row['gross_material_cost_gold'],
+                'expected_sale_recovery_gold': row['sale_recovery'].get('expected_recovery_gold', 0.0),
                 'net_craft_cost_gold': row['net_craft_cost_gold'],
-                'sell_probability_48h': row['sale_recovery'].get('sell_probability_48h'),
+                'sale_recovery_status': row['sale_recovery'].get('status'),
                 'skillup_probability': point['skillup_probability'],
+                'expected_gross_cost_per_skill_gold': point['expected_gross_cost_per_skill_gold'],
                 'expected_net_cost_per_skill_gold': point['expected_net_cost_per_skill_gold'],
                 'requirements': row.get('requirements'),
             }
@@ -256,9 +228,6 @@ def main():
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
-
-    for row in rows:
-        print(row['name'], 'raw=', row['material_cost_gold'], 'recovery=', row['sale_recovery']['expected_recovery_gold'], 'net=', row['net_craft_cost_gold'])
     print('Wrote', OUT)
 
 
