@@ -55,7 +55,6 @@ def sale_recovery(prices, output):
     row = item_row(prices, item_id)
     if not row:
         return {'status': 'missing_output_market_data', 'item_id': item_id, 'expected_recovery_gold': 0.0}
-
     sell_price = row.get('realistic_sell_price_gold', row.get('market_value_gold', row.get('min_buyout_gold')))
     p48 = row.get('sale_probability_48h')
     sold_per_day = row.get('sold_per_day')
@@ -68,7 +67,6 @@ def sale_recovery(prices, output):
             'sold_per_day': sold_per_day, 'sale_rate': sale_rate,
             'expected_recovery_gold': 0.0,
         }
-
     p48 = max(0.0, min(1.0, float(p48)))
     gross_after_cut = sell_price * qty * (1.0 - AH_CUT)
     recovery = max(0.0, gross_after_cut * p48 - listing_loss)
@@ -129,16 +127,10 @@ def route_summary(points, row_lookup, prices):
     total_gross = total_safe_gross = total_recovery = total_net = total_safe_net = 0.0
     expected_crafts_total = 0.0
     recipe_crafts = defaultdict(float)
-    gaps = []
-
     for point in points:
-        skill = point['skill']
         best = point['best']
         row = row_lookup[best['name']]
         p = best['skillup_probability']
-        if p <= 0:
-            gaps.append(skill)
-            continue
         crafts = 1.0 / p
         expected_crafts_total += crafts
         recipe_crafts[row['name']] += crafts
@@ -150,21 +142,18 @@ def route_summary(points, row_lookup, prices):
             total_safe_net += row['safe_net_craft_cost_gold'] * crafts
         for item_id, qty in row['materials'].items():
             mats[str(item_id)] += qty * crafts
-
     material_rows = []
     for item_id, qty in sorted(mats.items(), key=lambda x: -x[1]):
         market = item_row(prices, item_id) or {}
         unit_price = item_price(prices, item_id)
-        risk = supply_risk(prices, item_id, qty)
         material_rows.append({
             'item_id': int(item_id), 'name': market.get('name'),
             'expected_quantity': round(qty, 2),
             'effective_buy_gold': unit_price,
             'market_value_gold': market.get('market_value_gold'),
             'safe_unit_price_gold': round(unit_price * SAFE_BUY_MULTIPLIER, 4) if unit_price is not None else None,
-            **risk,
+            **supply_risk(prices, item_id, qty),
         })
-
     return {
         'covered_from_skill': points[0]['skill'] if points else None,
         'covered_to_skill': points[-1]['skill'] + 1 if points else None,
@@ -176,7 +165,6 @@ def route_summary(points, row_lookup, prices):
         'safe_7_5pct_gross_cost_gold': round(total_safe_gross, 2),
         'safe_7_5pct_net_cost_gold': round(total_safe_net, 2),
         'material_demand': material_rows,
-        'gaps': gaps,
     }
 
 
@@ -184,7 +172,6 @@ def main():
     prices = load_json(PRICES)
     recipes = load_json(RECIPES)
     rows = []
-
     for recipe in recipes['recipes']:
         gross_cost, missing = craft_cost(prices, recipe['materials'])
         safe_gross, _ = craft_cost(prices, recipe['materials'], SAFE_BUY_MULTIPLIER)
@@ -193,9 +180,10 @@ def main():
         net_cost = None if gross_cost is None else round(max(0.0, gross_cost - recovery_gold), 4)
         safe_net = None if safe_gross is None else round(max(0.0, safe_gross - recovery_gold), 4)
         required_skill = recipe.get('required_skill', 0)
-        repeatable = recipe.get('repeatable_for_leveling', recipe['name'] != 'Runed Adamantite Rod')
+        repeatable = recipe.get('repeatable_for_leveling', True)
+        available_now = recipe.get('available_now', True)
         skill_curve = []
-        if repeatable:
+        if repeatable and available_now:
             for skill in range(300, 375):
                 if skill < required_skill:
                     continue
@@ -208,10 +196,10 @@ def main():
                     'expected_net_cost_per_skill_gold': expected_cost_per_skill(net_cost, p),
                     'expected_safe_net_cost_per_skill_gold': expected_cost_per_skill(safe_net, p),
                 })
-
         rows.append({
             'name': recipe['name'], 'required_skill': required_skill, 'skill': recipe['skill'],
             'requirements': recipe.get('requirements'), 'materials': recipe['materials'],
+            'available_now': available_now,
             'gross_material_cost_gold': gross_cost, 'safe_gross_material_cost_gold': safe_gross,
             'sale_recovery': recovery, 'net_craft_cost_gold': net_cost, 'safe_net_craft_cost_gold': safe_net,
             'missing_price_item_ids': missing, 'repeatable_for_leveling': repeatable,
@@ -220,6 +208,8 @@ def main():
 
     report = {
         'market': prices['market'], 'price_source': prices['source'],
+        'current_phase': recipes.get('current_phase'),
+        'phase_verified_at': recipes.get('phase_verified_at'),
         'warning': 'Market-depth tiers are not available yet. effective_buy_gold currently uses the BBB market-value snapshot as a proxy. Safe scenario applies +7.5% to input buy prices. Sale recovery is credited only with explicit demand probability.',
         'economics_model': {
             'ranking_metric': '(material cost - expected sale recovery) / skill-up probability',
@@ -229,6 +219,7 @@ def main():
             'sale_recovery_rule': 'No demand probability = zero credited recovery',
         },
         'recipes': rows,
+        'inactive_recipes': [r['name'] for r in rows if not r['available_now']],
     }
 
     cheapest_by_skill, baseline_by_skill, conditional_by_skill = [], [], []
@@ -267,13 +258,14 @@ def main():
     report['baseline_route_summary'] = route_summary(baseline_by_skill, row_lookup, prices)
     report['conditional_route_summary'] = route_summary(conditional_by_skill, row_lookup, prices)
     report['all_route_summary'] = route_summary(cheapest_by_skill, row_lookup, prices)
-
+    report['route_gaps'] = [s for s in range(300, 375) if not any(p['skill'] == s for p in cheapest_by_skill)]
     report['mandatory_tools'] = [
         {
-            'name': r['name'], 'required_skill': r['required_skill'],
+            'name': r['name'], 'required_skill': r['required_skill'], 'available_now': r['available_now'],
             'gross_material_cost_gold': r['gross_material_cost_gold'],
             'safe_gross_material_cost_gold': r['safe_gross_material_cost_gold'],
             'missing_price_item_ids': r['missing_price_item_ids'],
+            'requirements': r.get('requirements'),
         }
         for r in rows if not r['repeatable_for_leveling']
     ]
@@ -281,10 +273,10 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
     print('Wrote', OUT)
-    print('Baseline:', report['baseline_route_segments'])
-    print('Baseline total:', report['baseline_route_summary'])
+    print('Current phase:', report['current_phase'])
+    print('Inactive:', report['inactive_recipes'])
+    print('Gaps:', report['route_gaps'])
     print('All:', report['all_route_segments'])
-    print('All total:', report['all_route_summary'])
 
 
 if __name__ == '__main__':
