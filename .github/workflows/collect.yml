@@ -13,6 +13,8 @@ on:
       - 'optimizer.py'
       - 'disenchant_optimizer.py'
       - 'cooking_profit.py'
+      - 'profession_profit.py'
+      - 'top_opportunities.py'
       - 'requirements.txt'
       - 'browser/**'
       - 'config/**'
@@ -35,73 +37,51 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
       - name: Validate browser collector syntax
         run: node --check browser/bbb_collector.js
-
       - name: Collect source diagnostics and live prices
         run: python collector.py
-
       - name: Validate browser BBB snapshot when present
         run: python validate_bbb_snapshot.py
-
       - name: Import browser BBB snapshot when present
         run: python import_bbb_snapshot.py
-
       - name: Import official TSM public prices
         run: python import_tsm_public.py
-
       - name: Probe TSM regional sale metrics
         run: python probe_tsm_web_metrics.py
-
-      - name: Build Enchanting report
+      - name: Build Enchanting leveling report
         run: python optimizer.py
-
       - name: Build disenchant thresholds
         run: python disenchant_optimizer.py
-
       - name: Build Cooking profit report
         run: python cooking_profit.py
-
-      - name: Show optimizer summary
+      - name: Build Blacksmithing and Enchanting profit report
+        run: python profession_profit.py
+      - name: Build unified Top Opportunities report
+        run: python top_opportunities.py
+      - name: Show gold scanner summary
         run: |
           python - <<'PY'
           import json
-          p=json.load(open('data/prices.json'))
-          d=json.load(open('data/enchanting_report.json'))
-          de=json.load(open('data/disenchant_thresholds.json'))
-          c=json.load(open('data/cooking_profit.json'))
-          m=json.load(open('data/tsm_web_metrics_probe.json'))
-          print('Price source:', p.get('source'))
-          print('TSM items imported:', p.get('tsm_items_imported'))
-          print('TSM latest updated:', p.get('tsm_latest_updated_at'))
-          print('TSM web metrics probe:', m.get('items'))
-          print('Market:', d['market'])
-          print('Baseline route:', d.get('baseline_route_segments'))
-          print('Baseline total:', d.get('baseline_route_summary'))
-          print('All route:', d.get('all_route_segments'))
-          print('All total:', d.get('all_route_summary'))
-          print('Top Cooking opportunities:')
-          for x in c.get('opportunities', [])[:10]:
-              print(x['output'], 'profit/craft=', x['profit_per_craft_gold'], 'stack20=', x['profit_per_stack20_gold'], 'ROI=', x['roi_pct'], 'heatmap=', x['heatmap_pct'])
-          print('Disenchant thresholds:')
-          for x in de['thresholds']:
-              print(x['item_type'], x['item_level_min'], '-', x['item_level_max'], 'EV=', x['expected_disenchant_value_gold'], 'safe<=', x['conservative_buy_ceiling_gold'])
+          top=json.load(open('data/top_opportunities.json'))
+          print('TOP OPPORTUNITIES TODAY')
+          for i,x in enumerate(top.get('top',[])[:10],1):
+              print(i, x.get('profession'), x.get('output'), 'profit=',x.get('profit_per_craft_gold'), 'rate=',x.get('region_sale_rate'), 'sold/day=',x.get('region_avg_daily_sold'), 'expected=',x.get('expected_profit_per_listing_gold'))
+          print('DE buy rules:')
+          for x in top.get('disenchant_buy_rules',[]):
+              print(x.get('item_type'),x.get('item_level_min'),'-',x.get('item_level_max'),'safe<=',x.get('conservative_buy_ceiling_gold'))
           PY
-
       - name: Commit generated output
         run: |
           git config user.name 'thunderstrike-gold-scanner'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json data/cooking_profit.json data/tsm_web_metrics_probe.json
+          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json data/cooking_profit.json data/profession_profit.json data/top_opportunities.json data/tsm_web_metrics_probe.json
           if git diff --cached --quiet; then
             echo 'No changes'
           else
