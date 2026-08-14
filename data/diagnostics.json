@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:48:40.535633+00:00",
+  "generated_at": "2026-08-14T14:51:46.360759+00:00",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -7,98 +7,20 @@
     "faction": "alliance",
     "auction_house_id": 2
   },
-  "items": [
+  "sources": [
     {
-      "id": 22445,
-      "name": "Arcane Dust",
-      "url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Arcane+Dust&item=22445",
-      "http_status": 403,
-      "final_url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Arcane+Dust&item=22445",
-      "content_length": 6395,
-      "response_headers": {
-        "Content-Type": "text/html; charset=UTF-8",
-        "Server": "cloudflare",
-        "CF-RAY": "a2b0c305cf0ced3e-SJC"
-      },
-      "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-8cXjKWfHLnmv6ML5w0zT4N&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font",
-      "item_found_in_text": false,
-      "text_excerpt": "Just a moment... Enable JavaScript and cookies to continue",
-      "money_candidates_gold": [],
-      "numeric_price_key_candidates": [],
-      "expected_validation_gold": 0.9662,
-      "validation_match": false
+      "url": "https://public-data.tradeskillmaster.com/classic/eu/realm/thunderstrike/items.csv",
+      "http_status": 404,
+      "content_type": "text/html",
+      "content_length": 27150,
+      "body_preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"icon\" href=\"https://www.cloudflare.com/favicon.ico\" />\n    <title>Not Found</title>\n    <style>\n      body {\n        font-family: system-"
     },
     {
-      "id": 22446,
-      "name": "Greater Planar Essence",
-      "url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Greater+Planar+Essence&item=22446",
-      "http_status": 403,
-      "final_url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Greater+Planar+Essence&item=22446",
-      "content_length": 6449,
-      "response_headers": {
-        "Content-Type": "text/html; charset=UTF-8",
-        "Server": "cloudflare",
-        "CF-RAY": "a2b0c3060db470f0-SJC"
-      },
-      "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-wAPP3cKSB9waMOtFToegaH&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font",
-      "item_found_in_text": false,
-      "text_excerpt": "Just a moment... Enable JavaScript and cookies to continue",
-      "money_candidates_gold": [],
-      "numeric_price_key_candidates": []
-    },
-    {
-      "id": 22449,
-      "name": "Large Prismatic Shard",
-      "url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Large+Prismatic+Shard&item=22449",
-      "http_status": 403,
-      "final_url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Large+Prismatic+Shard&item=22449",
-      "content_length": 6446,
-      "response_headers": {
-        "Content-Type": "text/html; charset=UTF-8",
-        "Server": "cloudflare",
-        "CF-RAY": "a2b0c3063cfc938c-SJC"
-      },
-      "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-eKP8wyMQEwy9CxSbeJlixS&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font",
-      "item_found_in_text": false,
-      "text_excerpt": "Just a moment... Enable JavaScript and cookies to continue",
-      "money_candidates_gold": [],
-      "numeric_price_key_candidates": []
-    },
-    {
-      "id": 22792,
-      "name": "Nightmare Vine",
-      "url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Nightmare+Vine&item=22792",
-      "http_status": 403,
-      "final_url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Nightmare+Vine&item=22792",
-      "content_length": 6404,
-      "response_headers": {
-        "Content-Type": "text/html; charset=UTF-8",
-        "Server": "cloudflare",
-        "CF-RAY": "a2b0c3067b837587-SJC"
-      },
-      "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-nQGUFsWTQHBvLUdMvUZugy&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font",
-      "item_found_in_text": false,
-      "text_excerpt": "Just a moment... Enable JavaScript and cookies to continue",
-      "money_candidates_gold": [],
-      "numeric_price_key_candidates": []
-    },
-    {
-      "id": 23571,
-      "name": "Primal Might",
-      "url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Primal+Might&item=23571",
-      "http_status": 403,
-      "final_url": "https://bootybaybroker.com/tbc-classic/ah?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike&q=Primal+Might&item=23571",
-      "content_length": 6398,
-      "response_headers": {
-        "Content-Type": "text/html; charset=UTF-8",
-        "Server": "cloudflare",
-        "CF-RAY": "a2b0c306be772546-SJC"
-      },
-      "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-e3zTCEHXeu2FBCsWVfX8pV&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font",
-      "item_found_in_text": false,
-      "text_excerpt": "Just a moment... Enable JavaScript and cookies to continue",
-      "money_candidates_gold": [],
-      "numeric_price_key_candidates": []
+      "url": "https://public-data.tradeskillmaster.com/classic-progression/eu/realm/thunderstrike/items.csv",
+      "http_status": 404,
+      "content_type": "text/html",
+      "content_length": 27150,
+      "body_preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"icon\" href=\"https://www.cloudflare.com/favicon.ico\" />\n    <title>Not Found</title>\n    <style>\n      body {\n        font-family: system-"
     }
   ]
 }
