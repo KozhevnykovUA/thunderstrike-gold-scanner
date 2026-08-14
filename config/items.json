@@ -7,6 +7,10 @@
     "auction_house_id": 2
   },
   "items": [
+    {"id": 16204, "name": "Illusion Dust", "role": "enchanting_material"},
+    {"id": 16203, "name": "Greater Eternal Essence", "role": "enchanting_material"},
+    {"id": 14344, "name": "Large Brilliant Shard", "role": "enchanting_material"},
+    {"id": 25843, "name": "Fel Iron Rod", "role": "enchanting_tool_material"},
     {"id": 22445, "name": "Arcane Dust", "expected_validation_gold": 0.9662},
     {"id": 22446, "name": "Greater Planar Essence"},
     {"id": 22447, "name": "Lesser Planar Essence"},
