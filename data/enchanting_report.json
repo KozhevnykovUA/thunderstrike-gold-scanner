@@ -8,6 +8,13 @@
   },
   "price_source": "manual_seed_from_verified_bootybaybroker_pages",
   "warning": "Seed prices are lowest-buyout snapshots, not live market-depth-adjusted prices.",
+  "skillup_model": {
+    "type": "color_breakpoint_linear_heuristic",
+    "orange": 1.0,
+    "yellow_to_green": "linear 1.0 -> 0.5",
+    "green_to_gray": "linear 0.5 -> 0.0",
+    "note": "Used for route comparison; replace with exact per-recipe skill-up data if a reliable source becomes available."
+  },
   "recipes": [
     {
       "name": "Enchant Cloak - Major Armor",
@@ -18,7 +25,284 @@
       },
       "material_cost_gold": 7.7296,
       "missing_price_item_ids": [],
-      "notes": "Current Wowhead route uses this from 317; price comparison can make it attractive through 335."
+      "notes": "Current Wowhead route uses this from 317; price comparison can make it attractive through 335.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 0.9667,
+          "expected_cost_per_skill_gold": 7.9961
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 0.9333,
+          "expected_cost_per_skill_gold": 8.2817
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 8.5884
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 0.8667,
+          "expected_cost_per_skill_gold": 8.9188
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 0.8333,
+          "expected_cost_per_skill_gold": 9.2755
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 9.662
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 0.7667,
+          "expected_cost_per_skill_gold": 10.0821
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 0.7333,
+          "expected_cost_per_skill_gold": 10.5404
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 11.0423
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 0.6667,
+          "expected_cost_per_skill_gold": 11.5944
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 0.6333,
+          "expected_cost_per_skill_gold": 12.2046
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 12.8827
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 0.5667,
+          "expected_cost_per_skill_gold": 13.6405
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 0.5333,
+          "expected_cost_per_skill_gold": 14.493
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 15.4592
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 0.4667,
+          "expected_cost_per_skill_gold": 16.5634
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 0.4333,
+          "expected_cost_per_skill_gold": 17.8375
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 19.324
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 0.3667,
+          "expected_cost_per_skill_gold": 21.0807
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 0.3333,
+          "expected_cost_per_skill_gold": 23.1888
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 25.7653
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 0.2667,
+          "expected_cost_per_skill_gold": 28.986
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 0.2333,
+          "expected_cost_per_skill_gold": 33.1269
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 0.2,
+          "expected_cost_per_skill_gold": 38.648
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 0.1667,
+          "expected_cost_per_skill_gold": 46.3776
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 0.1333,
+          "expected_cost_per_skill_gold": 57.972
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 0.1,
+          "expected_cost_per_skill_gold": 77.296
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 0.0667,
+          "expected_cost_per_skill_gold": 115.944
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 0.0333,
+          "expected_cost_per_skill_gold": 231.888
+        }
+      ]
     },
     {
       "name": "Enchant Chest - Major Spirit",
@@ -29,7 +313,309 @@
       },
       "material_cost_gold": 11.4826,
       "missing_price_item_ids": [],
-      "notes": "Baseline alternative after 320."
+      "notes": "Baseline alternative after 320.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 0.9667,
+          "expected_cost_per_skill_gold": 11.8786
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 0.9333,
+          "expected_cost_per_skill_gold": 12.3028
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 12.7584
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 0.8667,
+          "expected_cost_per_skill_gold": 13.2492
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 0.8333,
+          "expected_cost_per_skill_gold": 13.7791
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 14.3532
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 0.7667,
+          "expected_cost_per_skill_gold": 14.9773
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 0.7333,
+          "expected_cost_per_skill_gold": 15.6581
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 16.4037
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 0.6667,
+          "expected_cost_per_skill_gold": 17.2239
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 0.6333,
+          "expected_cost_per_skill_gold": 18.1304
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 19.1377
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 0.5667,
+          "expected_cost_per_skill_gold": 20.2634
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 0.5333,
+          "expected_cost_per_skill_gold": 21.5299
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 22.9652
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 0.4667,
+          "expected_cost_per_skill_gold": 24.6056
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 0.4333,
+          "expected_cost_per_skill_gold": 26.4983
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 28.7065
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 0.3667,
+          "expected_cost_per_skill_gold": 31.3162
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 0.3333,
+          "expected_cost_per_skill_gold": 34.4478
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 38.2753
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 0.2667,
+          "expected_cost_per_skill_gold": 43.0598
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 0.2333,
+          "expected_cost_per_skill_gold": 49.2111
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 0.2,
+          "expected_cost_per_skill_gold": 57.413
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 0.1667,
+          "expected_cost_per_skill_gold": 68.8956
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 0.1333,
+          "expected_cost_per_skill_gold": 86.1195
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 0.1,
+          "expected_cost_per_skill_gold": 114.826
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 0.0667,
+          "expected_cost_per_skill_gold": 172.239
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 0.0333,
+          "expected_cost_per_skill_gold": 344.478
+        }
+      ]
     },
     {
       "name": "Superior Wizard Oil",
@@ -40,7 +626,384 @@
       },
       "material_cost_gold": 6.7989,
       "missing_price_item_ids": [],
-      "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available."
+      "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 6.7989
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 0.9667,
+          "expected_cost_per_skill_gold": 7.0333
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 0.9333,
+          "expected_cost_per_skill_gold": 7.2845
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 7.5543
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 0.8667,
+          "expected_cost_per_skill_gold": 7.8449
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 0.8333,
+          "expected_cost_per_skill_gold": 8.1587
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 8.4986
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 0.7667,
+          "expected_cost_per_skill_gold": 8.8681
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 0.7333,
+          "expected_cost_per_skill_gold": 9.2712
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 9.7127
+        },
+        {
+          "skill": 360,
+          "skillup_probability": 0.6667,
+          "expected_cost_per_skill_gold": 10.1983
+        },
+        {
+          "skill": 361,
+          "skillup_probability": 0.6333,
+          "expected_cost_per_skill_gold": 10.7351
+        },
+        {
+          "skill": 362,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 11.3315
+        },
+        {
+          "skill": 363,
+          "skillup_probability": 0.5667,
+          "expected_cost_per_skill_gold": 11.9981
+        },
+        {
+          "skill": 364,
+          "skillup_probability": 0.5333,
+          "expected_cost_per_skill_gold": 12.7479
+        },
+        {
+          "skill": 365,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 13.5978
+        },
+        {
+          "skill": 366,
+          "skillup_probability": 0.4667,
+          "expected_cost_per_skill_gold": 14.5691
+        },
+        {
+          "skill": 367,
+          "skillup_probability": 0.4333,
+          "expected_cost_per_skill_gold": 15.6898
+        },
+        {
+          "skill": 368,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 16.9972
+        },
+        {
+          "skill": 369,
+          "skillup_probability": 0.3667,
+          "expected_cost_per_skill_gold": 18.5425
+        },
+        {
+          "skill": 370,
+          "skillup_probability": 0.3333,
+          "expected_cost_per_skill_gold": 20.3967
+        },
+        {
+          "skill": 371,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 22.663
+        },
+        {
+          "skill": 372,
+          "skillup_probability": 0.2667,
+          "expected_cost_per_skill_gold": 25.4959
+        },
+        {
+          "skill": 373,
+          "skillup_probability": 0.2333,
+          "expected_cost_per_skill_gold": 29.1381
+        },
+        {
+          "skill": 374,
+          "skillup_probability": 0.2,
+          "expected_cost_per_skill_gold": 33.9945
+        }
+      ]
     },
     {
       "name": "Runed Adamantite Rod",
@@ -51,7 +1014,259 @@
       },
       "material_cost_gold": 294.6969,
       "missing_price_item_ids": [],
-      "notes": "Also requires 1 Adamantite Rod. Required tool investment."
+      "notes": "Also requires 1 Adamantite Rod. Required tool investment.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 294.6969
+        }
+      ]
     },
     {
       "name": "Enchant Gloves - Major Strength",
@@ -62,7 +1277,384 @@
       },
       "material_cost_gold": 17.3357,
       "missing_price_item_ids": [],
-      "notes": "Baseline 351-365 route."
+      "notes": "Baseline 351-365 route.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 360,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "skill": 361,
+          "skillup_probability": 0.95,
+          "expected_cost_per_skill_gold": 18.2481
+        },
+        {
+          "skill": 362,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 19.2619
+        },
+        {
+          "skill": 363,
+          "skillup_probability": 0.85,
+          "expected_cost_per_skill_gold": 20.3949
+        },
+        {
+          "skill": 364,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 21.6696
+        },
+        {
+          "skill": 365,
+          "skillup_probability": 0.75,
+          "expected_cost_per_skill_gold": 23.1143
+        },
+        {
+          "skill": 366,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 24.7653
+        },
+        {
+          "skill": 367,
+          "skillup_probability": 0.65,
+          "expected_cost_per_skill_gold": 26.6703
+        },
+        {
+          "skill": 368,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 28.8928
+        },
+        {
+          "skill": 369,
+          "skillup_probability": 0.55,
+          "expected_cost_per_skill_gold": 31.5195
+        },
+        {
+          "skill": 370,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 34.6714
+        },
+        {
+          "skill": 371,
+          "skillup_probability": 0.45,
+          "expected_cost_per_skill_gold": 38.5238
+        },
+        {
+          "skill": 372,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 43.3392
+        },
+        {
+          "skill": 373,
+          "skillup_probability": 0.35,
+          "expected_cost_per_skill_gold": 49.5306
+        },
+        {
+          "skill": 374,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 57.7857
+        }
+      ]
     },
     {
       "name": "Enchant Ring - Spellpower",
@@ -73,12 +1665,2476 @@
       },
       "material_cost_gold": 51.0498,
       "missing_price_item_ids": [],
-      "notes": "Baseline 365-375 route; requires Honored Keepers of Time."
+      "notes": "Baseline 365-375 route; requires Honored Keepers of Time.",
+      "skill_curve": [
+        {
+          "skill": 300,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 301,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 302,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 303,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 304,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 305,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 306,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 307,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 308,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 309,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 310,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 311,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 312,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 313,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 314,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 315,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 316,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 317,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 318,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 319,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 320,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 321,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 322,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 323,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 324,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 325,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 326,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 327,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 328,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 329,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 330,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 331,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 332,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 333,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 334,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 335,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 336,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 337,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 338,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 339,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 340,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 341,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 342,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 343,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 344,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 345,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 346,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 347,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 348,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 349,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 350,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 351,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 352,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 353,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 354,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 355,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 356,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 358,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 359,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 360,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 361,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 362,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 363,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 364,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 365,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 366,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 367,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 368,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 369,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 370,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "skill": 371,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 56.722
+        },
+        {
+          "skill": 372,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 63.8122
+        },
+        {
+          "skill": 373,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 72.9283
+        },
+        {
+          "skill": 374,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 85.083
+        }
+      ]
     }
   ],
   "comparison_320_335": {
     "major_armor_cost_gold": 7.7296,
     "major_spirit_cost_gold": 11.4826,
     "major_armor_cheaper_pct": 32.68
-  }
+  },
+  "cheapest_by_skill": [
+    {
+      "skill": 300,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 301,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 302,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 303,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 304,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 305,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 306,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 307,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 308,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 309,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 310,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 311,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 312,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 313,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 314,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 315,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 316,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 317,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 318,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 319,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 320,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 321,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 322,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 323,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 324,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 325,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 7.7296
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 326,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.9667,
+          "expected_cost_per_skill_gold": 7.9961
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 327,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.9333,
+          "expected_cost_per_skill_gold": 8.2817
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 328,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 8.5884
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 329,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.8667,
+          "expected_cost_per_skill_gold": 8.9188
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 330,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.8333,
+          "expected_cost_per_skill_gold": 9.2755
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 11.4826
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 331,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 9.662
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.9667,
+          "expected_cost_per_skill_gold": 11.8786
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 332,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.7667,
+          "expected_cost_per_skill_gold": 10.0821
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.9333,
+          "expected_cost_per_skill_gold": 12.3028
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 333,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.7333,
+          "expected_cost_per_skill_gold": 10.5404
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 12.7584
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 334,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 11.0423
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.8667,
+          "expected_cost_per_skill_gold": 13.2492
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 335,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.6667,
+          "expected_cost_per_skill_gold": 11.5944
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.8333,
+          "expected_cost_per_skill_gold": 13.7791
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 336,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.6333,
+          "expected_cost_per_skill_gold": 12.2046
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 14.3532
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 337,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 12.8827
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.7667,
+          "expected_cost_per_skill_gold": 14.9773
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 338,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.5667,
+          "expected_cost_per_skill_gold": 13.6405
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.7333,
+          "expected_cost_per_skill_gold": 15.6581
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 339,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.5333,
+          "expected_cost_per_skill_gold": 14.493
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 16.4037
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 340,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 15.4592
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.6667,
+          "expected_cost_per_skill_gold": 17.2239
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        }
+      ]
+    },
+    {
+      "skill": 341,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.4667,
+          "expected_cost_per_skill_gold": 16.5634
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.6333,
+          "expected_cost_per_skill_gold": 18.1304
+        }
+      ]
+    },
+    {
+      "skill": 342,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.4333,
+          "expected_cost_per_skill_gold": 17.8375
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 19.1377
+        }
+      ]
+    },
+    {
+      "skill": 343,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 19.324
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.5667,
+          "expected_cost_per_skill_gold": 20.2634
+        }
+      ]
+    },
+    {
+      "skill": 344,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.3667,
+          "expected_cost_per_skill_gold": 21.0807
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.5333,
+          "expected_cost_per_skill_gold": 21.5299
+        }
+      ]
+    },
+    {
+      "skill": 345,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 22.9652
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.3333,
+          "expected_cost_per_skill_gold": 23.1888
+        }
+      ]
+    },
+    {
+      "skill": 346,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.4667,
+          "expected_cost_per_skill_gold": 24.6056
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 25.7653
+        }
+      ]
+    },
+    {
+      "skill": 347,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.4333,
+          "expected_cost_per_skill_gold": 26.4983
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.2667,
+          "expected_cost_per_skill_gold": 28.986
+        }
+      ]
+    },
+    {
+      "skill": 348,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 28.7065
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.2333,
+          "expected_cost_per_skill_gold": 33.1269
+        }
+      ]
+    },
+    {
+      "skill": 349,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.3667,
+          "expected_cost_per_skill_gold": 31.3162
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.2,
+          "expected_cost_per_skill_gold": 38.648
+        }
+      ]
+    },
+    {
+      "skill": 350,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 1.0,
+        "expected_cost_per_skill_gold": 6.7989
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.3333,
+          "expected_cost_per_skill_gold": 34.4478
+        },
+        {
+          "name": "Enchant Cloak - Major Armor",
+          "craft_cost_gold": 7.7296,
+          "skillup_probability": 0.1667,
+          "expected_cost_per_skill_gold": 46.3776
+        }
+      ]
+    },
+    {
+      "skill": 351,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.9667,
+        "expected_cost_per_skill_gold": 7.0333
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 38.2753
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 352,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.9333,
+        "expected_cost_per_skill_gold": 7.2845
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.2667,
+          "expected_cost_per_skill_gold": 43.0598
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 353,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.9,
+        "expected_cost_per_skill_gold": 7.5543
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.2333,
+          "expected_cost_per_skill_gold": 49.2111
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 354,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.8667,
+        "expected_cost_per_skill_gold": 7.8449
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.2,
+          "expected_cost_per_skill_gold": 57.413
+        }
+      ]
+    },
+    {
+      "skill": 355,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.8333,
+        "expected_cost_per_skill_gold": 8.1587
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.1667,
+          "expected_cost_per_skill_gold": 68.8956
+        }
+      ]
+    },
+    {
+      "skill": 356,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.8,
+        "expected_cost_per_skill_gold": 8.4986
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.1333,
+          "expected_cost_per_skill_gold": 86.1195
+        }
+      ]
+    },
+    {
+      "skill": 357,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.7667,
+        "expected_cost_per_skill_gold": 8.8681
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.1,
+          "expected_cost_per_skill_gold": 114.826
+        }
+      ]
+    },
+    {
+      "skill": 358,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.7333,
+        "expected_cost_per_skill_gold": 9.2712
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.0667,
+          "expected_cost_per_skill_gold": 172.239
+        }
+      ]
+    },
+    {
+      "skill": 359,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.7,
+        "expected_cost_per_skill_gold": 9.7127
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        },
+        {
+          "name": "Enchant Chest - Major Spirit",
+          "craft_cost_gold": 11.4826,
+          "skillup_probability": 0.0333,
+          "expected_cost_per_skill_gold": 344.478
+        }
+      ]
+    },
+    {
+      "skill": 360,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.6667,
+        "expected_cost_per_skill_gold": 10.1983
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 17.3357
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 361,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.6333,
+        "expected_cost_per_skill_gold": 10.7351
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.95,
+          "expected_cost_per_skill_gold": 18.2481
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 362,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.6,
+        "expected_cost_per_skill_gold": 11.3315
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 19.2619
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 363,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.5667,
+        "expected_cost_per_skill_gold": 11.9981
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.85,
+          "expected_cost_per_skill_gold": 20.3949
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 364,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.5333,
+        "expected_cost_per_skill_gold": 12.7479
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 21.6696
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 365,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.5,
+        "expected_cost_per_skill_gold": 13.5978
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.75,
+          "expected_cost_per_skill_gold": 23.1143
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 366,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.4667,
+        "expected_cost_per_skill_gold": 14.5691
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 24.7653
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 367,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.4333,
+        "expected_cost_per_skill_gold": 15.6898
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.65,
+          "expected_cost_per_skill_gold": 26.6703
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 368,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.4,
+        "expected_cost_per_skill_gold": 16.9972
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 28.8928
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 369,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.3667,
+        "expected_cost_per_skill_gold": 18.5425
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.55,
+          "expected_cost_per_skill_gold": 31.5195
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 370,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.3333,
+        "expected_cost_per_skill_gold": 20.3967
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.5,
+          "expected_cost_per_skill_gold": 34.6714
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 1.0,
+          "expected_cost_per_skill_gold": 51.0498
+        }
+      ]
+    },
+    {
+      "skill": 371,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.3,
+        "expected_cost_per_skill_gold": 22.663
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.45,
+          "expected_cost_per_skill_gold": 38.5238
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 0.9,
+          "expected_cost_per_skill_gold": 56.722
+        }
+      ]
+    },
+    {
+      "skill": 372,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.2667,
+        "expected_cost_per_skill_gold": 25.4959
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.4,
+          "expected_cost_per_skill_gold": 43.3392
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 0.8,
+          "expected_cost_per_skill_gold": 63.8122
+        }
+      ]
+    },
+    {
+      "skill": 373,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.2333,
+        "expected_cost_per_skill_gold": 29.1381
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.35,
+          "expected_cost_per_skill_gold": 49.5306
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 0.7,
+          "expected_cost_per_skill_gold": 72.9283
+        }
+      ]
+    },
+    {
+      "skill": 374,
+      "best": {
+        "name": "Superior Wizard Oil",
+        "craft_cost_gold": 6.7989,
+        "skillup_probability": 0.2,
+        "expected_cost_per_skill_gold": 33.9945
+      },
+      "alternatives": [
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "craft_cost_gold": 17.3357,
+          "skillup_probability": 0.3,
+          "expected_cost_per_skill_gold": 57.7857
+        },
+        {
+          "name": "Enchant Ring - Spellpower",
+          "craft_cost_gold": 51.0498,
+          "skillup_probability": 0.6,
+          "expected_cost_per_skill_gold": 85.083
+        }
+      ]
+    }
+  ]
 }
