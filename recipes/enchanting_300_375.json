@@ -21,7 +21,8 @@
       "required_skill": 340,
       "skill": {"yellow": 350, "green": 365, "gray": 380},
       "materials": {"22445": 3, "22792": 1},
-      "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available."
+      "output": {"item_id": 22522, "quantity": 1, "name": "Superior Wizard Oil"},
+      "notes": "Also requires 1 Imbued Vial. Sale recovery should be deducted from leveling cost when market price and demand data are available."
     },
     {
       "name": "Runed Adamantite Rod",
@@ -43,7 +44,7 @@
       "skill": {"yellow": 365, "green": 370, "gray": 375},
       "materials": {"22449": 2, "22445": 6},
       "requirements": {"reputation": "The Consortium - Revered"},
-      "notes": "Wowhead lists this as an alternative for 351-365 and comments describe it as useful through 370. Skill breakpoints are provisional until exact data is sourced."
+      "notes": "Alternative 360-370 route; exact skill breakpoints remain provisional until a primary data source is added."
     },
     {
       "name": "Enchant Ring - Spellpower",
@@ -59,7 +60,7 @@
       "skill": {"yellow": 375, "green": 380, "gray": 385},
       "materials": {"22449": 2, "22446": 3, "22445": 5},
       "requirements": {"reputation": "The Sha'tar - Revered"},
-      "notes": "Wowhead comments identify this as orange for 370-375. Later breakpoints are provisional; only 370-375 matters for this optimizer."
+      "notes": "Potential 370-375 route; later breakpoints are provisional."
     },
     {
       "name": "Enchant Chest - Defense",
@@ -67,7 +68,7 @@
       "skill": {"yellow": 370, "green": 375, "gray": 380},
       "materials": {"22446": 4, "22445": 8, "23427": 4},
       "requirements": {"reputation": "Shattered Sun Offensive - Honored", "phase_note": "Available with Shattered Sun Offensive content"},
-      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; currently excluded from ranking until item 23427 has a price."
+      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; excluded until item 23427 has a price."
     }
   ]
 }
