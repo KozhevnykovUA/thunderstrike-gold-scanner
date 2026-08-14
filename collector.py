@@ -1,128 +1,79 @@
+import csv
+import io
 import json
-import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlencode
 
 import requests
-from bs4 import BeautifulSoup
 
-BASE_URL = "https://bootybaybroker.com/tbc-classic/ah"
 CONFIG_PATH = Path("config/items.json")
 OUT_PATH = Path("data/diagnostics.json")
 
-PRICE_PATTERNS = [
-    re.compile(r"(?:(\d+)\s*g\s*)?(?:(\d+)\s*s\s*)?(\d+)\s*c", re.I),
-    re.compile(r"(?:(\d+)\s*g\s*)?(\d+)\s*s", re.I),
+CANDIDATE_URLS = [
+    "https://public-data.tradeskillmaster.com/classic/eu/realm/thunderstrike/items.csv",
+    "https://public-data.tradeskillmaster.com/classic-progression/eu/realm/thunderstrike/items.csv",
 ]
-NUMERIC_KEY_RE = re.compile(
-    r'"(?P<key>[^"\\]*(?:price|buyout|market)[^"\\]*)"\s*:\s*(?P<value>\d+(?:\.\d+)?)',
-    re.I,
-)
 
 
-def money_to_gold(match):
-    groups = match.groups()
-    if len(groups) == 3:
-        g, s, c = groups
-        return int(g or 0) + int(s or 0) / 100 + int(c or 0) / 10000
-    g, s = groups
-    return int(g or 0) + int(s or 0) / 100
+def parse_csv(text):
+    rows = list(csv.DictReader(io.StringIO(text)))
+    return rows
 
 
-def scoped_url(market, item):
-    params = {
-        "realmId": market["realm_id"],
-        "auctionHouseId": market["auction_house_id"],
-        "faction": market["faction"],
-        "region": market["region"],
-        "realm": market["realm"],
-        "q": item["name"],
-        "item": item["id"],
-    }
-    return f"{BASE_URL}?{urlencode(params)}"
-
-
-def extract_candidates(html, item_name):
-    soup = BeautifulSoup(html, "html.parser")
-    text = " ".join(soup.stripped_strings)
-    lower = text.lower()
-    idx = lower.find(item_name.lower())
-    window = text[max(0, idx - 800): idx + 5000] if idx >= 0 else text[:12000]
-
-    money = []
-    for pattern in PRICE_PATTERNS:
-        for m in pattern.finditer(window):
-            value = round(money_to_gold(m), 4)
-            if value > 0 and value not in money:
-                money.append(value)
-
-    numeric = []
-    for m in NUMERIC_KEY_RE.finditer(html):
-        entry = {"key": m.group("key")[:120], "value": float(m.group("value"))}
-        if entry not in numeric:
-            numeric.append(entry)
-        if len(numeric) >= 50:
-            break
-
-    return {
-        "item_found_in_text": idx >= 0,
-        "text_excerpt": window[:2500],
-        "money_candidates_gold": money[:50],
-        "numeric_price_key_candidates": numeric,
-    }
+def find_item(rows, item_id):
+    wanted = str(item_id)
+    for row in rows:
+        for key in ("itemId", "itemID", "id"):
+            if row.get(key) == wanted:
+                return row
+    return None
 
 
 def main():
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
-    market = config["market"]
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Cache-Control": "no-cache",
-        "Pragma": "no-cache",
-    })
-
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "market": market,
-        "items": [],
+        "market": config["market"],
+        "sources": [],
     }
 
-    for item in config["items"]:
-        url = scoped_url(market, item)
-        row = {"id": item["id"], "name": item["name"], "url": url}
+    session = requests.Session()
+    session.headers.update({"User-Agent": "thunderstrike-gold-scanner/0.1"})
+
+    for url in CANDIDATE_URLS:
+        src = {"url": url}
         try:
-            response = session.get(url, timeout=30, allow_redirects=True)
-            row["http_status"] = response.status_code
-            row["final_url"] = response.url
-            row["content_length"] = len(response.text)
-            row["response_headers"] = {
-                k: v for k, v in response.headers.items()
-                if k.lower() in {"server", "content-type", "cf-ray", "cf-cache-status", "location", "x-vercel-id"}
-            }
-            row["body_preview"] = response.text[:1000]
-            row.update(extract_candidates(response.text, item["name"]))
-            if "expected_validation_gold" in item:
-                expected = item["expected_validation_gold"]
-                row["expected_validation_gold"] = expected
-                row["validation_match"] = any(
-                    abs(candidate - expected) <= 0.0001
-                    for candidate in row["money_candidates_gold"]
-                )
+            r = session.get(url, timeout=45, allow_redirects=True)
+            src["http_status"] = r.status_code
+            src["content_type"] = r.headers.get("content-type")
+            src["content_length"] = len(r.content)
+            src["body_preview"] = r.text[:300]
+            if r.status_code == 200:
+                rows = parse_csv(r.text)
+                src["row_count"] = len(rows)
+                src["columns"] = list(rows[0].keys()) if rows else []
+                src["items"] = []
+                for item in config["items"]:
+                    found = find_item(rows, item["id"])
+                    entry = {"id": item["id"], "name": item["name"], "row": found}
+                    src["items"].append(entry)
+                if rows:
+                    result["selected_url"] = url
+                    result["selected_columns"] = src["columns"]
+                    result["selected_items"] = src["items"]
+                    result["sources"].append(src)
+                    break
         except Exception as exc:
-            row["error"] = repr(exc)
-        result["items"].append(row)
+            src["error"] = repr(exc)
+        result["sources"].append(src)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    arcane = next((x for x in result["items"] if x["id"] == 22445), None)
-    print("Arcane Dust HTTP:", arcane.get("http_status") if arcane else None)
-    print("Arcane Dust candidates:", arcane.get("money_candidates_gold") if arcane else None)
-    print("Arcane Dust validation:", arcane.get("validation_match") if arcane else None)
+    print("Selected TSM source:", result.get("selected_url"))
+    if result.get("selected_items"):
+        arcane = next((x for x in result["selected_items"] if x["id"] == 22445), None)
+        print("Arcane Dust row:", arcane)
 
 
 if __name__ == "__main__":
