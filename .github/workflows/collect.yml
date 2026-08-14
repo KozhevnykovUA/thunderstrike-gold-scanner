@@ -7,6 +7,7 @@ on:
     paths:
       - 'collector.py'
       - 'optimizer.py'
+      - 'disenchant_optimizer.py'
       - 'requirements.txt'
       - 'config/**'
       - 'recipes/**'
@@ -42,34 +43,33 @@ jobs:
       - name: Build Enchanting report
         run: python optimizer.py
 
+      - name: Build disenchant thresholds
+        run: python disenchant_optimizer.py
+
       - name: Show optimizer summary
         run: |
           python - <<'PY'
           import json
           p=json.load(open('data/prices.json'))
           d=json.load(open('data/enchanting_report.json'))
+          de=json.load(open('data/disenchant_thresholds.json'))
           print('Price source:', p.get('source'))
           print('Live items updated:', p.get('live_items_updated'))
           print('Market:', d['market'])
-          print('Ranking:', d.get('economics_model', {}).get('ranking_metric'))
-          for x in d['recipes']:
-              print(
-                  x['name'],
-                  'gross=', x.get('gross_material_cost_gold'),
-                  'recovery=', x.get('sale_recovery', {}).get('expected_recovery_gold'),
-                  'net=', x.get('net_craft_cost_gold'),
-                  'recovery_status=', x.get('sale_recovery', {}).get('status'),
-              )
           print('Baseline route:', d.get('baseline_route_segments'))
-          print('Conditional route:', d.get('conditional_route_segments'))
+          print('Baseline total:', d.get('baseline_route_summary'))
           print('All route:', d.get('all_route_segments'))
+          print('All total:', d.get('all_route_summary'))
+          print('Disenchant thresholds:')
+          for x in de['thresholds']:
+              print(x['item_type'], x['item_level_min'], '-', x['item_level_max'], 'EV=', x['expected_disenchant_value_gold'], 'safe<=', x['conservative_buy_ceiling_gold'])
           PY
 
       - name: Commit generated output
         run: |
           git config user.name 'thunderstrike-gold-scanner'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/prices.json data/diagnostics.json data/enchanting_report.json
+          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json
           if git diff --cached --quiet; then
             echo 'No changes'
           else
