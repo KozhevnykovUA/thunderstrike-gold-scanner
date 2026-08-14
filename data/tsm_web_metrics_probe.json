@@ -222,17 +222,25 @@
       "item_id": 28420,
       "name": "Fel Weightstone",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28420",
-      "status": 429,
+      "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28420",
-      "content_length": 8136
+      "content_length": 588418,
+      "region_sale_rate": 0.22,
+      "region_avg_daily_sold": 11.22,
+      "contains_sale_rate_label": true,
+      "contains_daily_sold_label": true
     },
     "23559": {
       "item_id": 23559,
       "name": "Lesser Rune of Warding",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23559",
-      "status": 429,
+      "status": 200,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23559",
-      "content_length": 8136
+      "content_length": 588376,
+      "region_sale_rate": 0.189,
+      "region_avg_daily_sold": 22.586,
+      "contains_sale_rate_label": true,
+      "contains_daily_sold_label": true
     },
     "23575": {
       "item_id": 23575,
@@ -240,7 +248,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23575",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23575",
-      "content_length": 8136
+      "content_length": 8137
     },
     "28421": {
       "item_id": 28421,
@@ -248,7 +256,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28421",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28421",
-      "content_length": 8136
+      "content_length": 8137
     },
     "23524": {
       "item_id": 23524,
@@ -256,7 +264,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23524",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23524",
-      "content_length": 8136
+      "content_length": 8137
     }
   }
 }

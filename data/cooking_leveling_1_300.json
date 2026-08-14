@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:53:42.552500+00:00",
+  "generated_at": "2026-08-14T16:55:11.070150+00:00",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "model": "minimize expected net leveling cost after 5% AH cut and one-listing sale-rate-weighted recovery",
   "route": [
@@ -21,6 +21,7 @@
       "sell_gold": 0.0009,
       "sale_rate": null,
       "sold_per_day": null,
+      "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0001,
       "net_per_craft_gold": 0.0017,
       "segment_net_gold": 0.09,
@@ -44,6 +45,7 @@
       "sell_gold": 0.0006,
       "sale_rate": null,
       "sold_per_day": null,
+      "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0001,
       "net_per_craft_gold": 0.001,
       "segment_net_gold": 0.06,
@@ -67,6 +69,7 @@
       "sell_gold": 0.0054,
       "sale_rate": null,
       "sold_per_day": null,
+      "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0005,
       "net_per_craft_gold": 0.0605,
       "segment_net_gold": 7.26,
@@ -75,25 +78,26 @@
     {
       "from": 175,
       "to": 225,
-      "output": "Mithril Head Trout",
-      "output_item_id": 8364,
-      "expected_crafts": 60,
+      "output": "Rockscale Cod",
+      "output_item_id": 4594,
+      "expected_crafts": 75,
       "materials": [
         {
-          "name": "Raw Mithril Head Trout",
+          "name": "Raw Rockscale Cod",
           "qty": 1,
-          "unit_gold": 0.0183,
-          "item_id": 8365
+          "unit_gold": 0.0009,
+          "item_id": 6362
         }
       ],
-      "gross_per_craft_gold": 0.0183,
-      "sell_gold": 23.6666,
+      "gross_per_craft_gold": 0.0009,
+      "sell_gold": 0.0051,
       "sale_rate": null,
       "sold_per_day": null,
-      "expected_recovery_per_craft_gold": 2.2483,
-      "net_per_craft_gold": 0,
-      "segment_net_gold": 0,
-      "recipe": "Recipe: Mithril Head Trout"
+      "sale_price_anomaly": false,
+      "expected_recovery_per_craft_gold": 0.0005,
+      "net_per_craft_gold": 0.0004,
+      "segment_net_gold": 0.03,
+      "recipe": "Recipe: Rockscale Cod"
     },
     {
       "from": 225,
@@ -113,6 +117,7 @@
       "sell_gold": 0.004,
       "sale_rate": null,
       "sold_per_day": null,
+      "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0004,
       "net_per_craft_gold": 0.0203,
       "segment_net_gold": 0.51,
@@ -136,6 +141,7 @@
       "sell_gold": 0.004,
       "sale_rate": null,
       "sold_per_day": null,
+      "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0004,
       "net_per_craft_gold": 0.0203,
       "segment_net_gold": 1.32,
@@ -165,6 +171,7 @@
       "sell_gold": 0.0419,
       "sale_rate": null,
       "sold_per_day": null,
+      "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.004,
       "net_per_craft_gold": 0.6559,
       "segment_net_gold": 16.4,
@@ -192,6 +199,7 @@
           "sell_gold": 0.0009,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0001,
           "net_per_craft_gold": 0.0017,
           "segment_net_gold": 0.09,
@@ -219,6 +227,7 @@
           "sell_gold": 0.0006,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0001,
           "net_per_craft_gold": 0.001,
           "segment_net_gold": 0.06,
@@ -246,6 +255,7 @@
           "sell_gold": 0.0054,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0005,
           "net_per_craft_gold": 0.0605,
           "segment_net_gold": 7.26,
@@ -257,27 +267,6 @@
       "from": 175,
       "to": 225,
       "ranked": [
-        {
-          "output": "Mithril Head Trout",
-          "output_item_id": 8364,
-          "expected_crafts": 60,
-          "materials": [
-            {
-              "name": "Raw Mithril Head Trout",
-              "qty": 1,
-              "unit_gold": 0.0183,
-              "item_id": 8365
-            }
-          ],
-          "gross_per_craft_gold": 0.0183,
-          "sell_gold": 23.6666,
-          "sale_rate": null,
-          "sold_per_day": null,
-          "expected_recovery_per_craft_gold": 2.2483,
-          "net_per_craft_gold": 0,
-          "segment_net_gold": 0,
-          "recipe": "Recipe: Mithril Head Trout"
-        },
         {
           "output": "Rockscale Cod",
           "output_item_id": 4594,
@@ -294,10 +283,33 @@
           "sell_gold": 0.0051,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0005,
           "net_per_craft_gold": 0.0004,
           "segment_net_gold": 0.03,
           "recipe": "Recipe: Rockscale Cod"
+        },
+        {
+          "output": "Mithril Head Trout",
+          "output_item_id": 8364,
+          "expected_crafts": 60,
+          "materials": [
+            {
+              "name": "Raw Mithril Head Trout",
+              "qty": 1,
+              "unit_gold": 0.0183,
+              "item_id": 8365
+            }
+          ],
+          "gross_per_craft_gold": 0.0183,
+          "sell_gold": 23.6666,
+          "sale_rate": null,
+          "sold_per_day": null,
+          "sale_price_anomaly": true,
+          "expected_recovery_per_craft_gold": 0,
+          "net_per_craft_gold": 0.0183,
+          "segment_net_gold": 1.1,
+          "recipe": "Recipe: Mithril Head Trout"
         }
       ]
     },
@@ -321,6 +333,7 @@
           "sell_gold": 0.004,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0004,
           "net_per_craft_gold": 0.0203,
           "segment_net_gold": 0.51,
@@ -348,6 +361,7 @@
           "sell_gold": 0.116,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.011,
           "net_per_craft_gold": 0.1694,
           "segment_net_gold": 4.23,
@@ -375,6 +389,7 @@
           "sell_gold": 0.004,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0004,
           "net_per_craft_gold": 0.0203,
           "segment_net_gold": 1.32,
@@ -396,6 +411,7 @@
           "sell_gold": 0.0049,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0005,
           "net_per_craft_gold": 0.2465,
           "segment_net_gold": 8.63,
@@ -423,6 +439,7 @@
           "sell_gold": 0.7989,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0759,
           "net_per_craft_gold": 0.4136,
           "segment_net_gold": 14.48,
@@ -456,6 +473,7 @@
           "sell_gold": 0.0419,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.004,
           "net_per_craft_gold": 0.6559,
           "segment_net_gold": 16.4,
@@ -483,6 +501,7 @@
           "sell_gold": 0.0299,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0028,
           "net_per_craft_gold": 1.0311,
           "segment_net_gold": 25.78,
@@ -516,6 +535,7 @@
           "sell_gold": 0.4592,
           "sale_rate": null,
           "sold_per_day": null,
+          "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0436,
           "net_per_craft_gold": 6.0704,
           "segment_net_gold": 151.76,
@@ -538,8 +558,8 @@
       "qty": 120
     },
     {
-      "name": "Raw Mithril Head Trout",
-      "qty": 60
+      "name": "Raw Rockscale Cod",
+      "qty": 75
     },
     {
       "name": "Raw Spotted Yellowtail",
@@ -583,8 +603,8 @@
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
-      "name": "Recipe: Mithril Head Trout",
-      "ah_recent_gold": 0.2996,
+      "name": "Recipe: Rockscale Cod",
+      "ah_recent_gold": 0.1996,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
@@ -608,11 +628,11 @@
     "Zesty Clam Meat": 10,
     "Alterac Swiss": 20
   },
-  "estimated_net_material_cost_gold": 25.64,
+  "estimated_net_material_cost_gold": 25.67,
   "notes": [
     "Sale rate and sold/day are regional TSM metrics, not Thunderstrike-only sales counts.",
     "Amounts are conservative expected-craft quantities; RNG may require a small top-up.",
     "Smoked Desert Dumplings is excluded because its recipe is quest-earned rather than AH-buyable.",
-    "Known Classic TSM name collisions are resolved with canonical item IDs where needed."
+    "Implausible low-level food price spikes are excluded from sale recovery."
   ]
 }

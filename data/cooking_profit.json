@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:53:42.158929+00:00",
+  "generated_at": "2026-08-14T16:55:10.648580+00:00",
   "source": "TSM public pricing + TSM server-rendered regional sale metrics + TSM Gold heatmap snapshot",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "pricing_transport": "workflow_cache",

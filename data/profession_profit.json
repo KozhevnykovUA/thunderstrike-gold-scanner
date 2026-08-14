@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:53:42.647496+00:00",
+  "generated_at": "2026-08-14T16:55:11.142652+00:00",
   "source": "TSM realm prices + TSM regional sale metrics",
   "opportunities": [
     {
@@ -33,6 +33,58 @@
     },
     {
       "profession": "Blacksmithing",
+      "output": "Fel Weightstone",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Fel Iron Bar",
+          "qty": 1,
+          "unit_buy_gold": 1.5518,
+          "cost_gold": 1.5518
+        },
+        {
+          "name": "Netherweave Cloth",
+          "qty": 1,
+          "unit_buy_gold": 0.1486,
+          "cost_gold": 0.1486
+        }
+      ],
+      "material_cost_gold": 1.7004,
+      "sell_recent_gold": 1.3977,
+      "net_sale_after_5pct_gold": 1.3278,
+      "profit_per_craft_gold": -0.3726,
+      "roi_pct": -21.9,
+      "region_sale_rate": 0.22,
+      "region_avg_daily_sold": 11.22,
+      "expected_profit_per_listing_gold": -0.082,
+      "regional_demand_profit_index": -4.18,
+      "profitable": false
+    },
+    {
+      "profession": "Blacksmithing",
+      "output": "Lesser Rune of Warding",
+      "requirements": null,
+      "materials": [
+        {
+          "name": "Adamantite Bar",
+          "qty": 1,
+          "unit_buy_gold": 4.2428,
+          "cost_gold": 4.2428
+        }
+      ],
+      "material_cost_gold": 4.2428,
+      "sell_recent_gold": 0.2713,
+      "net_sale_after_5pct_gold": 0.2577,
+      "profit_per_craft_gold": -3.9851,
+      "roi_pct": -93.9,
+      "region_sale_rate": 0.189,
+      "region_avg_daily_sold": 22.586,
+      "expected_profit_per_listing_gold": -0.7532,
+      "regional_demand_profit_index": -90.01,
+      "profitable": false
+    },
+    {
+      "profession": "Blacksmithing",
       "output": "Adamantite Weightstone",
       "requirements": "Cenarion Expedition - Honored",
       "materials": [
@@ -62,35 +114,6 @@
     },
     {
       "profession": "Blacksmithing",
-      "output": "Fel Weightstone",
-      "requirements": null,
-      "materials": [
-        {
-          "name": "Fel Iron Bar",
-          "qty": 1,
-          "unit_buy_gold": 1.5518,
-          "cost_gold": 1.5518
-        },
-        {
-          "name": "Netherweave Cloth",
-          "qty": 1,
-          "unit_buy_gold": 0.1486,
-          "cost_gold": 0.1486
-        }
-      ],
-      "material_cost_gold": 1.7004,
-      "sell_recent_gold": 1.3977,
-      "net_sale_after_5pct_gold": 1.3278,
-      "profit_per_craft_gold": -0.3726,
-      "roi_pct": -21.9,
-      "region_sale_rate": null,
-      "region_avg_daily_sold": null,
-      "expected_profit_per_listing_gold": null,
-      "regional_demand_profit_index": null,
-      "profitable": false
-    },
-    {
-      "profession": "Blacksmithing",
       "output": "Lesser Ward of Shielding",
       "requirements": null,
       "materials": [
@@ -106,29 +129,6 @@
       "net_sale_after_5pct_gold": 0.7595,
       "profit_per_craft_gold": -3.4833,
       "roi_pct": -82.1,
-      "region_sale_rate": null,
-      "region_avg_daily_sold": null,
-      "expected_profit_per_listing_gold": null,
-      "regional_demand_profit_index": null,
-      "profitable": false
-    },
-    {
-      "profession": "Blacksmithing",
-      "output": "Lesser Rune of Warding",
-      "requirements": null,
-      "materials": [
-        {
-          "name": "Adamantite Bar",
-          "qty": 1,
-          "unit_buy_gold": 4.2428,
-          "cost_gold": 4.2428
-        }
-      ],
-      "material_cost_gold": 4.2428,
-      "sell_recent_gold": 0.2713,
-      "net_sale_after_5pct_gold": 0.2577,
-      "profit_per_craft_gold": -3.9851,
-      "roi_pct": -93.9,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
