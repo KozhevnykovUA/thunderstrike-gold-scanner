@@ -4,39 +4,70 @@
   "recipes": [
     {
       "name": "Enchant Cloak - Major Armor",
+      "required_skill": 310,
       "skill": {"yellow": 325, "green": 340, "gray": 355},
       "materials": {"22445": 8},
       "notes": "Current Wowhead route uses this from 317; price comparison can make it attractive through 335."
     },
     {
       "name": "Enchant Chest - Major Spirit",
+      "required_skill": 320,
       "skill": {"yellow": 330, "green": 345, "gray": 360},
       "materials": {"22446": 2},
       "notes": "Baseline alternative after 320."
     },
     {
       "name": "Superior Wizard Oil",
+      "required_skill": 340,
       "skill": {"yellow": 350, "green": 365, "gray": 380},
       "materials": {"22445": 3, "22792": 1},
       "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available."
     },
     {
       "name": "Runed Adamantite Rod",
+      "required_skill": 350,
       "skill": {"yellow": 350, "green": 350, "gray": 350},
       "materials": {"22446": 8, "22449": 8, "23571": 1},
-      "notes": "Also requires 1 Adamantite Rod. Required tool investment."
+      "notes": "Also requires 1 Adamantite Rod. Required tool investment; not treated as a repeatable leveling recipe."
     },
     {
       "name": "Enchant Gloves - Major Strength",
+      "required_skill": 350,
       "skill": {"yellow": 360, "green": 370, "gray": 380},
       "materials": {"22445": 12, "22446": 1},
       "notes": "Baseline 351-365 route."
     },
     {
+      "name": "Enchant Ring - Striking",
+      "required_skill": 360,
+      "skill": {"yellow": 365, "green": 370, "gray": 375},
+      "materials": {"22449": 2, "22445": 6},
+      "requirements": {"reputation": "The Consortium - Revered"},
+      "notes": "Wowhead lists this as an alternative for 351-365 and comments describe it as useful through 370. Skill breakpoints are provisional until exact data is sourced."
+    },
+    {
       "name": "Enchant Ring - Spellpower",
+      "required_skill": 360,
       "skill": {"yellow": 370, "green": 375, "gray": 380},
       "materials": {"22449": 2, "22446": 2},
-      "notes": "Baseline 365-375 route; requires Honored Keepers of Time."
+      "requirements": {"reputation": "Keepers of Time - Honored"},
+      "notes": "Baseline 365-375 route."
+    },
+    {
+      "name": "Enchant Ring - Healing Power",
+      "required_skill": 370,
+      "skill": {"yellow": 375, "green": 380, "gray": 385},
+      "materials": {"22449": 2, "22446": 3, "22445": 5},
+      "requirements": {"reputation": "The Sha'tar - Revered"},
+      "notes": "Wowhead comments identify this as orange for 370-375. Later breakpoints are provisional; only 370-375 matters for this optimizer."
+    },
+    {
+      "name": "Enchant Chest - Defense",
+      "required_skill": 360,
+      "skill": {"yellow": 370, "green": 375, "gray": 380},
+      "materials": {"22446": 4, "22445": 8, "23427": 4},
+      "requirements": {"reputation": "Shattered Sun Offensive - Honored", "phase_note": "Available with Shattered Sun Offensive content"},
+      "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; currently excluded from ranking until item 23427 has a price."
     }
   ]
 }
