@@ -13,7 +13,7 @@
     "orange": 1.0,
     "yellow_to_green": "linear 1.0 -> 0.5",
     "green_to_gray": "linear 0.5 -> 0.0",
-    "note": "Used for route comparison; exact recipe availability and reputation requirements are enforced where known."
+    "note": "Used for route comparison; exact recipe availability and reputation requirements are preserved in output."
   },
   "recipes": [
     {
@@ -27,6 +27,7 @@
       "requirements": null,
       "material_cost_gold": 7.7296,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Current Wowhead route uses this from 317; price comparison can make it attractive through 335.",
       "skill_curve": [
         {
@@ -267,6 +268,7 @@
       "requirements": null,
       "material_cost_gold": 11.4826,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Baseline alternative after 320.",
       "skill_curve": [
         {
@@ -482,6 +484,7 @@
       "requirements": null,
       "material_cost_gold": 6.7989,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Also requires 1 Imbued Vial; product can be sold, so recovery value should be subtracted once product price is available.",
       "skill_curve": [
         {
@@ -672,6 +675,7 @@
       "requirements": null,
       "material_cost_gold": 294.6969,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": false,
       "notes": "Also requires 1 Adamantite Rod. Required tool investment; not treated as a repeatable leveling recipe.",
       "skill_curve": []
     },
@@ -686,6 +690,7 @@
       "requirements": null,
       "material_cost_gold": 17.3357,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Baseline 351-365 route.",
       "skill_curve": [
         {
@@ -828,6 +833,7 @@
       },
       "material_cost_gold": 45.3644,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Wowhead lists this as an alternative for 351-365 and comments describe it as useful through 370. Skill breakpoints are provisional until exact data is sourced.",
       "skill_curve": [
         {
@@ -920,6 +926,7 @@
       },
       "material_cost_gold": 51.0498,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Baseline 365-375 route.",
       "skill_curve": [
         {
@@ -1012,6 +1019,7 @@
       },
       "material_cost_gold": 61.6221,
       "missing_price_item_ids": [],
+      "repeatable_for_leveling": true,
       "notes": "Wowhead comments identify this as orange for 370-375. Later breakpoints are provisional; only 370-375 matters for this optimizer.",
       "skill_curve": [
         {
@@ -1057,6 +1065,7 @@
       "missing_price_item_ids": [
         "23427"
       ],
+      "repeatable_for_leveling": true,
       "notes": "Potentially cheap 360-375 option if Eternium Ore is inexpensive; currently excluded from ranking until item 23427 has a price.",
       "skill_curve": [
         {
@@ -2742,6 +2751,60 @@
           }
         }
       ]
+    }
+  ],
+  "baseline_route_segments": [
+    {
+      "from_skill": 310,
+      "to_skill": 340,
+      "recipe": "Enchant Cloak - Major Armor",
+      "requirements": null
+    },
+    {
+      "from_skill": 340,
+      "to_skill": 375,
+      "recipe": "Superior Wizard Oil",
+      "requirements": null
+    }
+  ],
+  "conditional_route_segments": [
+    {
+      "from_skill": 360,
+      "to_skill": 367,
+      "recipe": "Enchant Ring - Striking",
+      "requirements": {
+        "reputation": "The Consortium - Revered"
+      }
+    },
+    {
+      "from_skill": 367,
+      "to_skill": 372,
+      "recipe": "Enchant Ring - Spellpower",
+      "requirements": {
+        "reputation": "Keepers of Time - Honored"
+      }
+    },
+    {
+      "from_skill": 372,
+      "to_skill": 375,
+      "recipe": "Enchant Ring - Healing Power",
+      "requirements": {
+        "reputation": "The Sha'tar - Revered"
+      }
+    }
+  ],
+  "all_route_segments": [
+    {
+      "from_skill": 310,
+      "to_skill": 340,
+      "recipe": "Enchant Cloak - Major Armor",
+      "requirements": null
+    },
+    {
+      "from_skill": 340,
+      "to_skill": 375,
+      "recipe": "Superior Wizard Oil",
+      "requirements": null
     }
   ]
 }
