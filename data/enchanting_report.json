@@ -7,6 +7,8 @@
     "auction_house_id": 2
   },
   "price_source": "bootybaybroker_browser_session_snapshot",
+  "current_phase": 2,
+  "phase_verified_at": "2026-08-14",
   "warning": "Market-depth tiers are not available yet. effective_buy_gold currently uses the BBB market-value snapshot as a proxy. Safe scenario applies +7.5% to input buy prices. Sale recovery is credited only with explicit demand probability.",
   "economics_model": {
     "ranking_metric": "(material cost - expected sale recovery) / skill-up probability",
@@ -38,6 +40,7 @@
         "16203": 4,
         "14344": 6
       },
+      "available_now": true,
       "gross_material_cost_gold": null,
       "safe_gross_material_cost_gold": null,
       "sale_recovery": {
@@ -67,6 +70,7 @@
       "materials": {
         "16204": 8
       },
+      "available_now": true,
       "gross_material_cost_gold": null,
       "safe_gross_material_cost_gold": null,
       "sale_recovery": {
@@ -340,6 +344,7 @@
       "materials": {
         "22445": 8
       },
+      "available_now": true,
       "gross_material_cost_gold": 6.8376,
       "safe_gross_material_cost_gold": 7.3504,
       "sale_recovery": {
@@ -646,6 +651,7 @@
       "materials": {
         "22446": 2
       },
+      "available_now": true,
       "gross_material_cost_gold": 10.1876,
       "safe_gross_material_cost_gold": 10.9517,
       "sale_recovery": {
@@ -953,6 +959,7 @@
         "22445": 3,
         "22792": 1
       },
+      "available_now": true,
       "gross_material_cost_gold": 7.1907,
       "safe_gross_material_cost_gold": 7.73,
       "sale_recovery": {
@@ -1127,6 +1134,7 @@
         "23571": 1,
         "25844": 1
       },
+      "available_now": true,
       "gross_material_cost_gold": 318.8663,
       "safe_gross_material_cost_gold": 342.7813,
       "sale_recovery": {
@@ -1153,6 +1161,7 @@
         "22445": 12,
         "22446": 1
       },
+      "available_now": true,
       "gross_material_cost_gold": 15.3502,
       "safe_gross_material_cost_gold": 16.5015,
       "sale_recovery": {
@@ -1427,6 +1436,7 @@
         "22449": 2,
         "22445": 6
       },
+      "available_now": true,
       "gross_material_cost_gold": 42.1162,
       "safe_gross_material_cost_gold": 45.2749,
       "sale_recovery": {
@@ -1562,6 +1572,7 @@
         "22449": 2,
         "22446": 2
       },
+      "available_now": false,
       "gross_material_cost_gold": 47.1756,
       "safe_gross_material_cost_gold": 50.7138,
       "sale_recovery": {
@@ -1573,113 +1584,7 @@
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Phase 3 recipe. Blizzard has Phase 3 launching August 27, 2026, so it is excluded from current Phase 2 optimization.",
-      "skill_curve": [
-        {
-          "skill": 360,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 361,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 362,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 363,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 364,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 365,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 366,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 367,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 368,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 369,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 370,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138
-        },
-        {
-          "skill": 371,
-          "skillup_probability": 0.9667,
-          "expected_gross_cost_per_skill_gold": 48.8023,
-          "expected_net_cost_per_skill_gold": 48.8023,
-          "expected_safe_net_cost_per_skill_gold": 52.4626
-        },
-        {
-          "skill": 372,
-          "skillup_probability": 0.9333,
-          "expected_gross_cost_per_skill_gold": 50.5453,
-          "expected_net_cost_per_skill_gold": 50.5453,
-          "expected_safe_net_cost_per_skill_gold": 54.3362
-        },
-        {
-          "skill": 373,
-          "skillup_probability": 0.9,
-          "expected_gross_cost_per_skill_gold": 52.4173,
-          "expected_net_cost_per_skill_gold": 52.4173,
-          "expected_safe_net_cost_per_skill_gold": 56.3487
-        },
-        {
-          "skill": 374,
-          "skillup_probability": 0.8667,
-          "expected_gross_cost_per_skill_gold": 54.4334,
-          "expected_net_cost_per_skill_gold": 54.4334,
-          "expected_safe_net_cost_per_skill_gold": 58.5159
-        }
-      ]
+      "skill_curve": []
     },
     {
       "name": "Enchant Ring - Healing Power",
@@ -1697,6 +1602,7 @@
         "22446": 3,
         "22445": 5
       },
+      "available_now": true,
       "gross_material_cost_gold": 56.5429,
       "safe_gross_material_cost_gold": 60.7836,
       "sale_recovery": {
@@ -1763,6 +1669,7 @@
         "22445": 8,
         "23427": 4
       },
+      "available_now": false,
       "gross_material_cost_gold": 28.6904,
       "safe_gross_material_cost_gold": 30.8422,
       "sale_recovery": {
@@ -1774,114 +1681,12 @@
       "missing_price_item_ids": [],
       "repeatable_for_leveling": true,
       "notes": "Phase 5 recipe. Excluded from current Phase 2 optimization.",
-      "skill_curve": [
-        {
-          "skill": 360,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 361,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 362,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 363,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 364,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 365,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 366,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 367,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 368,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 369,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 370,
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422
-        },
-        {
-          "skill": 371,
-          "skillup_probability": 0.9667,
-          "expected_gross_cost_per_skill_gold": 29.6797,
-          "expected_net_cost_per_skill_gold": 29.6797,
-          "expected_safe_net_cost_per_skill_gold": 31.9057
-        },
-        {
-          "skill": 372,
-          "skillup_probability": 0.9333,
-          "expected_gross_cost_per_skill_gold": 30.7397,
-          "expected_net_cost_per_skill_gold": 30.7397,
-          "expected_safe_net_cost_per_skill_gold": 33.0452
-        },
-        {
-          "skill": 373,
-          "skillup_probability": 0.9,
-          "expected_gross_cost_per_skill_gold": 31.8782,
-          "expected_net_cost_per_skill_gold": 31.8782,
-          "expected_safe_net_cost_per_skill_gold": 34.2691
-        },
-        {
-          "skill": 374,
-          "skillup_probability": 0.8667,
-          "expected_gross_cost_per_skill_gold": 33.1043,
-          "expected_net_cost_per_skill_gold": 33.1043,
-          "expected_safe_net_cost_per_skill_gold": 35.5872
-        }
-      ]
+      "skill_curve": []
     }
+  ],
+  "inactive_recipes": [
+    "Enchant Ring - Spellpower",
+    "Enchant Chest - Defense"
   ],
   "cheapest_by_skill": [
     {
@@ -3701,22 +3506,6 @@
       },
       "alternatives": [
         {
-          "name": "Enchant Chest - Defense",
-          "gross_craft_cost_gold": 28.6904,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 28.6904,
-          "safe_net_craft_cost_gold": 30.8422,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422,
-          "requirements": {
-            "reputation": "Shattered Sun Offensive - Honored",
-            "phase": 5
-          }
-        },
-        {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
           "expected_sale_recovery_gold": 0.0,
@@ -3729,22 +3518,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -3766,22 +3539,6 @@
       },
       "alternatives": [
         {
-          "name": "Enchant Chest - Defense",
-          "gross_craft_cost_gold": 28.6904,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 28.6904,
-          "safe_net_craft_cost_gold": 30.8422,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422,
-          "requirements": {
-            "reputation": "Shattered Sun Offensive - Honored",
-            "phase": 5
-          }
-        },
-        {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
           "expected_sale_recovery_gold": 0.0,
@@ -3794,22 +3551,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -3831,22 +3572,6 @@
       },
       "alternatives": [
         {
-          "name": "Enchant Chest - Defense",
-          "gross_craft_cost_gold": 28.6904,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 28.6904,
-          "safe_net_craft_cost_gold": 30.8422,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422,
-          "requirements": {
-            "reputation": "Shattered Sun Offensive - Honored",
-            "phase": 5
-          }
-        },
-        {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
           "expected_sale_recovery_gold": 0.0,
@@ -3859,22 +3584,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -3896,22 +3605,6 @@
       },
       "alternatives": [
         {
-          "name": "Enchant Chest - Defense",
-          "gross_craft_cost_gold": 28.6904,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 28.6904,
-          "safe_net_craft_cost_gold": 30.8422,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 28.6904,
-          "expected_net_cost_per_skill_gold": 28.6904,
-          "expected_safe_net_cost_per_skill_gold": 30.8422,
-          "requirements": {
-            "reputation": "Shattered Sun Offensive - Honored",
-            "phase": 5
-          }
-        },
-        {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
           "expected_sale_recovery_gold": 0.0,
@@ -3924,22 +3617,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -3947,35 +3624,19 @@
     {
       "skill": 364,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Gloves - Major Strength",
+        "gross_craft_cost_gold": 15.3502,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 15.3502,
+        "safe_net_craft_cost_gold": 16.5015,
         "sale_recovery_status": "not_saleable",
-        "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
-        "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
-        }
+        "skillup_probability": 0.5333,
+        "expected_gross_cost_per_skill_gold": 28.7816,
+        "expected_net_cost_per_skill_gold": 28.7816,
+        "expected_safe_net_cost_per_skill_gold": 30.9403,
+        "requirements": null
       },
       "alternatives": [
-        {
-          "name": "Enchant Gloves - Major Strength",
-          "gross_craft_cost_gold": 15.3502,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 15.3502,
-          "safe_net_craft_cost_gold": 16.5015,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.5333,
-          "expected_gross_cost_per_skill_gold": 28.7816,
-          "expected_net_cost_per_skill_gold": 28.7816,
-          "expected_safe_net_cost_per_skill_gold": 30.9403,
-          "requirements": null
-        },
         {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
@@ -3989,22 +3650,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -4012,35 +3657,19 @@
     {
       "skill": 365,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Gloves - Major Strength",
+        "gross_craft_cost_gold": 15.3502,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 15.3502,
+        "safe_net_craft_cost_gold": 16.5015,
         "sale_recovery_status": "not_saleable",
-        "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
-        "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
-        }
+        "skillup_probability": 0.5,
+        "expected_gross_cost_per_skill_gold": 30.7004,
+        "expected_net_cost_per_skill_gold": 30.7004,
+        "expected_safe_net_cost_per_skill_gold": 33.003,
+        "requirements": null
       },
       "alternatives": [
-        {
-          "name": "Enchant Gloves - Major Strength",
-          "gross_craft_cost_gold": 15.3502,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 15.3502,
-          "safe_net_craft_cost_gold": 16.5015,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.5,
-          "expected_gross_cost_per_skill_gold": 30.7004,
-          "expected_net_cost_per_skill_gold": 30.7004,
-          "expected_safe_net_cost_per_skill_gold": 33.003,
-          "requirements": null
-        },
         {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
@@ -4054,22 +3683,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -4077,35 +3690,19 @@
     {
       "skill": 366,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Gloves - Major Strength",
+        "gross_craft_cost_gold": 15.3502,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 15.3502,
+        "safe_net_craft_cost_gold": 16.5015,
         "sale_recovery_status": "not_saleable",
-        "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
-        "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
-        }
+        "skillup_probability": 0.4667,
+        "expected_gross_cost_per_skill_gold": 32.8933,
+        "expected_net_cost_per_skill_gold": 32.8933,
+        "expected_safe_net_cost_per_skill_gold": 35.3604,
+        "requirements": null
       },
       "alternatives": [
-        {
-          "name": "Enchant Gloves - Major Strength",
-          "gross_craft_cost_gold": 15.3502,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 15.3502,
-          "safe_net_craft_cost_gold": 16.5015,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.4667,
-          "expected_gross_cost_per_skill_gold": 32.8933,
-          "expected_net_cost_per_skill_gold": 32.8933,
-          "expected_safe_net_cost_per_skill_gold": 35.3604,
-          "requirements": null
-        },
         {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
@@ -4119,22 +3716,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -4142,35 +3723,19 @@
     {
       "skill": 367,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Gloves - Major Strength",
+        "gross_craft_cost_gold": 15.3502,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 15.3502,
+        "safe_net_craft_cost_gold": 16.5015,
         "sale_recovery_status": "not_saleable",
-        "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
-        "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
-        }
+        "skillup_probability": 0.4333,
+        "expected_gross_cost_per_skill_gold": 35.4235,
+        "expected_net_cost_per_skill_gold": 35.4235,
+        "expected_safe_net_cost_per_skill_gold": 38.0804,
+        "requirements": null
       },
       "alternatives": [
-        {
-          "name": "Enchant Gloves - Major Strength",
-          "gross_craft_cost_gold": 15.3502,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 15.3502,
-          "safe_net_craft_cost_gold": 16.5015,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.4333,
-          "expected_gross_cost_per_skill_gold": 35.4235,
-          "expected_net_cost_per_skill_gold": 35.4235,
-          "expected_safe_net_cost_per_skill_gold": 38.0804,
-          "requirements": null
-        },
         {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
@@ -4184,22 +3749,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -4207,35 +3756,19 @@
     {
       "skill": 368,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Gloves - Major Strength",
+        "gross_craft_cost_gold": 15.3502,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 15.3502,
+        "safe_net_craft_cost_gold": 16.5015,
         "sale_recovery_status": "not_saleable",
-        "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
-        "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
-        }
+        "skillup_probability": 0.4,
+        "expected_gross_cost_per_skill_gold": 38.3755,
+        "expected_net_cost_per_skill_gold": 38.3755,
+        "expected_safe_net_cost_per_skill_gold": 41.2537,
+        "requirements": null
       },
       "alternatives": [
-        {
-          "name": "Enchant Gloves - Major Strength",
-          "gross_craft_cost_gold": 15.3502,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 15.3502,
-          "safe_net_craft_cost_gold": 16.5015,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.4,
-          "expected_gross_cost_per_skill_gold": 38.3755,
-          "expected_net_cost_per_skill_gold": 38.3755,
-          "expected_safe_net_cost_per_skill_gold": 41.2537,
-          "requirements": null
-        },
         {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
@@ -4249,22 +3782,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -4272,35 +3789,19 @@
     {
       "skill": 369,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Gloves - Major Strength",
+        "gross_craft_cost_gold": 15.3502,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 15.3502,
+        "safe_net_craft_cost_gold": 16.5015,
         "sale_recovery_status": "not_saleable",
-        "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
-        "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
-        }
+        "skillup_probability": 0.3667,
+        "expected_gross_cost_per_skill_gold": 41.8642,
+        "expected_net_cost_per_skill_gold": 41.8642,
+        "expected_safe_net_cost_per_skill_gold": 45.0041,
+        "requirements": null
       },
       "alternatives": [
-        {
-          "name": "Enchant Gloves - Major Strength",
-          "gross_craft_cost_gold": 15.3502,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 15.3502,
-          "safe_net_craft_cost_gold": 16.5015,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.3667,
-          "expected_gross_cost_per_skill_gold": 41.8642,
-          "expected_net_cost_per_skill_gold": 41.8642,
-          "expected_safe_net_cost_per_skill_gold": 45.0041,
-          "requirements": null
-        },
         {
           "name": "Enchant Ring - Striking",
           "gross_craft_cost_gold": 42.1162,
@@ -4314,22 +3815,6 @@
           "expected_safe_net_cost_per_skill_gold": 45.2749,
           "requirements": {
             "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
           }
         }
       ]
@@ -4337,37 +3822,21 @@
     {
       "skill": 370,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Ring - Striking",
+        "gross_craft_cost_gold": 42.1162,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 42.1162,
+        "safe_net_craft_cost_gold": 45.2749,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 1.0,
-        "expected_gross_cost_per_skill_gold": 28.6904,
-        "expected_net_cost_per_skill_gold": 28.6904,
-        "expected_safe_net_cost_per_skill_gold": 30.8422,
+        "expected_gross_cost_per_skill_gold": 42.1162,
+        "expected_net_cost_per_skill_gold": 42.1162,
+        "expected_safe_net_cost_per_skill_gold": 45.2749,
         "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
+          "reputation": "The Consortium - Revered"
         }
       },
       "alternatives": [
-        {
-          "name": "Enchant Ring - Striking",
-          "gross_craft_cost_gold": 42.1162,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 42.1162,
-          "safe_net_craft_cost_gold": 45.2749,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 42.1162,
-          "expected_net_cost_per_skill_gold": 42.1162,
-          "expected_safe_net_cost_per_skill_gold": 45.2749,
-          "requirements": {
-            "reputation": "The Consortium - Revered"
-          }
-        },
         {
           "name": "Enchant Gloves - Major Strength",
           "gross_craft_cost_gold": 15.3502,
@@ -4382,19 +3851,18 @@
           "requirements": null
         },
         {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
+          "name": "Enchant Ring - Healing Power",
+          "gross_craft_cost_gold": 56.5429,
           "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
+          "net_craft_cost_gold": 56.5429,
+          "safe_net_craft_cost_gold": 60.7836,
           "sale_recovery_status": "not_saleable",
           "skillup_probability": 1.0,
-          "expected_gross_cost_per_skill_gold": 47.1756,
-          "expected_net_cost_per_skill_gold": 47.1756,
-          "expected_safe_net_cost_per_skill_gold": 50.7138,
+          "expected_gross_cost_per_skill_gold": 56.5429,
+          "expected_net_cost_per_skill_gold": 56.5429,
+          "expected_safe_net_cost_per_skill_gold": 60.7836,
           "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
+            "reputation": "The Sha'tar - Revered"
           }
         }
       ]
@@ -4402,53 +3870,21 @@
     {
       "skill": 371,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Ring - Striking",
+        "gross_craft_cost_gold": 42.1162,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 42.1162,
+        "safe_net_craft_cost_gold": 45.2749,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9667,
-        "expected_gross_cost_per_skill_gold": 29.6797,
-        "expected_net_cost_per_skill_gold": 29.6797,
-        "expected_safe_net_cost_per_skill_gold": 31.9057,
+        "expected_gross_cost_per_skill_gold": 43.5685,
+        "expected_net_cost_per_skill_gold": 43.5685,
+        "expected_safe_net_cost_per_skill_gold": 46.8361,
         "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
+          "reputation": "The Consortium - Revered"
         }
       },
       "alternatives": [
-        {
-          "name": "Enchant Ring - Striking",
-          "gross_craft_cost_gold": 42.1162,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 42.1162,
-          "safe_net_craft_cost_gold": 45.2749,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.9667,
-          "expected_gross_cost_per_skill_gold": 43.5685,
-          "expected_net_cost_per_skill_gold": 43.5685,
-          "expected_safe_net_cost_per_skill_gold": 46.8361,
-          "requirements": {
-            "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.9667,
-          "expected_gross_cost_per_skill_gold": 48.8023,
-          "expected_net_cost_per_skill_gold": 48.8023,
-          "expected_safe_net_cost_per_skill_gold": 52.4626,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
-          }
-        },
         {
           "name": "Enchant Gloves - Major Strength",
           "gross_craft_cost_gold": 15.3502,
@@ -4461,59 +3897,42 @@
           "expected_net_cost_per_skill_gold": 51.1673,
           "expected_safe_net_cost_per_skill_gold": 55.005,
           "requirements": null
+        },
+        {
+          "name": "Enchant Ring - Healing Power",
+          "gross_craft_cost_gold": 56.5429,
+          "expected_sale_recovery_gold": 0.0,
+          "net_craft_cost_gold": 56.5429,
+          "safe_net_craft_cost_gold": 60.7836,
+          "sale_recovery_status": "not_saleable",
+          "skillup_probability": 1.0,
+          "expected_gross_cost_per_skill_gold": 56.5429,
+          "expected_net_cost_per_skill_gold": 56.5429,
+          "expected_safe_net_cost_per_skill_gold": 60.7836,
+          "requirements": {
+            "reputation": "The Sha'tar - Revered"
+          }
         }
       ]
     },
     {
       "skill": 372,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Ring - Striking",
+        "gross_craft_cost_gold": 42.1162,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 42.1162,
+        "safe_net_craft_cost_gold": 45.2749,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9333,
-        "expected_gross_cost_per_skill_gold": 30.7397,
-        "expected_net_cost_per_skill_gold": 30.7397,
-        "expected_safe_net_cost_per_skill_gold": 33.0452,
+        "expected_gross_cost_per_skill_gold": 45.1245,
+        "expected_net_cost_per_skill_gold": 45.1245,
+        "expected_safe_net_cost_per_skill_gold": 48.5088,
         "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
+          "reputation": "The Consortium - Revered"
         }
       },
       "alternatives": [
-        {
-          "name": "Enchant Ring - Striking",
-          "gross_craft_cost_gold": 42.1162,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 42.1162,
-          "safe_net_craft_cost_gold": 45.2749,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.9333,
-          "expected_gross_cost_per_skill_gold": 45.1245,
-          "expected_net_cost_per_skill_gold": 45.1245,
-          "expected_safe_net_cost_per_skill_gold": 48.5088,
-          "requirements": {
-            "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.9333,
-          "expected_gross_cost_per_skill_gold": 50.5453,
-          "expected_net_cost_per_skill_gold": 50.5453,
-          "expected_safe_net_cost_per_skill_gold": 54.3362,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
-          }
-        },
         {
           "name": "Enchant Ring - Healing Power",
           "gross_craft_cost_gold": 56.5429,
@@ -4528,59 +3947,40 @@
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "gross_craft_cost_gold": 15.3502,
+          "expected_sale_recovery_gold": 0.0,
+          "net_craft_cost_gold": 15.3502,
+          "safe_net_craft_cost_gold": 16.5015,
+          "sale_recovery_status": "not_saleable",
+          "skillup_probability": 0.2667,
+          "expected_gross_cost_per_skill_gold": 57.5632,
+          "expected_net_cost_per_skill_gold": 57.5632,
+          "expected_safe_net_cost_per_skill_gold": 61.8806,
+          "requirements": null
         }
       ]
     },
     {
       "skill": 373,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Ring - Striking",
+        "gross_craft_cost_gold": 42.1162,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 42.1162,
+        "safe_net_craft_cost_gold": 45.2749,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.9,
-        "expected_gross_cost_per_skill_gold": 31.8782,
-        "expected_net_cost_per_skill_gold": 31.8782,
-        "expected_safe_net_cost_per_skill_gold": 34.2691,
+        "expected_gross_cost_per_skill_gold": 46.7958,
+        "expected_net_cost_per_skill_gold": 46.7958,
+        "expected_safe_net_cost_per_skill_gold": 50.3054,
         "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
+          "reputation": "The Consortium - Revered"
         }
       },
       "alternatives": [
-        {
-          "name": "Enchant Ring - Striking",
-          "gross_craft_cost_gold": 42.1162,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 42.1162,
-          "safe_net_craft_cost_gold": 45.2749,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.9,
-          "expected_gross_cost_per_skill_gold": 46.7958,
-          "expected_net_cost_per_skill_gold": 46.7958,
-          "expected_safe_net_cost_per_skill_gold": 50.3054,
-          "requirements": {
-            "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.9,
-          "expected_gross_cost_per_skill_gold": 52.4173,
-          "expected_net_cost_per_skill_gold": 52.4173,
-          "expected_safe_net_cost_per_skill_gold": 56.3487,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
-          }
-        },
         {
           "name": "Enchant Ring - Healing Power",
           "gross_craft_cost_gold": 56.5429,
@@ -4595,59 +3995,40 @@
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "gross_craft_cost_gold": 15.3502,
+          "expected_sale_recovery_gold": 0.0,
+          "net_craft_cost_gold": 15.3502,
+          "safe_net_craft_cost_gold": 16.5015,
+          "sale_recovery_status": "not_saleable",
+          "skillup_probability": 0.2333,
+          "expected_gross_cost_per_skill_gold": 65.7866,
+          "expected_net_cost_per_skill_gold": 65.7866,
+          "expected_safe_net_cost_per_skill_gold": 70.7207,
+          "requirements": null
         }
       ]
     },
     {
       "skill": 374,
       "best": {
-        "name": "Enchant Chest - Defense",
-        "gross_craft_cost_gold": 28.6904,
+        "name": "Enchant Ring - Striking",
+        "gross_craft_cost_gold": 42.1162,
         "expected_sale_recovery_gold": 0.0,
-        "net_craft_cost_gold": 28.6904,
-        "safe_net_craft_cost_gold": 30.8422,
+        "net_craft_cost_gold": 42.1162,
+        "safe_net_craft_cost_gold": 45.2749,
         "sale_recovery_status": "not_saleable",
         "skillup_probability": 0.8667,
-        "expected_gross_cost_per_skill_gold": 33.1043,
-        "expected_net_cost_per_skill_gold": 33.1043,
-        "expected_safe_net_cost_per_skill_gold": 35.5872,
+        "expected_gross_cost_per_skill_gold": 48.5956,
+        "expected_net_cost_per_skill_gold": 48.5956,
+        "expected_safe_net_cost_per_skill_gold": 52.2403,
         "requirements": {
-          "reputation": "Shattered Sun Offensive - Honored",
-          "phase": 5
+          "reputation": "The Consortium - Revered"
         }
       },
       "alternatives": [
-        {
-          "name": "Enchant Ring - Striking",
-          "gross_craft_cost_gold": 42.1162,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 42.1162,
-          "safe_net_craft_cost_gold": 45.2749,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.8667,
-          "expected_gross_cost_per_skill_gold": 48.5956,
-          "expected_net_cost_per_skill_gold": 48.5956,
-          "expected_safe_net_cost_per_skill_gold": 52.2403,
-          "requirements": {
-            "reputation": "The Consortium - Revered"
-          }
-        },
-        {
-          "name": "Enchant Ring - Spellpower",
-          "gross_craft_cost_gold": 47.1756,
-          "expected_sale_recovery_gold": 0.0,
-          "net_craft_cost_gold": 47.1756,
-          "safe_net_craft_cost_gold": 50.7138,
-          "sale_recovery_status": "not_saleable",
-          "skillup_probability": 0.8667,
-          "expected_gross_cost_per_skill_gold": 54.4334,
-          "expected_net_cost_per_skill_gold": 54.4334,
-          "expected_safe_net_cost_per_skill_gold": 58.5159,
-          "requirements": {
-            "reputation": "Keepers of Time - Honored",
-            "phase": 3
-          }
-        },
         {
           "name": "Enchant Ring - Healing Power",
           "gross_craft_cost_gold": 56.5429,
@@ -4662,6 +4043,19 @@
           "requirements": {
             "reputation": "The Sha'tar - Revered"
           }
+        },
+        {
+          "name": "Enchant Gloves - Major Strength",
+          "gross_craft_cost_gold": 15.3502,
+          "expected_sale_recovery_gold": 0.0,
+          "net_craft_cost_gold": 15.3502,
+          "safe_net_craft_cost_gold": 16.5015,
+          "sale_recovery_status": "not_saleable",
+          "skillup_probability": 0.2,
+          "expected_gross_cost_per_skill_gold": 76.751,
+          "expected_net_cost_per_skill_gold": 76.751,
+          "expected_safe_net_cost_per_skill_gold": 82.5075,
+          "requirements": null
         }
       ]
     }
@@ -4696,10 +4090,9 @@
     {
       "from_skill": 360,
       "to_skill": 375,
-      "recipe": "Enchant Chest - Defense",
+      "recipe": "Enchant Ring - Striking",
       "requirements": {
-        "reputation": "Shattered Sun Offensive - Honored",
-        "phase": 5
+        "reputation": "The Consortium - Revered"
       }
     }
   ],
@@ -4724,17 +4117,16 @@
     },
     {
       "from_skill": 351,
-      "to_skill": 364,
+      "to_skill": 370,
       "recipe": "Enchant Gloves - Major Strength",
       "requirements": null
     },
     {
-      "from_skill": 364,
+      "from_skill": 370,
       "to_skill": 375,
-      "recipe": "Enchant Chest - Defense",
+      "recipe": "Enchant Ring - Striking",
       "requirements": {
-        "reputation": "Shattered Sun Offensive - Honored",
-        "phase": 5
+        "reputation": "The Consortium - Revered"
       }
     }
   ],
@@ -4787,26 +4179,25 @@
         "required_fraction_of_market": null,
         "risk": "unknown"
       }
-    ],
-    "gaps": []
+    ]
   },
   "conditional_route_summary": {
     "covered_from_skill": 360,
     "covered_to_skill": 375,
     "expected_crafts": 15.37,
     "expected_crafts_by_recipe": {
-      "Enchant Chest - Defense": 15.37
+      "Enchant Ring - Striking": 15.37
     },
-    "expected_gross_material_cost_gold": 441.0,
+    "expected_gross_material_cost_gold": 647.36,
     "expected_sale_recovery_gold": 0.0,
-    "expected_net_leveling_cost_gold": 441.0,
-    "safe_7_5pct_gross_cost_gold": 474.07,
-    "safe_7_5pct_net_cost_gold": 474.07,
+    "expected_net_leveling_cost_gold": 647.36,
+    "safe_7_5pct_gross_cost_gold": 695.91,
+    "safe_7_5pct_net_cost_gold": 695.91,
     "material_demand": [
       {
         "item_id": 22445,
         "name": "Arcane Dust",
-        "expected_quantity": 122.97,
+        "expected_quantity": 92.22,
         "effective_buy_gold": 0.8547,
         "market_value_gold": 0.8547,
         "safe_unit_price_gold": 0.9188,
@@ -4815,51 +4206,39 @@
         "risk": "unknown"
       },
       {
-        "item_id": 22446,
-        "name": "Greater Planar Essence",
-        "expected_quantity": 61.48,
-        "effective_buy_gold": 5.0938,
-        "market_value_gold": 5.0938,
-        "safe_unit_price_gold": 5.4758,
-        "market_quantity": null,
-        "required_fraction_of_market": null,
-        "risk": "unknown"
-      },
-      {
-        "item_id": 23427,
-        "name": "Eternium Ore",
-        "expected_quantity": 61.48,
-        "effective_buy_gold": 0.3694,
-        "market_value_gold": 0.3694,
-        "safe_unit_price_gold": 0.3971,
+        "item_id": 22449,
+        "name": "Large Prismatic Shard",
+        "expected_quantity": 30.74,
+        "effective_buy_gold": 18.494,
+        "market_value_gold": 18.494,
+        "safe_unit_price_gold": 19.881,
         "market_quantity": null,
         "required_fraction_of_market": null,
         "risk": "unknown"
       }
-    ],
-    "gaps": []
+    ]
   },
   "all_route_summary": {
     "covered_from_skill": 310,
     "covered_to_skill": 375,
-    "expected_crafts": 78.01,
+    "expected_crafts": 85.56,
     "expected_crafts_by_recipe": {
       "Enchant Cloak - Major Armor": 21.92,
       "Enchant Chest - Major Spirit": 11.92,
       "Superior Wizard Oil": 15.38,
-      "Enchant Gloves - Major Strength": 17.43,
-      "Enchant Chest - Defense": 11.37
+      "Enchant Gloves - Major Strength": 30.98,
+      "Enchant Ring - Striking": 5.37
     },
-    "expected_gross_material_cost_gold": 975.58,
+    "expected_gross_material_cost_gold": 1083.59,
     "expected_sale_recovery_gold": 0.0,
-    "expected_net_leveling_cost_gold": 975.58,
-    "safe_7_5pct_gross_cost_gold": 1048.75,
-    "safe_7_5pct_net_cost_gold": 1048.75,
+    "expected_net_leveling_cost_gold": 1083.59,
+    "safe_7_5pct_gross_cost_gold": 1164.86,
+    "safe_7_5pct_net_cost_gold": 1164.86,
     "material_demand": [
       {
         "item_id": 22445,
         "name": "Arcane Dust",
-        "expected_quantity": 521.56,
+        "expected_quantity": 625.46,
         "effective_buy_gold": 0.8547,
         "market_value_gold": 0.8547,
         "safe_unit_price_gold": 0.9188,
@@ -4870,21 +4249,10 @@
       {
         "item_id": 22446,
         "name": "Greater Planar Essence",
-        "expected_quantity": 86.75,
+        "expected_quantity": 54.82,
         "effective_buy_gold": 5.0938,
         "market_value_gold": 5.0938,
         "safe_unit_price_gold": 5.4758,
-        "market_quantity": null,
-        "required_fraction_of_market": null,
-        "risk": "unknown"
-      },
-      {
-        "item_id": 23427,
-        "name": "Eternium Ore",
-        "expected_quantity": 45.48,
-        "effective_buy_gold": 0.3694,
-        "market_value_gold": 0.3694,
-        "safe_unit_price_gold": 0.3971,
         "market_quantity": null,
         "required_fraction_of_market": null,
         "risk": "unknown"
@@ -4899,28 +4267,56 @@
         "market_quantity": null,
         "required_fraction_of_market": null,
         "risk": "unknown"
+      },
+      {
+        "item_id": 22449,
+        "name": "Large Prismatic Shard",
+        "expected_quantity": 10.74,
+        "effective_buy_gold": 18.494,
+        "market_value_gold": 18.494,
+        "safe_unit_price_gold": 19.881,
+        "market_quantity": null,
+        "required_fraction_of_market": null,
+        "risk": "unknown"
       }
-    ],
-    "gaps": []
+    ]
   },
+  "route_gaps": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309
+  ],
   "mandatory_tools": [
     {
       "name": "Runed Fel Iron Rod",
       "required_skill": 300,
+      "available_now": true,
       "gross_material_cost_gold": null,
       "safe_gross_material_cost_gold": null,
       "missing_price_item_ids": [
         "25843",
         "16203",
         "14344"
-      ]
+      ],
+      "requirements": {
+        "existing_tool": "Runed Arcanite Rod"
+      }
     },
     {
       "name": "Runed Adamantite Rod",
       "required_skill": 350,
+      "available_now": true,
       "gross_material_cost_gold": 318.8663,
       "safe_gross_material_cost_gold": 342.7813,
-      "missing_price_item_ids": []
+      "missing_price_item_ids": [],
+      "requirements": null
     }
   ]
 }
