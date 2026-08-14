@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T14:00:00Z",
-  "source": "manual_seed_from_verified_bootybaybroker_pages",
+  "generated_at": "2026-08-14T15:40:19.684Z",
+  "source": "bootybaybroker_browser_session_snapshot",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -9,15 +9,30 @@
     "auction_house_id": 2
   },
   "items": {
-    "22445": {"name": "Arcane Dust", "min_buyout_gold": 0.9662},
-    "22446": {"name": "Greater Planar Essence", "min_buyout_gold": 5.7413, "quantity": 5253},
-    "22449": {"name": "Large Prismatic Shard", "min_buyout_gold": 19.7836, "quantity": 4754},
-    "22792": {"name": "Nightmare Vine", "min_buyout_gold": 3.9003, "quantity": 3450},
-    "23571": {"name": "Primal Might", "min_buyout_gold": 90.4977, "quantity": 184}
+    "21877": {"name": "Netherweave Cloth", "market_value_gold": 0.1367, "effective_buy_gold": 0.1367},
+    "21885": {"name": "Primal Water", "market_value_gold": 13.7182, "effective_buy_gold": 13.7182},
+    "22445": {"name": "Arcane Dust", "market_value_gold": 0.8547, "effective_buy_gold": 0.8547},
+    "22446": {"name": "Greater Planar Essence", "market_value_gold": 5.0938, "effective_buy_gold": 5.0938},
+    "22447": {"name": "Lesser Planar Essence", "market_value_gold": 1.6355, "effective_buy_gold": 1.6355},
+    "22448": {"name": "Small Prismatic Shard", "market_value_gold": 6.4080, "effective_buy_gold": 6.4080},
+    "22449": {"name": "Large Prismatic Shard", "market_value_gold": 18.4940, "effective_buy_gold": 18.4940},
+    "22457": {"name": "Primal Mana", "market_value_gold": 15.6553, "effective_buy_gold": 15.6553},
+    "22522": {"name": "Superior Wizard Oil", "market_value_gold": 7.3746, "realistic_sell_price_gold": 7.3746},
+    "22578": {"name": "Mote of Water", "market_value_gold": 1.3542, "effective_buy_gold": 1.3542},
+    "22792": {"name": "Nightmare Vine", "market_value_gold": 4.6266, "effective_buy_gold": 4.6266},
+    "23427": {"name": "Eternium Ore", "market_value_gold": 0.3694, "effective_buy_gold": 0.3694},
+    "23445": {"name": "Fel Iron Bar", "market_value_gold": 1.4989, "effective_buy_gold": 1.4989},
+    "23446": {"name": "Adamantite Bar", "market_value_gold": 3.5752, "effective_buy_gold": 3.5752},
+    "23447": {"name": "Eternium Bar", "market_value_gold": 0.8976, "effective_buy_gold": 0.8976},
+    "23448": {"name": "Felsteel Bar", "market_value_gold": 7.1668, "effective_buy_gold": 7.1668},
+    "23449": {"name": "Khorium Bar", "market_value_gold": 4.1260, "effective_buy_gold": 4.1260},
+    "23571": {"name": "Primal Might", "market_value_gold": 85.7496, "effective_buy_gold": 85.7496},
+    "25844": {"name": "Adamantite Rod", "market_value_gold": 44.4143, "effective_buy_gold": 44.4143}
   },
   "notes": [
-    "These are seed values verified manually from realm-scoped BootyBayBroker pages.",
-    "They are lowest-buyout snapshots, not market-depth-adjusted effective buy prices.",
-    "Do not treat this file as a live feed until an automated source is connected."
+    "Imported from a realm-scoped BootyBayBroker browser-session snapshot supplied by the user.",
+    "The snapshot's min_buyout field was zero for most items, so market_value is used as the temporary effective-buy proxy.",
+    "Market depth, quantity, sale rate and sold/day were unavailable in this snapshot; do not treat effective_buy_gold as depth-adjusted.",
+    "Superior Wizard Oil market value is tracked as a sell-price reference, but sale recovery remains zero until demand probability is available."
   ]
 }
