@@ -8,6 +8,7 @@ on:
       - 'collector.py'
       - 'import_bbb_snapshot.py'
       - 'import_tsm_public.py'
+      - 'probe_tsm_web_metrics.py'
       - 'validate_bbb_snapshot.py'
       - 'optimizer.py'
       - 'disenchant_optimizer.py'
@@ -58,6 +59,9 @@ jobs:
       - name: Import official TSM public prices
         run: python import_tsm_public.py
 
+      - name: Probe TSM regional sale metrics
+        run: python probe_tsm_web_metrics.py
+
       - name: Build Enchanting report
         run: python optimizer.py
 
@@ -75,9 +79,11 @@ jobs:
           d=json.load(open('data/enchanting_report.json'))
           de=json.load(open('data/disenchant_thresholds.json'))
           c=json.load(open('data/cooking_profit.json'))
+          m=json.load(open('data/tsm_web_metrics_probe.json'))
           print('Price source:', p.get('source'))
           print('TSM items imported:', p.get('tsm_items_imported'))
           print('TSM latest updated:', p.get('tsm_latest_updated_at'))
+          print('TSM web metrics probe:', m.get('items'))
           print('Market:', d['market'])
           print('Baseline route:', d.get('baseline_route_segments'))
           print('Baseline total:', d.get('baseline_route_summary'))
@@ -95,7 +101,7 @@ jobs:
         run: |
           git config user.name 'thunderstrike-gold-scanner'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json data/cooking_profit.json
+          git add data/prices.json data/diagnostics.json data/enchanting_report.json data/disenchant_thresholds.json data/cooking_profit.json data/tsm_web_metrics_probe.json
           if git diff --cached --quiet; then
             echo 'No changes'
           else
