@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T15:21:57.233371+00:00",
+  "generated_at": "2026-08-14T15:23:18.017857+00:00",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -47,6 +47,39 @@
   ],
   "thunderstrike_market": [
     {
+      "url": "https://horde.thunderstrikemarket.org/report/alliance/raw-materials-enchanting/",
+      "http_status": 525,
+      "final_url": "https://horde.thunderstrikemarket.org/report/alliance/raw-materials-enchanting/",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7130,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "parsed_item_count": 0,
+      "wanted_items_found": []
+    },
+    {
+      "url": "https://horde.thunderstrikemarket.org/auction-house/compare/",
+      "http_status": 525,
+      "final_url": "https://horde.thunderstrikemarket.org/auction-house/compare/",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7130,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "parsed_item_count": 0,
+      "wanted_items_found": []
+    },
+    {
+      "url": "https://horde.thunderstrikemarket.org/report/",
+      "http_status": 525,
+      "final_url": "https://horde.thunderstrikemarket.org/report/",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7130,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "parsed_item_count": 0,
+      "wanted_items_found": []
+    },
+    {
       "url": "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
       "http_status": 525,
       "final_url": "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
@@ -56,152 +89,6 @@
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
       "wanted_items_found": []
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22445",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22445",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22446",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22446",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22449",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22449",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22792",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22792",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23571",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23571",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22522",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22522",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23427",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23427",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002,
-        0.0059
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=25844",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=25844",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002
-      ],
-      "parsed_item_count": 0
-    },
-    {
-      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23446",
-      "http_status": 525,
-      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23446",
-      "content_type": "text/html; charset=UTF-8",
-      "content_length": 7135,
-      "server": "cloudflare",
-      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
-      "item_found": false,
-      "money_candidates_gold": [
-        0.0001,
-        0.0003,
-        0.0002,
-        0.0008
-      ],
-      "parsed_item_count": 0
     }
   ],
   "bootybaybroker": [
@@ -216,14 +103,18 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6308,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-5gho8uTFlaSBYGT7VT9pHn&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-NqoTpW5pIEwsnW3BELPxGI&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0007,
             0.0005,
-            0.0009,
+            0.0002,
+            0.0007,
+            0.0008,
+            0.0001,
             0.0003,
+            0.0037,
+            0.0004,
             0.0006
           ]
         },
@@ -232,18 +123,20 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/item/22445/arcane-dust?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6368,
+          "content_length": 6389,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-oRMPW2d6xGMm3nSVjeXJZ1&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-yVcacvPvFz1LEjlDZkQb3d&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0002,
-            0.0004,
-            0.0705,
-            0.0006,
+            0.0003,
+            0.0005,
+            0.0009,
+            0.0073,
+            0.0007,
             0.0001,
-            0.0007
+            0.0006,
+            0.0008
           ]
         }
       ]
@@ -259,19 +152,17 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6362,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-cnLaTWduKSUlN8grfqAKvI&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-vv03hP5JEHFynjseBIvgJV&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0008,
-            0.0002,
-            0.0052,
-            0.0844,
-            0.0006,
-            0.0004,
+            0.0408,
+            0.0009,
             0.0001,
-            0.0003,
-            0.0005
+            0.0005,
+            0.0085,
+            0.0008,
+            0.0076
           ]
         },
         {
@@ -281,21 +172,16 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6401,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-cn1WurjdwYNPZdHtomr38l&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-kH4ARIolHe3426riytTM6A&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0031,
-            0.0009,
             0.0005,
-            0.0004,
-            0.001,
-            0.0885,
-            0.0029,
-            0.0008,
+            0.0003,
+            0.0002,
             0.0006,
             0.0007,
-            0.0072
+            0.0022
           ]
         }
       ]
