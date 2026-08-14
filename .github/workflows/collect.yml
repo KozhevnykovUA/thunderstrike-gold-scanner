@@ -7,6 +7,7 @@ on:
     paths:
       - 'collector.py'
       - 'import_bbb_snapshot.py'
+      - 'validate_bbb_snapshot.py'
       - 'optimizer.py'
       - 'disenchant_optimizer.py'
       - 'requirements.txt'
@@ -45,6 +46,9 @@ jobs:
 
       - name: Collect source diagnostics and live prices
         run: python collector.py
+
+      - name: Validate browser BBB snapshot when present
+        run: python validate_bbb_snapshot.py
 
       - name: Import browser BBB snapshot when present
         run: python import_bbb_snapshot.py
