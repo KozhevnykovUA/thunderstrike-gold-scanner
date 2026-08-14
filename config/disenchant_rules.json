@@ -3,6 +3,21 @@
   "brackets": [
     {
       "quality": "uncommon",
+      "item_level_min": 80,
+      "item_level_max": 99,
+      "armor": [
+        {"item_id": 22445, "name": "Arcane Dust", "probability": 0.75, "qty_min": 2, "qty_max": 3},
+        {"item_id": 22447, "name": "Lesser Planar Essence", "probability": 0.22, "qty_min": 2, "qty_max": 3},
+        {"item_id": 22448, "name": "Small Prismatic Shard", "probability": 0.03, "qty_min": 1, "qty_max": 1}
+      ],
+      "weapon": [
+        {"item_id": 22445, "name": "Arcane Dust", "probability": 0.22, "qty_min": 2, "qty_max": 3},
+        {"item_id": 22447, "name": "Lesser Planar Essence", "probability": 0.75, "qty_min": 2, "qty_max": 3},
+        {"item_id": 22448, "name": "Small Prismatic Shard", "probability": 0.03, "qty_min": 1, "qty_max": 1}
+      ]
+    },
+    {
+      "quality": "uncommon",
       "item_level_min": 100,
       "item_level_max": 120,
       "armor": [
