@@ -10,9 +10,9 @@ CACHE = Path('data/tsm_items.csv')
 BASE = 'https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/{}'
 
 NAMES = [
-    'Ravager Dog','Blackened Trout','Broiled Bloodfin',"Kibler's Bits",'Blackened Sporefish',
+    'Ravager Dog','Blackened Trout','Feltail Delight','Broiled Bloodfin',"Kibler's Bits",'Blackened Sporefish',
     'Grilled Mudfish','Spicy Crawdad','Warp Burger','Blackened Basilisk','Poached Bluefish',
-    'Spicy Hot Talbuk','Roasted Clefthoof','Golden Fish Sticks','Thistle Tea',
+    'Spicy Hot Talbuk','Talbuk Steak','Roasted Clefthoof','Golden Fish Sticks','Crunchy Serpent',"Mok'Nathal Shortribs",'Thistle Tea',
     'Arcane Dust','Greater Planar Essence','Large Prismatic Shard','Superior Wizard Oil',
     'Fel Weightstone','Lesser Rune of Warding','Lesser Ward of Shielding','Adamantite Weightstone','Khorium Belt'
 ]
