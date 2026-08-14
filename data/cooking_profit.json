@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:17:31.518829+00:00",
+  "generated_at": "2026-08-14T16:22:28.178200+00:00",
   "source": "TSM public pricing + TSM Gold heatmap snapshot",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "pricing_model": "recent sell and recent input prices; 5% AH cut; deposits and liquidity not yet included",
