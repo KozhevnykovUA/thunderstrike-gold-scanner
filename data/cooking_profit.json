@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-08-14T16:17:31.518829+00:00",
+  "source": "TSM public pricing + TSM Gold heatmap snapshot",
+  "market": "classic/eu-fresh/thunderstrike-alliance",
+  "pricing_model": "recent sell and recent input prices; 5% AH cut; deposits and liquidity not yet included",
+  "opportunities": [
+    {
+      "output": "Golden Fish Sticks",
+      "tsm_recent_sell_gold": 1.2173,
+      "tsm_min_buyout_gold": 0.9999,
+      "tsm_market_value_gold": 1.234,
+      "tsm_historical_gold": 1.3855,
+      "heatmap_pct": -10.9,
+      "materials": [
+        {
+          "name": "Golden Darter",
+          "qty": 1,
+          "unit_buy_gold": 0.9998,
+          "cost_gold": 0.9998
+        }
+      ],
+      "material_cost_gold": 0.9998,
+      "net_sale_after_5pct_gold": 1.1564,
+      "profit_per_craft_gold": 0.1566,
+      "profit_per_stack20_gold": 3.13,
+      "roi_pct": 15.7,
+      "margin_pct": 13.5,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Ravager Dog",
+      "tsm_recent_sell_gold": 0.2134,
+      "tsm_min_buyout_gold": 0.2077,
+      "tsm_market_value_gold": 0.3112,
+      "tsm_historical_gold": 0.1316,
+      "heatmap_pct": 131.8,
+      "materials": [
+        {
+          "name": "Ravager Flesh",
+          "qty": 1,
+          "unit_buy_gold": 0.0947,
+          "cost_gold": 0.0947
+        }
+      ],
+      "material_cost_gold": 0.0947,
+      "net_sale_after_5pct_gold": 0.2027,
+      "profit_per_craft_gold": 0.108,
+      "profit_per_stack20_gold": 2.16,
+      "roi_pct": 114.1,
+      "margin_pct": 53.3,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Spicy Hot Talbuk",
+      "tsm_recent_sell_gold": 0.2297,
+      "tsm_min_buyout_gold": 0.2298,
+      "tsm_market_value_gold": 0.2439,
+      "tsm_historical_gold": 0.2446,
+      "heatmap_pct": -1.3,
+      "materials": [
+        {
+          "name": "Talbuk Venison",
+          "qty": 1,
+          "unit_buy_gold": 0.1139,
+          "cost_gold": 0.1139
+        }
+      ],
+      "material_cost_gold": 0.1139,
+      "net_sale_after_5pct_gold": 0.2182,
+      "profit_per_craft_gold": 0.1043,
+      "profit_per_stack20_gold": 2.09,
+      "roi_pct": 91.6,
+      "margin_pct": 47.8,
+      "profitable": true,
+      "note": "Hot Spices vendor cost is trivial and omitted."
+    },
+    {
+      "output": "Broiled Bloodfin",
+      "tsm_recent_sell_gold": 1.0592,
+      "tsm_min_buyout_gold": 1.059,
+      "tsm_market_value_gold": 1.3919,
+      "tsm_historical_gold": 0.6423,
+      "heatmap_pct": 117.2,
+      "materials": [
+        {
+          "name": "Bloodfin Catfish",
+          "qty": 1,
+          "unit_buy_gold": 0.9282,
+          "cost_gold": 0.9282
+        }
+      ],
+      "material_cost_gold": 0.9282,
+      "net_sale_after_5pct_gold": 1.0062,
+      "profit_per_craft_gold": 0.078,
+      "profit_per_stack20_gold": 1.56,
+      "roi_pct": 8.4,
+      "margin_pct": 7.8,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Blackened Basilisk",
+      "tsm_recent_sell_gold": 1.0567,
+      "tsm_min_buyout_gold": 1.0196,
+      "tsm_market_value_gold": 1.1336,
+      "tsm_historical_gold": 0.9579,
+      "heatmap_pct": 18.1,
+      "materials": [
+        {
+          "name": "Chunk o' Basilisk",
+          "qty": 1,
+          "unit_buy_gold": 0.9259,
+          "cost_gold": 0.9259
+        }
+      ],
+      "material_cost_gold": 0.9259,
+      "net_sale_after_5pct_gold": 1.0039,
+      "profit_per_craft_gold": 0.078,
+      "profit_per_stack20_gold": 1.56,
+      "roi_pct": 8.4,
+      "margin_pct": 7.8,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Warp Burger",
+      "tsm_recent_sell_gold": 0.3493,
+      "tsm_min_buyout_gold": 0.2629,
+      "tsm_market_value_gold": 0.4195,
+      "tsm_historical_gold": 0.3482,
+      "heatmap_pct": 20.2,
+      "materials": [
+        {
+          "name": "Warped Flesh",
+          "qty": 1,
+          "unit_buy_gold": 0.2569,
+          "cost_gold": 0.2569
+        }
+      ],
+      "material_cost_gold": 0.2569,
+      "net_sale_after_5pct_gold": 0.3318,
+      "profit_per_craft_gold": 0.0749,
+      "profit_per_stack20_gold": 1.5,
+      "roi_pct": 29.2,
+      "margin_pct": 22.6,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Poached Bluefish",
+      "tsm_recent_sell_gold": 1.0537,
+      "tsm_min_buyout_gold": 1.0585,
+      "tsm_market_value_gold": 1.2287,
+      "tsm_historical_gold": 1.1438,
+      "heatmap_pct": 6.9,
+      "materials": [
+        {
+          "name": "Icefin Bluefish",
+          "qty": 1,
+          "unit_buy_gold": 0.9489,
+          "cost_gold": 0.9489
+        }
+      ],
+      "material_cost_gold": 0.9489,
+      "net_sale_after_5pct_gold": 1.001,
+      "profit_per_craft_gold": 0.0521,
+      "profit_per_stack20_gold": 1.04,
+      "roi_pct": 5.5,
+      "margin_pct": 5.2,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Blackened Sporefish",
+      "tsm_recent_sell_gold": 0.0606,
+      "tsm_min_buyout_gold": 0.0585,
+      "tsm_market_value_gold": 0.0746,
+      "tsm_historical_gold": 0.0448,
+      "heatmap_pct": 65.4,
+      "materials": [
+        {
+          "name": "Zangarian Sporefish",
+          "qty": 1,
+          "unit_buy_gold": 0.022,
+          "cost_gold": 0.022
+        }
+      ],
+      "material_cost_gold": 0.022,
+      "net_sale_after_5pct_gold": 0.0576,
+      "profit_per_craft_gold": 0.0356,
+      "profit_per_stack20_gold": 0.71,
+      "roi_pct": 161.7,
+      "margin_pct": 61.8,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Blackened Trout",
+      "tsm_recent_sell_gold": 0.0189,
+      "tsm_min_buyout_gold": 0.0191,
+      "tsm_market_value_gold": 0.0385,
+      "tsm_historical_gold": 0.0174,
+      "heatmap_pct": 120.7,
+      "materials": [
+        {
+          "name": "Barbed Gill Trout",
+          "qty": 1,
+          "unit_buy_gold": 0.007,
+          "cost_gold": 0.007
+        }
+      ],
+      "material_cost_gold": 0.007,
+      "net_sale_after_5pct_gold": 0.018,
+      "profit_per_craft_gold": 0.011,
+      "profit_per_stack20_gold": 0.22,
+      "roi_pct": 156.5,
+      "margin_pct": 61.0,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Roasted Clefthoof",
+      "tsm_recent_sell_gold": 0.4176,
+      "tsm_min_buyout_gold": 0.4039,
+      "tsm_market_value_gold": 0.4328,
+      "tsm_historical_gold": 0.4787,
+      "heatmap_pct": -9.9,
+      "materials": [
+        {
+          "name": "Clefthoof Meat",
+          "qty": 1,
+          "unit_buy_gold": 0.39,
+          "cost_gold": 0.39
+        }
+      ],
+      "material_cost_gold": 0.39,
+      "net_sale_after_5pct_gold": 0.3967,
+      "profit_per_craft_gold": 0.0067,
+      "profit_per_stack20_gold": 0.13,
+      "roi_pct": 1.7,
+      "margin_pct": 1.7,
+      "profitable": true,
+      "note": null
+    },
+    {
+      "output": "Thistle Tea",
+      "tsm_recent_sell_gold": 0.9481,
+      "tsm_min_buyout_gold": 0.9479,
+      "tsm_market_value_gold": 0.9042,
+      "tsm_historical_gold": 1.0968,
+      "heatmap_pct": -17.3,
+      "materials": [
+        {
+          "name": "Swiftthistle",
+          "qty": 1,
+          "unit_buy_gold": 0.9079,
+          "cost_gold": 0.9079
+        }
+      ],
+      "material_cost_gold": 0.9079,
+      "net_sale_after_5pct_gold": 0.9007,
+      "profit_per_craft_gold": -0.0072,
+      "profit_per_stack20_gold": -0.14,
+      "roi_pct": -0.8,
+      "margin_pct": -0.8,
+      "profitable": false,
+      "note": null
+    },
+    {
+      "output": "Grilled Mudfish",
+      "tsm_recent_sell_gold": 0.2629,
+      "tsm_min_buyout_gold": 0.2584,
+      "tsm_market_value_gold": 0.3499,
+      "tsm_historical_gold": 0.2465,
+      "heatmap_pct": 40.5,
+      "materials": [
+        {
+          "name": "Figluster's Mudfish",
+          "qty": 1,
+          "unit_buy_gold": 0.4441,
+          "cost_gold": 0.4441
+        }
+      ],
+      "material_cost_gold": 0.4441,
+      "net_sale_after_5pct_gold": 0.2498,
+      "profit_per_craft_gold": -0.1943,
+      "profit_per_stack20_gold": -3.89,
+      "roi_pct": -43.8,
+      "margin_pct": -77.8,
+      "profitable": false,
+      "note": null
+    },
+    {
+      "output": "Spicy Crawdad",
+      "tsm_recent_sell_gold": 0.8927,
+      "tsm_min_buyout_gold": 0.8894,
+      "tsm_market_value_gold": 0.542,
+      "tsm_historical_gold": 0.441,
+      "heatmap_pct": 30.0,
+      "materials": [
+        {
+          "name": "Furious Crawdad",
+          "qty": 1,
+          "unit_buy_gold": 1.2877,
+          "cost_gold": 1.2877
+        }
+      ],
+      "material_cost_gold": 1.2877,
+      "net_sale_after_5pct_gold": 0.8481,
+      "profit_per_craft_gold": -0.4396,
+      "profit_per_stack20_gold": -8.79,
+      "roi_pct": -34.1,
+      "margin_pct": -51.8,
+      "profitable": false,
+      "note": null
+    },
+    {
+      "output": "Kibler's Bits",
+      "tsm_recent_sell_gold": 0.2738,
+      "tsm_min_buyout_gold": 0.2491,
+      "tsm_market_value_gold": 0.3493,
+      "tsm_historical_gold": 0.1903,
+      "heatmap_pct": 81.5,
+      "materials": [
+        {
+          "name": "Buzzard Meat",
+          "qty": 1,
+          "unit_buy_gold": 0.9794,
+          "cost_gold": 0.9794
+        }
+      ],
+      "material_cost_gold": 0.9794,
+      "net_sale_after_5pct_gold": 0.2601,
+      "profit_per_craft_gold": -0.7193,
+      "profit_per_stack20_gold": -14.39,
+      "roi_pct": -73.4,
+      "margin_pct": -276.5,
+      "profitable": false,
+      "note": null
+    }
+  ],
+  "missing_names": []
+}
