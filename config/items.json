@@ -9,18 +9,21 @@
   "items": [
     {"id": 22445, "name": "Arcane Dust", "expected_validation_gold": 0.9662},
     {"id": 22446, "name": "Greater Planar Essence"},
+    {"id": 22447, "name": "Lesser Planar Essence"},
+    {"id": 22448, "name": "Small Prismatic Shard"},
     {"id": 22449, "name": "Large Prismatic Shard"},
-    {"id": 22792, "name": "Nightmare Vine"},
-    {"id": 23571, "name": "Primal Might"},
     {"id": 22522, "name": "Superior Wizard Oil", "role": "sale_output"},
+    {"id": 22792, "name": "Nightmare Vine"},
     {"id": 23427, "name": "Eternium Ore"},
     {"id": 25844, "name": "Adamantite Rod"},
     {"id": 23445, "name": "Fel Iron Bar", "role": "blacksmithing_material"},
     {"id": 21877, "name": "Netherweave Cloth", "role": "blacksmithing_material"},
     {"id": 23446, "name": "Adamantite Bar", "role": "blacksmithing_material"},
+    {"id": 23448, "name": "Felsteel Bar", "role": "blacksmithing_material"},
     {"id": 23449, "name": "Khorium Bar", "role": "blacksmithing_material"},
     {"id": 21885, "name": "Primal Water", "role": "blacksmithing_material"},
     {"id": 22457, "name": "Primal Mana", "role": "blacksmithing_material"},
+    {"id": 22578, "name": "Mote of Water", "role": "blacksmithing_material"},
     {"id": 23447, "name": "Eternium Bar", "role": "blacksmithing_material"}
   ]
 }
