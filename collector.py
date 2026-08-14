@@ -20,9 +20,13 @@ TSM_CANDIDATES = [
     "https://public-data.tradeskillmaster.com/anniversary/eu/realm/thunderstrike/items.csv",
 ]
 
-THUNDERSTRIKE_MARKET_CANDIDATES = [
+# market.thunderstrikemarket.org currently presents an SSL/Cloudflare 525 to GitHub-hosted runners.
+# Search engines index the alternate horde.* origin, including Alliance-scoped reports, so probe both.
+THUNDERSTRIKE_MARKET_PAGES = [
+    "https://horde.thunderstrikemarket.org/report/alliance/raw-materials-enchanting/",
+    "https://horde.thunderstrikemarket.org/auction-house/compare/",
+    "https://horde.thunderstrikemarket.org/report/",
     "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
-    "https://market.thunderstrikemarket.org/item/?faction=alliance&id={item_id}",
 ]
 
 PRICE_RE = re.compile(r"(?:(\d+)g\s*)?(?:(\d+)s\s*)?(\d+)c", re.I)
@@ -104,22 +108,19 @@ def normalize_header(text):
     return re.sub(r"[^a-z0-9]+", "_", text.strip().lower()).strip("_")
 
 
-def parse_market_table(html):
-    """Parse server-rendered Thunderstrike Market tables.
-
-    The site exposes realm/faction scoped tables with columns such as current price,
-    market average, on-sale quantity, auctions, regional sold/day and sale rate.
-    We deliberately key off header names rather than column positions.
-    """
+def parse_market_tables(html):
     soup = BeautifulSoup(html, "html.parser")
     rows = {}
     for table in soup.find_all("table"):
-        headers = [normalize_header(x.get_text(" ", strip=True)) for x in table.find_all("th")]
+        header_row = table.find("tr")
+        if not header_row:
+            continue
+        headers = [normalize_header(x.get_text(" ", strip=True)) for x in header_row.find_all(["th", "td"])]
         if not headers:
             continue
-        for tr in table.find_all("tr"):
+        for tr in table.find_all("tr")[1:]:
             cells = tr.find_all(["td", "th"])
-            if not cells or len(cells) < 2:
+            if len(cells) < 2:
                 continue
             texts = [c.get_text(" ", strip=True) for c in cells]
             id_match = ITEM_ID_RE.search(texts[0])
@@ -140,20 +141,13 @@ def get_any(row, keys):
 
 
 def row_to_market_data(row):
-    price_text = get_any(row, ["current_price", "price", "lowest_buyout", "buyout"])
+    # Alliance-scoped report pages use current_price/on_sale. Cross-faction compare uses alliance_price/alliance_on_sale.
+    price_text = get_any(row, ["current_price", "alliance_price", "price", "lowest_buyout", "buyout"])
     avg_text = get_any(row, ["market_avg", "market_average", "average", "dbmarket"])
-    qty_text = get_any(row, ["on_sale", "quantity", "qty", "supply"])
+    qty_text = get_any(row, ["on_sale", "alliance_on_sale", "quantity", "qty", "supply"])
     auctions_text = get_any(row, ["auctions", "auction_count", "listings"])
     sold_text = get_any(row, ["regional_sold_day", "regional_sold_per_day", "sold_day", "sold_per_day"])
     rate_text = get_any(row, ["regional_sales_rate", "regional_sale_rate", "sale_rate", "sales_rate"])
-
-    # Fallback for tables whose header wording changed but order resembles the public realm table:
-    # Item | Current price | Market avg | Vs avg | ... | On sale | Auctions | Sold/day | Sale rate ...
-    texts = row.get("_texts", [])
-    if price_text is None and len(texts) > 1:
-        price_text = texts[1]
-    if avg_text is None and len(texts) > 2:
-        avg_text = texts[2]
 
     return {
         "min_buyout_gold": parse_gold(price_text or ""),
@@ -181,8 +175,6 @@ def merge_live_prices(seed, live_rows, config):
         dst.update({k: v for k, v in live.items() if v is not None})
         dst["name"] = item["name"]
         dst["realistic_sell_price_gold"] = live.get("market_value_gold") or live.get("min_buyout_gold")
-        # TSM regional sale rate is used conservatively as our credited 48h sale probability.
-        # It is intentionally not boosted by sold/day, which is regional rather than realm-local.
         if live.get("sale_rate") is not None:
             dst["sale_probability_48h"] = max(0.0, min(1.0, live["sale_rate"]))
         dst["data_source"] = "thunderstrikemarket.org"
@@ -191,9 +183,10 @@ def merge_live_prices(seed, live_rows, config):
         out["source"] = "thunderstrikemarket_live_with_seed_fallback"
         out["live_items_updated"] = updated
         out["notes"] = [
-            "Live realm/faction price, supply and TSM regional demand metrics parsed from Thunderstrike Market when available.",
-            "Seed values are retained only for items not present in the live source.",
-            "sale_probability_48h conservatively equals TSM regional sale_rate when available; sold/day is informational only.",
+            "Realm/faction prices and supply come from Thunderstrike Market pages when reachable.",
+            "Regional sold/day and sale rate are TSM-derived demand metrics exposed by Thunderstrike Market.",
+            "Seed values remain only for items not found in a live page.",
+            "sale_probability_48h conservatively equals the exposed regional sale_rate; sold/day is informational only.",
         ]
     return out, updated
 
@@ -218,7 +211,6 @@ def main():
         "Accept-Language": "en-US,en;q=0.9",
     })
 
-    # 1) Official TSM static CSV probe.
     for url in TSM_CANDIDATES:
         probe, text = request_probe(session, url)
         result["tsm"].append(probe)
@@ -230,31 +222,17 @@ def main():
             result["selected_tsm_url"] = url
             break
 
-    # 2) Thunderstrike Market: try the full Alliance realm table first.
     live_rows = {}
-    realm_url = THUNDERSTRIKE_MARKET_CANDIDATES[0]
-    try:
-        probe, text = request_probe(session, realm_url)
-        parsed = parse_market_table(text) if probe["http_status"] == 200 else {}
-        probe["parsed_item_count"] = len(parsed)
-        probe["wanted_items_found"] = [i["id"] for i in config["items"] if i["id"] in parsed]
-        result["thunderstrike_market"].append(probe)
-        live_rows.update(parsed)
-    except Exception as exc:
-        result["thunderstrike_market"].append({"url": realm_url, "error": repr(exc)})
-
-    # If the full realm page is incomplete, try per-item lookup pages for each configured item.
-    for item in config["items"]:
-        if item["id"] in live_rows:
-            continue
-        url = THUNDERSTRIKE_MARKET_CANDIDATES[1].format(item_id=item["id"])
+    for url in THUNDERSTRIKE_MARKET_PAGES:
         try:
-            probe, text = request_probe(session, url, item["name"])
-            parsed = parse_market_table(text) if probe["http_status"] == 200 else {}
+            probe, text = request_probe(session, url)
+            parsed = parse_market_tables(text) if probe["http_status"] == 200 else {}
             probe["parsed_item_count"] = len(parsed)
+            probe["wanted_items_found"] = [i["id"] for i in config["items"] if i["id"] in parsed]
             result["thunderstrike_market"].append(probe)
-            if item["id"] in parsed:
-                live_rows[item["id"]] = parsed[item["id"]]
+            # Earlier pages are more directly Alliance-scoped, so don't overwrite them with compare-page rows.
+            for item_id, row in parsed.items():
+                live_rows.setdefault(item_id, row)
         except Exception as exc:
             result["thunderstrike_market"].append({"url": url, "error": repr(exc)})
 
@@ -264,7 +242,6 @@ def main():
         result["prices_updated"] = updated
         result["selected_source"] = "thunderstrikemarket.org"
 
-    # 3) BBB remains a diagnostic fallback; no Cloudflare bypass attempts.
     for item in config["items"][:2]:
         item_result = {"id": item["id"], "name": item["name"], "probes": []}
         for url in bbb_urls(item, market):
@@ -280,7 +257,7 @@ def main():
     DIAG_PATH.parent.mkdir(parents=True, exist_ok=True)
     DIAG_PATH.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print("Thunderstrike Market parsed live items:", len(live_rows), "prices updated:", updated)
+    print("Thunderstrike Market parsed live rows:", len(live_rows), "wanted prices updated:", updated)
     for item in config["items"]:
         if item["id"] in live_rows:
             print(item["name"], row_to_market_data(live_rows[item["id"]]))
