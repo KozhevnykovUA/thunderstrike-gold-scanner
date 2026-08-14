@@ -222,13 +222,9 @@
       "item_id": 22445,
       "name": "Arcane Dust",
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22445",
-      "status": 200,
+      "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22445",
-      "content_length": 594590,
-      "region_sale_rate": 0.638,
-      "region_avg_daily_sold": 12733.842,
-      "contains_sale_rate_label": true,
-      "contains_daily_sold_label": true
+      "content_length": 8137
     },
     "22446": {
       "item_id": 22446,
@@ -236,7 +232,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22446",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22446",
-      "content_length": 8136
+      "content_length": 8137
     },
     "22449": {
       "item_id": 22449,
@@ -244,7 +240,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22449",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22449",
-      "content_length": 8136
+      "content_length": 8137
     },
     "22522": {
       "item_id": 22522,
@@ -252,7 +248,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22522",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/22522",
-      "content_length": 8136
+      "content_length": 8137
     },
     "28420": {
       "item_id": 28420,
@@ -260,7 +256,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28420",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28420",
-      "content_length": 8136
+      "content_length": 8137
     },
     "23559": {
       "item_id": 23559,
@@ -268,7 +264,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23559",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23559",
-      "content_length": 8136
+      "content_length": 8137
     },
     "23575": {
       "item_id": 23575,
@@ -276,7 +272,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23575",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23575",
-      "content_length": 8136
+      "content_length": 8137
     },
     "28421": {
       "item_id": 28421,
@@ -284,7 +280,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28421",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/28421",
-      "content_length": 8136
+      "content_length": 8137
     },
     "23524": {
       "item_id": 23524,
@@ -292,7 +288,7 @@
       "url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23524",
       "status": 429,
       "final_url": "https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance/items/23524",
-      "content_length": 8136
+      "content_length": 8137
     }
   }
 }
