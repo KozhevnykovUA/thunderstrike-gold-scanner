@@ -1,0 +1,121 @@
+import csv
+import io
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import requests
+
+TSM_URL = "https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike-alliance/items.csv"
+OUT = Path("data/cooking_profit.json")
+AH_CUT = 0.05
+
+# Heatmap % values are from the user's current TSM Gold screenshots (2026-08-14).
+# Recipes/mats are standard TBC recipes; most make 1 item per craft.
+RECIPES = [
+    {"output": "Ravager Dog", "mats": {"Ravager Flesh": 1}, "heatmap_pct": 131.8},
+    {"output": "Blackened Trout", "mats": {"Barbed Gill Trout": 1}, "heatmap_pct": 120.7},
+    {"output": "Broiled Bloodfin", "mats": {"Bloodfin Catfish": 1}, "heatmap_pct": 117.2},
+    {"output": "Kibler's Bits", "mats": {"Buzzard Meat": 1}, "heatmap_pct": 81.5},
+    {"output": "Blackened Sporefish", "mats": {"Zangarian Sporefish": 1}, "heatmap_pct": 65.4},
+    {"output": "Grilled Mudfish", "mats": {"Figluster's Mudfish": 1}, "heatmap_pct": 40.5},
+    {"output": "Spicy Crawdad", "mats": {"Furious Crawdad": 1}, "heatmap_pct": 30.0},
+    {"output": "Warp Burger", "mats": {"Warped Flesh": 1}, "heatmap_pct": 20.2},
+    {"output": "Blackened Basilisk", "mats": {"Chunk o' Basilisk": 1}, "heatmap_pct": 18.1},
+    {"output": "Poached Bluefish", "mats": {"Icefin Bluefish": 1}, "heatmap_pct": 6.9},
+    {"output": "Spicy Hot Talbuk", "mats": {"Talbuk Venison": 1}, "vendor_cost_gold": 0.0, "heatmap_pct": -1.3, "note": "Hot Spices vendor cost is trivial and omitted."},
+    {"output": "Roasted Clefthoof", "mats": {"Clefthoof Meat": 1}, "heatmap_pct": -9.9},
+    {"output": "Golden Fish Sticks", "mats": {"Golden Darter": 1}, "heatmap_pct": -10.9},
+    {"output": "Thistle Tea", "mats": {"Swiftthistle": 1}, "heatmap_pct": -17.3},
+]
+
+def gold(copper):
+    if copper in (None, ""):
+        return None
+    return int(copper) / 10000.0
+
+
+def main():
+    r = requests.get(TSM_URL, timeout=45, headers={"User-Agent": "ThunderstrikeGoldScanner/1.0"})
+    r.raise_for_status()
+    rows = list(csv.DictReader(io.StringIO(r.text)))
+    by_name = {x["name"].strip().lower(): x for x in rows}
+
+    def lookup(name):
+        return by_name.get(name.strip().lower())
+
+    results = []
+    missing = []
+    for recipe in RECIPES:
+        out = lookup(recipe["output"])
+        if not out:
+            missing.append(recipe["output"])
+            continue
+        # For sale price use recent first, then marketValue. This avoids one anomalous min buyout.
+        sell = gold(out.get("recent")) or gold(out.get("marketValue"))
+        min_buyout = gold(out.get("minBuyout"))
+        market = gold(out.get("marketValue"))
+        historical = gold(out.get("historical"))
+
+        mat_cost = float(recipe.get("vendor_cost_gold", 0.0))
+        mats_detail = []
+        ok = True
+        for mat, qty in recipe.get("mats", {}).items():
+            row = lookup(mat)
+            if not row:
+                missing.append(mat)
+                ok = False
+                break
+            buy = gold(row.get("recent")) or gold(row.get("marketValue")) or gold(row.get("minBuyout"))
+            if buy is None:
+                ok = False
+                missing.append(mat)
+                break
+            cost = buy * qty
+            mat_cost += cost
+            mats_detail.append({"name": mat, "qty": qty, "unit_buy_gold": round(buy, 4), "cost_gold": round(cost, 4)})
+        if not ok or sell is None:
+            continue
+
+        net_sale = sell * (1 - AH_CUT)
+        profit = net_sale - mat_cost
+        roi = (profit / mat_cost * 100) if mat_cost > 0 else None
+        margin = (profit / net_sale * 100) if net_sale > 0 else None
+        stack20_profit = profit * 20
+        results.append({
+            "output": recipe["output"],
+            "tsm_recent_sell_gold": round(sell, 4),
+            "tsm_min_buyout_gold": round(min_buyout, 4) if min_buyout is not None else None,
+            "tsm_market_value_gold": round(market, 4) if market is not None else None,
+            "tsm_historical_gold": round(historical, 4) if historical is not None else None,
+            "heatmap_pct": recipe.get("heatmap_pct"),
+            "materials": mats_detail,
+            "material_cost_gold": round(mat_cost, 4),
+            "net_sale_after_5pct_gold": round(net_sale, 4),
+            "profit_per_craft_gold": round(profit, 4),
+            "profit_per_stack20_gold": round(stack20_profit, 2),
+            "roi_pct": round(roi, 1) if roi is not None else None,
+            "margin_pct": round(margin, 1) if margin is not None else None,
+            "profitable": profit > 0,
+            "note": recipe.get("note"),
+        })
+
+    results.sort(key=lambda x: x["profit_per_craft_gold"], reverse=True)
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": "TSM public pricing + TSM Gold heatmap snapshot",
+        "market": "classic/eu-fresh/thunderstrike-alliance",
+        "pricing_model": "recent sell and recent input prices; 5% AH cut; deposits and liquidity not yet included",
+        "opportunities": results,
+        "missing_names": sorted(set(missing)),
+    }
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    print("Top cooking opportunities:")
+    for x in results[:10]:
+        print(f"{x['output']}: profit {x['profit_per_craft_gold']:.2f}g, stack20 {x['profit_per_stack20_gold']:.2f}g, ROI {x['roi_pct']}%, heatmap {x['heatmap_pct']}%")
+    if missing:
+        print("Missing names:", sorted(set(missing)))
+
+if __name__ == "__main__":
+    main()
