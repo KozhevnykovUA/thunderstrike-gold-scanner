@@ -14,6 +14,12 @@ DIAG_PATH = Path("data/diagnostics.json")
 PRICES_PATH = Path("data/prices.json")
 
 TSM_CANDIDATES = [
+    # User-confirmed realm URL on TSM website:
+    # https://tradeskillmaster.com/classic/eu-fresh/thunderstrike-alliance
+    # TSM docs say public-data slugs are copied directly from the realm page URL.
+    "https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike-alliance/items.csv",
+    "https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike/items.csv",
+    # Older guesses kept only as diagnostics/fallbacks.
     "https://public-data.tradeskillmaster.com/classic/eu/realm/thunderstrike/items.csv",
     "https://public-data.tradeskillmaster.com/classic-progression/eu/realm/thunderstrike/items.csv",
     "https://public-data.tradeskillmaster.com/classic-anniversary/eu/realm/thunderstrike/items.csv",
@@ -141,7 +147,6 @@ def get_any(row, keys):
 
 
 def row_to_market_data(row):
-    # Alliance-scoped report pages use current_price/on_sale. Cross-faction compare uses alliance_price/alliance_on_sale.
     price_text = get_any(row, ["current_price", "alliance_price", "price", "lowest_buyout", "buyout"])
     avg_text = get_any(row, ["market_avg", "market_average", "average", "dbmarket"])
     qty_text = get_any(row, ["on_sale", "alliance_on_sale", "quantity", "qty", "supply"])
@@ -230,7 +235,6 @@ def main():
             probe["parsed_item_count"] = len(parsed)
             probe["wanted_items_found"] = [i["id"] for i in config["items"] if i["id"] in parsed]
             result["thunderstrike_market"].append(probe)
-            # Earlier pages are more directly Alliance-scoped, so don't overwrite them with compare-page rows.
             for item_id, row in parsed.items():
                 live_rows.setdefault(item_id, row)
         except Exception as exc:
