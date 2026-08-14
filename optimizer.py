@@ -28,13 +28,6 @@ def craft_cost(prices, materials):
 
 
 def skillup_probability(skill, thresholds):
-    """Classic/TBC profession heuristic from recipe color breakpoints.
-
-    Below yellow: orange, 100%.
-    Yellow -> green: linearly declines 100% -> 50%.
-    Green -> gray: linearly declines 50% -> 0%.
-    Gray+: 0%.
-    """
     yellow = thresholds['yellow']
     green = thresholds['green']
     gray = thresholds['gray']
@@ -63,8 +56,11 @@ def main():
 
     for recipe in recipes['recipes']:
         cost, missing = craft_cost(prices, recipe['materials'])
+        required_skill = recipe.get('required_skill', 0)
         skill_curve = []
         for skill in range(300, 375):
+            if skill < required_skill:
+                continue
             probability = skillup_probability(skill, recipe['skill'])
             if probability <= 0:
                 continue
@@ -76,7 +72,9 @@ def main():
 
         rows.append({
             'name': recipe['name'],
+            'required_skill': required_skill,
             'skill': recipe['skill'],
+            'requirements': recipe.get('requirements'),
             'material_cost_gold': cost,
             'missing_price_item_ids': missing,
             'notes': recipe.get('notes'),
@@ -92,7 +90,7 @@ def main():
             'orange': 1.0,
             'yellow_to_green': 'linear 1.0 -> 0.5',
             'green_to_gray': 'linear 0.5 -> 0.0',
-            'note': 'Used for route comparison; replace with exact per-recipe skill-up data if a reliable source becomes available.'
+            'note': 'Used for route comparison; exact recipe availability and reputation requirements are enforced where known.'
         },
         'recipes': rows,
     }
@@ -109,7 +107,6 @@ def main():
             'major_armor_cheaper_pct': round((1 - a / s) * 100, 2) if s else None,
         }
 
-    # Per-skill cheapest recipe among recipes represented in our current recipe DB.
     cheapest_by_skill = []
     for skill in range(300, 375):
         candidates = []
@@ -122,6 +119,7 @@ def main():
                 'craft_cost_gold': row['material_cost_gold'],
                 'skillup_probability': point['skillup_probability'],
                 'expected_cost_per_skill_gold': point['expected_cost_per_skill_gold'],
+                'requirements': row.get('requirements'),
             })
         candidates.sort(key=lambda x: x['expected_cost_per_skill_gold'])
         if candidates:
