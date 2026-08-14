@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T15:18:53.034676+00:00",
+  "generated_at": "2026-08-14T15:21:18.534555+00:00",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -45,6 +45,100 @@
       "body_preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"icon\" href=\"https://www.cloudflare.com/favicon.ico\" />\n    <title>Not Found</title>\n    <style>\n      body {\n        font-family: system-ui;\n        font-weight: 300;\n        font-size: 1.25rem;\n        color: #36393a;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n      }\n      main {\n        max-width: 1200px;\n        margin-top: 120px;\n        display: flex;\n        flex-wrap: wrap;\n        al"
     }
   ],
+  "thunderstrike_market": [
+    {
+      "url": "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
+      "http_status": 525,
+      "final_url": "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7133,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "parsed_item_count": 0,
+      "wanted_items_found": []
+    },
+    {
+      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22445",
+      "http_status": 525,
+      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22445",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7133,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "item_found": false,
+      "money_candidates_gold": [
+        0.0001,
+        0.0003,
+        0.0002
+      ],
+      "parsed_item_count": 0
+    },
+    {
+      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22446",
+      "http_status": 525,
+      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22446",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7133,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "item_found": false,
+      "money_candidates_gold": [
+        0.0001,
+        0.0003,
+        0.0002
+      ],
+      "parsed_item_count": 0
+    },
+    {
+      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22449",
+      "http_status": 525,
+      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22449",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7133,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "item_found": false,
+      "money_candidates_gold": [
+        0.0001,
+        0.0003,
+        0.0002
+      ],
+      "parsed_item_count": 0
+    },
+    {
+      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22792",
+      "http_status": 525,
+      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=22792",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7133,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "item_found": false,
+      "money_candidates_gold": [
+        0.0001,
+        0.0003,
+        0.0002
+      ],
+      "parsed_item_count": 0
+    },
+    {
+      "url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23571",
+      "http_status": 525,
+      "final_url": "https://market.thunderstrikemarket.org/item/?faction=alliance&id=23571",
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": 7133,
+      "server": "cloudflare",
+      "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
+      "item_found": false,
+      "money_candidates_gold": [
+        0.0001,
+        0.0003,
+        0.0002,
+        0.9689
+      ],
+      "parsed_item_count": 0
+    }
+  ],
   "bootybaybroker": [
     {
       "id": 22445,
@@ -55,46 +149,38 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/tbc-classic/item/22445/arcane-dust?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6264,
+          "content_length": 6308,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-HdQaGyK8ZUnbgkNK73Z2WX&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-V6iVV7douOxMHHdsDiHw2Y&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0008,
+            0.0003,
+            0.0006,
             0.0005,
-            0.0004,
-            0.0087,
-            0.0009
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
+            0.643,
+            0.0002
+          ]
         },
         {
           "url": "https://bootybaybroker.com/item/22445/arcane-dust?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/item/22445/arcane-dust?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6303,
+          "content_length": 6347,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-qGXs2zNE6xookNxulHlJwk&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-UuBjDNT3LSQZ2THjN5DPGT&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0034,
-            0.0037,
             0.0003,
+            0.0079,
+            0.0004,
+            0.0036,
+            0.0023,
             0.0002,
-            0.0001
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
+            0.0068
+          ]
         }
       ]
     },
@@ -107,216 +193,41 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/tbc-classic/item/22446/greater-planar-essence?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6297,
+          "content_length": 6362,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-zl9p45oNkoji3QpgCiXKMj&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-OmMXoYZQoBtqZbf5W8GEj7&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0002,
-            0.0006,
-            0.0087,
-            0.002,
-            0.0008,
-            0.0081
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
+            0.0001,
+            0.0994,
+            0.0005,
+            0.0007,
+            0.0004,
+            0.0095,
+            0.0051,
+            0.942
+          ]
         },
         {
           "url": "https://bootybaybroker.com/item/22446/greater-planar-essence?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/item/22446/greater-planar-essence?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6358,
+          "content_length": 6401,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-2VHm8Wb6onTTFCTyITSfS3&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-yEHJUIaQPJO5K4gyXeYaxU&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0008,
             0.0009,
-            0.0002,
-            0.0006,
-            38.0
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
-        }
-      ]
-    },
-    {
-      "id": 22449,
-      "name": "Large Prismatic Shard",
-      "probes": [
-        {
-          "url": "https://bootybaybroker.com/tbc-classic/item/22449/large-prismatic-shard?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "http_status": 403,
-          "final_url": "https://bootybaybroker.com/tbc-classic/item/22449/large-prismatic-shard?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "content_type": "text/html; charset=UTF-8",
-          "content_length": 6294,
-          "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-9j6j3UTkQmGxaunufR7aFE&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
-          "item_found": false,
-          "money_candidates_gold": [
-            0.0048,
-            0.0005,
-            0.0033,
-            0.0008,
-            0.0007,
-            0.0009
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
-        },
-        {
-          "url": "https://bootybaybroker.com/item/22449/large-prismatic-shard?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "http_status": 403,
-          "final_url": "https://bootybaybroker.com/item/22449/large-prismatic-shard?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "content_type": "text/html; charset=UTF-8",
-          "content_length": 6355,
-          "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-b8pvuawX9Xv27KMtqZW5Xc&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
-          "item_found": false,
-          "money_candidates_gold": [
-            0.0048,
-            0.0005,
-            0.0002,
             0.0004,
-            0.0609,
-            0.0008,
-            0.0058,
-            0.0009,
+            0.0005,
+            0.0002,
             0.0003,
-            0.0047,
-            0.0001
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
-        }
-      ]
-    },
-    {
-      "id": 22792,
-      "name": "Nightmare Vine",
-      "probes": [
-        {
-          "url": "https://bootybaybroker.com/tbc-classic/item/22792/nightmare-vine?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "http_status": 403,
-          "final_url": "https://bootybaybroker.com/tbc-classic/item/22792/nightmare-vine?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "content_type": "text/html; charset=UTF-8",
-          "content_length": 6273,
-          "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-Q4rWJFSXWFVQnv4OvLD2pO&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
-          "item_found": false,
-          "money_candidates_gold": [
-            0.0048,
-            0.0004,
-            0.0009,
             0.0006,
-            0.0002,
-            0.0005,
-            0.0001,
-            0.0008,
             0.0007
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
-        },
-        {
-          "url": "https://bootybaybroker.com/item/22792/nightmare-vine?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "http_status": 403,
-          "final_url": "https://bootybaybroker.com/item/22792/nightmare-vine?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "content_type": "text/html; charset=UTF-8",
-          "content_length": 6312,
-          "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-uUblyVEZUOyGqieblqhk4d&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
-          "item_found": false,
-          "money_candidates_gold": [
-            0.0048,
-            0.0006,
-            0.0008,
-            0.0004,
-            0.0002,
-            0.0005,
-            0.0003
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
-        }
-      ]
-    },
-    {
-      "id": 23571,
-      "name": "Primal Might",
-      "probes": [
-        {
-          "url": "https://bootybaybroker.com/tbc-classic/item/23571/primal-might?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "http_status": 403,
-          "final_url": "https://bootybaybroker.com/tbc-classic/item/23571/primal-might?realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "content_type": "text/html; charset=UTF-8",
-          "content_length": 6267,
-          "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-b0eI1yzMbE9fCYb1scO2Pn&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
-          "item_found": false,
-          "money_candidates_gold": [
-            0.0048,
-            0.0004,
-            0.0009,
-            0.0003,
-            0.0061,
-            0.0005,
-            0.0002,
-            0.005,
-            0.0363
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
-        },
-        {
-          "url": "https://bootybaybroker.com/item/23571/primal-might?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "http_status": 403,
-          "final_url": "https://bootybaybroker.com/item/23571/primal-might?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
-          "content_type": "text/html; charset=UTF-8",
-          "content_length": 6306,
-          "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-PuH7qIZDIxcJAreKHa6E5h&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
-          "item_found": false,
-          "money_candidates_gold": [
-            0.0048,
-            0.0001,
-            0.0007,
-            0.0008,
-            0.0009,
-            0.0003,
-            0.0074
-          ],
-          "market_depth": false,
-          "realm_price_comparison": false,
-          "current_price": false,
-          "lowest_buyout": false,
-          "price_levels": false
+          ]
         }
       ]
     }
