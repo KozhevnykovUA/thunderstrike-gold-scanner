@@ -1,20 +1,42 @@
 {
   "profession": "Enchanting",
   "range": [300, 375],
+  "current_phase": 2,
+  "phase_verified_at": "2026-08-14",
   "recipes": [
+    {
+      "name": "Runed Fel Iron Rod",
+      "required_skill": 300,
+      "skill": {"yellow": 300, "green": 310, "gray": 325},
+      "materials": {"25843": 1, "16203": 4, "14344": 6},
+      "repeatable_for_leveling": false,
+      "requirements": {"existing_tool": "Runed Arcanite Rod"},
+      "available_now": true,
+      "notes": "Mandatory one-time rod. TBC database difficulty 300/300/310/325/340; user already has the Runed Arcanite Rod, so it is treated as an existing tool rather than a market purchase."
+    },
+    {
+      "name": "Enchant Cloak - Superior Defense",
+      "required_skill": 285,
+      "skill": {"yellow": 300, "green": 317, "gray": 335},
+      "materials": {"16204": 8},
+      "available_now": true,
+      "notes": "Phase 1 vendor formula. TBC database difficulty 285/300/317/335. Current Wowhead leveling guide uses it for 301-317."
+    },
     {
       "name": "Enchant Cloak - Major Armor",
       "required_skill": 310,
       "skill": {"yellow": 320, "green": 335, "gray": 350},
       "materials": {"22445": 8},
-      "notes": "Wowhead difficulty 310/320/335/350. Current leveling guide uses it from 317 and may extend it toward 335 when Arcane Dust is cheap."
+      "available_now": true,
+      "notes": "Wowhead difficulty 310/320/335/350. Current leveling guide uses it from 317 and may extend it when Arcane Dust is cheap."
     },
     {
       "name": "Enchant Chest - Major Spirit",
       "required_skill": 320,
       "skill": {"yellow": 330, "green": 345, "gray": 360},
       "materials": {"22446": 2},
-      "notes": "Trainer recipe. Wowhead comments confirm green at 345; leveling guide uses it 320-340."
+      "available_now": true,
+      "notes": "Trainer recipe. Leveling guide uses it 320-340."
     },
     {
       "name": "Superior Wizard Oil",
@@ -22,21 +44,24 @@
       "skill": {"yellow": 340, "green": 350, "gray": 360},
       "materials": {"22445": 3, "22792": 1},
       "output": {"item_id": 22522, "quantity": 1, "saleable": true},
+      "available_now": true,
       "notes": "Wowhead difficulty 340/340/350/360. Also requires 1 Imbued Vial; vial cost is not yet included."
     },
     {
       "name": "Runed Adamantite Rod",
       "required_skill": 350,
-      "skill": {"yellow": 350, "green": 350, "gray": 350},
+      "skill": {"yellow": 350, "green": 360, "gray": 375},
       "materials": {"22446": 8, "22449": 8, "23571": 1, "25844": 1},
       "repeatable_for_leveling": false,
-      "notes": "Required one-time tool investment. Adamantite Rod price is tracked separately."
+      "available_now": true,
+      "notes": "Required one-time tool investment."
     },
     {
       "name": "Enchant Gloves - Major Strength",
       "required_skill": 340,
       "skill": {"yellow": 350, "green": 365, "gray": 380},
       "materials": {"22445": 12, "22446": 1},
+      "available_now": true,
       "notes": "Wowhead difficulty 340/350/365/380; baseline guide uses it after the 350 rod craft."
     },
     {
@@ -45,15 +70,17 @@
       "skill": {"yellow": 370, "green": 385, "gray": 400},
       "materials": {"22449": 2, "22445": 6},
       "requirements": {"reputation": "The Consortium - Revered"},
-      "notes": "Wowhead difficulty 360/370/385/400."
+      "available_now": true,
+      "notes": "Wowhead difficulty 360/370/385/400. Available from Karazhan reputation vendor path; usable in current phase if reputation requirement is met."
     },
     {
       "name": "Enchant Ring - Spellpower",
       "required_skill": 360,
       "skill": {"yellow": 370, "green": 385, "gray": 400},
       "materials": {"22449": 2, "22446": 2},
-      "requirements": {"reputation": "Keepers of Time - Honored"},
-      "notes": "Wowhead difficulty 360/370/385/400; baseline leveling guide uses it 365-375."
+      "requirements": {"reputation": "Keepers of Time - Honored", "phase": 3},
+      "available_now": false,
+      "notes": "Phase 3 recipe. Blizzard has Phase 3 launching August 27, 2026, so it is excluded from current Phase 2 optimization."
     },
     {
       "name": "Enchant Ring - Healing Power",
@@ -61,6 +88,7 @@
       "skill": {"yellow": 380, "green": 395, "gray": 410},
       "materials": {"22449": 2, "22446": 3, "22445": 5},
       "requirements": {"reputation": "The Sha'tar - Revered"},
+      "available_now": true,
       "notes": "Wowhead difficulty 370/380/395/410."
     },
     {
@@ -68,8 +96,9 @@
       "required_skill": 360,
       "skill": {"yellow": 370, "green": 385, "gray": 400},
       "materials": {"22446": 4, "22445": 8, "23427": 4},
-      "requirements": {"reputation": "Shattered Sun Offensive - Honored", "phase_note": "Available with Shattered Sun Offensive content"},
-      "notes": "Wowhead difficulty 360/370/385/400."
+      "requirements": {"reputation": "Shattered Sun Offensive - Honored", "phase": 5},
+      "available_now": false,
+      "notes": "Phase 5 recipe. Excluded from current Phase 2 optimization."
     }
   ]
 }
