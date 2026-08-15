@@ -28,9 +28,9 @@
       "item_level_min": 80,
       "item_level_max": 99,
       "item_type": "armor",
-      "expected_disenchant_value_gold": 2.9546,
-      "conservative_buy_ceiling_gold": 2.6591,
-      "break_even_buy_ceiling_gold": 2.9546,
+      "expected_disenchant_value_gold": 2.9537,
+      "conservative_buy_ceiling_gold": 2.6583,
+      "break_even_buy_ceiling_gold": 2.9537,
       "recommended_rule": "DE if total acquisition cost is below 2.66g; between 2.66g and 2.95g only if you accept price/variance risk.",
       "components": [
         {
@@ -47,18 +47,18 @@
           "name": "Lesser Planar Essence",
           "probability": 0.22,
           "average_quantity_if_hit": 2.5,
-          "unit_value_gold": 1.7523,
+          "unit_value_gold": 1.7472,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.9638
+          "expected_value_gold": 0.961
         },
         {
           "item_id": 22448,
           "name": "Small Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 6.3929,
+          "unit_value_gold": 6.4573,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.1918
+          "expected_value_gold": 0.1937
         }
       ],
       "missing_price_item_ids": []
@@ -68,10 +68,10 @@
       "item_level_min": 80,
       "item_level_max": 99,
       "item_type": "weapon",
-      "expected_disenchant_value_gold": 4.0051,
-      "conservative_buy_ceiling_gold": 3.6046,
-      "break_even_buy_ceiling_gold": 4.0051,
-      "recommended_rule": "DE if total acquisition cost is below 3.60g; between 3.60g and 4.01g only if you accept price/variance risk.",
+      "expected_disenchant_value_gold": 3.9974,
+      "conservative_buy_ceiling_gold": 3.5977,
+      "break_even_buy_ceiling_gold": 3.9974,
+      "recommended_rule": "DE if total acquisition cost is below 3.60g; between 3.60g and 4.00g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
@@ -87,18 +87,18 @@
           "name": "Lesser Planar Essence",
           "probability": 0.75,
           "average_quantity_if_hit": 2.5,
-          "unit_value_gold": 1.7523,
+          "unit_value_gold": 1.7472,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 3.2856
+          "expected_value_gold": 3.276
         },
         {
           "item_id": 22448,
           "name": "Small Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 6.3929,
+          "unit_value_gold": 6.4573,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.1918
+          "expected_value_gold": 0.1937
         }
       ],
       "missing_price_item_ids": []
@@ -108,10 +108,10 @@
       "item_level_min": 100,
       "item_level_max": 120,
       "item_type": "armor",
-      "expected_disenchant_value_gold": 4.9724,
-      "conservative_buy_ceiling_gold": 4.4752,
-      "break_even_buy_ceiling_gold": 4.9724,
-      "recommended_rule": "DE if total acquisition cost is below 4.48g; between 4.48g and 4.97g only if you accept price/variance risk.",
+      "expected_disenchant_value_gold": 4.9657,
+      "conservative_buy_ceiling_gold": 4.4691,
+      "break_even_buy_ceiling_gold": 4.9657,
+      "recommended_rule": "DE if total acquisition cost is below 4.47g; between 4.47g and 4.97g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
@@ -127,18 +127,18 @@
           "name": "Greater Planar Essence",
           "probability": 0.22,
           "average_quantity_if_hit": 1.5,
-          "unit_value_gold": 5.6337,
+          "unit_value_gold": 5.6168,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 1.8591
+          "expected_value_gold": 1.8535
         },
         {
           "item_id": 22449,
           "name": "Large Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 19.8202,
+          "unit_value_gold": 19.783,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.5946
+          "expected_value_gold": 0.5935
         }
       ],
       "missing_price_item_ids": []
@@ -148,10 +148,10 @@
       "item_level_min": 100,
       "item_level_max": 120,
       "item_type": "weapon",
-      "expected_disenchant_value_gold": 7.6713,
-      "conservative_buy_ceiling_gold": 6.9042,
-      "break_even_buy_ceiling_gold": 7.6713,
-      "recommended_rule": "DE if total acquisition cost is below 6.90g; between 6.90g and 7.67g only if you accept price/variance risk.",
+      "expected_disenchant_value_gold": 7.6512,
+      "conservative_buy_ceiling_gold": 6.8861,
+      "break_even_buy_ceiling_gold": 7.6512,
+      "recommended_rule": "DE if total acquisition cost is below 6.89g; between 6.89g and 7.65g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
@@ -167,18 +167,18 @@
           "name": "Greater Planar Essence",
           "probability": 0.75,
           "average_quantity_if_hit": 1.5,
-          "unit_value_gold": 5.6337,
+          "unit_value_gold": 5.6168,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 6.3379
+          "expected_value_gold": 6.3189
         },
         {
           "item_id": 22449,
           "name": "Large Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 19.8202,
+          "unit_value_gold": 19.783,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.5946
+          "expected_value_gold": 0.5935
         }
       ],
       "missing_price_item_ids": []
