@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T21:43:54.787590+00:00",
+  "generated_at": "2026-08-15T01:52:54.047259+00:00",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "model": "minimize expected net leveling cost after 5% AH cut and one-listing sale-rate-weighted recovery",
   "route": [
@@ -18,7 +18,7 @@
         }
       ],
       "gross_per_craft_gold": 0.0018,
-      "sell_gold": 0.0005,
+      "sell_gold": 0.0003,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
@@ -37,18 +37,18 @@
         {
           "name": "Raw Longjaw Mud Snapper",
           "qty": 1,
-          "unit_gold": 0.0012,
+          "unit_gold": 0.0002,
           "item_id": 6289
         }
       ],
-      "gross_per_craft_gold": 0.0012,
-      "sell_gold": 0.0005,
+      "gross_per_craft_gold": 0.0002,
+      "sell_gold": 0.0003,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0,
-      "net_per_craft_gold": 0.0012,
-      "segment_net_gold": 0.06,
+      "net_per_craft_gold": 0.0002,
+      "segment_net_gold": 0.01,
       "recipe": "Recipe: Longjaw Mud Snapper"
     },
     {
@@ -61,18 +61,18 @@
         {
           "name": "Raw Bristle Whisker Catfish",
           "qty": 1,
-          "unit_gold": 0.059,
+          "unit_gold": 0.0318,
           "item_id": 6308
         }
       ],
-      "gross_per_craft_gold": 0.059,
-      "sell_gold": 0.0053,
+      "gross_per_craft_gold": 0.0318,
+      "sell_gold": 0.0048,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0005,
-      "net_per_craft_gold": 0.0585,
-      "segment_net_gold": 7.02,
+      "net_per_craft_gold": 0.0313,
+      "segment_net_gold": 3.76,
       "recipe": "Recipe: Bristle Whisker Catfish"
     },
     {
@@ -85,18 +85,18 @@
         {
           "name": "Raw Rockscale Cod",
           "qty": 1,
-          "unit_gold": 0.0009,
+          "unit_gold": 0.0007,
           "item_id": 6362
         }
       ],
-      "gross_per_craft_gold": 0.0009,
-      "sell_gold": 0.005,
+      "gross_per_craft_gold": 0.0007,
+      "sell_gold": 0.0045,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
-      "expected_recovery_per_craft_gold": 0.0005,
-      "net_per_craft_gold": 0.0004,
-      "segment_net_gold": 0.03,
+      "expected_recovery_per_craft_gold": 0.0004,
+      "net_per_craft_gold": 0.0003,
+      "segment_net_gold": 0.02,
       "recipe": "Recipe: Rockscale Cod"
     },
     {
@@ -109,18 +109,18 @@
         {
           "name": "Raw Spotted Yellowtail",
           "qty": 1,
-          "unit_gold": 0.0153,
+          "unit_gold": 0.0148,
           "item_id": 4603
         }
       ],
-      "gross_per_craft_gold": 0.0153,
-      "sell_gold": 0.0039,
+      "gross_per_craft_gold": 0.0148,
+      "sell_gold": 0.0037,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0004,
-      "net_per_craft_gold": 0.0149,
-      "segment_net_gold": 0.37,
+      "net_per_craft_gold": 0.0144,
+      "segment_net_gold": 0.36,
       "recipe": "Recipe: Spotted Yellowtail"
     },
     {
@@ -133,18 +133,18 @@
         {
           "name": "Raw Spotted Yellowtail",
           "qty": 1,
-          "unit_gold": 0.0153,
+          "unit_gold": 0.0148,
           "item_id": 4603
         }
       ],
-      "gross_per_craft_gold": 0.0153,
-      "sell_gold": 0.0039,
+      "gross_per_craft_gold": 0.0148,
+      "sell_gold": 0.0037,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
       "expected_recovery_per_craft_gold": 0.0004,
-      "net_per_craft_gold": 0.0149,
-      "segment_net_gold": 0.97,
+      "net_per_craft_gold": 0.0144,
+      "segment_net_gold": 0.94,
       "recipe": "Recipe: Spotted Yellowtail"
     },
     {
@@ -157,24 +157,24 @@
         {
           "name": "Darkclaw Lobster",
           "qty": 1,
-          "unit_gold": 0.6501,
+          "unit_gold": 0.65,
           "item_id": 13888
         },
         {
           "name": "Refreshing Spring Water",
           "qty": 1,
-          "unit_gold": 0.0105,
+          "unit_gold": 0.0098,
           "item_id": 159
         }
       ],
-      "gross_per_craft_gold": 0.6606,
-      "sell_gold": 0.0419,
+      "gross_per_craft_gold": 0.6598,
+      "sell_gold": 0.0415,
       "sale_rate": null,
       "sold_per_day": null,
       "sale_price_anomaly": false,
-      "expected_recovery_per_craft_gold": 0.004,
-      "net_per_craft_gold": 0.6566,
-      "segment_net_gold": 16.42,
+      "expected_recovery_per_craft_gold": 0.0039,
+      "net_per_craft_gold": 0.6559,
+      "segment_net_gold": 16.4,
       "recipe": "Recipe: Lobster Stew"
     }
   ],
@@ -196,7 +196,7 @@
             }
           ],
           "gross_per_craft_gold": 0.0018,
-          "sell_gold": 0.0005,
+          "sell_gold": 0.0003,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
@@ -219,18 +219,18 @@
             {
               "name": "Raw Longjaw Mud Snapper",
               "qty": 1,
-              "unit_gold": 0.0012,
+              "unit_gold": 0.0002,
               "item_id": 6289
             }
           ],
-          "gross_per_craft_gold": 0.0012,
-          "sell_gold": 0.0005,
+          "gross_per_craft_gold": 0.0002,
+          "sell_gold": 0.0003,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0,
-          "net_per_craft_gold": 0.0012,
-          "segment_net_gold": 0.06,
+          "net_per_craft_gold": 0.0002,
+          "segment_net_gold": 0.01,
           "recipe": "Recipe: Longjaw Mud Snapper"
         }
       ]
@@ -247,18 +247,18 @@
             {
               "name": "Raw Bristle Whisker Catfish",
               "qty": 1,
-              "unit_gold": 0.059,
+              "unit_gold": 0.0318,
               "item_id": 6308
             }
           ],
-          "gross_per_craft_gold": 0.059,
-          "sell_gold": 0.0053,
+          "gross_per_craft_gold": 0.0318,
+          "sell_gold": 0.0048,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0005,
-          "net_per_craft_gold": 0.0585,
-          "segment_net_gold": 7.02,
+          "net_per_craft_gold": 0.0313,
+          "segment_net_gold": 3.76,
           "recipe": "Recipe: Bristle Whisker Catfish"
         }
       ]
@@ -275,18 +275,18 @@
             {
               "name": "Raw Rockscale Cod",
               "qty": 1,
-              "unit_gold": 0.0009,
+              "unit_gold": 0.0007,
               "item_id": 6362
             }
           ],
-          "gross_per_craft_gold": 0.0009,
-          "sell_gold": 0.005,
+          "gross_per_craft_gold": 0.0007,
+          "sell_gold": 0.0045,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
-          "expected_recovery_per_craft_gold": 0.0005,
-          "net_per_craft_gold": 0.0004,
-          "segment_net_gold": 0.03,
+          "expected_recovery_per_craft_gold": 0.0004,
+          "net_per_craft_gold": 0.0003,
+          "segment_net_gold": 0.02,
           "recipe": "Recipe: Rockscale Cod"
         },
         {
@@ -297,18 +297,18 @@
             {
               "name": "Raw Mithril Head Trout",
               "qty": 1,
-              "unit_gold": 0.0079,
+              "unit_gold": 0.0155,
               "item_id": 8365
             }
           ],
-          "gross_per_craft_gold": 0.0079,
-          "sell_gold": 20.9999,
+          "gross_per_craft_gold": 0.0155,
+          "sell_gold": 20.9996,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": true,
           "expected_recovery_per_craft_gold": 0,
-          "net_per_craft_gold": 0.0079,
-          "segment_net_gold": 0.47,
+          "net_per_craft_gold": 0.0155,
+          "segment_net_gold": 0.93,
           "recipe": "Recipe: Mithril Head Trout"
         }
       ]
@@ -325,18 +325,18 @@
             {
               "name": "Raw Spotted Yellowtail",
               "qty": 1,
-              "unit_gold": 0.0153,
+              "unit_gold": 0.0148,
               "item_id": 4603
             }
           ],
-          "gross_per_craft_gold": 0.0153,
-          "sell_gold": 0.0039,
+          "gross_per_craft_gold": 0.0148,
+          "sell_gold": 0.0037,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0004,
-          "net_per_craft_gold": 0.0149,
-          "segment_net_gold": 0.37,
+          "net_per_craft_gold": 0.0144,
+          "segment_net_gold": 0.36,
           "recipe": "Recipe: Spotted Yellowtail"
         },
         {
@@ -347,24 +347,24 @@
             {
               "name": "Tender Wolf Meat",
               "qty": 1,
-              "unit_gold": 0.1015,
+              "unit_gold": 0.094,
               "item_id": 12208
             },
             {
               "name": "Soothing Spices",
               "qty": 1,
-              "unit_gold": 0.0847,
+              "unit_gold": 0.0798,
               "item_id": 3713
             }
           ],
-          "gross_per_craft_gold": 0.1862,
-          "sell_gold": 0.1157,
+          "gross_per_craft_gold": 0.1738,
+          "sell_gold": 0.1119,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
-          "expected_recovery_per_craft_gold": 0.011,
-          "net_per_craft_gold": 0.1752,
-          "segment_net_gold": 4.38,
+          "expected_recovery_per_craft_gold": 0.0106,
+          "net_per_craft_gold": 0.1632,
+          "segment_net_gold": 4.08,
           "recipe": "Recipe: Tender Wolf Steak"
         }
       ]
@@ -381,18 +381,18 @@
             {
               "name": "Raw Spotted Yellowtail",
               "qty": 1,
-              "unit_gold": 0.0153,
+              "unit_gold": 0.0148,
               "item_id": 4603
             }
           ],
-          "gross_per_craft_gold": 0.0153,
-          "sell_gold": 0.0039,
+          "gross_per_craft_gold": 0.0148,
+          "sell_gold": 0.0037,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0004,
-          "net_per_craft_gold": 0.0149,
-          "segment_net_gold": 0.97,
+          "net_per_craft_gold": 0.0144,
+          "segment_net_gold": 0.94,
           "recipe": "Recipe: Spotted Yellowtail"
         },
         {
@@ -403,18 +403,18 @@
             {
               "name": "Raw Sunscale Salmon",
               "qty": 1,
-              "unit_gold": 0.2456,
+              "unit_gold": 0.2471,
               "item_id": 13760
             }
           ],
-          "gross_per_craft_gold": 0.2456,
-          "sell_gold": 0.0046,
+          "gross_per_craft_gold": 0.2471,
+          "sell_gold": 0.0044,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0004,
-          "net_per_craft_gold": 0.2452,
-          "segment_net_gold": 8.58,
+          "net_per_craft_gold": 0.2467,
+          "segment_net_gold": 8.63,
           "recipe": "Recipe: Poached Sunscale Salmon"
         },
         {
@@ -425,24 +425,24 @@
             {
               "name": "Raw Nightfin Snapper",
               "qty": 1,
-              "unit_gold": 0.3998,
+              "unit_gold": 0.3984,
               "item_id": 13759
             },
             {
               "name": "Refreshing Spring Water",
               "qty": 1,
-              "unit_gold": 0.0105,
+              "unit_gold": 0.0098,
               "item_id": 159
             }
           ],
-          "gross_per_craft_gold": 0.4103,
-          "sell_gold": 0.7987,
+          "gross_per_craft_gold": 0.4082,
+          "sell_gold": 0.7985,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0759,
-          "net_per_craft_gold": 0.3344,
-          "segment_net_gold": 11.7,
+          "net_per_craft_gold": 0.3323,
+          "segment_net_gold": 11.63,
           "recipe": "Recipe: Nightfin Soup"
         }
       ]
@@ -459,24 +459,24 @@
             {
               "name": "Darkclaw Lobster",
               "qty": 1,
-              "unit_gold": 0.6501,
+              "unit_gold": 0.65,
               "item_id": 13888
             },
             {
               "name": "Refreshing Spring Water",
               "qty": 1,
-              "unit_gold": 0.0105,
+              "unit_gold": 0.0098,
               "item_id": 159
             }
           ],
-          "gross_per_craft_gold": 0.6606,
-          "sell_gold": 0.0419,
+          "gross_per_craft_gold": 0.6598,
+          "sell_gold": 0.0415,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
-          "expected_recovery_per_craft_gold": 0.004,
-          "net_per_craft_gold": 0.6566,
-          "segment_net_gold": 16.42,
+          "expected_recovery_per_craft_gold": 0.0039,
+          "net_per_craft_gold": 0.6559,
+          "segment_net_gold": 16.4,
           "recipe": "Recipe: Lobster Stew"
         },
         {
@@ -487,24 +487,24 @@
             {
               "name": "Raw Whitescale Salmon",
               "qty": 1,
-              "unit_gold": 3.9491,
+              "unit_gold": 3.9488,
               "item_id": 13889
             },
             {
               "name": "Soothing Spices",
               "qty": 1,
-              "unit_gold": 0.0847,
+              "unit_gold": 0.0798,
               "item_id": 3713
             }
           ],
-          "gross_per_craft_gold": 4.0338,
-          "sell_gold": 0.037,
+          "gross_per_craft_gold": 4.0286,
+          "sell_gold": 0.0586,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
-          "expected_recovery_per_craft_gold": 0.0035,
-          "net_per_craft_gold": 4.0303,
-          "segment_net_gold": 100.76,
+          "expected_recovery_per_craft_gold": 0.0056,
+          "net_per_craft_gold": 4.023,
+          "segment_net_gold": 100.58,
           "recipe": "Recipe: Baked Salmon"
         },
         {
@@ -515,30 +515,30 @@
             {
               "name": "Large Raw Mightfish",
               "qty": 1,
-              "unit_gold": 6.0093,
+              "unit_gold": 6.0095,
               "item_id": 13893
             },
             {
               "name": "Hot Spices",
               "qty": 1,
-              "unit_gold": 0.0199,
+              "unit_gold": 0.0194,
               "item_id": 2692
             },
             {
               "name": "Soothing Spices",
               "qty": 1,
-              "unit_gold": 0.0847,
+              "unit_gold": 0.0798,
               "item_id": 3713
             }
           ],
-          "gross_per_craft_gold": 6.1139,
-          "sell_gold": 0.459,
+          "gross_per_craft_gold": 6.1087,
+          "sell_gold": 0.4587,
           "sale_rate": null,
           "sold_per_day": null,
           "sale_price_anomaly": false,
           "expected_recovery_per_craft_gold": 0.0436,
-          "net_per_craft_gold": 6.0703,
-          "segment_net_gold": 151.76,
+          "net_per_craft_gold": 6.0651,
+          "segment_net_gold": 151.63,
           "recipe": "Recipe: Mightfish Steak"
         }
       ]
@@ -589,37 +589,37 @@
   "recipes_and_books": [
     {
       "name": "Recipe: Brilliant Smallfish",
-      "ah_recent_gold": 0.1496,
+      "ah_recent_gold": 0.1491,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
       "name": "Recipe: Longjaw Mud Snapper",
-      "ah_recent_gold": 0.8994,
+      "ah_recent_gold": 0.8992,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
       "name": "Recipe: Bristle Whisker Catfish",
-      "ah_recent_gold": 1.9934,
+      "ah_recent_gold": 1.9922,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
       "name": "Recipe: Rockscale Cod",
-      "ah_recent_gold": 0.1996,
+      "ah_recent_gold": 0.1994,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
       "name": "Recipe: Spotted Yellowtail",
-      "ah_recent_gold": 3.4997,
+      "ah_recent_gold": 3.4995,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
       "name": "Recipe: Lobster Stew",
-      "ah_recent_gold": 5.999,
+      "ah_recent_gold": 56.9988,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     },
     {
       "name": "Expert Cookbook",
-      "ah_recent_gold": 1.3999,
+      "ah_recent_gold": 1.3992,
       "note": "Buy on AH if listed; otherwise vendor/quest source."
     }
   ],
@@ -628,7 +628,7 @@
     "Zesty Clam Meat": 10,
     "Alterac Swiss": 20
   },
-  "estimated_net_material_cost_gold": 24.96,
+  "estimated_net_material_cost_gold": 21.58,
   "notes": [
     "Sale rate and sold/day are regional TSM metrics, not Thunderstrike-only sales counts.",
     "Amounts are conservative expected-craft quantities; RNG may require a small top-up.",
