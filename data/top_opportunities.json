@@ -1,201 +1,173 @@
 {
-  "generated_at": "2026-08-19T07:09:22.759630+00:00",
+  "generated_at": "2026-08-19T09:52:42.988335+00:00",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "ranking": "sale-rate-adjusted expected profit per listing; sold/day retained as regional liquidity context",
   "top": [
     {
       "output": "Blackened Basilisk",
-      "tsm_recent_sell_gold": 0.9498,
-      "tsm_min_buyout_gold": 0.799,
-      "tsm_market_value_gold": 1.0089,
+      "tsm_recent_sell_gold": 0.9018,
+      "tsm_min_buyout_gold": 0.8992,
+      "tsm_market_value_gold": 1.0074,
       "tsm_historical_gold": 0.9579,
       "heatmap_pct": 18.1,
       "materials": [
         {
           "name": "Chunk o' Basilisk",
           "qty": 1,
-          "unit_buy_gold": 0.7672,
-          "cost_gold": 0.7672
+          "unit_buy_gold": 0.7351,
+          "cost_gold": 0.7351
         }
       ],
-      "material_cost_gold": 0.7672,
-      "net_sale_after_5pct_gold": 0.9023,
-      "profit_per_craft_gold": 0.1351,
-      "profit_per_stack20_gold": 2.7,
-      "roi_pct": 17.6,
-      "margin_pct": 15.0,
+      "material_cost_gold": 0.7351,
+      "net_sale_after_5pct_gold": 0.8567,
+      "profit_per_craft_gold": 0.1216,
+      "profit_per_stack20_gold": 2.43,
+      "roi_pct": 16.5,
+      "margin_pct": 14.2,
       "region_sale_rate": 0.418,
       "region_avg_daily_sold": 1468.852,
-      "expected_profit_per_listing_gold": 0.0565,
-      "regional_demand_profit_index": 198.46,
+      "expected_profit_per_listing_gold": 0.0508,
+      "regional_demand_profit_index": 178.63,
       "profitable": true,
       "profession": "Cooking"
     },
     {
       "output": "Warp Burger",
-      "tsm_recent_sell_gold": 0.3445,
-      "tsm_min_buyout_gold": 0.3385,
-      "tsm_market_value_gold": 0.3408,
+      "tsm_recent_sell_gold": 0.3385,
+      "tsm_min_buyout_gold": 0.3383,
+      "tsm_market_value_gold": 0.341,
       "tsm_historical_gold": 0.3491,
       "heatmap_pct": 20.2,
       "materials": [
         {
           "name": "Warped Flesh",
           "qty": 1,
-          "unit_buy_gold": 0.2347,
-          "cost_gold": 0.2347
+          "unit_buy_gold": 0.2305,
+          "cost_gold": 0.2305
         }
       ],
-      "material_cost_gold": 0.2347,
-      "net_sale_after_5pct_gold": 0.3273,
-      "profit_per_craft_gold": 0.0926,
-      "profit_per_stack20_gold": 1.85,
-      "roi_pct": 39.4,
+      "material_cost_gold": 0.2305,
+      "net_sale_after_5pct_gold": 0.3216,
+      "profit_per_craft_gold": 0.0911,
+      "profit_per_stack20_gold": 1.82,
+      "roi_pct": 39.5,
       "margin_pct": 28.3,
       "region_sale_rate": 0.461,
       "region_avg_daily_sold": 1007.516,
-      "expected_profit_per_listing_gold": 0.0427,
-      "regional_demand_profit_index": 93.27,
+      "expected_profit_per_listing_gold": 0.042,
+      "regional_demand_profit_index": 91.76,
       "profitable": true,
       "profession": "Cooking"
     },
     {
       "output": "Roasted Clefthoof",
-      "tsm_recent_sell_gold": 0.398,
-      "tsm_min_buyout_gold": 0.3972,
-      "tsm_market_value_gold": 0.4226,
+      "tsm_recent_sell_gold": 0.3969,
+      "tsm_min_buyout_gold": 0.3333,
+      "tsm_market_value_gold": 0.4219,
       "tsm_historical_gold": 0.4759,
       "heatmap_pct": -9.9,
       "materials": [
         {
           "name": "Clefthoof Meat",
           "qty": 1,
-          "unit_buy_gold": 0.2971,
-          "cost_gold": 0.2971
+          "unit_buy_gold": 0.2987,
+          "cost_gold": 0.2987
         }
       ],
-      "material_cost_gold": 0.2971,
-      "net_sale_after_5pct_gold": 0.3781,
-      "profit_per_craft_gold": 0.081,
-      "profit_per_stack20_gold": 1.62,
-      "roi_pct": 27.3,
-      "margin_pct": 21.4,
+      "material_cost_gold": 0.2987,
+      "net_sale_after_5pct_gold": 0.3771,
+      "profit_per_craft_gold": 0.0784,
+      "profit_per_stack20_gold": 1.57,
+      "roi_pct": 26.2,
+      "margin_pct": 20.8,
       "region_sale_rate": 0.503,
       "region_avg_daily_sold": 1182.05,
-      "expected_profit_per_listing_gold": 0.0407,
-      "regional_demand_profit_index": 95.75,
+      "expected_profit_per_listing_gold": 0.0394,
+      "regional_demand_profit_index": 92.62,
       "profitable": true,
       "profession": "Cooking"
     },
     {
       "output": "Kibler's Bits",
-      "tsm_recent_sell_gold": 0.1795,
+      "tsm_recent_sell_gold": 0.1753,
       "tsm_min_buyout_gold": 0.1363,
-      "tsm_market_value_gold": 0.2327,
+      "tsm_market_value_gold": 0.231,
       "tsm_historical_gold": 0.189,
       "heatmap_pct": 81.5,
       "materials": [
         {
           "name": "Buzzard Meat",
           "qty": 1,
-          "unit_buy_gold": 0.0997,
-          "cost_gold": 0.0997
+          "unit_buy_gold": 0.0951,
+          "cost_gold": 0.0951
         }
       ],
-      "material_cost_gold": 0.0997,
-      "net_sale_after_5pct_gold": 0.1705,
-      "profit_per_craft_gold": 0.0708,
-      "profit_per_stack20_gold": 1.42,
-      "roi_pct": 71.0,
-      "margin_pct": 41.5,
+      "material_cost_gold": 0.0951,
+      "net_sale_after_5pct_gold": 0.1665,
+      "profit_per_craft_gold": 0.0714,
+      "profit_per_stack20_gold": 1.43,
+      "roi_pct": 75.1,
+      "margin_pct": 42.9,
       "region_sale_rate": 0.392,
       "region_avg_daily_sold": 659.54,
-      "expected_profit_per_listing_gold": 0.0278,
-      "regional_demand_profit_index": 46.71,
+      "expected_profit_per_listing_gold": 0.028,
+      "regional_demand_profit_index": 47.11,
       "profitable": true,
       "profession": "Cooking"
     },
     {
-      "output": "Mok'Nathal Shortribs",
-      "tsm_recent_sell_gold": 0.1873,
-      "tsm_min_buyout_gold": 0.186,
-      "tsm_market_value_gold": 0.031,
-      "tsm_historical_gold": 0.0488,
-      "heatmap_pct": null,
+      "output": "Thistle Tea",
+      "tsm_recent_sell_gold": 0.8983,
+      "tsm_min_buyout_gold": 0.8982,
+      "tsm_market_value_gold": 0.9215,
+      "tsm_historical_gold": 1.0637,
+      "heatmap_pct": -17.3,
       "materials": [
         {
-          "name": "Raptor Ribs",
+          "name": "Swiftthistle",
           "qty": 1,
-          "unit_buy_gold": 0.0977,
-          "cost_gold": 0.0977
+          "unit_buy_gold": 0.7629,
+          "cost_gold": 0.7629
         }
       ],
-      "material_cost_gold": 0.0977,
-      "net_sale_after_5pct_gold": 0.1779,
-      "profit_per_craft_gold": 0.0802,
-      "profit_per_stack20_gold": 1.6,
-      "roi_pct": 82.1,
-      "margin_pct": 45.1,
-      "region_sale_rate": 0.233,
-      "region_avg_daily_sold": 135.257,
-      "expected_profit_per_listing_gold": 0.0187,
-      "regional_demand_profit_index": 10.85,
-      "profitable": true,
-      "profession": "Cooking"
-    },
-    {
-      "output": "Grilled Mudfish",
-      "tsm_recent_sell_gold": 0.2579,
-      "tsm_min_buyout_gold": 0.2437,
-      "tsm_market_value_gold": 0.313,
-      "tsm_historical_gold": 0.2549,
-      "heatmap_pct": 40.5,
-      "materials": [
-        {
-          "name": "Figluster's Mudfish",
-          "qty": 1,
-          "unit_buy_gold": 0.1996,
-          "cost_gold": 0.1996
-        }
-      ],
-      "material_cost_gold": 0.1996,
-      "net_sale_after_5pct_gold": 0.245,
-      "profit_per_craft_gold": 0.0454,
-      "profit_per_stack20_gold": 0.91,
-      "roi_pct": 22.7,
-      "margin_pct": 18.5,
-      "region_sale_rate": 0.406,
-      "region_avg_daily_sold": 1161.16,
-      "expected_profit_per_listing_gold": 0.0184,
-      "regional_demand_profit_index": 52.72,
+      "material_cost_gold": 0.7629,
+      "net_sale_after_5pct_gold": 0.8534,
+      "profit_per_craft_gold": 0.0905,
+      "profit_per_stack20_gold": 1.81,
+      "roi_pct": 11.9,
+      "margin_pct": 10.6,
+      "region_sale_rate": 0.24,
+      "region_avg_daily_sold": 499.32,
+      "expected_profit_per_listing_gold": 0.0217,
+      "regional_demand_profit_index": 45.18,
       "profitable": true,
       "profession": "Cooking"
     },
     {
       "output": "Ravager Dog",
-      "tsm_recent_sell_gold": 0.1749,
-      "tsm_min_buyout_gold": 0.1741,
-      "tsm_market_value_gold": 0.2491,
+      "tsm_recent_sell_gold": 0.1744,
+      "tsm_min_buyout_gold": 0.174,
+      "tsm_market_value_gold": 0.2433,
       "tsm_historical_gold": 0.1395,
       "heatmap_pct": 131.8,
       "materials": [
         {
           "name": "Ravager Flesh",
           "qty": 1,
-          "unit_buy_gold": 0.0921,
-          "cost_gold": 0.0921
+          "unit_buy_gold": 0.0866,
+          "cost_gold": 0.0866
         }
       ],
-      "material_cost_gold": 0.0921,
-      "net_sale_after_5pct_gold": 0.1662,
-      "profit_per_craft_gold": 0.0741,
-      "profit_per_stack20_gold": 1.48,
-      "roi_pct": 80.4,
-      "margin_pct": 44.6,
+      "material_cost_gold": 0.0866,
+      "net_sale_after_5pct_gold": 0.1657,
+      "profit_per_craft_gold": 0.0791,
+      "profit_per_stack20_gold": 1.58,
+      "roi_pct": 91.3,
+      "margin_pct": 47.7,
       "region_sale_rate": 0.233,
       "region_avg_daily_sold": 340.879,
-      "expected_profit_per_listing_gold": 0.0173,
-      "regional_demand_profit_index": 25.24,
+      "expected_profit_per_listing_gold": 0.0184,
+      "regional_demand_profit_index": 26.96,
       "profitable": true,
       "profession": "Cooking"
     },
@@ -203,62 +175,34 @@
       "output": "Broiled Bloodfin",
       "tsm_recent_sell_gold": 1.1997,
       "tsm_min_buyout_gold": 1.1997,
-      "tsm_market_value_gold": 1.2553,
+      "tsm_market_value_gold": 1.2561,
       "tsm_historical_gold": 0.7494,
       "heatmap_pct": 117.2,
       "materials": [
         {
           "name": "Bloodfin Catfish",
           "qty": 1,
-          "unit_buy_gold": 1.0593,
-          "cost_gold": 1.0593
+          "unit_buy_gold": 1.0591,
+          "cost_gold": 1.0591
         }
       ],
-      "material_cost_gold": 1.0593,
+      "material_cost_gold": 1.0591,
       "net_sale_after_5pct_gold": 1.1397,
-      "profit_per_craft_gold": 0.0804,
+      "profit_per_craft_gold": 0.0806,
       "profit_per_stack20_gold": 1.61,
       "roi_pct": 7.6,
       "margin_pct": 7.1,
       "region_sale_rate": 0.206,
       "region_avg_daily_sold": 148.835,
       "expected_profit_per_listing_gold": 0.0166,
-      "regional_demand_profit_index": 11.97,
-      "profitable": true,
-      "profession": "Cooking"
-    },
-    {
-      "output": "Poached Bluefish",
-      "tsm_recent_sell_gold": 1.0461,
-      "tsm_min_buyout_gold": 1.0253,
-      "tsm_market_value_gold": 1.1449,
-      "tsm_historical_gold": 1.1447,
-      "heatmap_pct": 6.9,
-      "materials": [
-        {
-          "name": "Icefin Bluefish",
-          "qty": 1,
-          "unit_buy_gold": 0.9538,
-          "cost_gold": 0.9538
-        }
-      ],
-      "material_cost_gold": 0.9538,
-      "net_sale_after_5pct_gold": 0.9938,
-      "profit_per_craft_gold": 0.04,
-      "profit_per_stack20_gold": 0.8,
-      "roi_pct": 4.2,
-      "margin_pct": 4.0,
-      "region_sale_rate": 0.414,
-      "region_avg_daily_sold": 807.714,
-      "expected_profit_per_listing_gold": 0.0166,
-      "regional_demand_profit_index": 32.3,
+      "regional_demand_profit_index": 12.0,
       "profitable": true,
       "profession": "Cooking"
     },
     {
       "output": "Spicy Hot Talbuk",
-      "tsm_recent_sell_gold": 0.1488,
-      "tsm_min_buyout_gold": 0.1483,
+      "tsm_recent_sell_gold": 0.1482,
+      "tsm_min_buyout_gold": 0.1482,
       "tsm_market_value_gold": 0.1986,
       "tsm_historical_gold": 0.2337,
       "heatmap_pct": -1.3,
@@ -266,104 +210,104 @@
         {
           "name": "Talbuk Venison",
           "qty": 1,
-          "unit_buy_gold": 0.0899,
-          "cost_gold": 0.0899
+          "unit_buy_gold": 0.09,
+          "cost_gold": 0.09
         }
       ],
-      "material_cost_gold": 0.0899,
-      "net_sale_after_5pct_gold": 0.1414,
-      "profit_per_craft_gold": 0.0515,
-      "profit_per_stack20_gold": 1.03,
-      "roi_pct": 57.2,
-      "margin_pct": 36.4,
+      "material_cost_gold": 0.09,
+      "net_sale_after_5pct_gold": 0.1408,
+      "profit_per_craft_gold": 0.0508,
+      "profit_per_stack20_gold": 1.02,
+      "roi_pct": 56.4,
+      "margin_pct": 36.1,
       "region_sale_rate": 0.303,
       "region_avg_daily_sold": 679.478,
-      "expected_profit_per_listing_gold": 0.0156,
-      "regional_demand_profit_index": 34.97,
+      "expected_profit_per_listing_gold": 0.0154,
+      "regional_demand_profit_index": 34.51,
       "profitable": true,
       "profession": "Cooking"
     },
     {
-      "output": "Thistle Tea",
-      "tsm_recent_sell_gold": 0.8984,
-      "tsm_min_buyout_gold": 0.8982,
-      "tsm_market_value_gold": 0.9239,
-      "tsm_historical_gold": 1.0637,
-      "heatmap_pct": -17.3,
+      "output": "Mok'Nathal Shortribs",
+      "tsm_recent_sell_gold": 0.1697,
+      "tsm_min_buyout_gold": 0.17,
+      "tsm_market_value_gold": 0.0305,
+      "tsm_historical_gold": 0.0488,
+      "heatmap_pct": null,
       "materials": [
         {
-          "name": "Swiftthistle",
+          "name": "Raptor Ribs",
           "qty": 1,
-          "unit_buy_gold": 0.7984,
-          "cost_gold": 0.7984
+          "unit_buy_gold": 0.0974,
+          "cost_gold": 0.0974
         }
       ],
-      "material_cost_gold": 0.7984,
-      "net_sale_after_5pct_gold": 0.8535,
-      "profit_per_craft_gold": 0.0551,
-      "profit_per_stack20_gold": 1.1,
-      "roi_pct": 6.9,
-      "margin_pct": 6.5,
-      "region_sale_rate": 0.24,
-      "region_avg_daily_sold": 499.32,
-      "expected_profit_per_listing_gold": 0.0132,
-      "regional_demand_profit_index": 27.5,
+      "material_cost_gold": 0.0974,
+      "net_sale_after_5pct_gold": 0.1612,
+      "profit_per_craft_gold": 0.0638,
+      "profit_per_stack20_gold": 1.28,
+      "roi_pct": 65.5,
+      "margin_pct": 39.6,
+      "region_sale_rate": 0.233,
+      "region_avg_daily_sold": 135.257,
+      "expected_profit_per_listing_gold": 0.0149,
+      "regional_demand_profit_index": 8.63,
+      "profitable": true,
+      "profession": "Cooking"
+    },
+    {
+      "output": "Grilled Mudfish",
+      "tsm_recent_sell_gold": 0.2432,
+      "tsm_min_buyout_gold": 0.2436,
+      "tsm_market_value_gold": 0.312,
+      "tsm_historical_gold": 0.2549,
+      "heatmap_pct": 40.5,
+      "materials": [
+        {
+          "name": "Figluster's Mudfish",
+          "qty": 1,
+          "unit_buy_gold": 0.1988,
+          "cost_gold": 0.1988
+        }
+      ],
+      "material_cost_gold": 0.1988,
+      "net_sale_after_5pct_gold": 0.231,
+      "profit_per_craft_gold": 0.0322,
+      "profit_per_stack20_gold": 0.64,
+      "roi_pct": 16.2,
+      "margin_pct": 14.0,
+      "region_sale_rate": 0.406,
+      "region_avg_daily_sold": 1161.16,
+      "expected_profit_per_listing_gold": 0.0131,
+      "regional_demand_profit_index": 37.44,
       "profitable": true,
       "profession": "Cooking"
     },
     {
       "output": "Blackened Sporefish",
-      "tsm_recent_sell_gold": 0.0588,
-      "tsm_min_buyout_gold": 0.0575,
-      "tsm_market_value_gold": 0.1414,
+      "tsm_recent_sell_gold": 0.0581,
+      "tsm_min_buyout_gold": 0.0574,
+      "tsm_market_value_gold": 0.1412,
       "tsm_historical_gold": 0.0449,
       "heatmap_pct": 65.4,
       "materials": [
         {
           "name": "Zangarian Sporefish",
           "qty": 1,
-          "unit_buy_gold": 0.0283,
-          "cost_gold": 0.0283
+          "unit_buy_gold": 0.0285,
+          "cost_gold": 0.0285
         }
       ],
-      "material_cost_gold": 0.0283,
-      "net_sale_after_5pct_gold": 0.0559,
-      "profit_per_craft_gold": 0.0276,
-      "profit_per_stack20_gold": 0.55,
-      "roi_pct": 97.4,
-      "margin_pct": 49.3,
+      "material_cost_gold": 0.0285,
+      "net_sale_after_5pct_gold": 0.0552,
+      "profit_per_craft_gold": 0.0267,
+      "profit_per_stack20_gold": 0.53,
+      "roi_pct": 93.7,
+      "margin_pct": 48.4,
       "region_sale_rate": 0.348,
       "region_avg_daily_sold": 348.87,
-      "expected_profit_per_listing_gold": 0.0096,
-      "regional_demand_profit_index": 9.61,
-      "profitable": true,
-      "profession": "Cooking"
-    },
-    {
-      "output": "Crunchy Serpent",
-      "tsm_recent_sell_gold": 1.0203,
-      "tsm_min_buyout_gold": 0.9983,
-      "tsm_market_value_gold": 1.2071,
-      "tsm_historical_gold": 1.2379,
-      "heatmap_pct": 7.3,
-      "materials": [
-        {
-          "name": "Serpent Flesh",
-          "qty": 1,
-          "unit_buy_gold": 0.9532,
-          "cost_gold": 0.9532
-        }
-      ],
-      "material_cost_gold": 0.9532,
-      "net_sale_after_5pct_gold": 0.9693,
-      "profit_per_craft_gold": 0.0161,
-      "profit_per_stack20_gold": 0.32,
-      "roi_pct": 1.7,
-      "margin_pct": 1.7,
-      "region_sale_rate": 0.513,
-      "region_avg_daily_sold": 404.501,
-      "expected_profit_per_listing_gold": 0.0083,
-      "regional_demand_profit_index": 6.51,
+      "expected_profit_per_listing_gold": 0.0093,
+      "regional_demand_profit_index": 9.31,
       "profitable": true,
       "profession": "Cooking"
     },
@@ -371,55 +315,55 @@
       "output": "Feltail Delight",
       "tsm_recent_sell_gold": 0.016,
       "tsm_min_buyout_gold": 0.0157,
-      "tsm_market_value_gold": 0.0265,
+      "tsm_market_value_gold": 0.0262,
       "tsm_historical_gold": 0.019,
       "heatmap_pct": null,
       "materials": [
         {
           "name": "Spotted Feltail",
           "qty": 1,
-          "unit_buy_gold": 0.0017,
-          "cost_gold": 0.0017
+          "unit_buy_gold": 0.002,
+          "cost_gold": 0.002
         }
       ],
-      "material_cost_gold": 0.0017,
+      "material_cost_gold": 0.002,
       "net_sale_after_5pct_gold": 0.0152,
-      "profit_per_craft_gold": 0.0135,
-      "profit_per_stack20_gold": 0.27,
-      "roi_pct": 794.1,
-      "margin_pct": 88.8,
+      "profit_per_craft_gold": 0.0132,
+      "profit_per_stack20_gold": 0.26,
+      "roi_pct": 660.0,
+      "margin_pct": 86.8,
       "region_sale_rate": 0.213,
       "region_avg_daily_sold": 64.646,
-      "expected_profit_per_listing_gold": 0.0029,
-      "regional_demand_profit_index": 0.87,
+      "expected_profit_per_listing_gold": 0.0028,
+      "regional_demand_profit_index": 0.85,
       "profitable": true,
       "profession": "Cooking"
     },
     {
-      "output": "Blackened Trout",
-      "tsm_recent_sell_gold": 0.0163,
-      "tsm_min_buyout_gold": 0.0163,
-      "tsm_market_value_gold": 0.0168,
-      "tsm_historical_gold": 0.0174,
-      "heatmap_pct": 120.7,
+      "output": "Crunchy Serpent",
+      "tsm_recent_sell_gold": 1.0055,
+      "tsm_min_buyout_gold": 0.9982,
+      "tsm_market_value_gold": 1.2024,
+      "tsm_historical_gold": 1.2379,
+      "heatmap_pct": 7.3,
       "materials": [
         {
-          "name": "Barbed Gill Trout",
+          "name": "Serpent Flesh",
           "qty": 1,
-          "unit_buy_gold": 0.0035,
-          "cost_gold": 0.0035
+          "unit_buy_gold": 0.9522,
+          "cost_gold": 0.9522
         }
       ],
-      "material_cost_gold": 0.0035,
-      "net_sale_after_5pct_gold": 0.0155,
-      "profit_per_craft_gold": 0.012,
-      "profit_per_stack20_gold": 0.24,
-      "roi_pct": 342.4,
-      "margin_pct": 77.4,
-      "region_sale_rate": 0.154,
-      "region_avg_daily_sold": 3.08,
-      "expected_profit_per_listing_gold": 0.0018,
-      "regional_demand_profit_index": 0.04,
+      "material_cost_gold": 0.9522,
+      "net_sale_after_5pct_gold": 0.9552,
+      "profit_per_craft_gold": 0.003,
+      "profit_per_stack20_gold": 0.06,
+      "roi_pct": 0.3,
+      "margin_pct": 0.3,
+      "region_sale_rate": 0.513,
+      "region_avg_daily_sold": 404.501,
+      "expected_profit_per_listing_gold": 0.0016,
+      "regional_demand_profit_index": 1.22,
       "profitable": true,
       "profession": "Cooking"
     },
@@ -431,21 +375,21 @@
         {
           "name": "Adamantite Bar",
           "qty": 1,
-          "unit_buy_gold": 3.6882,
-          "cost_gold": 3.6882
+          "unit_buy_gold": 3.6872,
+          "cost_gold": 3.6872
         },
         {
           "name": "Netherweave Cloth",
           "qty": 2,
-          "unit_buy_gold": 0.1388,
-          "cost_gold": 0.2776
+          "unit_buy_gold": 0.148,
+          "cost_gold": 0.296
         }
       ],
-      "material_cost_gold": 3.9658,
-      "sell_recent_gold": 4.9056,
-      "net_sale_after_5pct_gold": 4.6603,
-      "profit_per_craft_gold": 0.6945,
-      "roi_pct": 17.5,
+      "material_cost_gold": 3.9832,
+      "sell_recent_gold": 4.8458,
+      "net_sale_after_5pct_gold": 4.6035,
+      "profit_per_craft_gold": 0.6203,
+      "roi_pct": 15.6,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
@@ -459,37 +403,37 @@
       "item_level_min": 80,
       "item_level_max": 99,
       "item_type": "armor",
-      "expected_disenchant_value_gold": 2.9261,
-      "conservative_buy_ceiling_gold": 2.6335,
-      "break_even_buy_ceiling_gold": 2.9261,
-      "recommended_rule": "DE if total acquisition cost is below 2.63g; between 2.63g and 2.93g only if you accept price/variance risk.",
+      "expected_disenchant_value_gold": 2.9373,
+      "conservative_buy_ceiling_gold": 2.6436,
+      "break_even_buy_ceiling_gold": 2.9373,
+      "recommended_rule": "DE if total acquisition cost is below 2.64g; between 2.64g and 2.94g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
           "name": "Arcane Dust",
           "probability": 0.75,
           "average_quantity_if_hit": 2.5,
-          "unit_value_gold": 0.9544,
+          "unit_value_gold": 0.9559,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 1.7895
+          "expected_value_gold": 1.7923
         },
         {
           "item_id": 22447,
           "name": "Lesser Planar Essence",
           "probability": 0.22,
           "average_quantity_if_hit": 2.5,
-          "unit_value_gold": 1.7118,
+          "unit_value_gold": 1.723,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.9415
+          "expected_value_gold": 0.9477
         },
         {
           "item_id": 22448,
           "name": "Small Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 6.5023,
+          "unit_value_gold": 6.5794,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.1951
+          "expected_value_gold": 0.1974
         }
       ],
       "missing_price_item_ids": []
@@ -499,37 +443,37 @@
       "item_level_min": 80,
       "item_level_max": 99,
       "item_type": "weapon",
-      "expected_disenchant_value_gold": 3.9296,
-      "conservative_buy_ceiling_gold": 3.5366,
-      "break_even_buy_ceiling_gold": 3.9296,
-      "recommended_rule": "DE if total acquisition cost is below 3.54g; between 3.54g and 3.93g only if you accept price/variance risk.",
+      "expected_disenchant_value_gold": 3.9538,
+      "conservative_buy_ceiling_gold": 3.5584,
+      "break_even_buy_ceiling_gold": 3.9538,
+      "recommended_rule": "DE if total acquisition cost is below 3.56g; between 3.56g and 3.95g only if you accept price/variance risk.",
       "components": [
         {
           "item_id": 22445,
           "name": "Arcane Dust",
           "probability": 0.22,
           "average_quantity_if_hit": 2.5,
-          "unit_value_gold": 0.9544,
+          "unit_value_gold": 0.9559,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.5249
+          "expected_value_gold": 0.5257
         },
         {
           "item_id": 22447,
           "name": "Lesser Planar Essence",
           "probability": 0.75,
           "average_quantity_if_hit": 2.5,
-          "unit_value_gold": 1.7118,
+          "unit_value_gold": 1.723,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 3.2096
+          "expected_value_gold": 3.2306
         },
         {
           "item_id": 22448,
           "name": "Small Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 6.5023,
+          "unit_value_gold": 6.5794,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.1951
+          "expected_value_gold": 0.1974
         }
       ],
       "missing_price_item_ids": []
@@ -539,9 +483,9 @@
       "item_level_min": 100,
       "item_level_max": 120,
       "item_type": "armor",
-      "expected_disenchant_value_gold": 4.9393,
-      "conservative_buy_ceiling_gold": 4.4454,
-      "break_even_buy_ceiling_gold": 4.9393,
+      "expected_disenchant_value_gold": 4.9436,
+      "conservative_buy_ceiling_gold": 4.4492,
+      "break_even_buy_ceiling_gold": 4.9436,
       "recommended_rule": "DE if total acquisition cost is below 4.45g; between 4.45g and 4.94g only if you accept price/variance risk.",
       "components": [
         {
@@ -549,27 +493,27 @@
           "name": "Arcane Dust",
           "probability": 0.75,
           "average_quantity_if_hit": 3.5,
-          "unit_value_gold": 0.9544,
+          "unit_value_gold": 0.9559,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 2.5053
+          "expected_value_gold": 2.5092
         },
         {
           "item_id": 22446,
           "name": "Greater Planar Essence",
           "probability": 0.22,
           "average_quantity_if_hit": 1.5,
-          "unit_value_gold": 5.5665,
+          "unit_value_gold": 5.5643,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 1.8369
+          "expected_value_gold": 1.8362
         },
         {
           "item_id": 22449,
           "name": "Large Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 19.9033,
+          "unit_value_gold": 19.9371,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.5971
+          "expected_value_gold": 0.5981
         }
       ],
       "missing_price_item_ids": []
@@ -579,9 +523,9 @@
       "item_level_min": 100,
       "item_level_max": 120,
       "item_type": "weapon",
-      "expected_disenchant_value_gold": 7.5943,
-      "conservative_buy_ceiling_gold": 6.8349,
-      "break_even_buy_ceiling_gold": 7.5943,
+      "expected_disenchant_value_gold": 7.594,
+      "conservative_buy_ceiling_gold": 6.8346,
+      "break_even_buy_ceiling_gold": 7.594,
       "recommended_rule": "DE if total acquisition cost is below 6.83g; between 6.83g and 7.59g only if you accept price/variance risk.",
       "components": [
         {
@@ -589,27 +533,27 @@
           "name": "Arcane Dust",
           "probability": 0.22,
           "average_quantity_if_hit": 3.5,
-          "unit_value_gold": 0.9544,
+          "unit_value_gold": 0.9559,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.7349
+          "expected_value_gold": 0.736
         },
         {
           "item_id": 22446,
           "name": "Greater Planar Essence",
           "probability": 0.75,
           "average_quantity_if_hit": 1.5,
-          "unit_value_gold": 5.5665,
+          "unit_value_gold": 5.5643,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 6.2623
+          "expected_value_gold": 6.2598
         },
         {
           "item_id": 22449,
           "name": "Large Prismatic Shard",
           "probability": 0.03,
           "average_quantity_if_hit": 1.0,
-          "unit_value_gold": 19.9033,
+          "unit_value_gold": 19.9371,
           "unit_value_source": "direct_market",
-          "expected_value_gold": 0.5971
+          "expected_value_gold": 0.5981
         }
       ],
       "missing_price_item_ids": []
