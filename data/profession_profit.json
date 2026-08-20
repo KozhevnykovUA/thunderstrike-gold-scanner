@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T04:03:13.009848+00:00",
+  "generated_at": "2026-08-20T07:11:43.289987+00:00",
   "source": "TSM realm prices + TSM regional sale metrics",
   "opportunities": [
     {
@@ -10,21 +10,21 @@
         {
           "name": "Arcane Dust",
           "qty": 3,
-          "unit_buy_gold": 1.1686,
-          "cost_gold": 3.5058
+          "unit_buy_gold": 1.0625,
+          "cost_gold": 3.1875
         },
         {
           "name": "Nightmare Vine",
           "qty": 1,
-          "unit_buy_gold": 3.0986,
-          "cost_gold": 3.0986
+          "unit_buy_gold": 3.0772,
+          "cost_gold": 3.0772
         }
       ],
-      "material_cost_gold": 6.9244,
-      "sell_recent_gold": 8.9768,
-      "net_sale_after_5pct_gold": 8.528,
-      "profit_per_craft_gold": 1.6036,
-      "roi_pct": 23.2,
+      "material_cost_gold": 6.5847,
+      "sell_recent_gold": 8.9758,
+      "net_sale_after_5pct_gold": 8.527,
+      "profit_per_craft_gold": 1.9423,
+      "roi_pct": 29.5,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
@@ -39,21 +39,21 @@
         {
           "name": "Adamantite Bar",
           "qty": 1,
-          "unit_buy_gold": 4.812,
-          "cost_gold": 4.812
+          "unit_buy_gold": 3.9357,
+          "cost_gold": 3.9357
         },
         {
           "name": "Netherweave Cloth",
           "qty": 2,
-          "unit_buy_gold": 0.1533,
-          "cost_gold": 0.3066
+          "unit_buy_gold": 0.1484,
+          "cost_gold": 0.2968
         }
       ],
-      "material_cost_gold": 5.1186,
-      "sell_recent_gold": 6.1494,
-      "net_sale_after_5pct_gold": 5.8419,
-      "profit_per_craft_gold": 0.7233,
-      "roi_pct": 14.1,
+      "material_cost_gold": 4.2325,
+      "sell_recent_gold": 6.148,
+      "net_sale_after_5pct_gold": 5.8406,
+      "profit_per_craft_gold": 1.6081,
+      "roi_pct": 38.0,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
@@ -68,21 +68,21 @@
         {
           "name": "Fel Iron Bar",
           "qty": 1,
-          "unit_buy_gold": 1.7852,
-          "cost_gold": 1.7852
+          "unit_buy_gold": 1.7448,
+          "cost_gold": 1.7448
         },
         {
           "name": "Netherweave Cloth",
           "qty": 1,
-          "unit_buy_gold": 0.1533,
-          "cost_gold": 0.1533
+          "unit_buy_gold": 0.1484,
+          "cost_gold": 0.1484
         }
       ],
-      "material_cost_gold": 1.9385,
-      "sell_recent_gold": 1.4017,
-      "net_sale_after_5pct_gold": 1.3316,
-      "profit_per_craft_gold": -0.6069,
-      "roi_pct": -31.3,
+      "material_cost_gold": 1.8932,
+      "sell_recent_gold": 1.3995,
+      "net_sale_after_5pct_gold": 1.3295,
+      "profit_per_craft_gold": -0.5637,
+      "roi_pct": -29.8,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
@@ -97,15 +97,15 @@
         {
           "name": "Adamantite Bar",
           "qty": 1,
-          "unit_buy_gold": 4.812,
-          "cost_gold": 4.812
+          "unit_buy_gold": 3.9357,
+          "cost_gold": 3.9357
         }
       ],
-      "material_cost_gold": 4.812,
-      "sell_recent_gold": 0.1984,
-      "net_sale_after_5pct_gold": 0.1885,
-      "profit_per_craft_gold": -4.6235,
-      "roi_pct": -96.1,
+      "material_cost_gold": 3.9357,
+      "sell_recent_gold": 0.1983,
+      "net_sale_after_5pct_gold": 0.1884,
+      "profit_per_craft_gold": -3.7473,
+      "roi_pct": -95.2,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
@@ -120,15 +120,15 @@
         {
           "name": "Adamantite Bar",
           "qty": 1,
-          "unit_buy_gold": 4.812,
-          "cost_gold": 4.812
+          "unit_buy_gold": 3.9357,
+          "cost_gold": 3.9357
         }
       ],
-      "material_cost_gold": 4.812,
+      "material_cost_gold": 3.9357,
       "sell_recent_gold": 0.1677,
       "net_sale_after_5pct_gold": 0.1593,
-      "profit_per_craft_gold": -4.6527,
-      "roi_pct": -96.7,
+      "profit_per_craft_gold": -3.7764,
+      "roi_pct": -96.0,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
@@ -143,27 +143,27 @@
         {
           "name": "Khorium Bar",
           "qty": 3,
-          "unit_buy_gold": 3.8934,
-          "cost_gold": 11.6802
+          "unit_buy_gold": 3.8931,
+          "cost_gold": 11.6793
         },
         {
           "name": "Primal Water",
           "qty": 2,
-          "unit_buy_gold": 19.879,
-          "cost_gold": 39.758
+          "unit_buy_gold": 19.6331,
+          "cost_gold": 39.2662
         },
         {
           "name": "Primal Mana",
           "qty": 2,
-          "unit_buy_gold": 16.4971,
-          "cost_gold": 32.9942
+          "unit_buy_gold": 14.886,
+          "cost_gold": 29.772
         }
       ],
-      "material_cost_gold": 84.4324,
+      "material_cost_gold": 80.7175,
       "sell_recent_gold": 29.3996,
       "net_sale_after_5pct_gold": 27.9296,
-      "profit_per_craft_gold": -56.5028,
-      "roi_pct": -66.9,
+      "profit_per_craft_gold": -52.7879,
+      "roi_pct": -65.4,
       "region_sale_rate": null,
       "region_avg_daily_sold": null,
       "expected_profit_per_listing_gold": null,
