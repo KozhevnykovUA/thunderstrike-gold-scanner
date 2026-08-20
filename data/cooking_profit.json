@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T01:54:49.034593+00:00",
+  "generated_at": "2026-08-20T04:03:12.195142+00:00",
   "source": "TSM public pricing + TSM server-rendered regional sale metrics + TSM Gold heatmap snapshot",
   "market": "classic/eu-fresh/thunderstrike-alliance",
   "pricing_transport": "workflow_cache",
@@ -27,10 +27,10 @@
       "profit_per_stack20_gold": 2.56,
       "roi_pct": 43.9,
       "margin_pct": 30.5,
-      "region_sale_rate": 0.503,
-      "region_avg_daily_sold": 1079.941,
-      "expected_profit_per_listing_gold": 0.0643,
-      "regional_demand_profit_index": 138.07,
+      "region_sale_rate": 0.464,
+      "region_avg_daily_sold": 996.208,
+      "expected_profit_per_listing_gold": 0.0593,
+      "regional_demand_profit_index": 127.36,
       "profitable": true
     },
     {
@@ -54,10 +54,10 @@
       "profit_per_stack20_gold": 2.47,
       "roi_pct": 66.0,
       "margin_pct": 39.8,
-      "region_sale_rate": 0.461,
-      "region_avg_daily_sold": 1105.709,
-      "expected_profit_per_listing_gold": 0.057,
-      "regional_demand_profit_index": 136.6,
+      "region_sale_rate": 0.463,
+      "region_avg_daily_sold": 1110.506,
+      "expected_profit_per_listing_gold": 0.0572,
+      "regional_demand_profit_index": 137.2,
       "profitable": true
     },
     {
@@ -81,10 +81,10 @@
       "profit_per_stack20_gold": 4.59,
       "roi_pct": 25.5,
       "margin_pct": 20.3,
-      "region_sale_rate": 0.206,
-      "region_avg_daily_sold": 114.124,
-      "expected_profit_per_listing_gold": 0.0473,
-      "regional_demand_profit_index": 26.21,
+      "region_sale_rate": 0.209,
+      "region_avg_daily_sold": 115.786,
+      "expected_profit_per_listing_gold": 0.048,
+      "regional_demand_profit_index": 26.59,
       "profitable": true
     },
     {
@@ -108,10 +108,10 @@
       "profit_per_stack20_gold": 0.95,
       "roi_pct": 4.4,
       "margin_pct": 4.2,
-      "region_sale_rate": 0.513,
-      "region_avg_daily_sold": 308.826,
-      "expected_profit_per_listing_gold": 0.0244,
-      "regional_demand_profit_index": 14.68,
+      "region_sale_rate": 0.515,
+      "region_avg_daily_sold": 310.03,
+      "expected_profit_per_listing_gold": 0.0245,
+      "regional_demand_profit_index": 14.73,
       "profitable": true
     },
     {
@@ -162,10 +162,10 @@
       "profit_per_stack20_gold": 1.56,
       "roi_pct": 10.1,
       "margin_pct": 9.2,
-      "region_sale_rate": 0.24,
-      "region_avg_daily_sold": 468.36,
-      "expected_profit_per_listing_gold": 0.0188,
-      "regional_demand_profit_index": 36.63,
+      "region_sale_rate": 0.243,
+      "region_avg_daily_sold": 474.215,
+      "expected_profit_per_listing_gold": 0.019,
+      "regional_demand_profit_index": 37.09,
       "profitable": true
     },
     {
@@ -189,10 +189,10 @@
       "profit_per_stack20_gold": 0.87,
       "roi_pct": 4.9,
       "margin_pct": 4.7,
-      "region_sale_rate": 0.418,
-      "region_avg_daily_sold": 1861.145,
-      "expected_profit_per_listing_gold": 0.0181,
-      "regional_demand_profit_index": 80.55,
+      "region_sale_rate": 0.427,
+      "region_avg_daily_sold": 1901.218,
+      "expected_profit_per_listing_gold": 0.0185,
+      "regional_demand_profit_index": 82.28,
       "profitable": true
     },
     {
@@ -216,10 +216,10 @@
       "profit_per_stack20_gold": 0.62,
       "roi_pct": 15.6,
       "margin_pct": 13.5,
-      "region_sale_rate": 0.406,
-      "region_avg_daily_sold": 982.52,
-      "expected_profit_per_listing_gold": 0.0125,
-      "regional_demand_profit_index": 30.3,
+      "region_sale_rate": 0.395,
+      "region_avg_daily_sold": 955.9,
+      "expected_profit_per_listing_gold": 0.0122,
+      "regional_demand_profit_index": 29.48,
       "profitable": true
     },
     {
@@ -243,10 +243,10 @@
       "profit_per_stack20_gold": 0.38,
       "roi_pct": 1.4,
       "margin_pct": 1.4,
-      "region_sale_rate": 0.59,
-      "region_avg_daily_sold": 1078.815,
+      "region_sale_rate": 0.592,
+      "region_avg_daily_sold": 1082.472,
       "expected_profit_per_listing_gold": 0.0114,
-      "regional_demand_profit_index": 20.77,
+      "regional_demand_profit_index": 20.84,
       "profitable": true
     },
     {
@@ -270,10 +270,10 @@
       "profit_per_stack20_gold": 0.92,
       "roi_pct": 60.2,
       "margin_pct": 37.6,
-      "region_sale_rate": 0.233,
-      "region_avg_daily_sold": 268.766,
-      "expected_profit_per_listing_gold": 0.0107,
-      "regional_demand_profit_index": 12.35,
+      "region_sale_rate": 0.236,
+      "region_avg_daily_sold": 272.226,
+      "expected_profit_per_listing_gold": 0.0108,
+      "regional_demand_profit_index": 12.51,
       "profitable": true
     },
     {
@@ -297,10 +297,10 @@
       "profit_per_stack20_gold": 0.61,
       "roi_pct": 158.8,
       "margin_pct": 61.4,
-      "region_sale_rate": 0.348,
-      "region_avg_daily_sold": 360.702,
+      "region_sale_rate": 0.347,
+      "region_avg_daily_sold": 359.665,
       "expected_profit_per_listing_gold": 0.0106,
-      "regional_demand_profit_index": 11.0,
+      "regional_demand_profit_index": 10.96,
       "profitable": true
     },
     {
@@ -351,10 +351,10 @@
       "profit_per_stack20_gold": 0.34,
       "roi_pct": 8.6,
       "margin_pct": 7.9,
-      "region_sale_rate": 0.392,
-      "region_avg_daily_sold": 1694.42,
-      "expected_profit_per_listing_gold": 0.0067,
-      "regional_demand_profit_index": 29.08,
+      "region_sale_rate": 0.394,
+      "region_avg_daily_sold": 1703.065,
+      "expected_profit_per_listing_gold": 0.0068,
+      "regional_demand_profit_index": 29.23,
       "profitable": true
     },
     {
@@ -378,10 +378,10 @@
       "profit_per_stack20_gold": 0.27,
       "roi_pct": 10.3,
       "margin_pct": 9.4,
-      "region_sale_rate": 0.303,
-      "region_avg_daily_sold": 397.839,
-      "expected_profit_per_listing_gold": 0.004,
-      "regional_demand_profit_index": 5.3,
+      "region_sale_rate": 0.306,
+      "region_avg_daily_sold": 401.778,
+      "expected_profit_per_listing_gold": 0.0041,
+      "regional_demand_profit_index": 5.35,
       "profitable": true
     },
     {
@@ -432,10 +432,10 @@
       "profit_per_stack20_gold": 0.17,
       "roi_pct": 0.9,
       "margin_pct": 0.9,
-      "region_sale_rate": 0.414,
-      "region_avg_daily_sold": 969.588,
-      "expected_profit_per_listing_gold": 0.0036,
-      "regional_demand_profit_index": 8.37,
+      "region_sale_rate": 0.36,
+      "region_avg_daily_sold": 843.12,
+      "expected_profit_per_listing_gold": 0.0031,
+      "regional_demand_profit_index": 7.28,
       "profitable": true
     },
     {
@@ -459,10 +459,10 @@
       "profit_per_stack20_gold": -0.09,
       "roi_pct": -22.6,
       "margin_pct": -29.2,
-      "region_sale_rate": 0.154,
-      "region_avg_daily_sold": 62.909,
+      "region_sale_rate": 0.153,
+      "region_avg_daily_sold": 62.5,
       "expected_profit_per_listing_gold": -0.0007,
-      "regional_demand_profit_index": -0.28,
+      "regional_demand_profit_index": -0.27,
       "profitable": false
     },
     {
@@ -486,10 +486,10 @@
       "profit_per_stack20_gold": -1.84,
       "roi_pct": -71.6,
       "margin_pct": -252.2,
-      "region_sale_rate": 0.281,
-      "region_avg_daily_sold": 116.756,
-      "expected_profit_per_listing_gold": -0.0259,
-      "regional_demand_profit_index": -10.77,
+      "region_sale_rate": 0.277,
+      "region_avg_daily_sold": 115.094,
+      "expected_profit_per_listing_gold": -0.0255,
+      "regional_demand_profit_index": -10.61,
       "profitable": false
     }
   ],
