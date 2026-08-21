@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T21:47:03.340079+00:00",
+  "generated_at": "2026-08-21T02:00:36.303406+00:00",
   "market": {
     "region": "eu",
     "realm": "thunderstrike",
@@ -13,10 +13,10 @@
       "http_status": 200,
       "final_url": "https://public-data.tradeskillmaster.com/classic/eu-fresh/realm/thunderstrike-alliance/items.csv",
       "content_type": "text/csv; charset=utf-8",
-      "content_length": 588618,
+      "content_length": 588759,
       "server": "cloudflare",
-      "body_preview": "itemId,name,marketValue,minBuyout,recent,historical,updatedAt\n36,Worn Mace,50089,49488,49488,9898,2026-08-20T17:23:09Z\n45,Squire's Shirt,15778,4906,4906,14946,2026-08-20T17:23:09Z\n47,Footpad's Shoes,1933,2077,199,3096,2026-08-20T17:23:09Z\n48,Footpad's Pants,180501,340000,20200,19599,2026-08-20T17:23:09Z\n49,Footpad's Shirt,31082,230000,230000,12822,2026-08-20T17:23:09Z\n51,Neophyte's Boots,6528,333,333,7397,2026-08-20T17:23:09Z\n117,Tough Jerky,193,30,29,34,2026-08-20T17:23:09Z\n732,Okra,235,26,29,9,2026-08-20T17:23:09Z\n783,Light Hide,93,98,100,84,2026-08-20T17:23:09Z\n785,Mageroyal,105,98,149,78,2",
-      "row_count": 8636,
+      "body_preview": "itemId,name,marketValue,minBuyout,recent,historical,updatedAt\n31148,Demon Hide Spaulders,658045,669999,679999,521493,2026-08-20T22:58:07Z\n2274,Sapper's Gloves,11577,0,0,19998,2026-08-20T22:58:07Z\n8281,Valorous Pauldrons,20556,43398,43398,24999,2026-08-20T22:58:07Z\n9834,Scaled Leather Shoulders,9427,5996,5997,9949,2026-08-20T22:58:07Z\n10208,Overlord's Legplates,40526,400000,400000,39980,2026-08-20T22:58:07Z\n10209,Overlord's Spaulders,27303,45099,47549,29995,2026-08-20T22:58:07Z\n12227,Recipe: Lean Wolf Steak,83339,0,0,106935,2026-08-20T22:58:07Z\n12228,Recipe: Roast Raptor,22400,16878,16879,9997,",
+      "row_count": 8633,
       "columns": [
         "itemId",
         "name",
@@ -33,11 +33,11 @@
           "row": {
             "itemId": "16204",
             "name": "Illusion Dust",
-            "marketValue": "9677",
-            "minBuyout": "7052",
-            "recent": "9686",
-            "historical": "10688",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "9660",
+            "minBuyout": "7133",
+            "recent": "9348",
+            "historical": "10651",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -46,11 +46,11 @@
           "row": {
             "itemId": "16203",
             "name": "Greater Eternal Essence",
-            "marketValue": "32202",
-            "minBuyout": "30483",
-            "recent": "30472",
+            "marketValue": "31901",
+            "minBuyout": "30466",
+            "recent": "30478",
             "historical": "31535",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -59,11 +59,11 @@
           "row": {
             "itemId": "14344",
             "name": "Large Brilliant Shard",
-            "marketValue": "35337",
-            "minBuyout": "36055",
-            "recent": "36054",
+            "marketValue": "35317",
+            "minBuyout": "44995",
+            "recent": "49015",
             "historical": "36932",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -72,11 +72,11 @@
           "row": {
             "itemId": "25843",
             "name": "Fel Iron Rod",
-            "marketValue": "135580",
-            "minBuyout": "119982",
-            "recent": "119988",
+            "marketValue": "133796",
+            "minBuyout": "119888",
+            "recent": "119989",
             "historical": "146499",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -85,11 +85,11 @@
           "row": {
             "itemId": "22445",
             "name": "Arcane Dust",
-            "marketValue": "9798",
-            "minBuyout": "11790",
-            "recent": "11871",
-            "historical": "9981",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "9957",
+            "minBuyout": "11534",
+            "recent": "11621",
+            "historical": "9988",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -98,11 +98,11 @@
           "row": {
             "itemId": "22446",
             "name": "Greater Planar Essence",
-            "marketValue": "58327",
-            "minBuyout": "62430",
-            "recent": "68402",
+            "marketValue": "58783",
+            "minBuyout": "62892",
+            "recent": "67948",
             "historical": "64537",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -111,11 +111,11 @@
           "row": {
             "itemId": "22447",
             "name": "Lesser Planar Essence",
-            "marketValue": "18367",
-            "minBuyout": "22392",
-            "recent": "22389",
+            "marketValue": "18649",
+            "minBuyout": "20853",
+            "recent": "20915",
             "historical": "19909",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -124,11 +124,11 @@
           "row": {
             "itemId": "22448",
             "name": "Small Prismatic Shard",
-            "marketValue": "70025",
-            "minBuyout": "73985",
-            "recent": "75881",
-            "historical": "66026",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "70348",
+            "minBuyout": "77769",
+            "recent": "78292",
+            "historical": "66032",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -137,11 +137,11 @@
           "row": {
             "itemId": "22449",
             "name": "Large Prismatic Shard",
-            "marketValue": "204225",
-            "minBuyout": "233000",
-            "recent": "235710",
-            "historical": "204491",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "205053",
+            "minBuyout": "231533",
+            "recent": "237802",
+            "historical": "205043",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -150,11 +150,11 @@
           "row": {
             "itemId": "22522",
             "name": "Superior Wizard Oil",
-            "marketValue": "67191",
-            "minBuyout": "80092",
-            "recent": "85000",
+            "marketValue": "67383",
+            "minBuyout": "80988",
+            "recent": "81647",
             "historical": "69955",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -163,11 +163,11 @@
           "row": {
             "itemId": "22792",
             "name": "Nightmare Vine",
-            "marketValue": "35277",
-            "minBuyout": "30527",
-            "recent": "30528",
+            "marketValue": "35169",
+            "minBuyout": "40118",
+            "recent": "40125",
             "historical": "37372",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -176,11 +176,11 @@
           "row": {
             "itemId": "23427",
             "name": "Eternium Ore",
-            "marketValue": "3913",
-            "minBuyout": "5972",
-            "recent": "5544",
-            "historical": "4150",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "3978",
+            "minBuyout": "3675",
+            "recent": "4063",
+            "historical": "4126",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -189,11 +189,11 @@
           "row": {
             "itemId": "25844",
             "name": "Adamantite Rod",
-            "marketValue": "464166",
-            "minBuyout": "430521",
-            "recent": "439308",
+            "marketValue": "461829",
+            "minBuyout": "439308",
+            "recent": "439311",
             "historical": "528112",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -202,11 +202,11 @@
           "row": {
             "itemId": "23445",
             "name": "Fel Iron Bar",
-            "marketValue": "17530",
-            "minBuyout": "13026",
-            "recent": "17442",
+            "marketValue": "18273",
+            "minBuyout": "18000",
+            "recent": "19486",
             "historical": "17533",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -215,11 +215,11 @@
           "row": {
             "itemId": "21877",
             "name": "Netherweave Cloth",
-            "marketValue": "1492",
-            "minBuyout": "1482",
-            "recent": "1497",
+            "marketValue": "1494",
+            "minBuyout": "1410",
+            "recent": "1530",
             "historical": "1507",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -228,11 +228,11 @@
           "row": {
             "itemId": "23446",
             "name": "Adamantite Bar",
-            "marketValue": "39935",
-            "minBuyout": "42696",
-            "recent": "43988",
+            "marketValue": "40111",
+            "minBuyout": "41000",
+            "recent": "42039",
             "historical": "45557",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -241,11 +241,11 @@
           "row": {
             "itemId": "23448",
             "name": "Felsteel Bar",
-            "marketValue": "77724",
-            "minBuyout": "98000",
-            "recent": "97992",
-            "historical": "79987",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "77262",
+            "minBuyout": "97594",
+            "recent": "97762",
+            "historical": "80002",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -254,11 +254,11 @@
           "row": {
             "itemId": "23449",
             "name": "Khorium Bar",
-            "marketValue": "41365",
-            "minBuyout": "39070",
-            "recent": "38853",
-            "historical": "34993",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "41111",
+            "minBuyout": "37943",
+            "recent": "38480",
+            "historical": "35947",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -267,11 +267,11 @@
           "row": {
             "itemId": "21885",
             "name": "Primal Water",
-            "marketValue": "162107",
-            "minBuyout": "194789",
-            "recent": "195287",
-            "historical": "181698",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "166833",
+            "minBuyout": "188498",
+            "recent": "194495",
+            "historical": "181805",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -280,11 +280,11 @@
           "row": {
             "itemId": "22457",
             "name": "Primal Mana",
-            "marketValue": "150914",
-            "minBuyout": "152989",
-            "recent": "153081",
+            "marketValue": "151422",
+            "minBuyout": "159957",
+            "recent": "160159",
             "historical": "164656",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -293,11 +293,11 @@
           "row": {
             "itemId": "22578",
             "name": "Mote of Water",
-            "marketValue": "16930",
-            "minBuyout": "17484",
-            "recent": "18877",
-            "historical": "17850",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "marketValue": "17104",
+            "minBuyout": "18457",
+            "recent": "18468",
+            "historical": "17946",
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         },
         {
@@ -306,11 +306,11 @@
           "row": {
             "itemId": "23447",
             "name": "Eternium Bar",
-            "marketValue": "8978",
-            "minBuyout": "11961",
-            "recent": "11967",
+            "marketValue": "9067",
+            "minBuyout": "9990",
+            "recent": "11821",
             "historical": "10417",
-            "updatedAt": "2026-08-20T17:23:09Z"
+            "updatedAt": "2026-08-20T22:58:07Z"
           }
         }
       ]
@@ -322,7 +322,7 @@
       "http_status": 525,
       "final_url": "https://horde.thunderstrikemarket.org/report/alliance/raw-materials-enchanting/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7128,
+      "content_length": 7133,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -333,7 +333,7 @@
       "http_status": 525,
       "final_url": "https://horde.thunderstrikemarket.org/auction-house/compare/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7128,
+      "content_length": 7133,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -344,7 +344,7 @@
       "http_status": 525,
       "final_url": "https://horde.thunderstrikemarket.org/report/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7128,
+      "content_length": 7133,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -355,7 +355,7 @@
       "http_status": 525,
       "final_url": "https://market.thunderstrikemarket.org/realms/thunderstrike/alliance/",
       "content_type": "text/html; charset=UTF-8",
-      "content_length": 7133,
+      "content_length": 7138,
       "server": "cloudflare",
       "body_preview": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>thunderstrikemarket.org | 525: SSL handshake failed</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta na",
       "parsed_item_count": 0,
@@ -374,14 +374,17 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6314,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-UfOx6rrN9E0bfcQVnb5Akh&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-G0O0Rae0PpMNPSsu8jGTVM&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.6201,
-            0.0006,
             0.0002,
-            0.0008
+            0.0992,
+            0.0009,
+            0.0055,
+            0.0001,
+            0.0003,
+            0.0006
           ]
         },
         {
@@ -389,18 +392,22 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/item/16204/illusion-dust?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6353,
+          "content_length": 6374,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-4Ilnc7lbFtmrrWzi2D2RJr&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-a8YkwkmNLz14tC6Pm0VFzK&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0006,
-            0.0096,
-            0.0009,
+            0.0005,
+            3.0009,
+            0.0008,
+            0.0098,
             0.0001,
-            3.1639,
-            0.0003
+            0.0829,
+            0.0009,
+            0.0006,
+            0.0003,
+            0.0035
           ]
         }
       ]
@@ -416,15 +423,20 @@
           "content_type": "text/html; charset=UTF-8",
           "content_length": 6365,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-FJIwAJowkaOQU5ODa18DFj&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-2ARIzSF4WmwB2p5lrzEbzm&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
-            0.0529,
+            0.0712,
+            0.0007,
+            0.0005,
+            0.0001,
+            0.0089,
             0.0008,
             0.0003,
-            0.0005,
-            0.0002
+            0.0043,
+            0.0004,
+            0.0071
           ]
         },
         {
@@ -432,14 +444,18 @@
           "http_status": 403,
           "final_url": "https://bootybaybroker.com/item/16203/greater-eternal-essence?version=tbc-classic&realmId=6409&auctionHouseId=2&faction=alliance&region=eu&realm=thunderstrike",
           "content_type": "text/html; charset=UTF-8",
-          "content_length": 6404,
+          "content_length": 6446,
           "server": "cloudflare",
-          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-3NgFcvq2nSVr7aVf15K9aH&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
+          "body_preview": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-cbbjsB80RRbtpGHBSWfu2x&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges",
           "item_found": false,
           "money_candidates_gold": [
             0.0048,
+            0.0008,
+            0.0001,
+            0.0006,
+            0.0009,
             0.0002,
-            0.0008
+            0.0003
           ]
         }
       ]
