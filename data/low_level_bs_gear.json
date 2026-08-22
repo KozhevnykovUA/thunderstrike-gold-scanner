@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:54:35.020532+00:00",
+  "generated_at": "2026-08-22T03:59:56.301486+00:00",
   "market": "Thunderstrike EU Alliance",
   "items": [
     {
@@ -7,14 +7,14 @@
       "role": "ret",
       "level": 55,
       "score": 10,
-      "material_cost_gold": 359.75,
+      "material_cost_gold": 359.4,
       "output_recent_or_market_gold": 499.97,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Arcanite Bar",
           "qty": 12,
-          "unit_gold": 17.3194,
+          "unit_gold": 17.3193,
           "cost_gold": 207.83
         },
         {
@@ -26,8 +26,8 @@
         {
           "name": "Essence of Earth",
           "qty": 10,
-          "unit_gold": 3.1748,
-          "cost_gold": 31.75
+          "unit_gold": 3.1397,
+          "cost_gold": 31.4
         },
         {
           "name": "Flask of the Titans",
@@ -43,39 +43,39 @@
       "role": "ret",
       "level": 56,
       "score": 9,
-      "material_cost_gold": 417.71,
+      "material_cost_gold": 417.16,
       "output_recent_or_market_gold": 615.58,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Thorium Bar",
           "qty": 80,
-          "unit_gold": 1.5986,
-          "cost_gold": 127.89
+          "unit_gold": 1.5817,
+          "cost_gold": 126.54
         },
         {
           "name": "Arcanite Bar",
           "qty": 12,
-          "unit_gold": 17.3194,
+          "unit_gold": 17.3193,
           "cost_gold": 207.83
         },
         {
           "name": "Wicked Claw",
           "qty": 40,
-          "unit_gold": 0.0623,
-          "cost_gold": 2.49
+          "unit_gold": 0.0973,
+          "cost_gold": 3.89
         },
         {
           "name": "Blue Sapphire",
           "qty": 10,
-          "unit_gold": 4.756,
-          "cost_gold": 47.56
+          "unit_gold": 4.759,
+          "cost_gold": 47.59
         },
         {
           "name": "Azerothian Diamond",
           "qty": 4,
-          "unit_gold": 7.9838,
-          "cost_gold": 31.94
+          "unit_gold": 7.8279,
+          "cost_gold": 31.31
         }
       ],
       "missing": []
@@ -85,14 +85,14 @@
       "role": "hybrid",
       "level": 57,
       "score": 6,
-      "material_cost_gold": 351.35,
+      "material_cost_gold": 351.11,
       "output_recent_or_market_gold": 499.97,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Arcanite Bar",
           "qty": 15,
-          "unit_gold": 17.3194,
+          "unit_gold": 17.3193,
           "cost_gold": 259.79
         },
         {
@@ -104,20 +104,20 @@
         {
           "name": "Essence of Earth",
           "qty": 10,
-          "unit_gold": 3.1748,
-          "cost_gold": 31.75
+          "unit_gold": 3.1397,
+          "cost_gold": 31.4
         },
         {
           "name": "Blue Sapphire",
           "qty": 4,
-          "unit_gold": 4.756,
-          "cost_gold": 19.02
+          "unit_gold": 4.759,
+          "cost_gold": 19.04
         },
         {
           "name": "Large Opal",
           "qty": 4,
-          "unit_gold": 6.3983,
-          "cost_gold": 25.59
+          "unit_gold": 6.4238,
+          "cost_gold": 25.7
         }
       ],
       "missing": []
@@ -127,14 +127,14 @@
       "role": "prot",
       "level": 57,
       "score": 7,
-      "material_cost_gold": 155.9,
+      "material_cost_gold": 155.59,
       "output_recent_or_market_gold": null,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Arcanite Bar",
           "qty": 6,
-          "unit_gold": 17.3194,
+          "unit_gold": 17.3193,
           "cost_gold": 103.92
         },
         {
@@ -146,20 +146,20 @@
         {
           "name": "Essence of Earth",
           "qty": 6,
-          "unit_gold": 3.1748,
-          "cost_gold": 19.05
+          "unit_gold": 3.1397,
+          "cost_gold": 18.84
         },
         {
           "name": "Large Opal",
           "qty": 2,
-          "unit_gold": 6.3983,
-          "cost_gold": 12.8
+          "unit_gold": 6.4238,
+          "cost_gold": 12.85
         },
         {
           "name": "Azerothian Diamond",
           "qty": 1,
-          "unit_gold": 7.9838,
-          "cost_gold": 7.98
+          "unit_gold": 7.8279,
+          "cost_gold": 7.83
         }
       ],
       "missing": []
@@ -169,15 +169,15 @@
       "role": "prot",
       "level": 58,
       "score": 7,
-      "material_cost_gold": 208.99,
+      "material_cost_gold": 208.42,
       "output_recent_or_market_gold": null,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Arcanite Bar",
           "qty": 8,
-          "unit_gold": 17.3194,
-          "cost_gold": 138.56
+          "unit_gold": 17.3193,
+          "cost_gold": 138.55
         },
         {
           "name": "Enchanted Thorium Bar",
@@ -188,26 +188,26 @@
         {
           "name": "Essence of Earth",
           "qty": 4,
-          "unit_gold": 3.1748,
-          "cost_gold": 12.7
+          "unit_gold": 3.1397,
+          "cost_gold": 12.56
         },
         {
           "name": "Essence of Water",
           "qty": 4,
-          "unit_gold": 0.9382,
-          "cost_gold": 3.75
+          "unit_gold": 0.9289,
+          "cost_gold": 3.72
         },
         {
           "name": "Huge Emerald",
           "qty": 2,
-          "unit_gold": 9.8888,
-          "cost_gold": 19.78
+          "unit_gold": 9.8478,
+          "cost_gold": 19.7
         },
         {
           "name": "Azerothian Diamond",
           "qty": 2,
-          "unit_gold": 7.9838,
-          "cost_gold": 15.97
+          "unit_gold": 7.8279,
+          "cost_gold": 15.66
         }
       ],
       "missing": []
@@ -217,14 +217,14 @@
       "role": "prot",
       "level": 58,
       "score": 7,
-      "material_cost_gold": 213.42,
+      "material_cost_gold": 213.33,
       "output_recent_or_market_gold": null,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Arcanite Bar",
           "qty": 10,
-          "unit_gold": 17.3194,
+          "unit_gold": 17.3193,
           "cost_gold": 173.19
         },
         {
@@ -236,20 +236,20 @@
         {
           "name": "Essence of Water",
           "qty": 6,
-          "unit_gold": 0.9382,
-          "cost_gold": 5.63
+          "unit_gold": 0.9289,
+          "cost_gold": 5.57
         },
         {
           "name": "Blue Sapphire",
           "qty": 2,
-          "unit_gold": 4.756,
-          "cost_gold": 9.51
+          "unit_gold": 4.759,
+          "cost_gold": 9.52
         },
         {
           "name": "Huge Emerald",
           "qty": 1,
-          "unit_gold": 9.8888,
-          "cost_gold": 9.89
+          "unit_gold": 9.8478,
+          "cost_gold": 9.85
         }
       ],
       "missing": []
@@ -259,33 +259,33 @@
       "role": "ret",
       "level": 58,
       "score": 4,
-      "material_cost_gold": 387.6,
+      "material_cost_gold": 386.46,
       "output_recent_or_market_gold": null,
       "cheaper_to_buy_finished": false,
       "materials": [
         {
           "name": "Arcanite Bar",
           "qty": 15,
-          "unit_gold": 17.3194,
+          "unit_gold": 17.3193,
           "cost_gold": 259.79
         },
         {
           "name": "Azerothian Diamond",
           "qty": 8,
-          "unit_gold": 7.9838,
-          "cost_gold": 63.87
+          "unit_gold": 7.8279,
+          "cost_gold": 62.62
         },
         {
           "name": "Righteous Orb",
           "qty": 1,
-          "unit_gold": 10.8986,
+          "unit_gold": 10.8982,
           "cost_gold": 10.9
         },
         {
           "name": "Large Opal",
           "qty": 4,
-          "unit_gold": 6.3983,
-          "cost_gold": 25.59
+          "unit_gold": 6.4238,
+          "cost_gold": 25.7
         },
         {
           "name": "Enchanted Leather",
